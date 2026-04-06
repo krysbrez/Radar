@@ -1,25 +1,38 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Mascot from "../components/Mascot";
 import DidYouKnow from "../components/DidYouKnow";
 import RadarSays from "../components/RadarSays";
+import { LineChart, Line, ResponsiveContainer } from "recharts";
 import { getArticlesByCategory } from "../data/articles";
+import SignalCard from "../components/SignalCard";
+
+function Sparkline({ data, isUp }) {
+  const color = isUp ? "#16a34a" : "#dc2626";
+  const points = data.map((v) => ({ v }));
+  return (
+    <ResponsiveContainer width={64} height={32}>
+      <LineChart data={points} margin={{ top: 2, right: 2, bottom: 2, left: 2 }}>
+        <Line type="monotone" dataKey="v" stroke={color} strokeWidth={1.8} dot={false} isAnimationActive={false} />
+      </LineChart>
+    </ResponsiveContainer>
+  );
+}
 
 const CZ_STOCKS = [
-  { name: "ČEZ", symbol: "CEZ", price: "900 Kč", change: "+1.2%", cap: "483 mld Kč", isUp: true, sector: "Energie" },
-  { name: "Komerční banka", symbol: "KOMB", price: "863 Kč", change: "-0.4%", cap: "184 mld Kč", isUp: false, sector: "Finance" },
-  { name: "O2 Czech Republic", symbol: "TELEC", price: "298 Kč", change: "+0.8%", cap: "97 mld Kč", isUp: true, sector: "Telekomunikace" },
-  { name: "Moneta Money Bank", symbol: "MONET", price: "94 Kč", change: "+2.1%", cap: "42 mld Kč", isUp: true, sector: "Finance" },
-  { name: "Kofola", symbol: "KOFOL", price: "312 Kč", change: "-1.1%", cap: "8 mld Kč", isUp: false, sector: "Spotřeba" },
+  { name: "ČEZ", symbol: "CEZ", price: "900 Kč", change: "+1.2%", cap: "483 mld Kč", isUp: true, sector: "Energie", spark: [871, 878, 884, 879, 888, 895, 900] },
+  { name: "Komerční banka", symbol: "KOMB", price: "863 Kč", change: "-0.4%", cap: "184 mld Kč", isUp: false, sector: "Finance", spark: [880, 877, 874, 871, 869, 866, 863] },
+  { name: "O2 Czech Republic", symbol: "TELEC", price: "298 Kč", change: "+0.8%", cap: "97 mld Kč", isUp: true, sector: "Telekomunikace", spark: [289, 291, 290, 293, 294, 296, 298] },
+  { name: "Moneta Money Bank", symbol: "MONET", price: "94 Kč", change: "+2.1%", cap: "42 mld Kč", isUp: true, sector: "Finance", spark: [90, 91, 90, 92, 93, 93, 94] },
+  { name: "Kofola", symbol: "KOFOL", price: "312 Kč", change: "-1.1%", cap: "8 mld Kč", isUp: false, sector: "Spotřeba", spark: [322, 319, 318, 316, 315, 313, 312] },
 ];
 
 const WORLD_STOCKS = [
-  { name: "Apple", symbol: "AAPL", price: "$172", change: "+0.9%", cap: "$2.64T", isUp: true, sector: "Technologie" },
-  { name: "Nvidia", symbol: "NVDA", price: "$880", change: "+3.4%", cap: "$2.17T", isUp: true, sector: "Technologie" },
-  { name: "Microsoft", symbol: "MSFT", price: "$415", change: "+0.5%", cap: "$3.08T", isUp: true, sector: "Technologie" },
-  { name: "Amazon", symbol: "AMZN", price: "$185", change: "-0.7%", cap: "$1.94T", isUp: false, sector: "E-commerce" },
-  { name: "Alphabet (Google)", symbol: "GOOGL", price: "$165", change: "+1.1%", cap: "$2.03T", isUp: true, sector: "Technologie" },
+  { name: "Apple", symbol: "AAPL", price: "$172", change: "+0.9%", cap: "$2.64T", isUp: true, sector: "Technologie", spark: [164, 166, 165, 168, 169, 170, 172] },
+  { name: "Nvidia", symbol: "NVDA", price: "$880", change: "+3.4%", cap: "$2.17T", isUp: true, sector: "Technologie", spark: [830, 845, 840, 855, 862, 870, 880] },
+  { name: "Microsoft", symbol: "MSFT", price: "$415", change: "+0.5%", cap: "$3.08T", isUp: true, sector: "Technologie", spark: [408, 409, 410, 411, 412, 413, 415] },
+  { name: "Amazon", symbol: "AMZN", price: "$185", change: "-0.7%", cap: "$1.94T", isUp: false, sector: "E-commerce", spark: [191, 190, 189, 188, 187, 186, 185] },
+  { name: "Alphabet (Google)", symbol: "GOOGL", price: "$165", change: "+1.1%", cap: "$2.03T", isUp: true, sector: "Technologie", spark: [158, 159, 160, 161, 162, 163, 165] },
 ];
 
 const HOW_TO_BUY = [
@@ -74,6 +87,7 @@ function StockTable({ stocks, title, flag, colCompany }) {
               <th className="text-left px-4 py-3">Ticker</th>
               <th className="text-left px-4 py-3">Sektor</th>
               <th className="text-right px-4 py-3">Cena</th>
+              <th className="text-right px-4 py-3">7 dní</th>
               <th className="text-right px-5 py-3">Změna</th>
             </tr>
           </thead>
@@ -86,6 +100,11 @@ function StockTable({ stocks, title, flag, colCompany }) {
                 </td>
                 <td className="px-4 py-3.5 text-on-surface-variant text-xs">{s.sector}</td>
                 <td className="px-4 py-3.5 text-right font-bold text-primary font-mono">{s.price}</td>
+                <td className="px-4 py-3.5">
+                  <div className="flex justify-end">
+                    {s.spark && <Sparkline data={s.spark} isUp={s.isUp} />}
+                  </div>
+                </td>
                 <td className="px-5 py-3.5 text-right">
                   <span className={`font-black text-sm px-2 py-0.5 rounded-full ${s.isUp ? "text-green-700 bg-green-100" : "text-red-600 bg-red-100"}`}>{s.change}</span>
                 </td>
@@ -140,7 +159,6 @@ function ArticleCard({ article }) {
 
 export default function AkciePage() {
   const { t } = useTranslation();
-  const [activeStep, setActiveStep] = useState(null);
   const articles = getArticlesByCategory("akcie").slice(0, 5);
 
   return (
@@ -151,7 +169,7 @@ export default function AkciePage() {
           <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
             <Link to="/" className="hover:text-white transition-colors">Radar</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">Akcie</span>
+            <span className="text-primary-fixed-dim">{t("akcie.breadcrumb")}</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
@@ -159,14 +177,14 @@ export default function AkciePage() {
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
                 <span className="text-xs font-black text-primary-fixed-dim uppercase tracking-widest font-headline">Live data · 5. 4. 2026</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4">Akcie — kousky<br /><span className="text-tertiary-fixed">skutečných firem</span></h1>
-              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl">Koupíš kousek Applu. Apple vydělá. Ty vydělíš. Tak jednoduché to je — a tak složité, jak si sám uděláš.</p>
+              <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4">{t("akcie.hero_title")}<br /><span className="text-tertiary-fixed">{t("akcie.hero_title_accent")}</span></h1>
+              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl">{t("akcie.hero_subtitle")}</p>
               <div className="flex flex-wrap gap-3 mt-6">
                 <a href="#tabulka" className="bg-white text-primary font-black text-sm font-headline px-5 py-2.5 rounded-full hover:bg-primary-fixed transition-colors">
-                  Přehled akcií ↓
+                  {t("akcie.btn_table")}
                 </a>
                 <a href="#jak-koupit" className="bg-white/10 text-white font-bold text-sm font-headline px-5 py-2.5 rounded-full hover:bg-white/20 transition-colors">
-                  Jak koupit první akcii
+                  {t("akcie.btn_buy")}
                 </a>
               </div>
             </div>
@@ -174,6 +192,16 @@ export default function AkciePage() {
               <Mascot size={120} mood="happy" variant="signal" trackMouse={false} />
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* SignalCard strip */}
+      <div className="bg-surface-container/50 border-b border-outline-variant/10">
+        <div className="max-w-5xl mx-auto px-6 md:px-8 py-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+          <SignalCard eyebrow="ČEZ" value="900 Kč" note="↑ +1.2% dnes" tone="positive" />
+          <SignalCard eyebrow="Komerční banka" value="810 Kč" note="↓ -0.3% dnes" tone="negative" />
+          <SignalCard eyebrow="Apple (AAPL)" value="$172" note="↑ +0.8% dnes" tone="positive" />
+          <SignalCard eyebrow="Nvidia (NVDA)" value="$880" note="↑ +2.1% dnes" tone="positive" />
         </div>
       </div>
 
@@ -248,7 +276,7 @@ export default function AkciePage() {
         {/* Akcie vs ETF sidebar callout */}
         <section className="grid md:grid-cols-3 gap-6">
           <div className="md:col-span-2 bg-white rounded-2xl border border-outline-variant/10 p-6">
-            <h3 className="font-black text-primary font-headline text-lg mb-4">Akcie vs ETF — co vybrat?</h3>
+            <h3 className="font-black text-primary font-headline text-lg mb-4">{t("akcie.vs_etf_title")}</h3>
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-4">
                 <p className="font-black text-indigo-700 font-headline mb-2">📊 Jednotlivé akcie</p>
@@ -287,7 +315,7 @@ export default function AkciePage() {
         {articles.length > 0 && (
           <section>
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl font-black font-headline text-primary">Akcie na Radaru</h2>
+              <h2 className="text-xl font-black font-headline text-primary">{t("akcie.articles_section_title")}</h2>
               <Link to="/archiv" className="text-sm font-bold text-outline hover:text-primary transition-colors">Všechny články →</Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
