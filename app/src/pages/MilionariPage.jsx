@@ -144,7 +144,7 @@ export default function MilionariPage() {
         </div>
 
         {/* Cards */}
-        {BILLIONAIRES.map((b, i) => (
+        {BILLIONAIRES.map((b) => (
           <div key={b.name} className="bg-white rounded-2xl border border-outline-variant/10 overflow-hidden hover:shadow-md transition-shadow">
             <div className="p-6 md:p-8">
               <div className="flex flex-col md:flex-row gap-6">
