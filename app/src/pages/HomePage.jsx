@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Hero from "../components/Hero";
 import Mascot from "../components/Mascot";
 import TydenVCislech from "../components/TydenVCislech";
@@ -20,6 +21,25 @@ import MytusWeek from "../components/MytusWeek";
 import CisloTydne from "../components/CisloTydne";
 import BiteSize from "../components/BiteSize";
 import Reviews from "../components/Reviews";
+import SocialCoverSection from "../components/SocialCoverSection";
+
+const HOW_RADAR_WORKS = [
+  {
+    step: "01",
+    title: "Radar hlídá trhy",
+    text: "Akcie, krypto, reality, auta a alternativy na jednom místě. Bez přepínání mezi deseti weby.",
+  },
+  {
+    step: "02",
+    title: "Filtruje signál od šumu",
+    text: "Vybereme to, co má opravdu dopad. Co se hýbe, proč na tom záleží a co sledovat dál.",
+  },
+  {
+    step: "03",
+    title: "Posílá jasný výstup",
+    text: "V pondělí dostaneš přehled do inboxu. Mezitím můžeš sledovat alerty a živé ceny na webu.",
+  },
+];
 
 const Divider = () => (
   <div className="max-w-7xl mx-auto px-6 md:px-8">
@@ -28,9 +48,44 @@ const Divider = () => (
 );
 
 export default function HomePage() {
+  const { t } = useTranslation();
   return (
     <>
       <Hero />
+
+      <SocialCoverSection />
+
+      <section className="max-w-7xl mx-auto px-6 md:px-8 py-6">
+        <div className="rounded-[1.75rem] border border-outline-variant/10 bg-surface-container-low px-6 py-7 md:px-8">
+          <div className="mb-6 max-w-2xl">
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-outline font-headline mb-2">
+              Jak Radar funguje
+            </p>
+            <h2 className="text-2xl md:text-[2rem] font-black tracking-tight text-primary font-headline">
+              Jeden produkt. Tři jednoduché vrstvy.
+            </h2>
+            <p className="mt-2 text-sm md:text-base leading-relaxed text-on-surface-variant">
+              Newsletter pro přehled, alerty pro timing, tržní pokrytí pro kontext.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {HOW_RADAR_WORKS.map((item) => (
+              <div key={item.step} className="rounded-2xl border border-outline-variant/10 bg-white px-5 py-5">
+                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                  {item.step}
+                </p>
+                <h3 className="mt-3 text-lg font-black text-primary font-headline">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <TrziTydne />
 
@@ -144,10 +199,10 @@ export default function HomePage() {
         <div className="gradient-primary rounded-2xl px-6 py-4 flex items-center gap-4">
           <Mascot size={44} mood="signal" variant="signal" trackMouse={false} />
           <p className="text-sm text-primary-fixed-dim leading-relaxed flex-1">
-            <span className="font-black text-white">Každé pondělí v 8:00</span> posíláme shrnutí týdne — co se stalo, proč to záleží a co dělat. Přes 47 000 čtenářů už ví proč.
+            <span className="font-black text-white">{t("home.strip_monday")}</span> {t("home.strip_desc")}
           </p>
           <a href="#newsletter" className="bg-white text-primary text-xs font-black font-headline px-4 py-2 rounded-full whitespace-nowrap hover:bg-primary-fixed transition-colors flex-shrink-0">
-            Odebírat →
+            {t("home.strip_btn")}
           </a>
         </div>
       </div>
