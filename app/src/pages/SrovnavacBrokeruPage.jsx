@@ -70,6 +70,27 @@ const FEATURES = [
   { key: "stocks", label: "Akcie" },
 ];
 
+const STARTER_GUIDE = [
+  {
+    title: "Chci koupit ETF nebo akcie bez chaosu",
+    text: "Začni u brokera. Je to nejjednodušší vstup pro dlouhodobé investování a nebudeš řešit deset věcí navíc hned první den.",
+  },
+  {
+    title: "Chci řešit čistě krypto",
+    text: "Tam už často dává smysl burza. Má víc krypto funkcí, ale i víc tlačítek, ve kterých se dá ztratit, když začínáš.",
+  },
+  {
+    title: "Co je walletka",
+    text: "Walletka není místo na objevování nových coinů. Je to místo, kde držíš kontrolu nad svým kryptem, když už víš, proč ho máš.",
+  },
+];
+
+const FIRST_ACCOUNT_WARNINGS = [
+  "Ověř poplatky. Ne jen za nákup, ale i za směnu měny, neaktivitu nebo výběr.",
+  "Nezačínej pákou. Na první účet nepotřebuješ obchodovat na steroidech.",
+  "Nejdřív si zkus ETF nebo jednu jednoduchou pozici. Cíl není být hrdina první týden.",
+];
+
 function Stars({ count }) {
   return (
     <div className="flex gap-0.5">
@@ -122,6 +143,52 @@ export default function SrovnavacBrokeruPage() {
             <p className="text-sm text-green-700 leading-relaxed">
               <strong>XTB</strong> je jednoznačně nejlepší volba pro začínající české investory. Nulové poplatky, plná čeština, skvělá aplikace a zákaznická podpora v češtině. Začni tam.
             </p>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl border border-outline-variant/10 p-5 mb-8">
+          <div className="max-w-3xl mb-5">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+              Kde začít, když nechceš chaos
+            </p>
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+              Broker vs. burza: co řeší který nástroj
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+              Pro většinu začátečníků je problém spíš v tom, že neví, kde začít, než v tom, že by neuměli investovat. Tohle je rychlá orientace bez finančního žargonu.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {STARTER_GUIDE.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-5 py-5">
+                <h3 className="text-base font-black text-primary font-headline">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-surface-container-low rounded-2xl border border-outline-variant/10 p-5 mb-8">
+          <div className="max-w-3xl mb-4">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+              Na co si dát bacha při prvním účtu
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+              První účet nemusí být dokonalý. Ale je fajn neudělat tři chyby, které pak zbytečně bolí.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {FIRST_ACCOUNT_WARNINGS.map((item) => (
+              <div key={item} className="rounded-2xl border border-outline-variant/10 bg-white px-5 py-5 text-sm leading-relaxed text-on-surface">
+                {item}
+              </div>
+            ))}
           </div>
         </div>
 
