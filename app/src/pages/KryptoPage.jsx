@@ -41,7 +41,7 @@ function FearGreedMeter({ value }) {
     if (v <= 80) return { label: t("krypto.fear_greed"), color: "text-green-600", bg: "bg-green-500" };
     return { label: t("krypto.fear_extreme_greed"), color: "text-emerald-600", bg: "bg-emerald-500" };
   };
-  const { label, color, bg } = getLabel(value);
+  const { label, color } = getLabel(value);
   return (
     <div className="bg-white rounded-2xl border border-outline-variant/10 p-6">
       <h3 className="text-sm font-black text-primary font-headline uppercase tracking-wider mb-4">Fear & Greed Index</h3>
