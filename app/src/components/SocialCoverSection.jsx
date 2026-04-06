@@ -30,6 +30,12 @@ const SIGNALS = [
   },
 ];
 
+const PRODUCT_PILLARS = [
+  { label: "Newsletter", detail: "pondělní přehled" },
+  { label: "Alerty", detail: "co hlídat teď" },
+  { label: "Pokrytí", detail: "4 hlavní kategorie" },
+];
+
 export default function SocialCoverSection() {
   const { t } = useTranslation();
   const location = useLocation();
@@ -72,14 +78,19 @@ export default function SocialCoverSection() {
             </p>
           </div>
 
-          <div className="mb-5 flex flex-wrap gap-2">
-            {["Newsletter", "Alerty", "Kontext"].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/8 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-primary-fixed-dim"
+          <div className="mb-5 grid grid-cols-3 gap-2.5 md:gap-3">
+            {PRODUCT_PILLARS.map((item) => (
+              <div
+                key={item.label}
+                className="rounded-2xl border border-white/10 bg-white/8 px-3 py-3 text-center"
               >
-                {item}
-              </span>
+                <p className="text-[11px] font-black uppercase tracking-[0.18em] text-primary-fixed-dim">
+                  {item.label}
+                </p>
+                <p className="mt-1 text-xs font-medium leading-tight text-white">
+                  {item.detail}
+                </p>
+              </div>
             ))}
           </div>
 
