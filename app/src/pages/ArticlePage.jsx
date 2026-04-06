@@ -151,6 +151,29 @@ export default function ArticlePage() {
             {t("article.tip_desc").split("redakce@radar.cz")[1]}
           </p>
         </div>
+
+        <div className="mt-4 rounded-2xl border border-outline-variant/10 bg-white p-6">
+          <p className="text-xs font-black uppercase tracking-widest text-outline font-headline mb-2">
+            Pokračuj v Radaru
+          </p>
+          <p className="text-sm leading-relaxed text-on-surface-variant mb-4">
+            Chceš navázat na tohle téma? Otevři další články ze stejné sekce nebo si projdi celý archiv signálů.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              to={`/#${article.category}`}
+              className="rounded-full border border-outline-variant/20 px-4 py-2 text-sm font-bold text-primary font-headline hover:border-outline-variant/40 hover:bg-surface-container-low transition-all"
+            >
+              Další z {categoryLabel}
+            </Link>
+            <Link
+              to="/archiv"
+              className="rounded-full border border-outline-variant/20 px-4 py-2 text-sm font-bold text-on-surface-variant font-headline hover:border-outline-variant/40 hover:bg-surface-container-low hover:text-primary transition-all"
+            >
+              Otevřít archiv
+            </Link>
+          </div>
+        </div>
       </main>
 
       {/* Related articles */}
