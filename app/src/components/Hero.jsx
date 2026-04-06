@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Mascot from "./Mascot";
+import SignalCard from "./SignalCard";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -100,20 +101,25 @@ export default function Hero() {
 
         {/* RIGHT: Stats cards */}
         <div className="lg:col-span-3 order-3 grid grid-cols-2 lg:grid-cols-1 gap-3">
-          <div className="bg-white rounded-2xl p-5 border border-outline-variant/10 shadow-sm">
-            <p className="text-xs font-bold text-outline uppercase tracking-wider mb-1 font-headline">{t("hero.sp500_label")}</p>
-            <p className="text-3xl font-black text-green-600 font-headline leading-none">+12.4%</p>
-            <p className="text-xs text-outline mt-1">{t("hero.sp500_note")}</p>
-          </div>
-          <div className="bg-white rounded-2xl p-5 border border-outline-variant/10 shadow-sm">
-            <p className="text-xs font-bold text-outline uppercase tracking-wider mb-1 font-headline">{t("hero.btc_label")}</p>
-            <p className="text-3xl font-black text-orange-500 font-headline leading-none">$84k</p>
-            <p className="text-xs text-red-500 mt-1">↓ -2.1% {t("hero.btc_note")}</p>
-          </div>
-          <div className="bg-white rounded-2xl p-5 border border-outline-variant/10 shadow-sm lg:block hidden">
-            <p className="text-xs font-bold text-outline uppercase tracking-wider mb-1 font-headline">{t("hero.czk_label")}</p>
-            <p className="text-3xl font-black text-primary font-headline leading-none">25.10</p>
-            <p className="text-xs text-green-600 mt-1">{t("hero.czk_note")}</p>
+          <SignalCard
+            eyebrow={t("hero.sp500_label")}
+            value="+12.4%"
+            note={t("hero.sp500_note")}
+            tone="positive"
+          />
+          <SignalCard
+            eyebrow={t("hero.btc_label")}
+            value="$84k"
+            note={`↓ -2.1% ${t("hero.btc_note")}`}
+            tone="accent"
+          />
+          <div className="lg:block hidden">
+            <SignalCard
+              eyebrow={t("hero.czk_label")}
+              value="25.10"
+              note={t("hero.czk_note")}
+              tone="neutral"
+            />
           </div>
         </div>
       </div>
