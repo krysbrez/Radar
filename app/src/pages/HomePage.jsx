@@ -41,6 +41,29 @@ const HOW_RADAR_WORKS = [
   },
 ];
 
+const SIGNAL_EXAMPLES = [
+  {
+    category: "Akcie / ETF",
+    signal: "S&P 500 ETF po 6% korekci",
+    note: "Když se trh nadechne, Radar ukáže, jestli jde o šum nebo příležitost.",
+  },
+  {
+    category: "Reality",
+    signal: "2+kk Praha pod 5.8M",
+    note: "Ne jen ceny bytů, ale i lokality, výnos a tlak na nájemní trh.",
+  },
+  {
+    category: "Auta",
+    signal: "BMW E46 M3 do 900k",
+    note: "Youngtimery, kde ještě dává smysl vstup a nehrozí přepálený hype.",
+  },
+  {
+    category: "Alternativy",
+    signal: "Zlato nad $2 400 / oz",
+    note: "Komodity, hodinky i další aktiva, která mají vlastní rytmus mimo akcie.",
+  },
+];
+
 const Divider = () => (
   <div className="max-w-7xl mx-auto px-6 md:px-8">
     <div className="h-px bg-outline-variant/10" />
@@ -80,6 +103,38 @@ export default function HomePage() {
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
                   {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-6 md:px-8 pb-6">
+        <div className="rounded-[1.75rem] border border-outline-variant/10 bg-white px-6 py-7 md:px-8">
+          <div className="mb-6 max-w-2xl">
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-outline font-headline mb-2">
+              Příklady signálů
+            </p>
+            <h2 className="text-2xl md:text-[2rem] font-black tracking-tight text-primary font-headline">
+              Co můžeš s Radarem reálně hlídat
+            </h2>
+            <p className="mt-2 text-sm md:text-base leading-relaxed text-on-surface-variant">
+              Ne reklamní slogany. Konkrétní situace, které dávají smysl sledovat napříč hlavními kategoriemi.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {SIGNAL_EXAMPLES.map((item) => (
+              <div key={item.category} className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-5 py-5">
+                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                  {item.category}
+                </p>
+                <h3 className="mt-3 text-lg font-black text-primary font-headline">
+                  {item.signal}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  {item.note}
                 </p>
               </div>
             ))}
