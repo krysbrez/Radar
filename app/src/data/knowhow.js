@@ -617,6 +617,160 @@ Beginners často pletou „bezpečné“ s „chytré“. Ale opravdu chytré je
     level: "Začátečník",
   },
   {
+    id: "co-je-riziko",
+    emoji: "🎢",
+    title: "Co je riziko — a proč to není totéž co průšvih",
+    excerpt: "Riziko neznamená automaticky katastrofu. Často jen znamená, že výsledek není jistý a že musíš vědět, co vlastně hraješ.",
+    body: `Slovo **riziko** zní, jako by po jeho vyslovení měl okamžitě někdo přijít o peníze, klid a možná i o chuť k životu. Jenže tak to není.
+
+Riziko není automaticky průšvih. Riziko je hlavně **nejistota výsledku**.
+
+To znamená:
+- výsledek není stoprocentně předvídatelný
+- může to dopadnout dobře
+- může to dopadnout hůř
+- a ty předem nevíš přesně jak
+
+To je celé. Žádná černá magie.
+
+**Riziko není jen ve financích**
+
+Riziko řešíš pořád:
+- když si vybíráš školu
+- když jdeš na brigádu místo jiné
+- když se přestěhuješ
+- když začneš dělat něco nového
+
+Jen u peněz to najednou zní strašně oficiálně, protože se kolem toho používají velká slova a lidi mají pocit, že správná odpověď je „hlavně nic nepokazit“.
+
+**Nejčastější omyl: bez rizika = dobré rozhodnutí**
+
+Tohle zní logicky, ale často to nefunguje.
+
+Příklad:
+- Nechat všechny peníze na běžném účtu působí bezpečně
+- číslo tam neklesá
+- nic nelítá
+- appka je klidná
+
+Jenže mezitím přichází inflace a tvoje kupní síla tiše slábne. Takže:
+- krátkodobě se cítíš safe
+- dlouhodobě to ale nemusí být vůbec smart
+
+Takže „bez viditelného rizika“ ještě neznamená „dobré rozhodnutí“.
+
+**Riziko není totéž co katastrofa**
+
+Když ETF na chvíli spadne o 8 %, není to automaticky průšvih.
+Když koupíš jednu random akcii, které nerozumíš, a ona spadne o 35 %, to už je jiná liga.
+
+Riziko není jedno univerzální monstrum. Záleží:
+- co kupuješ
+- na jak dlouho
+- co od toho čekáš
+- a jak dobře rozumíš tomu, co držíš
+
+**Riziko závisí na čase**
+
+Tohle je pro začátek strašně důležité.
+
+Stejná věc může být:
+- dost riskantní na 6 měsíců
+- ale úplně v pohodě na 10 let
+
+Příklad:
+Potřebuješ za rok kauci na byt. Poslat ty peníze do akciového ETF je risk.
+
+Ale posílat 1 000 Kč měsíčně do ETF s horizontem 10+ let? To už je úplně jiný příběh.
+
+Takže otázka není jen:
+„Je to riskantní?“
+
+Lepší otázka je:
+„Je to riskantní vzhledem k tomu, kdy ty peníze budu potřebovat?“
+
+**Riziko závisí i na produktu**
+
+Není riziko jako riziko.
+
+Spořicí účet:
+- malé kolísání
+- malý výnos
+- vysoká dostupnost
+
+ETF na široký trh:
+- střední kolísání
+- dlouhodobě rozumný růst
+- potřebuje čas
+
+Jednotlivé akcie:
+- větší výkyvy
+- větší šance na omyl i větší výnos
+
+CFD nebo páka:
+- rychlá akce
+- rychlé chyby
+- pro začátečníka často zbytečně ostré
+
+Takže není fér říct jen „investování je risk“. To je stejné jako říct „sport je nebezpečný“ a hodit do jednoho pytle procházku, box a skok na motorce.
+
+**Riziko závisí i na očekávání**
+
+Když čekáš, že investice poroste každý měsíc, bude ti připadat riskantní skoro všechno.
+
+Když ale chápeš, že:
+- krátkodobé výkyvy jsou normální
+- dlouhodobě se díváš na trend
+- a nejde o sprint na tři týdny
+
+pak se na riziko díváš úplně jinak.
+
+Část stresu nevzniká z produktu samotného. Vzniká z toho, že od něj čekáš něco, co ti nikdy slíbit nemohl.
+
+**Začátečníci si často pletou riziko s pocitem nepohody**
+
+To, že je něco nepříjemné sledovat, ještě neznamená, že je to automaticky špatně.
+
+Například:
+- ETF klesne o 6 %
+- ty máš chuť panikařit
+- a mozek ti křičí, že se děje konec světa
+
+Jenže problém není vždycky ten pokles. Problém může být spíš to, že nevíš, proč to držíš, jak dlouhý máš horizont a co je pro tenhle typ investice normální.
+
+Jinými slovy:
+- ignorance bolí víc než samotné slovo riziko
+- panika často udělá větší škodu než trh
+
+**Tak co je zdravý přístup k riziku?**
+
+Neptat se:
+„Jak se vyhnu jakémukoliv riziku?“
+
+Ale spíš:
+„Jaké riziko dává smysl pro můj cíl, čas a hlavu?“
+
+To je mnohem dospělejší otázka.
+
+**Takeaway**
+
+Riziko není automaticky průšvih.
+
+Riziko je:
+- nejistota výsledku
+- cena za možnost růstu
+- něco, co musíš chápat v kontextu času, produktu a očekávání
+
+A často platí, že větší problém než riziko samotné je:
+- nepochopení
+- špatný horizont
+- nebo panika ve chvíli, kdy se něco normálně hýbe.`,
+    readTime: "5 min",
+    tag: "Know How",
+    category: "Základy",
+    level: "Začátečník",
+  },
+  {
     id: "co-je-inflace-pizza",
     emoji: "🍕",
     title: "Co je to inflace — vysvětleno přes pizzu",
