@@ -235,39 +235,1038 @@ Kup jeden globální ETF a jeden emerging markets ETF. Hotovo, jsi diverzifikova
   {
     id: "dca-strategie",
     emoji: "📅",
-    title: "DCA strategie: Jak investovat bez stresu a bez timing rizika",
-    excerpt: "Nekoupit na vrcholu. Neprodat na dně. DCA tě zachrání od obou chyb.",
-    body: `Největší chyba investorů není špatný výběr akcií — je to snaha uhodnout správný čas k nákupu. Tohle selhává i profesionálům.
+    title: "Co je DCA — a proč je úplně v pohodě investovat pomalu",
+    excerpt: "Nemusíš koupit všechno hned. DCA je klidný způsob, jak začít s ETF bez lovení perfektní chvíle.",
+    body: `Když už víš, že ETF je pro začátek rozumná volba, přichází další typická otázka:
 
-**Co je DCA (Dollar Cost Averaging):**
-Investuješ pravidelně stejnou částku, bez ohledu na to, co trh dělá. Každý měsíc, každý první den. 2 000 Kč do ETF. Tečka.
+„OK, ale kdy mám začít? Teď? Za týden? A co když je zrovna blbý moment?“
 
-Někdy koupíš draho (trh je nahoře), někdy levně (trh je dole). Průměrná nákupní cena se vyrovná.
+A tady přichází DCA.
 
-**Srovnání: Lump sum vs. DCA (fiktivní příklad):**
-Honza investoval 24 000 Kč najednou v lednu 2022. Trh pak spadl o 25 %. O rok ho bolelo koukat na portfolio.
-Jana investovala 2 000 Kč/měsíc po celý rok 2022. V době pádu nakupovala levněji. Výsledek po 3 letech? Jana má lepší průměrnou nákupní cenu než Honza.
+**Co je DCA**
 
-**Psychologická výhoda DCA:**
-Když trh padá, "kupuješ slevu". Místo paniky máš důvod být klidný — čekáš na pravidelný nákupní den.
-Když trh roste, tvé stávající investice rostou. Taky dobrý pocit.
+DCA znamená, že investuješ pravidelně stejnou částku.
 
-**Jak nastavit DCA v praxi:**
-1. Otevři XTB nebo Degiro účet
-2. Vyber ETF (IWDA, VWCE)
-3. Nastav trvalý příkaz na první den v měsíci
-4. Opusť aplikaci a vrať se za rok
+Třeba:
+- každý měsíc 500 Kč
+- nebo 1 000 Kč
+- nebo 2 000 Kč
 
-**Jak to vypadá po 5 letech (2 000 Kč/měsíc, 8 % průměrný výnos):**
-- Celkový vklad: 120 000 Kč
-- Hodnota portfolia: ~146 000 Kč
-- Zisk ze složeného úročení: ~26 000 Kč
+Pořád stejně. Bez ohledu na to, jestli trh zrovna roste, padá nebo se tváří, že se rozhoduje až příští týden.
 
-**Co z toho vyplývá pro tebe:**
-Nastav automatický DCA a přestaň sledovat denní ceny. Investování by mělo být nudné. Nuda = disciplína = bohatství.`,
+Není to žádná tajná strategie pro génie. Je to spíš způsob, jak si investování zjednodušit tak, aby ses z toho nezbláznil.
+
+**Proč to lidi používají**
+
+Protože většina lidí neumí trefovat perfektní moment. A upřímně, neumí to spolehlivě ani většina lidí, kteří o tom mluví velmi sebevědomě.
+
+DCA řeší jednoduchou věc:
+- nemusíš čekat na „ideální chvíli“
+- nemusíš hádat dno ani vrchol
+- nemusíš poslat všechny peníze najednou
+
+Místo toho prostě začneš a pokračuješ.
+
+**Jak to funguje v praxi**
+
+Když investuješ pravidelně:
+- někdy kupuješ dráž
+- někdy levněji
+- a v čase se ti nákupní cena zprůměruje
+
+To je celé. Žádná magie. Jen méně stresu a méně prostoru pro špatné timingové divadlo.
+
+**Proč nemusíš koupit všechno hned**
+
+Spousta začátečníků má pocit, že když mají třeba 12 000 Kč, musí udělat jedno velké rozhodnutí:
+- koupit teď
+- nebo čekat
+- nebo panikařit
+
+Jenže nemusíš.
+
+Klidně můžeš udělat něco mnohem normálnějšího:
+- 1 000 Kč měsíčně do ETF
+- a hotovo
+
+To není slabý start. To je dost často nejrozumnější start.
+
+**DCA je super hlavně pro začátečníky**
+
+Protože beginner chyba nebývá „málo sofistikovaná strategie“. Beginner chyba bývá spíš:
+- moc přemýšlení
+- moc odkladů
+- moc snahy trefit dokonalý moment
+
+DCA tohle všechno trochu vypíná.
+
+Místo otázky:
+„Je dnes ten správný den?“
+
+máš otázku:
+„Poslal jsem tohle měsíc po měsíci, jak jsem si slíbil?“
+
+To je mnohem zdravější hra.
+
+**Slow a boring může být chytré**
+
+Na internetu to vypadá, že správné investování musí mít:
+- velké screenshoty
+- dramatické vstupy
+- přesné načasování
+- a nejlíp ještě nějakou větu o tom, jak jsi „outsmartnul market“
+
+Reálně ale často vyhrává něco mnohem míň sexy:
+- pravidelnost
+- automatika
+- trpělivost
+
+Jinými slovy: to, co vypadá nudně, bývá docela často přesně to, co funguje.
+
+**Jak DCA sedí k ETF**
+
+ETF a DCA jsou pro začátek hodně přirozená dvojka:
+- ETF ti dává jednoduchý a rozložený produkt
+- DCA ti dává jednoduchý a rozložený způsob, jak do něj chodit
+
+Takže nemusíš řešit:
+- jednu geniální akcii
+- jednu geniální chvíli
+- jeden geniální tah
+
+Stačí rozumný produkt a rozumný rytmus.
+
+**Malý příklad**
+
+Řekněme, že posíláš 1 000 Kč měsíčně do ETF.
+
+Za rok:
+- neuděláš z toho pohádku o Lamborghini
+- ale uděláš z toho návyk
+- a návyk je na začátku cennější než jeden „hero moment“
+
+Právě proto DCA dává smysl. Pomáhá ti být konzistentní, ne efektní.
+
+**Takeaway**
+
+DCA je pravidelné investování stejné částky.
+
+Lidi ho používají, protože:
+- nechtějí čekat na perfektní moment
+- nechtějí sázet všechno najednou
+- chtějí začít klidně a bez chaosu
+
+S ETF tvoří DCA jeden z nejrozumnějších beginner startů.
+
+Pomalu neznamená špatně.
+Pomalu často znamená, že vůbec vydržíš.`,
     readTime: "4 min",
     tag: "Know How",
     category: "Investování",
+    level: "Začátečník",
+  },
+  {
+    id: "jak-zacit-investovat-jednoduse",
+    emoji: "🛫",
+    title: "Jak začít investovat jednoduše a bez chaosu",
+    excerpt: "Nemusíš mít perfektní plán, pět aplikací ani investiční alter ego. Na začátku stačí jeden klidný setup, který zvládneš držet.",
+    body: `Když už víš, co je ETF a proč dává smysl DCA, přichází dost normální otázka:
+
+„OK, tak jak teda reálně začít, aniž bych z toho udělal zbytečný chaos?“
+
+Krátká odpověď?
+
+Nemusíš rozjíždět finanční Avengers.
+Na start často stačí jeden jednoduchý plán, který není heroický, ale vydrží.
+
+**První důležitá věc: nemusíš udělat všechno najednou**
+
+Začátečníci mají často pocit, že než pošlou první peníze do investice, musí mít:
+- perfektně vybraného brokera
+- přečtených 40 vláken na Redditu
+- názor na americké sazby
+- jasno v tom, jestli je lepší S&P 500, MSCI World nebo něco, co zní extrémně sofistikovaně
+
+Nemusíš.
+
+Na začátku nejde o to vytvořit masterpiece. Jde o to vytvořit **normální funkční start**.
+
+**Jeden jednoduchý plán je na začátek dost**
+
+Fakt nemusíš mít portfolio jak člověk, který tráví sobotu porovnáváním expense ratio tří podobných ETF a říká tomu relax.
+
+Pro většinu beginner lidí úplně stačí:
+- mít rezervu bokem na spořicím účtu
+- vybrat jedno rozumné ETF
+- posílat do něj pravidelně jednu částku
+- a nechat to chvíli dýchat
+
+To je plán.
+A upřímně, je mnohem lepší než složitý setup, který nevydržíš ani dva měsíce.
+
+**Jak může vypadat klidný beginner setup**
+
+Třeba takhle:
+- rezerva: pár tisíc až pár měsíců výdajů bokem podle tvé situace
+- broker: jeden jednoduchý a důvěryhodný
+- investice: jedno široké ETF
+- rytmus: třeba 500 Kč nebo 1 000 Kč měsíčně
+
+Nic víc není povinné.
+
+Nemusíš k tomu přidávat:
+- druhé ETF jen proto, aby to vypadalo chytřeji
+- krypto „pro jistotu“
+- stock picking, protože někdo na internetu psal, že bez toho jsi nudný
+
+Na začátku je nuda docela underrated.
+
+**Co přesně udělat jako první**
+
+Jedna úplně v pohodě verze může být:
+1. Udělej si malou rezervu, ať tě první nečekaný výdaj nevykopne ze hry.
+2. Vyber si brokera, u kterého se neztratíš po třech kliknutích.
+3. Vyber jedno široké ETF, kterému rozumíš aspoň základ.
+4. Nastav si pravidelnou částku, kterou zvládneš i příští měsíc.
+5. Pošli první peníze a nepředstírej, že teď musíš každé ráno kontrolovat graf.
+
+To je všechno.
+
+Není to málo. Je to start.
+
+**Kolik posílat? Tolik, aby ses nezničil hned na začátku**
+
+Častá chyba není „posílám málo“. Častá chyba je spíš:
+- nastavím si moc ambiciózní částku
+- pak přijde normální život
+- a celý plán se rozpadne
+
+Mnohem chytřejší bývá posílat částku, která je trochu nudná, ale udržitelná.
+
+Například:
+- 500 Kč měsíčně
+- 1 000 Kč měsíčně
+- nebo jakákoliv částka, kterou dáš pravidelně bez pocitu, že jsi právě vyhlásil finanční válečný stav
+
+Na začátku je konzistence důležitější než machrování.
+
+**Nemusíš řešit každou optimalizaci hned**
+
+Tohle je důležité.
+
+Nemusíš hned vyřešit:
+- jestli máš přidat druhý trh
+- jestli je lepší accumulating nebo distributing verze
+- jestli by šel teoreticky o 0,12 % lepší setup
+
+Tyhle věci existují. Ale na začátku tě víc brzdí chaos než nedokonalost.
+
+První úroveň hry je:
+- začít
+- pochopit, co držíš
+- vydržet u toho
+
+Až potom má smysl něco ladit.
+
+**Jak nezačít divně**
+
+Jestli chceš začít bez chaosu, zkus se vyhnout těmhle klasikám:
+- nekupuj pět věcí najednou jen proto, aby ses cítil „diverzifikovaně“
+- neměň plán po každém videu, které na tebe křičí CAPS LOCKEM
+- nečekej na perfektní moment, protože ten se rád tváří, že přijde zítra a pak nepřijde nikdy
+- nedělej z investování celou osobnost po prvním nákupu
+
+To poslední je taky služba pro tvoje okolí.
+
+**Jak poznáš, že tvůj start je zdravý**
+
+Dobrý beginner setup většinou vypadá trochu až podezřele obyčejně:
+- rozumíš tomu, co posíláš
+- částka tě nestresuje
+- plán umíš říct jednou větou
+- nepotřebuješ každý týden něco měnit
+
+Pokud tohle sedí, jsi dost možná na lepší cestě než člověk se sedmi screenshoty a nulovou disciplínou.
+
+**Jedna věc, která je na začátku důležitější než „dokonalý výběr“**
+
+Návyk.
+
+Protože dlouhodobě ti často víc pomůže:
+- průměrně dobrý plán, který držíš roky
+
+než:
+- geniální plán, který tě přestane bavit po třech týdnech
+
+To není motivační plakát. To je dost často realita.
+
+**Takeaway**
+
+Začít investovat jednoduše znamená:
+- nechtít zvládnout všechno první týden
+- vybrat si jeden klidný plán
+- posílat pravidelně částku, kterou uneseš
+- a nenechat si start rozbít chaosem, optimalizacemi a internetovým divadlem
+
+Na začátku nepotřebuješ být expert.
+Potřebuješ být hlavně konzistentní a v klidu.`,
+    readTime: "5 min",
+    tag: "Know How",
+    category: "Investování",
+    level: "Začátečník",
+  },
+  {
+    id: "psychologie-penez",
+    emoji: "🧠",
+    title: "Psychologie peněz — proč neděláme průšvihy hlavou, ale emocemi",
+    excerpt: "Spousta špatných money rozhodnutí nevzniká proto, že jsme hloupí. Vzniká proto, že jsme lidi a mozek občas hraje proti nám.",
+    body: `Když se mluví o penězích, většina lidí si představí čísla, grafy, kalkulačky a někoho, kdo velmi vážně říká slovo „strategie“.
+
+Jenže realita bývá mnohem míň film o géniovi a mnohem víc film o člověku, který v panice něco prodá, v euforii něco koupí a pak si to celé zkusí vysvětlit jako „promyšlený tah“.
+
+Tohle je psychologie peněz.
+
+Nejde jen o to, co víš. Jde i o to, **co s tebou udělají emoce ve chvíli, kdy se něco hýbe**.
+
+**Peníze nejsou jen logika**
+
+To je první důležitá věc.
+
+Lidi si rádi myslí, že o penězích rozhodují racionálně:
+- tady jsou fakta
+- tady je plán
+- tady je chytré rozhodnutí
+
+Ve skutečnosti do toho skoro vždycky leze:
+- strach
+- závist
+- pocit, že něco nestíháš
+- potřeba mít pravdu
+- potřeba necítit se jako idiot
+
+A to je dost silná parta.
+
+Proto často neuděláš průšvih proto, že bys neuměl číst. Uděláš ho proto, že tvůj mozek zrovna nechce být klidný.
+
+**Proč lidi panikaří ve špatnou chvíli**
+
+Když trh padá, mozek to často nečte jako:
+- „normální výkyv“
+
+ale spíš jako:
+- „aha, tak teď asi přichází konec všeho“
+
+To dává smysl. Mozek je stavěný na přežití, ne na elegantní držení ETF během korekce.
+
+Když vidíš:
+- červená čísla
+- dramatické titulky
+- lidi, kteří píšou, že „tohle je jiný“
+
+tak je dost snadné udělat přesně tu věc, která ti dlouhodobě uškodí:
+- prodat v momentě, kdy jsi hlavně vyděšený
+
+Jinými slovy:
+panika nevypadá jako chyba.
+Panika většinou vypadá jako „teď konečně dělám něco rozumného“.
+
+A právě v tom je zákeřná.
+
+**FOMO je drahá emoce v hezkém obalu**
+
+FOMO = fear of missing out.
+
+Přeloženo:
+„Všichni už tam jsou, všichni už vydělávají, a já tady vypadám jak člověk, co přišel na party ve chvíli, kdy už sklízí stoly.“
+
+Tohle je jedna z nejdražších emocí v investování.
+
+Protože tě tlačí:
+- kupovat pozdě
+- kupovat bez plánu
+- kupovat věci, kterým vlastně nerozumíš
+
+Když něco dlouho roste, FOMO ti šeptá:
+„Jestli nenaskočíš teď, už nikdy nebudeš mít šanci.“
+
+To je mimochodem věta, která skoro nikdy nezní chytřeji tím, že ji řekne člověk na internetu s drahými hodinkami.
+
+**Proč trpělivost zní nudně, ale je důležitá**
+
+Trpělivost má hrozný PR.
+
+Neprodává se dobře, protože nevypadá jako příběh.
+Není tam drama. Není tam screenshot. Není tam hrdina, který „viděl o tři tahy dopředu“.
+
+Jenže u peněz bývá trpělivost často přesně ta část, která drží celý výsledek pohromadě.
+
+Protože:
+- dobrý plán potřebuje čas
+- složené úročení potřebuje čas
+- ETF potřebuje čas
+- tvoje hlava potřebuje čas, aby si zvykla, že každé hnutí není důvod dělat salto
+
+Nuda je v investování často podceňovaná superpower.
+
+**Největší problém nebývá produkt. Bývá to tvoje reakce na něj.**
+
+Spousta lidí hledá dokonalou věc:
+- nejlepší ETF
+- nejlepší aplikaci
+- nejlepší strategii
+
+Jenže často je větší otázka:
+„Co udělám já, když to o 12 % spadne?“
+
+Tohle je důležité, protože:
+- rozumný produkt můžeš zkazit špatnou hlavou
+- průměrný plán můžeš zachránit dobrou disciplínou
+
+Jinými slovy:
+chápat produkt je důležité
+ale chápat vlastní reakce je skoro stejně důležité
+
+**Peníze často spouští víc než jen peníze**
+
+Na penězích je zákeřné i to, že v nich nejsou jen peníze.
+
+Bývá v nich schované:
+- ego
+- status
+- pocit bezpečí
+- srovnávání s ostatními
+- strach, že zůstaneš pozadu
+
+Proto dva lidi můžou vidět stejnou situaci a reagovat úplně jinak.
+
+Jeden řekne:
+„OK, držím plán.“
+
+Druhý řekne:
+„Musím okamžitě něco udělat, jinak jsem mimo.“
+
+Ne protože by jeden byl génius a druhý tragédie.
+Ale protože peníze mačkají různé psychické knoflíky.
+
+**Jak si neházet klacky pod nohy**
+
+Nemusíš být zen mistr financí. Ale pomáhá pár jednoduchých věcí:
+- mít plán ještě předtím, než přijde chaos
+- nedělat velká rozhodnutí ve chvíli, kdy jsi vystresovaný
+- neporovnávat svůj začátek s cizím highlight reel
+- mít produkt, kterému rozumíš natolik, že tě každý pohyb nevystřelí z bot
+
+Tohle zní obyčejně. A přesně proto to funguje.
+
+Psychologie peněz není bonusová kapitola pro nerdy.
+Je to dost často rozdíl mezi:
+- „měl jsem dobrý plán“
+
+a:
+- „měl jsem dobrý plán, ale pak jsem ho v panice sám rozbil“
+
+**Malý reality check**
+
+Když uděláš někdy emoční money chybu, neznamená to, že se na finance nehodíš.
+
+Znamená to jen, že jsi člověk.
+
+Cíl není být robot.
+Cíl je:
+- znát svoje slabší místa
+- počítat s nimi
+- a stavět si systém tak, aby tě nemusel každý měsíc zachraňovat silou vůle
+
+To je mnohem dospělejší přístup než hrát si na neomylného investičního samuraje.
+
+**Takeaway**
+
+Money rozhodnutí nejsou jen logická. Často jsou hlavně emocionální.
+
+Lidi dělají průšvihy, protože:
+- panikaří ve špatnou chvíli
+- naskakují do věcí přes FOMO
+- podceňují, jak důležitá je trpělivost
+- a myslí si, že problém je jen v produktu, ne v jejich reakci
+
+Rozumět ETF, DCA nebo riziku je super.
+Rozumět vlastní hlavě je skoro stejně důležité.
+
+Protože na konci dne často neprohráváš s trhem.
+Spíš občas bojuješ s verzí sebe, která chce dělat něco „hned“ jen proto, že je nervózní.`,
+    readTime: "5 min",
+    tag: "Know How",
+    category: "Základy",
+    level: "Začátečník",
+  },
+  {
+    id: "kolik-si-nechat-bokem",
+    emoji: "🪣",
+    title: "Kolik si nechat bokem a kolik už může jít do investic",
+    excerpt: "Ne všechno musí hned makat v ETF. Část peněz má mít úplně jinou práci: držet tě v klidu, když život udělá svůj klasický neohlášený vstup.",
+    body: `Když člověk objeví investování, často přijde velmi rychle jedna nebezpečná myšlenka:
+
+„Takže všechny peníze, které jen leží, jsou líné a měly by okamžitě začít makat.“
+
+Zní to docela chytře.
+Jenže ne vždycky.
+
+Ne všechny peníze mají mít stejnou práci.
+
+Některé peníze mají růst.
+Některé peníze mají hlavně **být po ruce, když se něco pokazí**.
+
+A když tohle pomícháš, umí to udělat zbytečný chaos.
+
+**Proč ne všechno poslat rovnou do investic**
+
+Protože investice nejsou náhrada za rezervu.
+
+ETF je super nástroj na dlouhodobý růst.
+Ale není to ideální místo pro peníze, které možná budeš potřebovat:
+- za dva měsíce
+- za půl roku
+- nebo ve chvíli, kdy ti odejde notebook, zubař, spolubydlení i nervový systém najednou
+
+To je práce pro peníze bokem.
+
+Investování řeší budoucí růst.
+Rezerva řeší, aby ses v přítomnosti nesesypal při první blbé kombinaci okolností.
+
+**Co vlastně znamená “nechat si bokem”**
+
+Neznamená to:
+- nechat všechno na běžném účtu do smrti
+
+Znamená to spíš:
+- mít část peněz bezpečně a dostupně
+- nesahat na ně kvůli každé random chuti něco koupit
+- ale vědět, že tam jsou, když je fakt budeš potřebovat
+
+Prakticky to bývá:
+- spořicí účet
+- krátkodobá rezerva
+- peníze na věci, které víš, že přijdou dřív než za pár let
+
+Takže:
+„bokem“ neznamená „zbytečně“
+„bokem“ znamená „pro jinou roli“
+
+**Rezerva není sexy, ale bývá zatraceně užitečná**
+
+Rezerva má špatný marketing.
+
+Nevypadá cool. Neuděláš z ní screenshot. Nikdo ti nezatleská, že sis vybudoval něco, co většinu času jen klidně sedí a nic dramatického nedělá.
+
+Jenže právě proto je dobrá.
+
+Rezerva ti kupuje:
+- čas
+- klid
+- menší šanci, že budeš prodávat investice ve špatný moment
+- menší šanci, že uděláš finanční rozhodnutí jen proto, že ho „musíš vyřešit hned“
+
+To je dost silná práce na něco, co v appce vypadá nudně.
+
+**Kolik přesně si nechat bokem? Bohužel neexistuje sexy magické číslo**
+
+Tohle je důležité.
+
+Internet miluje jednoduché odpovědi:
+- 10 %
+- 20 %
+- 3 měsíce
+- 6 měsíců
+- přesně 42 000 Kč, protože to zní jistě
+
+Jenže správná odpověď bývá:
+**záleží na tvé situaci**
+
+A to není vyhýbavost. To je realita.
+
+Protože jinak na tom bude:
+- student, co bydlí doma
+- student v pronájmu
+- člověk s první výplatou
+- freelancer s nepravidelným příjmem
+- někdo, kdo ví, že za 8 měsíců bude řešit stěhování nebo autoškolu
+
+Stejná tabulka nevyřeší všechny.
+
+**Jak o tom přemýšlet bez překomplikování**
+
+Místo otázky:
+„Jaké je správné číslo pro všechny lidi na světě?“
+
+je mnohem lepší otázka:
+„Co budu pravděpodobně potřebovat v příštích 6 až 12 měsících a jak stabilní je můj život právě teď?“
+
+To je mnohem užitečnější.
+
+Můžeš si to rozdělit zhruba takhle:
+
+**1. Krátkodobý klid**
+- peníze na nečekané výdaje
+- peníze na věci, které brzy přijdou
+- peníze, které nechceš vytahovat z investic
+
+Tohle patří bokem.
+
+**2. Dlouhodobější peníze**
+- peníze, které nebudeš potřebovat hned
+- peníze, kterým můžeš dát roky
+- peníze, u kterých zvládneš, že někdy kolísají
+
+Tohle už může začít pracovat.
+
+To je základ. Žádný finanční origami workshop.
+
+**Pár normálních životních příkladů**
+
+**Student, co bydlí doma**
+- příjem malý, ale náklady taky menší
+- klidně stačí menší rezerva
+- dává smysl začít investovat dřív, i s menší částkou
+
+**Student nebo mladý člověk v nájmu**
+- větší riziko náhlých výdajů
+- kauce, stěhování, rozbitá technika, výpadek příjmu
+- tady dává větší smysl mít silnější rezervu než dělat hrdinské investiční gesto
+
+**Freelancer nebo nepravidelný příjem**
+- tady je rezerva extra důležitá
+- ne proto, že by investování bylo špatně
+- ale protože tvoje realita je méně stabilní
+
+Takže jo:
+správný split fakt nevzniká v abstrakci.
+Vzniká podle života, který právě máš.
+
+**Beginner chyba: investovat moc brzo peníze, které vlastně nejsou volné**
+
+Tohle je časté.
+
+Člověk si řekne:
+„Nebudu přece nechávat peníze zahálet.“
+
+A pak investuje peníze, které:
+- možná bude brzy potřebovat
+- psychicky neunese vidět kolísat
+- nebo by měly spíš krýt normální životní turbulence
+
+Pak přijde problém a celé to končí stylem:
+- vybírám investici ve špatný moment
+- jsem naštvaný na trh
+- a mám pocit, že investování je scam
+
+Přitom problém často nebyl v ETF.
+Problém byl v tom, že ty peníze měly mít od začátku jinou roli.
+
+**Tak jaký je rozumný beginner přístup?**
+
+Co bývá na začátku zdravé:
+- mít nějakou bezpečnou rezervu bokem
+- začít investovat jen s penězi, které nemusíš brzo vytahovat
+- nesnažit se vyřešit všechno jedním dokonalým číslem
+
+Klidně můžeš dělat oboje zároveň:
+- část peněz budovat bokem
+- část peněz posílat do investic
+
+Například:
+- nejdřív vytvoříš základní polštář
+- a vedle toho posíláš menší pravidelnou částku do ETF
+
+To není nerozhodnost.
+To je normální dospělý setup.
+
+**Takeaway**
+
+Ne všechny peníze mají jít rovnou do investic.
+
+Část peněz má mít jinou práci:
+- být bezpečně po ruce
+- držet tě v klidu
+- chránit tě před tím, abys dělal špatná rozhodnutí pod tlakem
+
+Kolik si nechat bokem nezávisí na jednom magickém čísle.
+Závisí to na:
+- tvých výdajích
+- stabilitě příjmu
+- věcech, které tě čekají
+- a na tom, jak moc chceš, aby tě první problém nerozstřelil
+
+Investování je důležité.
+Ale stejně důležité je neposlat do investic peníze, které tam vlastně nikdy neměly jít.`,
+    readTime: "5 min",
+    tag: "Know How",
+    category: "Základy",
+    level: "Začátečník",
+  },
+  {
+    id: "prvni-broker-bez-chaosu",
+    emoji: "🧭",
+    title: "První broker bez chaosu — co fakt řešit a co už ne",
+    excerpt: "První broker nemusí být investiční cockpit pro člověka, který má sedm monitorů. Na začátku většinou vyhrává jednoduchost, důvěra a prostředí, ve kterém se neztratíš po třech kliknutích.",
+    body: `Jakmile se člověk dostane k tomu, že by fakt chtěl začít investovat, velmi rychle narazí na další klasický beginner problém:
+
+„OK, ale přes co to mám vlastně udělat?“
+
+A tady se z toho umí stát menší cirkus.
+
+Najednou porovnáváš:
+- aplikace
+- poplatky
+- desítky funkcí
+- recenze lidí, kteří obchodují věci, které ty ještě ani neumíš vyslovit
+
+Výsledek?
+Místo jasného startu máš otevřených 19 tabů a pocit, že bez doktorátu z brokerologie nemůžeš kliknout na nic.
+
+Naštěstí můžeš.
+
+**Co je broker a proč ho vůbec potřebuješ**
+
+Broker je prostě platforma, přes kterou kupuješ investice.
+
+Nic mystického.
+Je to tvoje brána k tomu, abys mohl koupit ETF, akcie nebo další produkty.
+
+Na začátku ale nemusíš hledat „nejlepší platformu na světě“.
+Potřebuješ spíš:
+- rozumné místo pro první kroky
+- prostředí, které tě zbytečně nevyděsí
+- a brokera, u kterého nebudeš mít pocit, že tě testují už na login obrazovce
+
+**Co u prvního brokera fakt řešit**
+
+Pro beginner start dávají největší smysl čtyři věci:
+
+**1. Jednoduchost**
+
+Jestli se v aplikaci ztratíš dřív, než najdeš základní nákup ETF, není to pro tebe na start ideální.
+
+To není tvoje slabost.
+To je prostě špatný fit.
+
+První broker by měl být čitelný:
+- víš, kde co je
+- rozumíš základním krokům
+- nepůsobí to jako ovládací panel rakety, která odlétá za 4 vteřiny
+
+**2. Důvěra**
+
+Na začátku nepotřebuješ exotiku.
+Potřebuješ brokera, u kterého je jasné:
+- kdo za ním stojí
+- že je regulovaný
+- že není postavený na podezřelém „easy money“ divadle
+
+Tohle není sexy část výběru, ale je důležitá.
+
+Když někam posíláš peníze, je docela fajn, aby to nepůsobilo jako appka, která se zítra přejmenuje a pozítří zmizí.
+
+**3. Poplatky, ale bez posedlosti**
+
+Jo, poplatky jsou důležité.
+
+Ale beginner chyba často vypadá takhle:
+- honím absolutně nejnižší poplatek na trhu
+- kvůli tomu skončím v prostředí, které mi vůbec nesedí
+- a pak stejně nezačnu, protože jsem si výběr znepříjemnil víc, než bylo potřeba
+
+Takže:
+nízké a rozumné poplatky ano
+ale ne za cenu toho, že si vybereš něco, co tě bude odrazovat od používání
+
+První broker nemusí vyhrát olympiádu v mikroskopických rozdílech.
+Musí fungovat normálně.
+
+**4. Použitelnost pro tvoji realitu**
+
+Pro začátečníka bývá důležitější:
+- jak snadno pošle peníze
+- jak snadno koupí první ETF
+- jak snadno se vyzná v účtu
+
+než:
+- kolik pokročilých order typů tam je
+- jestli má 180 derivátových nástrojů
+- nebo jestli umí tvářit se velmi profesionálně v tmavém režimu
+
+To poslední není investiční výhoda. To je jen atmosféra.
+
+**Co beginners řeší až moc zbytečně**
+
+Tohle bývá klasika:
+- desetiny procenta v poplatcích, které pro ně na startu nehrají hlavní roli
+- funkce, které ještě měsíce nebo roky nevyužijí
+- jestli platforma vypadá „pro“
+- jestli ji používá někdo na YouTube, kdo mluví hodně sebevědomě
+
+Beginner člověk často nepotřebuje:
+- páku
+- komplikované grafy
+- desítky trhů
+- tlačítka, která vypadají důležitě, ale jen zvyšují chaos
+
+Na začátku je mnohem důležitější:
+- aby ses nebál platformu otevřít
+- aby ses v ní vyznal
+- aby ses neztratil ve chvíli, kdy chceš udělat něco úplně základního
+
+**Nejlepší první broker nebývá ten s nejvíc tlačítky**
+
+Tohle si zaslouží samostatnou větu, protože internet dělá přesný opak.
+
+Platforma s milionem funkcí může být super pro člověka, který:
+- aktivně obchoduje
+- řeší různé trhy
+- ví, co dělá
+
+Jenže beginner si z toho často nevezme „víc možností“.
+Vezme si z toho spíš:
+- větší zmatek
+- větší šanci kliknout na něco, čemu nerozumí
+- větší pocit, že investování je zbytečně složité
+
+Na startu nevyhrává broker, který vypadá nejvíc jako cockpit.
+Vyhrává broker, přes který zvládneš udělat svůj plán bez zbytečné mlhy.
+
+**Tak co je rozumný beginner přístup?**
+
+Polož si spíš tyhle otázky:
+- Rozumím tomu prostředí?
+- Umím tam jednoduše poslat peníze a koupit první ETF?
+- Působí to důvěryhodně?
+- Mají poplatky normální hlavu a patu?
+- Neodrazuje mě ta platforma víc, než mi pomáhá?
+
+Když ano, jsi dost možná blíž správnému výběru než člověk, který zrovna porovnává sedmnáctou tabulku s poplatky za produkty, které stejně nepoužije.
+
+**Perfektní výběr není pointa**
+
+Tohle je možná nejdůležitější část.
+
+První broker nemusí být tvoje životní láska.
+
+Má to být rozumný začátek.
+
+Spousta lidí odkládá start jen proto, že chtějí:
+- vybrat dokonale
+- rozhodnout se bez jediné pochybnosti
+- najít platformu, která bude navždy nejlepší
+
+Jenže takhle realita často nefunguje.
+
+Na začátku je úplně v pohodě vybrat něco, co je:
+- dost dobré
+- přehledné
+- důvěryhodné
+- a dovolí ti normálně začít
+
+To je mnohem lepší než rok studovat brokery a mezitím neudělat nic.
+
+**Takeaway**
+
+U prvního brokera fakt řeš hlavně:
+- jednoduchost
+- důvěryhodnost
+- rozumné poplatky
+- použitelnost pro svůj reálný start
+
+Míň řeš:
+- přehnaně pokročilé funkce
+- dojem „profesionální“ platformy
+- věci, které stejně ještě nepotřebuješ
+
+Nejlepší první broker většinou není ten s nejvíc tlačítky.
+Je to ten, přes který začneš jasně, klidně a bez zbytečného chaosu.
+
+Pointa není vypadat hned jako profík.
+Pointa je udělat první normální krok a neznechutit si ho už na výběru platformy.`,
+    readTime: "5 min",
+    tag: "Know How",
+    category: "Brokeři",
+    level: "Začátečník",
+  },
+  {
+    id: "co-banka-resi-pred-bydlenim",
+    emoji: "🏦",
+    title: "Co banka řeší dřív, než ti půjčí na bydlení",
+    excerpt: "Hypotéka není jen test toho, jestli bys nějak zvládl měsíční splátku. Banka se dívá hlavně na to, jestli působíš stabilně, ne jen optimisticky.",
+    body: `Když někdo poprvé začne přemýšlet o hypotéce, často si to představuje docela jednoduše:
+
+„Když bych tu splátku asi zvládl, tak by to přece mělo projít.“
+
+Jenže banka nepřemýšlí stylem:
+- „asi by to mohl dát“
+
+Banka přemýšlí spíš stylem:
+- „vypadá tenhle člověk dost stabilně na to, abychom mu půjčili miliony?“
+
+A to je dost jiná otázka.
+
+Hypotéka není jen o tom, jestli máš dneska nějak na splátku.
+Je to i o tom, jak vypadáš jako člověk, který bude schopný fungovat dlouhodobě.
+
+**Banka neřeší jen příjem**
+
+Tohle je první důležitá věc.
+
+Spousta lidí se zasekne na jedné větě:
+„Hlavně musím vydělávat dost.“
+
+Jo, příjem je důležitý.
+Ale není to celé.
+
+Banka většinou řeší víc věcí najednou:
+- kolik vyděláváš
+- jak stabilní ten příjem je
+- kolik máš vlastních peněz
+- jaké máš další dluhy
+- jak se chováš finančně
+
+Takže dva lidi se stejným platem můžou vypadat pro banku úplně jinak.
+
+**Vlastní peníze nejsou detail. Jsou součást signálu, že stojíš na vlastních nohách**
+
+Hypotéka většinou nefunguje tak, že přijdeš s nulou a banka řekne:
+- „jasně, zbytek nějak domyslíme“
+
+Vlastní peníze jsou důležité, protože ukazují dvě věci:
+- že umíš něco odložit bokem
+- že nejedeš úplně na hraně
+
+To neznamená, že musíš být milionář.
+Ale banka chce vidět, že do toho jdeš taky s něčím svým, ne jen s nadějí a pěknou představou kuchyně.
+
+Jinými slovy:
+rezerva a vlastní peníze nejsou kosmetika.
+Jsou součást důvěryhodnosti.
+
+**Dluhy nehrají vedle hypotéky. Hrají přímo proti ní**
+
+Tohle je část, kterou lidi často podceňují.
+
+Můžeš si říkat:
+- „vždyť tohle je jen menší úvěr“
+- „tohle je jen auto na splátky“
+- „tohle je jen kreditka, kterou skoro nepoužívám“
+
+Jenže pro banku to nejsou roztomilé detaily.
+Jsou to další závazky.
+
+Takže když už něco splácíš, banka si z toho nečte:
+- „umí fungovat s financemi“
+
+ale často spíš:
+- „už teď má na zádech další povinnosti“
+
+A to mění, jak bezpečně na ni působíš.
+
+**“Já bych to asi dal” není totéž jako “banka to schválí”**
+
+Tohle je asi nejpraktičtější věta z celého článku.
+
+Ty můžeš mít pocit:
+- že bys to utáhl
+- že bys to nějak poskládal
+- že kdyby bylo hůř, tak by ses uskromnil
+
+Jenže banka nepůjčuje podle vibeu.
+
+Nepůjčuje podle:
+- „asi jo“
+- „nějak bych to vymyslel“
+- „kdyžtak si odpustím dovolenou a budu chvíli víc v klidu“
+
+Banka chce vidět, že to dává smysl i bez improvizačního divadla.
+
+To může být trochu otravné.
+Ale upřímně, u závazku na dlouhé roky je to docela pochopitelné.
+
+**Finanční chování je taky signál**
+
+Tohle je část, která bývá nenápadná, ale důležitá.
+
+Banka nechce jen vědět, kolik ti chodí.
+Chce taky trochu pochopit, jak funguješ.
+
+Například:
+- jestli jedeš dlouhodobě úplně nadoraz
+- jestli ti po výplatě skoro nic nezůstává
+- jestli máš chaos v závazcích
+- jestli nevypadáš jako člověk, který žije stylem „nějak to dopadne“
+
+To neznamená, že musíš působit jak účetní v lidské podobě.
+Jen je dobré nevypadat, že tvoje finanční strategie je čistě založená na optimismu a kofeinu.
+
+**Co banka vlastně chce vidět**
+
+V kostce něco jako:
+- stabilnější příjem
+- rozumné vlastní peníze
+- žádný zbytečný dluhový bordel
+- chování, které nepůsobí úplně divoce
+
+Banka nehledá člověka, který je perfektní.
+Hledá člověka, který působí předvídatelně a unesitelně.
+
+To je velký rozdíl.
+
+Protože “nadějný” a “stabilní” nejsou pro banku totéž.
+
+**Praktický real talk pro mladé**
+
+Pokud o bydlení přemýšlíš do budoucna, dává smysl začít si hlídat pár věcí dřív, než vůbec budeš řešit konkrétní byt:
+- mít postupně něco vlastního bokem
+- nedělat si zbytečné dluhy jen proto, že „to teď vyšlo“
+- nepůsobit dlouhodobě finančně chaoticky
+- chápat, že stabilita je pro banku skoro stejně důležitá jako příjem
+
+To není strašení.
+To je spíš dobrá zpráva.
+
+Protože spoustu z toho můžeš ovlivnit dřív, než vůbec půjdeš do banky.
+
+**Nejde o to být dokonalý. Jde o to nevypadat rizikově zbytečně**
+
+Tohle je důležitý mindset.
+
+Nemusíš být:
+- bezchybné finanční zvíře
+- člověk s dokonale uhlazeným životopisem
+- chodící excel
+
+Ale pomáhá:
+- nemít zbytečný chaos
+- mít vlastní polštář
+- nedávat bance důvod myslet si, že jedeš moc na hraně
+
+To je často praktičtější cíl než honit nějaký abstraktní ideál.
+
+**Takeaway**
+
+Když banka řeší hypotéku, nedívá se jen na to, jestli bys teoreticky zvládl měsíční splátku.
+
+Dívá se i na:
+- stabilitu příjmu
+- vlastní peníze a rezervu
+- další dluhy
+- finanční chování
+- to, jestli působíš spíš stabilně než jen nadšeně
+
+„Já bych to asi dal“ není totéž jako „banka to schválí“.
+
+Banka si nekupuje tvoji víru v dobrý budoucí scénář.
+Banka si ověřuje, jestli nepůsobíš jako člověk, který by při prvním větším zádrhelu začal improvizovat.
+
+A upřímně:
+to je dobré vědět dřív, než začneš počítat, jak bude vypadat gauč v obýváku.`,
+    readTime: "5 min",
+    tag: "Know How",
+    category: "Základy",
     level: "Začátečník",
   },
   {
@@ -847,37 +1846,120 @@ Firma může i prodělat nebo zkrachovat. Proto:
   {
     id: "co-jsou-etf",
     emoji: "🧺",
-    title: "Co jsou to ETF — nákupní košík akcií",
-    excerpt: "Místo jedné akcie koupíš 500 najednou. Levně. Jednoduše. Efektivně.",
-    body: `Představ si, že chceš koupit kousek každého obchodu v nákupním centru. Musel bys vstoupit do každého obchodu zvlášť, koupit tam podíl, platit různé poplatky...
+    title: "Co je ETF — a proč je to pro většinu lidí nejlepší start",
+    excerpt: "Nemusíš hned vybírat jednu geniální akcii. ETF je často chytřejší první krok, protože je jednoduché, rozložené a dlouhodobě dává smysl.",
+    body: `Když jsi na začátku, často to vypadá, že máš dvě možnosti:
+- buď najít „tu jednu správnou akcii“
+- nebo zůstat sedět a nic nedělat, protože je toho moc
 
-Nebo jednoduše koupíš "podíl v celém nákupním centru" — a tím pádem automaticky vlastníš kousek každého obchodu.
+ETF je přesně ten prostřední, normální, chytrý krok mezi tím.
 
-**ETF = Exchange-Traded Fund = přesně tohle.**
+**Co je ETF**
 
-Jeden ETF S&P 500 = vlastníš kousek 500 největších amerických firem najednou. Apple, Microsoft, Nvidia, Amazon, Google, Berkshire Hathaway... všechno v jednom.
+ETF je fond obchodovaný na burze. V praxi to znamená, že nekupuješ jednu firmu, ale **celý balík firem najednou**.
 
-**Proč jsou ETF tak populární:**
+Představ si to jako playlist místo jedné písničky.
 
-✅ **Diverzifikace automaticky** — pád jedné firmy tě nepoloží
-✅ **Nízké poplatky** — TER (roční poplatek) typicky 0.03–0.20 %
-✅ **Jednoduché** — koupíš jako akcie přes brokera
-✅ **Historický výnos** — S&P 500 ETF: ~10 % ročně za 50 let
-✅ **Pasivní** — nepotřebuješ sledovat zprávy každý den
+Když koupíš jedno ETF na S&P 500, nemáš jen Apple nebo jen Nvidia. Máš kousek 500 velkých amerických firem v jednom nákupu.
 
-**Nejznámější ETF:**
-- **iShares Core S&P 500 (CSPX)** — 500 amerických firem, TER 0.07 %
-- **Vanguard FTSE All-World (VWCE)** — ~3 700 firem celého světa, TER 0.22 %
-- **iShares MSCI World (IWDA)** — 1 600 firem z rozvinutých zemí, TER 0.20 %
+Takže místo:
+- „doufám, že jsem trefil správnou firmu“
 
-**ETF vs. aktivní fond:**
+máš spíš:
+- „beru celý kus trhu a dávám mu čas“
 
-| | ETF | Aktivní fond |
-|---|---|---|
-| Poplatek ročně | 0.07–0.22 % | 1.5–2.5 % |
-| Překoná index? | = index | 87 % jich nezkoná |
+**Proč je ETF tak dobrý start**
 
-**Závěr:** Pro 90 % lidí je pravidelný nákup VWCE nebo CSPX nejchytřejší investiční rozhodnutí, které mohou udělat. Jednoduché, levné, efektivní.`,
+Protože začátečník většinou ještě nepotřebuje být hrdina. Potřebuje hlavně:
+- jednoduchost
+- rozumné riziko
+- čas
+- a menší šanci, že si ublíží blbým rozhodnutím
+
+ETF pomáhá přesně v tomhle.
+
+**1. Nemusíš vybírat jednu firmu moc brzo**
+
+Když kupuješ jednu akcii, sázíš na konkrétní firmu. To může vyjít. Taky nemusí.
+
+U ETF nehraješ hned na „poznám budoucího vítěze trhu“. Bereš širší košík a tím snižuješ šanci, že tě jedna chyba pošle do zbytečné paniky.
+
+To není nuda z nouze. To je docela rozumný move.
+
+**2. ETF ti pomáhá s rizikem**
+
+Po článku o riziku už víš, že riziko není automaticky katastrofa. Ale taky víš, že záleží na produktu.
+
+ETF bývá pro začátek snesitelnější než jednotlivé akcie, protože:
+- je rozložené mezi víc firem
+- jedna špatná výsledkovka tě tolik nerozhází
+- nesázíš všechno na jedno jméno
+
+Takže jo, ETF pořád kolísá. Ale většinou je to zdravější typ rizika než „vsadil jsem to na jednu akcii, kterou jsem znal z memeů“.
+
+**3. Jednoduché a boring může být výhoda**
+
+Na internetu boring zní skoro jako urážka. Jenže v investování je boring často docela luxus.
+
+Když tvoje strategie:
+- nevyžaduje sledovat grafy každé ráno
+- nenutí tě řešit každou zprávu
+- a nevypadá jako thriller po earnings callu
+
+tak je to pro začátečníka často přesně ono.
+
+Není ostuda začít jednoduše. Ostuda by byla dělat něco složitého jen proto, aby to vypadalo víc „investorsky“.
+
+**4. ETF a dlouhodobé myšlení**
+
+ETF dává největší smysl tehdy, když nepřemýšlíš v horizontu dvou týdnů.
+
+Je to nástroj pro styl:
+- posílám pravidelně
+- neřeším každý výkyv
+- dávám tomu roky, ne víkend
+
+To je důležité. ETF není kouzlo na rychlé zbohatnutí. Je to spíš klidný stroj na budování hodnoty v čase.
+
+**Jak ETF souvisí s diverzifikací**
+
+Diverzifikace znamená, že nedáváš všechno na jednu kartu.
+
+ETF ti tohle udělá skoro automaticky:
+- místo jedné firmy jich máš desítky, stovky, někdy tisíce
+- jeden průšvih tě tolik nerozhodí
+- celé portfolio není závislé na jedné legendě z TikToku
+
+To je jedna z největších výhod ETF pro začátek. Nemusíš mít všechno perfektně nastudované, aby první krok dával smysl.
+
+**A co konkrétně lidi často kupují**
+
+Nejčastější beginner volby bývají:
+- **S&P 500 ETF** — 500 velkých amerických firem
+- **MSCI World ETF** — firmy z rozvinutých zemí
+- **All-World ETF** — ještě širší globální rozložení
+
+Nemusíš z toho dělat vědu hned první den. Pointa není trefit „nejlepší ETF na planetě“. Pointa je začít rozumně.
+
+**Tak proč ne rovnou jednotlivé akcie?**
+
+Můžeš. Ale většina lidí na startu:
+- nezná firmy dost dobře
+- přeceňuje svou jistotu
+- podceňuje, jak rychle je rozhodí výkyv ceny
+
+ETF je pro většinu lidí lepší první liga než stock-picking. Ne proto, že by jednotlivé akcie byly zakázané, ale proto, že na ně budeš mít lepší hlavu o kus později.
+
+**Takeaway**
+
+ETF je často nejlepší start, protože:
+- je jednoduché
+- je rozložené
+- pomáhá držet riziko v rozumných mezích
+- podporuje dlouhodobé myšlení
+- a nedělá z tebe člověka, který musí předstírat, že už všechno ví
+
+Jednoduchý start není méně chytrý start. Často je to přesně naopak.`,
     readTime: "4 min",
     tag: "Know How",
     category: "Základy",
