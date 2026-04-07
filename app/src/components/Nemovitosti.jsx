@@ -67,6 +67,8 @@ function RegionMap() {
 
 export default function Nemovitosti() {
   const articles = getArticlesByCategory("nemovitosti");
+  const featuredArticle = articles[0];
+  const secondaryArticles = articles.slice(1, 4);
 
   return (
     <section id="nemovitosti" className="max-w-7xl mx-auto px-6 md:px-8 py-16">
@@ -76,6 +78,9 @@ export default function Nemovitosti() {
           <h2 className="text-4xl md:text-5xl font-black text-primary font-headline tracking-tight leading-none">
             Nemovitosti
           </h2>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-on-surface-variant">
+            Nejen ceny bytů. Radar ukazuje, kde dává smysl sledovat výnos, tlak na nájem a momenty, kdy trh na chvíli povolí.
+          </p>
         </div>
         <Link
           to="/clanek/najemni-vynosy-vs-sazby"
@@ -89,8 +94,49 @@ export default function Nemovitosti() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Articles */}
         <div className="lg:col-span-8">
+          {featuredArticle && (
+            <Link
+              to={`/clanek/${featuredArticle.id}`}
+              className="group relative mb-5 block overflow-hidden rounded-[1.75rem] border border-outline-variant/10 bg-slate-900"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent z-10" />
+              {featuredArticle.image ? (
+                <img
+                  src={featuredArticle.image}
+                  alt={featuredArticle.title}
+                  className="h-[22rem] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  onError={(e) => { e.target.style.display = "none"; }}
+                />
+              ) : (
+                <div className="h-[22rem] w-full bg-gradient-to-br from-slate-900 to-slate-950" />
+              )}
+              <div className="absolute inset-0 z-20 flex max-w-xl flex-col justify-end p-7">
+                <div className="mb-4 flex items-center gap-2 text-xs">
+                  <span className="rounded-full bg-white/12 px-3 py-1 font-black uppercase tracking-[0.18em] text-white font-headline">
+                    Hlavní signál
+                  </span>
+                  <span className="rounded-full bg-emerald-400/15 px-3 py-1 font-bold text-emerald-200">
+                    {featuredArticle.tag}
+                  </span>
+                </div>
+                <h3 className="text-2xl font-black leading-tight text-white font-headline">
+                  {featuredArticle.title}
+                </h3>
+                <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/80">
+                  {featuredArticle.excerpt}
+                </p>
+                <div className="mt-5 flex items-center gap-3 text-sm">
+                  <span className="font-black text-white font-headline">Číst hlavní analýzu →</span>
+                  <span className="text-white/50">{featuredArticle.readTime}</span>
+                  <span className="text-white/40">·</span>
+                  <span className="text-white/50">{featuredArticle.date}</span>
+                </div>
+              </div>
+            </Link>
+          )}
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {articles.map((article, i) => (
+            {secondaryArticles.map((article) => (
               <Link
                 key={article.id}
                 to={`/clanek/${article.id}`}
