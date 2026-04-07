@@ -98,20 +98,20 @@ const TIPS = [
 
 function ArticleCard({ article }) {
   return (
-    <Link to={`/clanek/${article.id}`} className="group bg-white rounded-2xl border border-outline-variant/10 overflow-hidden hover:shadow-md transition-shadow">
+    <Link to={`/clanek/${article.id}`} className="group flex h-full flex-col overflow-hidden rounded-2xl border border-outline-variant/10 bg-white transition-shadow hover:shadow-md">
       {article.image && (
         <div className="h-40 overflow-hidden">
           <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
         </div>
       )}
-      <div className="p-4">
-        <div className="flex items-center gap-2 mb-2">
+      <div className="flex flex-1 flex-col p-4">
+        <div className="mb-3 flex min-h-6 flex-wrap items-center gap-2">
           <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full ${article.tagColor || "bg-gray-100 text-gray-700"}`}>{article.tag}</span>
           {article.hot && <span className="text-[10px] font-black text-orange-500 bg-orange-50 px-2 py-0.5 rounded-full">🔥 HOT</span>}
         </div>
-        <h3 className="font-black text-primary font-headline text-sm leading-tight mb-1 group-hover:text-primary-container transition-colors">{article.title}</h3>
-        <p className="text-xs text-on-surface-variant line-clamp-2">{article.excerpt}</p>
-        <div className="flex items-center gap-2 mt-3 text-[10px] text-outline">
+        <h3 className="mb-2 line-clamp-2 min-h-[2.75rem] text-sm font-black leading-snug text-primary transition-colors group-hover:text-primary-container font-headline">{article.title}</h3>
+        <p className="flex-1 line-clamp-2 min-h-[2.5rem] text-xs leading-relaxed text-on-surface-variant">{article.excerpt}</p>
+        <div className="mt-4 flex items-center gap-2 border-t border-outline-variant/10 pt-3 text-[10px] text-outline">
           <span>{article.readTime}</span>
           <span>·</span>
           <span>{article.date}</span>
@@ -125,6 +125,8 @@ export default function AutaPage() {
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState(null);
   const articles = getArticlesByCategory("auta").slice(0, 5);
+  const starterArticle = articles.find((article) => article.id === "classic-car-pruvodce") ?? articles[0];
+  const nextArticle = articles.find((article) => article.id === "aukce-autozberatele") ?? articles.find((article) => article.id !== starterArticle?.id);
 
   return (
     <div className="min-h-screen bg-surface">
@@ -320,6 +322,36 @@ export default function AutaPage() {
         {/* Články */}
         {articles.length > 0 && (
           <section>
+            {starterArticle && (
+              <div className="mb-5 rounded-2xl border border-gray-300 bg-gray-50 p-5">
+                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-gray-700 font-headline">
+                  Čti nejdřív
+                </p>
+                <h3 className="mt-2 text-lg font-black text-primary font-headline">
+                  Pokud jsi v autech nový, začni tím, jak poznat rozumný kus.
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  Nejdřív si srovnej, co z auta dělá zajímavý youngtimer. Pak teprve řeš aukce, konkrétní modely a jestli je cena ještě rozumná.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <Link
+                    to={`/clanek/${starterArticle.id}`}
+                    className="rounded-full bg-primary px-4 py-2 text-sm font-black text-white font-headline hover:bg-primary-container transition-colors"
+                  >
+                    {starterArticle.title} →
+                  </Link>
+                  {nextArticle && (
+                    <Link
+                      to={`/clanek/${nextArticle.id}`}
+                      className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-bold text-on-surface-variant font-headline hover:border-gray-400 hover:bg-surface-container-low hover:text-primary transition-colors"
+                    >
+                      Pak pokračuj: aukce a nákup
+                    </Link>
+                  )}
+                </div>
+              </div>
+            )}
+
             <div className="flex items-center justify-between mb-5">
               <h2 className="text-xl font-black font-headline text-primary">{t("auta.articles_title")}</h2>
               <Link to="/archiv" className="text-sm font-bold text-outline hover:text-primary transition-colors">{t("auta.all_articles")}</Link>
