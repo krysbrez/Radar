@@ -141,7 +141,7 @@ export default function SrovnavacBrokeruPage() {
           <div>
             <p className="font-black text-green-800 font-headline mb-1">Radarovo doporučení pro začátečníky</p>
             <p className="text-sm text-green-700 leading-relaxed">
-              <strong>XTB</strong> je jednoznačně nejlepší volba pro začínající české investory. Nulové poplatky, plná čeština, skvělá aplikace a zákaznická podpora v češtině. Začni tam.
+              <strong>XTB</strong> je pro většinu začínajících českých investorů nejsnazší start. Nulové poplatky, plná čeština, dobrá appka a podpora, která nemluví jak robot. Na první účet dává smysl právě tady.
             </p>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function SrovnavacBrokeruPage() {
               Broker vs. burza: co řeší který nástroj
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
-              Pro většinu začátečníků je problém spíš v tom, že neví, kde začít, než v tom, že by neuměli investovat. Tohle je rychlá orientace bez finančního žargonu.
+              Pro většinu začátečníků je problém spíš v tom, že neví, kde začít, než v tom, že by neuměli investovat. Tohle je rychlá orientace bez finanční mlhy.
             </p>
           </div>
 

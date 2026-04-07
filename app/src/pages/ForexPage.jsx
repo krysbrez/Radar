@@ -1,7 +1,71 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import Mascot from "../components/Mascot";
 import { getArticlesByCategory } from "../data/articles";
+import SignalCard from "../components/SignalCard";
+
+const EUR_CZK_DATA = [
+  { date: "7.3", rate: 25.48 }, { date: "8.3", rate: 25.42 }, { date: "9.3", rate: 25.51 },
+  { date: "10.3", rate: 25.39 }, { date: "11.3", rate: 25.35 }, { date: "12.3", rate: 25.29 },
+  { date: "13.3", rate: 25.33 }, { date: "14.3", rate: 25.28 }, { date: "15.3", rate: 25.22 },
+  { date: "16.3", rate: 25.19 }, { date: "17.3", rate: 25.25 }, { date: "18.3", rate: 25.21 },
+  { date: "19.3", rate: 25.14 }, { date: "20.3", rate: 25.08 }, { date: "21.3", rate: 25.12 },
+  { date: "22.3", rate: 25.05 }, { date: "23.3", rate: 25.10 }, { date: "24.3", rate: 25.03 },
+  { date: "25.3", rate: 24.98 }, { date: "26.3", rate: 25.01 }, { date: "27.3", rate: 25.06 },
+  { date: "28.3", rate: 25.09 }, { date: "29.3", rate: 25.04 }, { date: "30.3", rate: 25.11 },
+  { date: "31.3", rate: 25.15 }, { date: "1.4", rate: 25.09 }, { date: "2.4", rate: 25.03 },
+  { date: "3.4", rate: 25.12 }, { date: "4.4", rate: 25.16 }, { date: "5.4", rate: 25.18 },
+];
+
+function EurCzkChart() {
+  const first = EUR_CZK_DATA[0].rate;
+  const last = EUR_CZK_DATA[EUR_CZK_DATA.length - 1].rate;
+  const isUp = last >= first;
+  const color = isUp ? "#16a34a" : "#dc2626";
+  const diff = (last - first).toFixed(2);
+  const diffPct = (((last - first) / first) * 100).toFixed(2);
+
+  return (
+    <div className={`rounded-2xl border border-outline-variant/10 p-6 ${isUp ? "bg-green-50" : "bg-red-50"}`}>
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          <p className="text-xs font-black text-outline uppercase tracking-wider font-headline mb-1">EUR/CZK · 30 dní</p>
+          <p className="text-3xl font-black text-primary font-headline">{last.toFixed(2)}</p>
+        </div>
+        <div className={`text-right px-3 py-2 rounded-xl ${isUp ? "bg-red-100" : "bg-green-100"}`}>
+          <p className={`text-lg font-black ${isUp ? "text-red-600" : "text-green-600"}`}>
+            {isUp ? "▲" : "▼"} {Math.abs(diffPct)}%
+          </p>
+          <p className={`text-xs font-bold ${isUp ? "text-red-500" : "text-green-500"}`}>
+            {isUp ? "+" : ""}{diff} za 30 dní
+          </p>
+        </div>
+      </div>
+      <ResponsiveContainer width="100%" height={180}>
+        <LineChart data={EUR_CZK_DATA} margin={{ top: 4, right: 4, bottom: 0, left: 0 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.06)" vertical={false} />
+          <XAxis dataKey="date" tick={{ fontSize: 10, fill: "#9ca3af" }} axisLine={false} tickLine={false} interval={4} />
+          <YAxis hide domain={["auto", "auto"]} />
+          <Tooltip
+            contentStyle={{ borderRadius: 12, border: "none", boxShadow: "0 4px 20px rgba(0,0,0,0.1)", fontSize: 12 }}
+            formatter={(v) => [`${v.toFixed(3)} CZK`, "EUR/CZK"]}
+            labelStyle={{ fontWeight: 700, color: "#1a1a2e" }}
+          />
+          <Line
+            type="monotone"
+            dataKey="rate"
+            stroke={color}
+            strokeWidth={2.5}
+            dot={false}
+            activeDot={{ r: 5, strokeWidth: 2, stroke: "#fff" }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+      <p className="text-xs text-outline mt-3 text-center">Nižší hodnota = silnější koruna · Placeholder data · Zdroj: ČNB (fáze 2)</p>
+    </div>
+  );
+}
 
 const CURRENCY_PAIRS = [
   { pair: "EUR/CZK", rate: "25.10", change: "-0.42%", note: "Koruna nejsilnější za 5 let", isUp: false },
@@ -26,7 +90,22 @@ const FOREX_EXPLAINERS = [
   {
     emoji: "🏭️",
     title: "Proč firmy sledují EUR/CZK každý ráno?",
-    text: "Škoda Auto prodává auta za eura, ale platy platí v korunách. Silnější koruna snižuje jejich zisk v CZK. Slabší koruna = víc korun za každé euro. Forex není jen pro spekulanty — je to realita každé exportní firmy.",
+    text: "Škoda Auto prodává auta za eura, ale platy platí v korunách. Silnější koruna snižuje jejich zisk v CZK. Slabší koruna = víc korun za každé euro. Forex není jen hra pro grafové nadšence, ale realita každé exportní firmy.",
+  },
+];
+
+const FOREX_STARTER_POINTS = [
+  {
+    title: "Kupuješ něco ze zahraničí",
+    text: "iPhone, sneakers nebo letenka nejsou dražší jen tak. Často za to může kurz, ne tvoje smůla.",
+  },
+  {
+    title: "Řešíš dovolenou nebo Erasmus",
+    text: "Když koruna oslabí, stejné euro tě stojí víc. A najednou je brunch v Lisabonu trochu moc premium.",
+  },
+  {
+    title: "Nevíš, kde začít",
+    text: "Úplně stačí sledovat EUR/CZK a USD/CZK. To je pro začátek víc než dost, žádný trader starter pack nepotřebuješ.",
   },
 ];
 
@@ -55,7 +134,7 @@ export default function ForexPage() {
               </h1>
               <p className="text-primary-fixed-dim text-xl leading-relaxed max-w-xl mb-6">
                 Měnové kurzy ovlivňují tvoje nákupy, dovolenou i hypotéku.
-                Radar ti každý týden vysvětlí co se děje — bez grafu plného čárek a šipek.
+                Radar ti každý týden vysvětlí, co se děje, bez pocitu, že musíš být trader v obleku.
               </p>
               <div className="flex gap-3">
                 <Link to="/#newsletter" className="bg-white text-primary font-black text-sm font-headline px-6 py-3 rounded-full hover:bg-primary-fixed transition-colors">
@@ -72,7 +151,38 @@ export default function ForexPage() {
         </div>
       </div>
 
+      {/* SignalCard strip */}
+      <div className="bg-surface-container/50 border-b border-outline-variant/10">
+        <div className="max-w-6xl mx-auto px-6 md:px-8 py-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+          <SignalCard eyebrow="EUR/CZK" value="25.18" note="↑ +0.1% dnes" tone="positive" />
+          <SignalCard eyebrow="USD/CZK" value="23.42" note="↓ -0.2% dnes" tone="negative" />
+          <SignalCard eyebrow="GBP/CZK" value="29.65" note="↑ +0.3% dnes" tone="positive" />
+        </div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 space-y-12">
+
+        <section className="bg-surface-container-low rounded-3xl border border-outline-variant/10 p-6 md:p-7">
+          <div className="max-w-3xl mb-5">
+            <p className="text-xs font-black text-outline uppercase tracking-[0.22em] font-headline mb-2">Proč řešit kurz, i když netraduješ</p>
+            <h2 className="text-2xl font-black text-primary font-headline mb-2">Forex bez dramatu.</h2>
+            <p className="text-sm text-on-surface-variant leading-relaxed">
+              Nemusíš sedět u grafu celý den. Stačí vědět, že kurz se propisuje do normálních věcí:
+              nákupů, cestování a toho, kolik tě reálně stojí věci ze světa venku.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {FOREX_STARTER_POINTS.map((item) => (
+              <div key={item.title} className="bg-white rounded-2xl border border-outline-variant/10 p-5">
+                <h3 className="text-base font-black text-primary font-headline mb-2">{item.title}</h3>
+                <p className="text-sm text-on-surface-variant leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* EUR/CZK Chart */}
+        <EurCzkChart />
 
         {/* Měnové páry tabulka */}
         <section>

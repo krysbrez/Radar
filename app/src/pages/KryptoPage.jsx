@@ -1,8 +1,69 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import Mascot from "../components/Mascot";
 import { getArticlesByCategory } from "../data/articles";
+import SignalCard from "../components/SignalCard";
+
+const BTC_CHART_DATA = [
+  { date: "3. 3.", price: 64200 },
+  { date: "10. 3.", price: 67400 },
+  { date: "17. 3.", price: 71000 },
+  { date: "24. 3.", price: 68500 },
+  { date: "31. 3.", price: 72800 },
+  { date: "7. 4.", price: 69500 },
+  { date: "14. 4.", price: 70000 },
+];
+
+function BtcChart() {
+  const isUp = BTC_CHART_DATA[BTC_CHART_DATA.length - 1].price >= BTC_CHART_DATA[0].price;
+  const color = isUp ? "#16a34a" : "#dc2626";
+  const bgColor = isUp ? "bg-green-50" : "bg-red-50";
+
+  return (
+    <div className={`rounded-2xl border border-outline-variant/10 p-6 ${bgColor}`}>
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          <p className="text-xs font-black text-outline uppercase tracking-widest font-headline mb-0.5">Bitcoin (BTC) — 30 dní</p>
+          <p className="text-2xl font-black text-primary font-headline">$70 000</p>
+        </div>
+        <span className={`text-sm font-black px-3 py-1 rounded-full ${isUp ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+          {isUp ? "▲" : "▼"} {isUp ? "+8.9%" : "-8.9%"} za 30 dní
+        </span>
+      </div>
+      <ResponsiveContainer width="100%" height={180}>
+        <LineChart data={BTC_CHART_DATA} margin={{ top: 4, right: 4, bottom: 0, left: 0 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.06)" vertical={false} />
+          <XAxis
+            dataKey="date"
+            tick={{ fontSize: 10, fill: "#9ca3af" }}
+            axisLine={false}
+            tickLine={false}
+          />
+          <YAxis
+            hide
+            domain={["auto", "auto"]}
+          />
+          <Tooltip
+            contentStyle={{ borderRadius: 12, border: "1px solid #e5e7eb", fontSize: 12, boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}
+            formatter={(value) => [`$${value.toLocaleString("cs")}`, "BTC"]}
+            labelStyle={{ fontWeight: 700, color: "#1e3a5f" }}
+          />
+          <Line
+            type="monotone"
+            dataKey="price"
+            stroke={color}
+            strokeWidth={2.5}
+            dot={{ fill: color, r: 3, strokeWidth: 0 }}
+            activeDot={{ r: 5, strokeWidth: 2, stroke: "#fff" }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+      <p className="text-xs text-outline mt-3 text-center">Placeholder data · Data: CoinGecko API (fáze 2)</p>
+    </div>
+  );
+}
 
 const CRYPTO_DATA = [
   { rank: 1, name: "Bitcoin", symbol: "BTC", price: "$84 200", change: "-2.1%", cap: "$1.66T", isUp: false },
@@ -28,6 +89,38 @@ const GLOSSARY = [
   { term: "Bull/Bear run", def: "Bull = ceny rostou, medvěd = ceny klesají. Trh má cykly. Panic sell v bear runu = chyba č. 1." },
   { term: "Whale", def: "Někdo kdo drží obrovské množství kryptoměny. Když whale prodává, cena jde dolů. Sleduj on-chain data." },
   { term: "FOMO", def: "Fear Of Missing Out. Ten moment kdy koupíš na vrcholu, protože 'to přece nemůže dál klesat'. Může." },
+];
+
+const NORMAL_CZECH = [
+  { term: "Bitcoin", meaning: "Digitální aktivum, které nikdo centrálně nevydává ani nevypíná." },
+  { term: "Ethereum", meaning: "Síť, na které kromě plateb běží i další aplikace a chytré smlouvy." },
+  { term: "Peněženka", meaning: "Není to appka na utrácení, ale nástroj, kterým držíš a ovládáš svoje krypto." },
+  { term: "Altcoin", meaning: "Každá kryptoměna mimo Bitcoin. Některé mají smysl, spousta z nich jen marketing." },
+];
+
+const WATCH_OUT = [
+  "Neskákej do coinů jen proto, že je zrovna všude vidíš na TikToku nebo X.",
+  "Neposílej peníze na neznámé wallet adresy. V kryptu nejde zavolat bance a vrátit omyl.",
+  "Když nerozumíš riziku nebo tomu, odkud má přijít výnos, nekupuj to jen ze strachu, že ti něco uteče.",
+];
+
+const EASY_SITUATIONS = [
+  {
+    title: "Mám krypto na Trading 212",
+    text: "Pravděpodobně jsi blíž brokeru než čisté krypto burze. Je to pohodlné na nákup, ale neznamená to vždy stejnou kontrolu jako u vlastní peněženky.",
+  },
+  {
+    title: "Mám krypto na Bybitu",
+    text: "To už je klasická krypto burza. Máš víc možností, ale taky víc míst, kde můžeš udělat chybu. Na začátek drž jednoduché nákupy a nesahej na pákové věci.",
+  },
+  {
+    title: "Kdy dává smysl Trezor",
+    text: "Když už máš větší částku, víš proč to držíš a nechceš mít všechno jen u cizí platformy. Trezor dává smysl jako vlastní trezor, ne jako hračka na první týden.",
+  },
+  {
+    title: "Broker vs. burza vs. walletka",
+    text: "Broker je nejjednodušší vstup. Burza je větší krypto hřiště. Walletka je místo, kde máš klíče ty. Rozdíl není v cool názvu, ale v tom, kdo má kontrolu.",
+  },
 ];
 
 const FEAR_GREED = 62; // 0-100, 62 = Greed
@@ -74,6 +167,8 @@ export default function KryptoPage() {
   const { t } = useTranslation();
   const articles = getArticlesByCategory("krypto");
   const [openGloss, setOpenGloss] = useState(null);
+  const starterArticle = articles.find((article) => article.id === "ethereum-co-je") ?? articles[0];
+  const nextArticle = articles.find((article) => article.id === "krypto-penezenky") ?? articles.find((article) => article.id !== starterArticle?.id);
 
   return (
     <div className="min-h-screen bg-surface">
@@ -83,7 +178,7 @@ export default function KryptoPage() {
           <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
             <Link to="/" className="hover:text-white transition-colors">Radar</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">Krypto</span>
+            <span className="text-primary-fixed-dim">{t("krypto.breadcrumb")}</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
@@ -92,15 +187,14 @@ export default function KryptoPage() {
                 <span className="text-xs font-black text-primary-fixed-dim uppercase tracking-widest font-headline">Live data</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-black font-headline tracking-tight leading-tight mb-4">
-                Krypto bez keců.
+                {t("krypto.hero_title")}
               </h1>
               <p className="text-primary-fixed-dim text-xl leading-relaxed max-w-xl mb-6">
-                Bitcoin, Ethereum, altcoiny — rozebereme ti co se děje, proč to záleží,
-                a kdy je nejlepší čas koupit (spoiler: ne v pátek večer po třetím pivu).
+                {t("krypto.hero_subtitle")}
               </p>
               <div className="flex gap-3">
                 <Link to="/#newsletter" className="bg-white text-primary font-black text-sm font-headline px-6 py-3 rounded-full hover:bg-primary-fixed transition-colors">
-                  Odebírat newsletter →
+                  {t("krypto.hero_btn")}
                 </Link>
               </div>
             </div>
@@ -113,7 +207,95 @@ export default function KryptoPage() {
         </div>
       </div>
 
+      {/* SignalCard strip */}
+      <div className="bg-surface-container/50 border-b border-outline-variant/10">
+        <div className="max-w-6xl mx-auto px-6 md:px-8 py-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+          <SignalCard eyebrow="Bitcoin (BTC)" value="$70 000" note="↑ +1.5% dnes" tone="positive" />
+          <SignalCard eyebrow="Ethereum (ETH)" value="$2 000" note="↓ -0.8% dnes" tone="negative" />
+          <SignalCard eyebrow="Solana (SOL)" value="$130" note="↑ +3.2% dnes" tone="positive" />
+        </div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 space-y-12">
+
+        <section>
+          <div className="rounded-[1.75rem] border border-orange-200 bg-orange-50 px-6 py-6 md:px-7">
+            <div className="max-w-3xl">
+              <p className="text-[11px] font-black uppercase tracking-[0.2em] text-orange-700 font-headline">
+                Krypto bez paniky
+              </p>
+              <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+                Nemusíš chápat všechno najednou.
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                Na začátek stačí vědět tři věci: co je Bitcoin a Ethereum, jak funguje peněženka a proč není potřeba naskakovat do každého coinového cirkusu.
+              </p>
+            </div>
+
+            <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {[
+                "Nejdřív pochop základ, až pak zkoumej altcoiny.",
+                "Když něčemu nerozumíš, není ostuda to nekoupit.",
+                "První cíl není jackpot. První cíl je nezmatkovat.",
+              ].map((item) => (
+                <div key={item} className="rounded-2xl border border-orange-200 bg-white/80 px-4 py-4 text-sm leading-relaxed text-on-surface">
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            {starterArticle && (
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  to={`/clanek/${starterArticle.id}`}
+                  className="rounded-full bg-orange-600 px-4 py-2 text-sm font-black text-white font-headline hover:bg-orange-500 transition-colors"
+                >
+                  Začni tady: {starterArticle.title} →
+                </Link>
+                {nextArticle && (
+                  <Link
+                    to={`/clanek/${nextArticle.id}`}
+                    className="rounded-full border border-orange-200 bg-white px-4 py-2 text-sm font-bold text-orange-700 font-headline hover:border-orange-300 hover:bg-orange-100/60 transition-colors"
+                  >
+                    Pak pokračuj: peněženky
+                  </Link>
+                )}
+              </div>
+            )}
+          </div>
+        </section>
+
+        <section>
+          <div className="rounded-[1.75rem] border border-outline-variant/10 bg-white px-6 py-6 md:px-7">
+            <div className="max-w-3xl">
+              <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                Kde to vlastně máš
+              </p>
+              <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+                Situace z praxe, ne kryptoslovník.
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                Jestli máš pocit, že všichni mluví o walletkách, burzách a custody a ty jen chceš vědět, co z toho je vlastně tvoje situace, začni tady.
+              </p>
+            </div>
+
+            <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+              {EASY_SITUATIONS.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-5 py-5">
+                  <h3 className="text-base font-black text-primary font-headline">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* BTC Graf */}
+        <BtcChart />
 
         {/* Top 10 tabulka */}
         <section>
@@ -216,6 +398,43 @@ export default function KryptoPage() {
 
         {/* Krypto slovník */}
         <section>
+          <div className="mb-5 rounded-[1.5rem] border border-outline-variant/10 bg-surface-container-low px-5 py-5">
+            <div className="max-w-3xl">
+              <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                Přeloženo do normální češtiny
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                Než se začne mluvit o halvincích a DeFi, tady jsou čtyři pojmy, které ti pomůžou zorientovat se bez kryptobro slovníku.
+              </p>
+            </div>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+              {NORMAL_CZECH.map((item) => (
+                <div key={item.term} className="rounded-2xl border border-outline-variant/10 bg-white px-4 py-4">
+                  <p className="text-sm font-black text-primary font-headline">{item.term}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-on-surface-variant">{item.meaning}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-5 rounded-[1.5rem] border border-red-200 bg-red-50 px-5 py-5">
+            <div className="max-w-3xl">
+              <p className="text-[11px] font-black uppercase tracking-[0.2em] text-red-700 font-headline">
+                Na co si dát bacha
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                Krypto není jen o tom, co může vyrůst. Je taky o tom, co tě může zbytečně nachytat, když jedeš moc rychle.
+              </p>
+            </div>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+              {WATCH_OUT.map((item) => (
+                <div key={item} className="rounded-2xl border border-red-200 bg-white/85 px-4 py-4 text-sm leading-relaxed text-on-surface">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="flex items-center gap-3 mb-5">
             <span className="text-xl">📖</span>
             <h2 className="text-xl font-black text-primary font-headline">{t("krypto.glossary_title")}</h2>

@@ -183,7 +183,7 @@ export default function AutaPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h2 className="text-2xl font-black font-headline text-primary mb-4">Co je youngtimer?</h2>
-              <p className="text-on-surface leading-relaxed mb-3">Youngtimer je auto ve věku 15–30 let, které ještě není plně klasické, ale má potenciál stát se sběratelským kouskem. Zlatá éra je přibližně <strong>1985–2005</strong>.</p>
+              <p className="text-on-surface leading-relaxed mb-3">Youngtimer je auto ve věku 15–30 let, které ještě není plně klasické, ale už má šanci zestárnout do ceny, ne do zapomnění. Zlatá éra je přibližně <strong>1985–2005</strong>.</p>
               <p className="text-on-surface leading-relaxed mb-3">Klíčové jsou tři věci: <strong>ikoničnost</strong> (muselo být slavné nebo kultovní), <strong>vzácnost</strong> (málo kusů = vyšší cena) a <strong>stav</strong> (originál bez nehod vždy vyhraje).</p>
               <p className="text-on-surface leading-relaxed">Na rozdíl od oldtimerů (30+ let) ještě neplatíš historické pojistky a díly jsou relativně dostupné.</p>
             </div>
@@ -331,7 +331,7 @@ export default function AutaPage() {
                   Pokud jsi v autech nový, začni tím, jak poznat rozumný kus.
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
-                  Nejdřív si srovnej, co z auta dělá zajímavý youngtimer. Pak teprve řeš aukce, konkrétní modely a jestli je cena ještě rozumná.
+                  Nejdřív si srovnej, proč má tohle auto šanci držet cenu. Až potom řeš aukce, konkrétní modely a jestli ta cenovka není jen nostalgie po Fast & Furious.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-3">
                   <Link

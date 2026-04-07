@@ -209,7 +209,7 @@ export default function AkciePage() {
 
       <div className="max-w-5xl mx-auto px-6 md:px-8 py-10 space-y-12">
 
-        <DidYouKnow text="87 % aktivně řízených fondů za 10 let zaostalo za indexem S&P 500. Nejjednodušší strategie — koupit ETF a čekat — poráží většinu profesionálů." />
+        <DidYouKnow text="87 % aktivně řízených fondů za 10 let zaostalo za indexem S&P 500. Jinými slovy: obyčejné koupit ETF a dát tomu čas často porazí i lidi, kteří u grafů sedí celý den." />
 
         {/* Co je akcie */}
         <section>
@@ -299,7 +299,7 @@ export default function AkciePage() {
                 </ul>
               </div>
             </div>
-            <p className="text-sm text-on-surface-variant mt-4">Pro začátečníky doporučujeme <strong className="text-primary">začít s ETF</strong> a jednotlivé akcie přidávat postupně, jak se orientuješ na trhu.</p>
+            <p className="text-sm text-on-surface-variant mt-4">Pokud začínáš, dává největší smysl <strong className="text-primary">začít s ETF</strong>. Jednotlivé akcie si nech na chvíli, kdy už víš, co vlastně kupuješ.</p>
           </div>
           <div className="bg-indigo-600 rounded-2xl p-5 text-white flex flex-col justify-between">
             <div>
@@ -325,7 +325,7 @@ export default function AkciePage() {
                   Pokud jsi v akciích nový, začni tady.
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
-                  Nejprve si otevři jednoduchý průvodce prvním nákupem. Pak můžeš přejít na konkrétní akcie a dividendové tipy.
+                  Nejdřív si dej úplný základ, ať víš co je ticker, broker a proč není nutné hned lovit další Nvidii. Pak můžeš přejít na konkrétní akcie a dividendy.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-3">
                   <Link
