@@ -128,6 +128,51 @@ const TRADING_EXPLAINER = [
   },
 ];
 
+const ETF_EXPLAINER = [
+  {
+    title: "Co je vlastně ETF",
+    text: "ETF je jeden fond obchodovaný na burze, ve kterém máš najednou balík firem. Místo lovení jedné akcie kupuješ celý košík.",
+  },
+  {
+    title: "Proč je to chytrý start",
+    text: "Když jedna firma zklame, celý svět ti nespadne na hlavu. ETF ti hned od začátku dává větší rozložení rizika a méně prostoru pro začátečnické přestřely.",
+  },
+  {
+    title: "Proč je nuda někdy super",
+    text: "Na začátku je docela výhra, když tvoje investice není drama seriál. Nudné neznamená špatné. Často to znamená, že můžeš klidně spát a neřešit každý den další zázračný tip.",
+  },
+];
+
+const CFD_EXPLAINER = [
+  {
+    title: "Co jsou vlastně CFD",
+    text: "CFD je sázka na pohyb ceny, ne klasické vlastnictví aktiva. Neřešíš, že něco opravdu držíš. Řešíš hlavně to, jestli cena půjde nahoru nebo dolů.",
+  },
+  {
+    title: "Proč v tom mají lidi zmatek",
+    text: "V appce to často vypadá skoro stejně jako normální nákup. Jenže koupit akcii nebo ETF je něco jiného než spekulovat na její pohyb. Ten rozdíl je menší v designu a větší v riziku.",
+  },
+  {
+    title: "Proč to není start pro začátečníky",
+    text: "CFD umí působit jednoduše, ale ve skutečnosti bývá mnohem ostřejší. Malý pohyb ceny může bolet víc, než čekáš. Začátečník fakt nemusí začínat tam, kde se kliká rychleji než přemýšlí.",
+  },
+];
+
+const DCA_PRACTICE = [
+  {
+    title: "500 Kč měsíčně je normální start",
+    text: "Nemusíš čekat, až budeš mít deset tisíc navíc. Pro začátek úplně stačí menší pravidelná částka, která ti nerozbije rozpočet ani náladu.",
+  },
+  {
+    title: "Nemusíš trefit dokonalý moment",
+    text: "Nikdo spolehlivě neví, jestli je dnešek top nebo dip. DCA je fajn právě proto, že tě netlačí hrát si na věštce s grafem v ruce.",
+  },
+  {
+    title: "Klidný start je pořád start",
+    text: "1 000 Kč měsíčně poslaných pravidelně často udělá víc práce než velké hrdinské plány, které skončí po dvou týdnech. Nuda a konzistence umí být underrated duo.",
+  },
+];
+
 function StepBlock({ step, isActive, onClick }) {
   return (
     <div
@@ -204,6 +249,40 @@ export default function JakZacitPage() {
   const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(1);
   const [completed, setCompleted] = useState([]);
+  const completedCount = completed.length;
+  const signalProgress = Math.min(78, 28 + completedCount * 14);
+  const currentStage = completedCount >= 2
+    ? {
+        name: "Tracker",
+        description: "Už nejsi jen náhodný čtenář. Začínáš vědět, co chceš sledovat a proč to pro tebe má smysl.",
+        next: "Reader",
+        unlock: "Vlastní watchlist signálů a rychlý návrat k věcem, které chceš mít na očích.",
+        remaining: `${Math.max(0, 3 - completedCount)} dokončené kroky v Jak začít a 1 první weekly brief`,
+      }
+    : {
+        name: "Observer",
+        description: "Rozhlížíš se, skládáš si základ a učíš se rozeznat, co je šum a co už stojí za pozornost.",
+        next: "Tracker",
+        unlock: "Saved Signals a klidný přehled toho, co chceš dál hlídat bez hledání v archivu.",
+        remaining: `${Math.max(0, 2 - completedCount)} dokončené kroky v Jak začít`,
+      };
+  const signalDrivers = [
+    {
+      title: "Praktické kroky",
+      note: `${completedCount}/${STEPS.length} hotovo v Jak začít`,
+      tone: completedCount > 0 ? "text-emerald-700 bg-emerald-50 border-emerald-200" : "text-outline bg-white border-outline-variant/10",
+    },
+    {
+      title: "Know How základy",
+      note: "Krátké články, které ti skládají kontext dřív než začneš něco klikat",
+      tone: "text-primary bg-white border-outline-variant/10",
+    },
+    {
+      title: "Weekly brief",
+      note: "První otevřený pondělní přehled jako signál, že se k produktu vracíš smysluplně",
+      tone: "text-primary bg-white border-outline-variant/10",
+    },
+  ];
 
   const toggleComplete = (stepNum) => {
     setCompleted((prev) =>
@@ -240,13 +319,13 @@ export default function JakZacitPage() {
         {/* Progress bar */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-bold text-outline font-headline">{completed.length} / {STEPS.length} kroků dokončeno</p>
-            {completed.length === STEPS.length && <span className="text-xs font-black text-green-600 bg-green-100 px-2.5 py-1 rounded-full">🎉 Jsi investor!</span>}
+            <p className="text-xs font-bold text-outline font-headline">{completedCount} / {STEPS.length} kroků dokončeno</p>
+            {completedCount === STEPS.length && <span className="text-xs font-black text-green-600 bg-green-100 px-2.5 py-1 rounded-full">🎉 Jsi investor!</span>}
           </div>
           <div className="h-2 bg-surface-container rounded-full overflow-hidden">
             <div
               className="h-full bg-green-500 rounded-full transition-all duration-500"
-              style={{ width: `${(completed.length / STEPS.length) * 100}%` }}
+              style={{ width: `${(completedCount / STEPS.length) * 100}%` }}
             />
           </div>
         </div>
@@ -298,6 +377,188 @@ export default function JakZacitPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="mb-10 rounded-2xl border border-purple-200 bg-purple-50 p-6">
+          <div className="max-w-3xl mb-5">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-purple-700 font-headline">
+              ETF bez pozlátka
+            </p>
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+              ETF: nuda v dobrém slova smyslu.
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+              Nemusíš začínat něčím flashy. Pro spoustu lidí je ETF chytřejší první krok než hon na jednotlivé akcie nebo snaha být trader dřív, než vůbec víš, co sleduješ.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {ETF_EXPLAINER.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-purple-200 bg-white/90 px-5 py-5">
+                <h3 className="text-base font-black text-primary font-headline">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-10 rounded-2xl border border-amber-200 bg-amber-50 p-6">
+          <div className="max-w-3xl mb-5">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-amber-700 font-headline">
+              CFD bez zbytečného chaosu
+            </p>
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+              CFD není totéž co normální investování.
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+              Spousta lidí si plete nákup aktiva s tím, že jen spekuluješ na jeho pohyb. U CFD je právě tenhle rozdíl důležitý. Vypadá to jednoduše, ale je to podstatně ostřejší hra.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {CFD_EXPLAINER.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-amber-200 bg-white/90 px-5 py-5">
+                <h3 className="text-base font-black text-primary font-headline">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-10 rounded-2xl border border-green-200 bg-green-50 p-6">
+          <div className="max-w-3xl mb-5">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-green-700 font-headline">
+              DCA v praxi
+            </p>
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+              DCA bez hero momentu.
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+              DCA už na stránce máš vysvětlené. Tohle je spíš připomínka, jak vypadá klidný start v reálu: malé částky, žádné čekání na perfektní chvíli a minimum zbytečného dramatu.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {DCA_PRACTICE.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-green-200 bg-white/90 px-5 py-5">
+                <h3 className="text-base font-black text-primary font-headline">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-10 hidden md:block">
+          <div className="overflow-hidden rounded-[1.75rem] border border-outline-variant/10 bg-white shadow-[0_18px_60px_rgba(12,23,46,0.06)]">
+            <div className="grid grid-cols-[minmax(0,1.1fr),22rem]">
+              <div className="px-7 py-7">
+                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                  Signal Level MVP
+                </p>
+                <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+                  Progress, který působí jako produkt. Ne jako hra.
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-on-surface-variant">
+                  Malý desktop-only koncept, jak může Radar ukazovat postup bez gamifikovaného cirkusu.
+                  Ne sbírání bodů za existenci, ale klidný přehled toho, v jaké fázi se uživatel nachází,
+                  co mu dává progres a co dává smysl odemknout jako další vrstvu produktu.
+                </p>
+
+                <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-outline-variant/10 bg-surface-container-low">
+                  <div className="grid grid-cols-[minmax(0,1fr),18rem]">
+                    <div className="px-5 py-5">
+                      <div className="flex items-start justify-between gap-6">
+                        <div>
+                          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                            Aktuální stage
+                          </p>
+                          <div className="mt-3 flex items-center gap-3">
+                            <p className="text-2xl font-black text-primary font-headline">
+                              {currentStage.name}
+                            </p>
+                            <span className="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.18em] text-outline font-headline">
+                              {signalProgress}% to {currentStage.next}
+                            </span>
+                          </div>
+                          <p className="mt-3 max-w-xl text-sm leading-relaxed text-on-surface-variant">
+                            {currentStage.description}
+                          </p>
+                        </div>
+                        <div className="rounded-2xl border border-outline-variant/10 bg-white px-4 py-3">
+                          <p className="text-[11px] font-black uppercase tracking-[0.18em] text-outline font-headline">
+                            Další unlock
+                          </p>
+                          <p className="mt-2 text-base font-black text-primary font-headline">
+                            {currentStage.next}
+                          </p>
+                          <p className="mt-1 max-w-[14rem] text-xs leading-relaxed text-on-surface-variant">
+                            {currentStage.unlock}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="mt-6">
+                        <div className="mb-2 flex items-center justify-between text-xs">
+                          <span className="font-black uppercase tracking-[0.18em] text-outline font-headline">
+                            Signal progress
+                          </span>
+                          <span className="font-bold text-primary">{signalProgress}%</span>
+                        </div>
+                        <div className="h-2 rounded-full bg-white overflow-hidden">
+                          <div
+                            className="h-full rounded-full bg-gradient-to-r from-primary via-indigo-500 to-sky-400 transition-all duration-500"
+                            style={{ width: `${signalProgress}%` }}
+                          />
+                        </div>
+                        <p className="mt-3 text-sm text-on-surface-variant">
+                          Chybí už jen: <span className="font-bold text-primary">{currentStage.remaining}</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-l border-outline-variant/10 bg-surface px-6 py-7">
+                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                  Co dává progres
+                </p>
+                <div className="mt-5 space-y-3">
+                  {signalDrivers.map((item) => (
+                    <div key={item.title} className={`rounded-2xl border px-4 py-4 ${item.tone}`}>
+                      <p className="text-[11px] font-black uppercase tracking-[0.18em] font-headline">
+                        {item.title}
+                      </p>
+                      <p className="mt-2 text-sm leading-relaxed">
+                        {item.note}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-5 rounded-2xl border border-outline-variant/10 bg-white px-4 py-4">
+                  <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                    Princip
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                    Progress se váže na pochopení a návrat k důležitým věcem. Ne na náhodné proklikávání, refreshování cen nebo sbírání bodů za hluk.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
