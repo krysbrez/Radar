@@ -496,6 +496,127 @@ Jakmile tohle pochopíš, inflace i investování začnou dávat mnohem větší
     level: "Začátečník",
   },
   {
+    id: "sporeni-vs-investovani",
+    emoji: "⚖️",
+    title: "Spoření vs. investování — proč to není totéž",
+    excerpt: "Spoření tě chrání před průšvihem zítra. Investování řeší, aby tvoje peníze dávaly smysl i za pár let.",
+    body: `Spousta lidí hází spoření a investování do jednoho pytle. Prostě „někam dáváš peníze bokem“. Jenže to je asi jako říct, že deštník a bunda jsou totéž, protože tě oboje chrání před zimou.
+
+Nejsou. Každé řeší jiný problém.
+
+**Spoření = peníze, které mají být po ruce**
+
+Spoření je hlavně o bezpečí a dostupnosti. Ty peníze tam nejsou proto, aby udělaly kariéru. Jsou tam proto, aby tě podržely, když se něco pokazí nebo když víš, že je budeš potřebovat brzy.
+
+Typické situace pro spoření:
+- rozbitý mobil nebo notebook
+- kauce na byt
+- řidičák
+- dovolená za půl roku
+- rezerva, kdyby ti vypadl příjem
+
+Spoření říká: **nechci překvapení, chci klid**.
+
+**Investování = peníze, které mají čas růst**
+
+Investování je naopak o tom, že ty peníze nemusíš zítra vytahovat. Dáváš jim čas, aby se zhodnotily. Není to parkoviště. Je to delší cesta, během které to občas zaskřípe, ale cíl je, aby peníze v budoucnu měly větší sílu než dnes.
+
+Typické situace pro investování:
+- peníze na horizont 5+ let
+- budoucí bydlení
+- finanční rezerva do dospělosti
+- dlouhodobé budování majetku
+
+Investování říká: **teď to nepotřebuju, a tak to nechám pracovat**.
+
+**Největší rozdíl: jistota vs. růst**
+
+Spoření:
+- menší kolísání
+- peníze máš rychle k dispozici
+- výnos bývá malý
+
+Investování:
+- hodnota může kolísat
+- potřebuje čas
+- dlouhodobě má větší šanci porazit inflaci
+
+Takže:
+- spoření chrání tvoji likviditu
+- investování chrání tvoji budoucí kupní sílu
+
+To jsou dvě různé mise.
+
+**Kdy spoření dává smysl**
+
+Spoření dává smysl, když:
+- peníze budeš potřebovat do 1–3 let
+- chceš mít rezervu na nečekané věci
+- nesneseš, že by částka krátkodobě klesla
+
+Příklad:
+Máš 40 000 Kč a za 8 měsíců chceš skládat kauci na pokoj nebo byt. To není kapitál na investování do ETF. To je přesně práce pro spořicí účet.
+
+**Kdy investování dává smysl**
+
+Investování dává smysl, když:
+- peníze nepotřebuješ hned
+- zvládneš, že jejich hodnota někdy dočasně klesne
+- chceš, aby v čase rostly rychleji než inflace
+
+Příklad:
+Posíláš si 1 000 Kč měsíčně bokem a neřešíš, jestli je použiješ příští rok. Tohle už je spíš kandidát na investování než na hromadění hotovosti.
+
+**Proč si lidé pletou „safe“ se „smart“**
+
+Tohle je častá chyba.
+
+Mít všechno na spořáku působí bezpečně. Číslo neklesá, appka je klidná, žádný stres. Jenže když inflace běží rychleji než výnos, tvoje peníze sice nevypadají, že mizí, ale reálně slábnou.
+
+Takže:
+- safe může znamenat „nebolí to dnes“
+- smart znamená „dává to smysl i za pár let“
+
+To není totéž.
+
+**Nejlepší přístup není buď, anebo**
+
+Většinou nepotřebuješ vybrat jedno a druhé zahodit.
+
+Smysluplnější verze bývá:
+- část peněz spořit
+- část peněz investovat
+
+Například:
+- 30 000 Kč rezerva na spořicím účtu
+- 1 000 Kč měsíčně do ETF
+
+To není nudné. To je dospělý setup bez zbytečného dramatu.
+
+**Tak co je chytřejší?**
+
+Špatná otázka je:
+„Je lepší spořit, nebo investovat?“
+
+Lepší otázka je:
+„Na co ty peníze budou a kdy je budu potřebovat?“
+
+Když potřebuješ klid a dostupnost → spoření.
+Když potřebuješ růst a máš čas → investování.
+
+**Takeaway**
+
+Spoření a investování nejsou soupeři. Jsou to dva různé nástroje:
+- spoření na krátkodobý klid
+- investování na dlouhodobý růst
+
+Beginners často pletou „bezpečné“ s „chytré“. Ale opravdu chytré je použít správný nástroj pro správný cíl.`,
+    readTime: "4 min",
+    tag: "Know How",
+    category: "Základy",
+    level: "Začátečník",
+  },
+  {
     id: "co-je-inflace-pizza",
     emoji: "🍕",
     title: "Co je to inflace — vysvětleno přes pizzu",
