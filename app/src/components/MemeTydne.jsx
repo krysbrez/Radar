@@ -1,107 +1,125 @@
 import { useState } from "react";
 
-const MEMES = [
+const RADAR_INSIGHTS = [
   {
     id: 1,
-    text: "Já při pohledu na graf S&P 500 v lednu 2022",
-    subtext: "vs. já, co nakupoval DCA každý měsíc bez koukání na ceny",
-    topLabel: "😭 Panic seller",
-    bottomLabel: "😎 DCA investor",
-    emoji: "📉",
-    bg: "from-red-50 to-orange-50",
-    border: "border-orange-200",
+    label: "On The Radar",
+    eyebrow: "Akcie / ETF",
+    headline: "Korekce není automaticky problém. Někdy je to jen sleva bez reklamy.",
+    note: "Když kvalitní ETF spadne o pár procent, ještě to neznamená, že se svět rozpadá. Často je to spíš moment, kdy šum zní hlasitěji než realita.",
+    signal: "S&P 500 po korekci",
+    takeaway: "Sleduj, co se změnilo ve firmách. Ne jen co se změnilo v titulcích.",
+    accent: "from-sky-500/15 to-blue-500/5",
+    ring: "border-sky-200",
+    chip: "bg-sky-100 text-sky-700",
   },
   {
     id: 2,
-    text: "Kamarád: 'Krypto je mrtvé'",
-    subtext: "Bitcoin dva týdny poté",
-    topLabel: "💀 FUD",
-    bottomLabel: "🚀 +40%",
-    emoji: "₿",
-    bg: "from-orange-50 to-yellow-50",
-    border: "border-yellow-200",
+    label: "On The Radar",
+    eyebrow: "Reality",
+    headline: "Levnější byt není automaticky deal. Někdy je levný z docela dobrého důvodu.",
+    note: "U nemovitostí bývá nejdražší chyba ta, kterou nevidíš v inzerátu. Lokalita, dispozice a výnos rozhodují víc než hezká kuchyň na fotce.",
+    signal: "2+kk pod trhem",
+    takeaway: "Nejdřív počítej výnos a tlak na nájem. Teprve pak se zamiluj do podlahy.",
+    accent: "from-orange-500/15 to-amber-500/5",
+    ring: "border-orange-200",
+    chip: "bg-orange-100 text-orange-700",
   },
   {
     id: 3,
-    text: "Spořicí účet mi dává 4 % a já jsem spokojený",
-    subtext: "Inflace tiše:",
-    topLabel: "😊 Nominální výnos",
-    bottomLabel: "😤 Reálný výnos: +0.8%",
-    emoji: "🏦",
-    bg: "from-blue-50 to-cyan-50",
-    border: "border-blue-200",
+    label: "On The Radar",
+    eyebrow: "Auta",
+    headline: "Youngtimer není jen auto. Je to směs rarity, stavu a toho, jestli ho všichni zrovna nezačali chtít ve stejný moment.",
+    note: "Když kolem modelu vznikne hype, cenovka roste rychleji než rozum. Radar hledá kusy, kde ještě dává smysl vstup, ne jen nostalgie s drahým volantem.",
+    signal: "BMW E46 M3",
+    takeaway: "Servisní historie bývá cennější než hlasitý výfuk a cool caption.",
+    accent: "from-slate-400/20 to-slate-300/5",
+    ring: "border-slate-300",
+    chip: "bg-slate-200 text-slate-700",
   },
   {
     id: 4,
-    text: "Já při pohledu na portfolio po prvním měsíci investování",
-    subtext: "Já po 10 letech složeného úročení",
-    topLabel: "😕 -2 % tento měsíc",
-    bottomLabel: "🤑 +340 % celkem",
-    emoji: "📈",
-    bg: "from-green-50 to-emerald-50",
-    border: "border-green-200",
+    label: "On The Radar",
+    eyebrow: "Alternativy",
+    headline: "Když zlato letí nahoru, nemusí to být signál k panice. Často je to signál, že trh začíná být nervózní.",
+    note: "Alternativy fungují jiným tempem než akcie. Smysl dávají hlavně tehdy, když víš, proč je sleduješ a co od nich vlastně chceš.",
+    signal: "Zlato nad $2 400",
+    takeaway: "Nekupuj alternativy jen proto, že vypadají dospěle. Kupuj je, když víš, co mají v portfoliu dělat.",
+    accent: "from-amber-500/15 to-yellow-500/5",
+    ring: "border-amber-200",
+    chip: "bg-amber-100 text-amber-700",
   },
 ];
 
 export default function MemeTydne() {
   const [index, setIndex] = useState(0);
-  const meme = MEMES[index];
+  const insight = RADAR_INSIGHTS[index];
 
   return (
-    <div className={`bg-gradient-to-br ${meme.bg} rounded-2xl p-6 border ${meme.border} transition-all duration-300`}>
-      <div className="flex items-center justify-between mb-4">
-        <p className="text-xs font-black text-outline uppercase tracking-widest font-headline">
-          Meme týdne 😂
-        </p>
-        <div className="flex gap-1">
-          {MEMES.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setIndex(i)}
-              className={`rounded-full transition-all ${
-                i === index ? "w-5 h-2 bg-primary" : "w-2 h-2 bg-outline-variant"
-              }`}
-            />
-          ))}
-        </div>
-      </div>
+    <div className={`relative overflow-hidden rounded-[1.75rem] border ${insight.ring} bg-gradient-to-br ${insight.accent} p-6 transition-all duration-300`}>
+      <div className="absolute inset-x-0 top-0 h-1 bg-primary" />
 
-      {/* Meme card */}
-      <div className="bg-white rounded-xl overflow-hidden shadow-sm">
-        {/* Top panel */}
-        <div className="p-4 border-b border-outline-variant/10">
-          <span className="text-xs font-bold text-outline bg-surface-container px-2 py-0.5 rounded">{meme.topLabel}</span>
-          <div className="flex items-center justify-center py-6">
-            <span className="text-6xl">{meme.emoji}</span>
-            <span className="text-4xl ml-2">😭</span>
+      <div className="relative">
+        <div className="flex items-start justify-between gap-4 mb-5">
+          <div>
+            <p className="text-[11px] font-black uppercase tracking-[0.22em] text-outline font-headline">
+              {insight.label}
+            </p>
+            <p className={`mt-2 inline-flex rounded-full px-2.5 py-1 text-[11px] font-black uppercase tracking-[0.18em] font-headline ${insight.chip}`}>
+              {insight.eyebrow}
+            </p>
           </div>
-          <p className="text-sm font-bold text-primary text-center font-headline leading-snug">{meme.text}</p>
-        </div>
-        {/* Bottom panel */}
-        <div className="p-4">
-          <span className="text-xs font-bold text-green-600 bg-green-100 px-2 py-0.5 rounded">{meme.bottomLabel}</span>
-          <div className="flex items-center justify-center py-4">
-            <span className="text-5xl">😎</span>
-            <span className="text-4xl ml-2">💸</span>
+          <div className="flex gap-1">
+            {RADAR_INSIGHTS.map((item, i) => (
+              <button
+                key={item.id}
+                onClick={() => setIndex(i)}
+                className={`rounded-full transition-all ${i === index ? "h-2 w-5 bg-primary" : "h-2 w-2 bg-outline-variant"}`}
+                aria-label={`Zobrazit insight ${i + 1}`}
+              />
+            ))}
           </div>
-          <p className="text-sm text-on-surface-variant text-center italic">{meme.subtext}</p>
         </div>
-      </div>
 
-      <div className="flex items-center justify-between mt-3">
-        <button
-          onClick={() => setIndex((index - 1 + MEMES.length) % MEMES.length)}
-          className="text-xs font-bold text-on-surface-variant hover:text-primary transition-colors"
-        >
-          ← Předchozí
-        </button>
-        <p className="text-xs text-outline">{index + 1} / {MEMES.length}</p>
-        <button
-          onClick={() => setIndex((index + 1) % MEMES.length)}
-          className="text-xs font-bold text-on-surface-variant hover:text-primary transition-colors"
-        >
-          Další →
-        </button>
+        <div className="rounded-[1.5rem] border border-white/70 bg-white/90 p-5 shadow-[0_18px_40px_rgba(12,23,46,0.06)] backdrop-blur-sm">
+          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+            Týdenní insight
+          </p>
+          <h3 className="mt-3 text-xl font-black leading-tight text-primary font-headline">
+            {insight.headline}
+          </h3>
+          <p className="mt-3 text-sm leading-relaxed text-on-surface-variant">
+            {insight.note}
+          </p>
+
+          <div className="mt-5 rounded-2xl border border-outline-variant/10 bg-surface-container-low px-4 py-4">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+              Signál týdne
+            </p>
+            <p className="mt-2 text-base font-black text-primary font-headline">
+              {insight.signal}
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+              {insight.takeaway}
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-4 flex items-center justify-between text-xs">
+          <button
+            onClick={() => setIndex((index - 1 + RADAR_INSIGHTS.length) % RADAR_INSIGHTS.length)}
+            className="font-bold text-on-surface-variant hover:text-primary transition-colors"
+          >
+            ← Předchozí
+          </button>
+          <p className="text-outline">{index + 1} / {RADAR_INSIGHTS.length}</p>
+          <button
+            onClick={() => setIndex((index + 1) % RADAR_INSIGHTS.length)}
+            className="font-bold text-on-surface-variant hover:text-primary transition-colors"
+          >
+            Další →
+          </button>
+        </div>
       </div>
     </div>
   );
