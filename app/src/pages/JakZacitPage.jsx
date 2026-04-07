@@ -113,6 +113,21 @@ const STEPS = [
   },
 ];
 
+const TRADING_EXPLAINER = [
+  {
+    title: "Co je trading",
+    text: "Trading je častější kupování a prodávání s cílem trefit kratší pohyby ceny. Není to kouzlo, spíš rychlejší hra s vyšší šancí, že se unavíš dřív než trh.",
+  },
+  {
+    title: "Trading vs. investování",
+    text: "Investor koupí rozumnou věc a dá jí čas. Trader řeší, co udělá cena dnes, zítra nebo příští týden. Obojí existuje, ale rozhodně to není totéž.",
+  },
+  {
+    title: "Proč to na sítích vypadá tak easy",
+    text: "Protože na sítích vidíš screenshot výhry, ne dvacet špatných obchodů vedle. Trading není easy money a začátečník kvůli němu fakt nemusí hned otevírat čtyři grafy najednou.",
+  },
+];
+
 function StepBlock({ step, isActive, onClick }) {
   return (
     <div
@@ -258,6 +273,33 @@ export default function JakZacitPage() {
             </div>
           ))}
         </div>
+
+        <section className="mb-10 rounded-2xl border border-outline-variant/10 bg-white p-6">
+          <div className="max-w-3xl mb-5">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+              Trading bez iluzí
+            </p>
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+              Trading není povinný start.
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+              Když jsi nový, je úplně v pohodě trading neřešit. Není to zkratka k bohatství, spíš těžší disciplína, která na internetu vypadá mnohem jednodušeji než ve skutečnosti.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {TRADING_EXPLAINER.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-5 py-5">
+                <h3 className="text-base font-black text-primary font-headline">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* After steps — next resources */}
         <div className="gradient-primary rounded-2xl p-8 text-white text-center">
