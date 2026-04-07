@@ -32,6 +32,16 @@ export default function KnowHowListPage() {
 
   const featured = filtered[0];
   const rest = filtered.slice(1);
+  const starterPath = [
+    "co-jsou-penize",
+    "k-cemu-penize-slouzi",
+    "co-je-inflace-pizza",
+    "sporeni-vs-investovani",
+    "co-je-riziko",
+    "co-jsou-etf",
+    "dca-strategie",
+    "jak-zacit-investovat-jednoduse",
+  ].map((id) => KNOWHOW_ARTICLES.find((article) => article.id === id)).filter(Boolean);
 
   return (
     <div className="min-h-screen bg-surface">
@@ -57,6 +67,59 @@ export default function KnowHowListPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 md:px-8 py-8">
+        <div className="mb-8 rounded-[1.75rem] border border-outline-variant/10 bg-white px-6 py-6 md:px-7">
+          <div className="flex items-start justify-between gap-6">
+            <div className="max-w-2xl">
+              <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                Začni tady
+              </p>
+              <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+                Nejlogičtější start, když jdeš od nuly a nechceš v tom mít guláš.
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                Tohle není škola ani sylabus. Jen osm krátkých čtení v pořadí, které tě vezmou od úplných základů peněz přes riziko, ETF a DCA až k prvnímu klidnému investičnímu setupu.
+              </p>
+            </div>
+            <div className="hidden md:block rounded-2xl border border-outline-variant/10 bg-surface-container-low px-4 py-3 text-right">
+              <p className="text-[11px] font-black uppercase tracking-[0.18em] text-outline font-headline">
+                Starter path
+              </p>
+              <p className="mt-2 text-lg font-black text-primary font-headline">
+                8 čtení
+              </p>
+              <p className="mt-1 text-xs text-on-surface-variant">
+                od základů k prvnímu klidnému startu
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-4 gap-4">
+            {starterPath.map((article, index) => (
+              <Link
+                key={article.id}
+                to={`/knowhow/${article.id}`}
+                className="group rounded-2xl border border-outline-variant/10 bg-surface-container-low px-5 py-5 transition-all hover:border-outline-variant/25 hover:bg-white"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-sm font-black text-primary font-headline">
+                    0{index + 1}
+                  </span>
+                  <span className="text-2xl">{article.emoji}</span>
+                </div>
+                <p className="mt-4 text-[11px] font-black uppercase tracking-[0.18em] text-outline font-headline">
+                  {article.category}
+                </p>
+                <h3 className="mt-2 text-base font-black leading-snug text-primary font-headline group-hover:text-primary-container transition-colors">
+                  {article.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant line-clamp-2">
+                  {article.excerpt}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Search + filters */}
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <div className="relative flex-1 max-w-md">
