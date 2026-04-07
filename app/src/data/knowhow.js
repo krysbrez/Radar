@@ -394,6 +394,108 @@ Peníze v peněžence nebo na běžném účtu pomalu umírají. Musíš je dát
     level: "Začátečník",
   },
   {
+    id: "k-cemu-penize-slouzi",
+    emoji: "🧭",
+    title: "K čemu peníze slouží — a proč to není jen číslo na účtu",
+    excerpt: "Peníze nejsou jen papír nebo appka v mobilu. Jsou to nástroj, který ti kupuje čas, klid a možnosti.",
+    body: `Když ti přijde výplata, kapesné nebo peníze z brigády, většinou to vypadá jako číslo v appce. 2 000 Kč. 8 500 Kč. 17 200 Kč. Jenže peníze nejsou zajímavé tím číslem. Zajímavé je, **co ti to číslo dovolí udělat**.
+
+**Peníze jsou hlavně nástroj**
+
+Samy o sobě nejsou cíl. Nejíš bankovku, nenosíš minci jako bundu a číslo na účtu ti samo o sobě neudělá lepší víkend. Peníze jsou prostředník mezi tebou a věcmi, které chceš:
+- jídlo
+- bydlení
+- klid
+- čas
+- volby
+
+Proto je dobré chápat, k čemu vlastně slouží, ještě než začneš řešit inflaci, ETF nebo jestli někdo na TikToku právě neobjevil „nejlepší investici roku“.
+
+**1. Prostředek směny**
+
+Tohle je nejjednodušší role peněz. Peníze ti usnadňují výměnu.
+
+Bez peněz by to vypadalo dost divně:
+- ty máš starý iPhone
+- kámoš má tenisky
+- někdo další má pizzu
+- a všichni řešíte, kdo chce zrovna co
+
+S penězi to neřešíš. Prodáš práci, čas nebo věc za peníze, a ty pak vyměníš za něco úplně jiného. Peníze zkracují chaos. Díky nim nemusíš shánět člověka, který chce přesně to, co máš ty.
+
+**2. Ukládají hodnotu**
+
+Peníze ti dovolují poslat hodnotu z dneška do budoucna.
+
+Dneska odpracuješ směnu v kavárně. Místo toho, abys dostal pět toastů a dva fresh džusy, dostaneš peníze. A ty můžeš použít až za týden, za měsíc nebo za rok.
+
+To je super. Jen má to háček: peníze ukládají hodnotu jen **nějak dobře**, ne dokonale. Právě proto pak řešíme inflaci. Ale než se dostaneš k inflaci, je důležité chápat, že peníze jsou první vrstva „uložené energie“ z tvojí práce a času.
+
+**3. Kupují svobodu**
+
+Tohle je část, která je zajímavější než definice z učebnice.
+
+Peníze ti dávají možnost říct:
+- nemusím vzít úplně každou brigádu
+- nemusím panikařit, když se něco pokazí
+- můžu si zaplatit čas na učení, cestu nebo lepší start
+
+Nejde o flex. Jde o prostor. Čím víc finanční rezervy máš, tím méně tě každý problém tlačí do zdi.
+
+**4. Kupují čas**
+
+Spousta lidí si myslí, že peníze jsou hlavně na věci. Jenže dost často jsou hlavně na čas.
+
+Příklad:
+- zaplatíš si dopravu místo hodinového přestupování
+- koupíš si notebook, na kterém můžeš dělat práci rychleji
+- vytvoříš si rezervu a nemusíš brát každou směnu jen proto, abys přežil měsíc
+
+Peníze nejsou jen spotřeba. Dobře použité peníze ti vrací kus života zpátky.
+
+**5. Dávají možnosti**
+
+Možnost není totéž co luxus.
+
+Možnost znamená, že:
+- můžeš změnit školu nebo práci
+- můžeš se přestěhovat
+- můžeš zkusit něco vlastního
+- můžeš chvíli vydržet, když se něco pokazí
+
+Člověk bez rezervy často nedělá rozhodnutí podle toho, co je chytré. Dělá je podle toho, co ho právě nejmíň bolí. A to je obrovský rozdíl.
+
+**Proč tohle chápat před investováním**
+
+Když nevíš, k čemu peníze slouží, investování pak vypadá jako hra na čísla:
+- kolik to vyrostlo
+- kolik jsem vydělal
+- co je nejlepší výnos
+
+Jenže investování není sbírání bodů. Je to snaha udržet a rozumně zvětšovat tvoje možnosti do budoucna.
+
+Nejdřív tedy dává smysl chápat:
+1. co peníze jsou
+2. k čemu slouží
+3. proč ztrácí hodnotu
+4. a teprve potom co s nimi dělat dál
+
+**Takeaway**
+
+Peníze nejsou jen papír ani číslo na displeji. Jsou to:
+- prostředek směny
+- zásobník hodnoty
+- nástroj na čas
+- nástroj na svobodu
+- nástroj na možnosti
+
+Jakmile tohle pochopíš, inflace i investování začnou dávat mnohem větší smysl.`,
+    readTime: "4 min",
+    tag: "Know How",
+    category: "Základy",
+    level: "Začátečník",
+  },
+  {
     id: "co-je-inflace-pizza",
     emoji: "🍕",
     title: "Co je to inflace — vysvětleno přes pizzu",
