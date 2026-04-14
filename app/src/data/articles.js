@@ -1,5 +1,155 @@
 export const ARTICLES = [
   {
+    id: "investori-jsou-pesimistictejsi-nez-za-poslednich-10-mesicu-b",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Investoři jsou pesimističtější než za posledních 10 měsíců – BofA",
+    excerpt: "BofA zjišťuje, že 36 % investorů očekává oslabení globální ekonomiky. Klesá alokace do akcií a očekává se pokles úrokových sazeb v USA a jejich růst v EU.",
+    body: `Bank of America zveřejnila nejnovější průzkum mezi fondovými manažery, který ukazuje výrazný nárůst pesimismu. Netto 36 % investorů nyní očekává oslabení globální ekonomiky, což je obrat oproti předchozímu měsíci, kdy 7 % investorů očekávalo růst. Tento posun je doprovázen snížením alokace do akcií a celkově odráží rostoucí obavy o budoucí vývoj trhů.
+
+**Co se stalo**
+
+Průzkum BofA ukázal dramatický obrat v sentimentu investorů. Alokace do akcií klesla z net 37% overweight na 13% overweight. Očekávání poklesu úrokových sazeb v USA vzrostlo na 58 % a očekávání růstu v EU na 46 %.
+
+**Kontext**
+
+Průzkum BofA Global Fund Manager Survey je jedním z nejvlivnějších ukazatelů nálady na trzích. Sleduje názory stovek fondových manažerů z celého světa a poskytuje cenné informace o investičních trendech a očekáváních.
+
+**Klíčová čísla**
+
+- **36%**: Podíl investorů očekávajících oslabení globální ekonomiky.
+- **13%**: Netto alokace do akcií (pokles z 37% v únoru).
+- **58%**: Očekávání poklesu úrokových sazeb v USA.
+- **46%**: Očekávání růstu úrokových sazeb v EU.
+- **$80-90**: Očekávaná cena ropy do konce roku 2026.
+
+**Co sledovat dál**
+
+Sledujte další data o globální ekonomice a vývoj v jednáních mezi USA a Íránem. Důležitá bude i reakce trhů na rozhodnutí centrálních bank ohledně úrokových sazeb.
+
+**Praktický závěr**
+
+Vzhledem k rostoucímu pesimismu investorů a nejistotě na trzích je vhodné zvážit snížení expozice rizikovým aktivům a diverzifikaci portfolia.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/investors-surveyed-in-early-april-were-most-bearish-in-10-months-bofa-20260414/)*`,
+    whyMatters: "Změna sentimentu investorů může mít významný dopad na trhy a ekonomiku. Pesimistický výhled může vést k poklesu investic a zpomalení ekonomického růstu.",
+    readTime: "2 min",
+    date: "14. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/investors-surveyed-in-early-april-were-most-bearish-in-10-months-bofa-20260414/",
+  },
+  {
+    id: "dnesni-udalosti-zustava-v-popredi-jednani-usa-a-iranu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Dnešní události: Zůstává v popředí jednání USA a Íránu",
+    excerpt: "Dnes se na trzích očekává klid, s výjimkou finálních dat o inflaci ve Španělsku. Hlavní pozornost je stále upřena na jednání mezi USA a Íránem.",
+    body: `Dnešní den nepřináší na trzích mnoho významných událostí, kromě zveřejnění finálních dat o inflaci ve Španělsku. Nicméně, hlavní pozornost investorů je stále upřena na jednání mezi USA a Íránem, kde se očekává další kolo rozhovorů.
+
+**Co se stalo**
+
+Zveřejnění zpráv o pokračujících jednáních mezi USA a Íránem přineslo na trhy optimismus, i když se jedná o opakování předchozích zpráv.
+
+**Kontext**
+
+Geopolitické napětí v regionu Perského zálivu má významný dopad na ceny energií a globální ekonomiku. Jakékoli jednání o deeskalaci napětí je proto pečlivě sledováno trhy.
+
+**Klíčová čísla**
+
+N/A
+
+**Co sledovat dál**
+
+Sledujte vývoj jednání mezi USA a Íránem a reakci trhů na jakékoli nové zprávy.
+
+**Praktický závěr**
+
+Vzhledem k nejistotě ohledně jednání mezi USA a Íránem je vhodné udržovat opatrný přístup a sledovat vývoj situace.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/what-are-the-main-events-for-today-20260414/)*`,
+    whyMatters: "Výsledek jednání mezi USA a Íránem může mít významný dopad na ceny energií a globální ekonomiku.",
+    readTime: "2 min",
+    date: "14. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/what-are-the-main-events-for-today-20260414/",
+  },
+  {
+    id: "nova-nissan-x-trail-hybridni-pohon-a-novy-design",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Nová Nissan X-Trail: Hybridní pohon a nový design",
+    excerpt: "Nissan představil novou X-Trail s hybridním pohonem a výrazně přepracovaným designem.",
+    body: `Nissan odhalil novou generaci SUV X-Trail, která se vyznačuje hybridním pohonem a výrazně modernizovaným designem. Jedná se o součást širší strategie společnosti zaměřené na klíčové globální trhy.
+
+**Co se stalo**
+
+Nissan představil novou X-Trail s hybridním pohonem a novým designem.
+
+**Kontext**
+
+Nissan se snaží posílit svou pozici na trhu SUV a adaptovat se na rostoucí poptávku po hybridních vozidlech.
+
+**Klíčová čísla**
+
+N/A
+
+**Co sledovat dál**
+
+Sledujte uvedení modelu na trh a reakci zákazníků na nový design a hybridní pohon.
+
+**Praktický závěr**
+
+Pro zákazníky hledající SUV s hybridním pohonem se jedná o zajímavou novinku.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/new-nissan-x-trail-revealed-hybrid-power-and-bold-new-look)*`,
+    whyMatters: "Nové modely Nissan ukazují směr, kterým se automobilový průmysl ubírá.",
+    readTime: "2 min",
+    date: "14. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/new-nissan-x-trail-revealed-hybrid-power-and-bold-new-look",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/128732.jpg?itok=YodTpnoP",
+  },
+  {
+    id: "akciove-trhy-optimismus-diky-jednani-usa-a-iranu",
+    tag: "Investování",
+    tagColor: "bg-blue-500/20 text-blue-300",
+    title: "Akciové trhy: Optimismus díky jednání USA a Íránu",
+    excerpt: "Americké akciové trhy rostou díky naději na dohodu mezi USA a Íránem.",
+    body: `Americké akciové trhy reagují na naději na dohodu mezi USA a Íránem a mírně rostou.
+
+**Co se stalo**
+
+Americké akciové trhy rostou.
+
+**Kontext**
+
+Naděje na dohodu mezi USA a Íránem snižuje geopolitické riziko a podporuje růst akciových trhů.
+
+**Klíčová čísla**
+
+N/A
+
+**Co sledovat dál**
+
+Sledujte vývoj jednání mezi USA a Íránem a reakci trhů na jakékoli nové zprávy.
+
+**Praktický závěr**
+
+Vzhledem k nejistotě ohledně jednání mezi USA a Íránem je vhodné udržovat opatrný přístup a sledovat vývoj situace.
+
+*Zdroj: [Yahoo Finance](https://finance.yahoo.com/markets/stocks/article/stock-market-today-dow-sp-500-nasdaq-futures-edge-higher-as-hopes-for-an-iran-deal-grow-225637511.html)*`,
+    whyMatters: "Výsledek jednání mezi USA a Íránem může mít významný dopad na akciové trhy.",
+    readTime: "2 min",
+    date: "13. 4. 2026",
+    author: "Radar Redakce",
+    category: "investovani",
+    sourceLink: "https://finance.yahoo.com/markets/stocks/article/stock-market-today-dow-sp-500-nasdaq-futures-edge-higher-as-hopes-for-an-iran-deal-grow-225637511.html",
+    image: "https://s.yimg.com/os/creatr-uploaded-images/2026-04/c213d650-3292-11f1-bbfe-b7148f07439d",
+  },
+  {
     id: "bmw-m5-touring-hybridni-spicka-s-vykonem-708-koni",
     tag: "Auta",
     tagColor: "bg-amber-500/20 text-amber-300",
