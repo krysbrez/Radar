@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import Navbar from "./components/Navbar";
-import PriceTicker from "./components/PriceTicker";
 import Footer from "./components/Footer";
 import FloatingFeedback from "./components/FloatingFeedback";
 
@@ -27,6 +26,12 @@ import MilionariPage from "./pages/MilionariPage";
 import IpoPage from "./pages/IpoPage";
 import DanePage from "./pages/DanePage";
 import TymPage from "./pages/TymPage";
+import HlidacPage from "./pages/HlidacPage";
+import MujRadarPage from "./pages/MujRadarPage";
+import ONasPage from "./pages/ONasPage";
+import InzercePage from "./pages/InzercePage";
+import KontaktPage from "./pages/KontaktPage";
+import NewsletterPage from "./pages/NewsletterPage";
 
 // Scroll to top on route change, handle hash anchors
 function ScrollManager() {
@@ -49,13 +54,8 @@ function Layout() {
     <div className="min-h-screen bg-surface">
       <Navbar />
 
-      {/* Fixed ticker strip below navbar */}
-      <div className="fixed top-[57px] w-full z-40">
-        <PriceTicker />
-      </div>
-
-      {/* Content offset: navbar ~57px + ticker 32px = 89px */}
-      <main className="pt-[89px]">
+      {/* Content offset: navbar + calmer breathing room */}
+      <main className="pt-[84px]">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/clanek/:id" element={<ArticlePage />} />
@@ -70,11 +70,11 @@ function Layout() {
           <Route path="/nemovitosti" element={<NemovitostiPage />} />
           <Route path="/auta" element={<AutaPage />} />
           {/* Footer / static pages */}
-          <Route path="/o-nas" element={<StaticPage pageKey="o-nas" />} />
+          <Route path="/o-nas" element={<ONasPage />} />
           <Route path="/tym" element={<TymPage />} />
-          <Route path="/inzerce" element={<StaticPage pageKey="inzerce" />} />
-          <Route path="/newsletter" element={<StaticPage pageKey="newsletter" />} />
-          <Route path="/kontakt" element={<StaticPage pageKey="kontakt" />} />
+          <Route path="/inzerce" element={<InzercePage />} />
+          <Route path="/newsletter" element={<NewsletterPage />} />
+          <Route path="/kontakt" element={<KontaktPage />} />
           <Route path="/podminky" element={<StaticPage pageKey="podminky" />} />
           <Route path="/soukromi" element={<StaticPage pageKey="soukromi" />} />
           <Route path="/cookies" element={<StaticPage pageKey="cookies" />} />
@@ -86,6 +86,8 @@ function Layout() {
           <Route path="/dane" element={<DanePage />} />
           <Route path="/milionari" element={<MilionariPage />} />
           <Route path="/ipo" element={<IpoPage />} />
+          <Route path="/hlidac" element={<HlidacPage />} />
+          <Route path="/muj-radar" element={<MujRadarPage />} />
           {/* Fallback */}
           <Route path="*" element={<PlaceholderPage />} />
         </Routes>

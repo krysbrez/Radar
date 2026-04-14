@@ -176,7 +176,7 @@ const DCA_PRACTICE = [
 function StepBlock({ step, isActive, onClick }) {
   return (
     <div
-      className={`rounded-2xl border transition-all cursor-pointer ${isActive ? `${step.lightColor} ${step.borderColor} border-2` : "bg-white border-outline-variant/10 hover:border-outline-variant/25"}`}
+      className={`rounded-2xl border transition-all cursor-pointer ${isActive ? `${step.lightColor} ${step.borderColor} border-2` : "bg-white border-white/12/10 hover:border-white/12/25"}`}
       onClick={onClick}
     >
       <div className="p-5 flex items-center gap-4">
@@ -185,25 +185,25 @@ function StepBlock({ step, isActive, onClick }) {
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-0.5">
-            <span className={`text-xs font-black uppercase tracking-wider font-headline ${isActive ? step.textColor : "text-outline"}`}>Krok {step.number}</span>
+            <span className={`text-xs font-black uppercase tracking-wider font-headline ${isActive ? step.textColor : "text-white/55"}`}>Krok {step.number}</span>
           </div>
-          <p className="font-black text-primary font-headline text-base leading-tight">{step.title}</p>
-          <p className="text-xs text-on-surface-variant mt-0.5">{step.subtitle}</p>
+          <p className="font-black text-white font-headline text-base leading-tight">{step.title}</p>
+          <p className="text-xs text-white/65 mt-0.5">{step.subtitle}</p>
         </div>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className={`text-outline flex-shrink-0 transition-transform ${isActive ? "rotate-90" : ""}`}>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className={`text-white/55 flex-shrink-0 transition-transform ${isActive ? "rotate-90" : ""}`}>
           <polyline points="9 18 15 12 9 6"/>
         </svg>
       </div>
 
       {isActive && (
-        <div className="px-5 pb-5 space-y-4 border-t border-outline-variant/10 pt-4">
+        <div className="px-5 pb-5 space-y-4 border-t border-white/12/10 pt-4">
           {step.content.map((block, i) => {
-            if (block.type === "text") return <p key={i} className="text-sm text-on-surface leading-relaxed">{block.value}</p>;
+            if (block.type === "text") return <p key={i} className="text-sm text-white/85 leading-relaxed">{block.value}</p>;
 
             if (block.type === "recommendation") return (
               <div key={i} className={`${step.lightColor} border ${step.borderColor} rounded-xl p-4`}>
                 <p className={`text-xs font-black uppercase tracking-wider mb-2 font-headline ${step.textColor}`}>{block.label}</p>
-                <p className="text-sm text-on-surface leading-relaxed">{block.value}</p>
+                <p className="text-sm text-white/85 leading-relaxed">{block.value}</p>
                 {block.link && <a href={block.link} target="_blank" rel="noopener noreferrer" className={`text-xs font-bold mt-2 inline-block ${step.textColor}`}>Přejít na web →</a>}
               </div>
             );
@@ -213,7 +213,7 @@ function StepBlock({ step, isActive, onClick }) {
                 {block.items.map((item, ii) => (
                   <li key={ii} className="flex items-start gap-3">
                     <span className={`w-5 h-5 ${step.color} text-white text-xs font-black rounded-full flex items-center justify-center flex-shrink-0 mt-0.5`}>{ii + 1}</span>
-                    <span className="text-sm text-on-surface leading-relaxed">{item}</span>
+                    <span className="text-sm text-white/85 leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ol>
@@ -229,10 +229,10 @@ function StepBlock({ step, isActive, onClick }) {
             if (block.type === "numbers") return (
               <div key={i} className="grid grid-cols-3 gap-3">
                 {block.items.map((num, ii) => (
-                  <div key={ii} className="bg-white rounded-xl p-3 border border-outline-variant/10">
-                    <p className="text-sm font-black text-primary font-headline">{num.value}</p>
-                    <p className="text-[10px] text-outline mt-0.5">{num.label}</p>
-                    <p className="text-[10px] text-on-surface-variant">{num.note}</p>
+                  <div key={ii} className="bg-white rounded-xl p-3 border border-white/12/10">
+                    <p className="text-sm font-black text-white font-headline">{num.value}</p>
+                    <p className="text-[10px] text-white/55 mt-0.5">{num.label}</p>
+                    <p className="text-[10px] text-white/65">{num.note}</p>
                   </div>
                 ))}
               </div>
@@ -256,31 +256,31 @@ export default function JakZacitPage() {
         name: "Tracker",
         description: "Už nejsi jen náhodný čtenář. Začínáš vědět, co chceš sledovat a proč to pro tebe má smysl.",
         next: "Reader",
-        unlock: "Vlastní watchlist signálů a rychlý návrat k věcem, které chceš mít na očích.",
-        remaining: `${Math.max(0, 3 - completedCount)} dokončené kroky v Jak začít a 1 první weekly brief`,
+        unlock: "Přehled watchlistu a rychlý návrat k signálům a tématům, která chceš mít na očích.",
+        remaining: `${Math.max(0, 3 - completedCount)} dokončené kroky v Jak začít a 1 otevřený týdenní brief`,
       }
     : {
         name: "Observer",
         description: "Rozhlížíš se, skládáš si základ a učíš se rozeznat, co je šum a co už stojí za pozornost.",
         next: "Tracker",
-        unlock: "Saved Signals a klidný přehled toho, co chceš dál hlídat bez hledání v archivu.",
+        unlock: "Uložené signály a klidný přehled toho, co chceš dál sledovat bez lovení v archivu.",
         remaining: `${Math.max(0, 2 - completedCount)} dokončené kroky v Jak začít`,
       };
   const signalDrivers = [
     {
       title: "Praktické kroky",
       note: `${completedCount}/${STEPS.length} hotovo v Jak začít`,
-      tone: completedCount > 0 ? "text-emerald-700 bg-emerald-50 border-emerald-200" : "text-outline bg-white border-outline-variant/10",
+      tone: completedCount > 0 ? "text-emerald-700 bg-emerald-50 border-emerald-200" : "text-white/55 bg-white border-white/12/10",
     },
     {
       title: "Know How základy",
-      note: "Krátké články, které ti skládají kontext dřív než začneš něco klikat",
-      tone: "text-primary bg-white border-outline-variant/10",
+      note: "Krátké články, které ti poskládají kontext dřív, než začneš někam klikat",
+      tone: "text-white bg-white border-white/12/10",
     },
     {
-      title: "Weekly brief",
+      title: "Týdenní brief",
       note: "První otevřený pondělní přehled jako signál, že se k produktu vracíš smysluplně",
-      tone: "text-primary bg-white border-outline-variant/10",
+      tone: "text-white bg-white border-white/12/10",
     },
   ];
 
@@ -291,22 +291,22 @@ export default function JakZacitPage() {
   };
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-white/4">
       {/* Hero */}
       <div className="gradient-primary text-white">
         <div className="max-w-4xl mx-auto px-6 md:px-8 pt-10 pb-12">
-          <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
+          <nav className="flex items-center gap-2 text-xs text-white-fixed-dim/60 mb-6">
             <Link to="/" className="hover:text-white transition-colors">Radar</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">{t("tools.start_title")}</span>
+            <span className="text-white-fixed-dim">{t("tools.start_title")}</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-4">
-                <span className="text-xs font-black text-primary-fixed-dim uppercase tracking-widest font-headline">Pro naprosté začátečníky</span>
+                <span className="text-xs font-black text-white-fixed-dim uppercase tracking-widest font-headline">Pro naprosté začátečníky</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4">{t("tools.start_title")}</h1>
-              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl">{t("tools.start_subtitle")}</p>
+              <p className="text-white-fixed-dim text-lg leading-relaxed max-w-xl">{t("tools.start_subtitle")}</p>
             </div>
             <div className="hidden md:block flex-shrink-0 bg-white/10 rounded-3xl p-4">
               <Mascot size={120} mood="happy" variant="signal" trackMouse={false} />
@@ -319,10 +319,10 @@ export default function JakZacitPage() {
         {/* Progress bar */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-bold text-outline font-headline">{completedCount} / {STEPS.length} kroků dokončeno</p>
+            <p className="text-xs font-bold text-white/55 font-headline">{completedCount} / {STEPS.length} kroků dokončeno</p>
             {completedCount === STEPS.length && <span className="text-xs font-black text-green-600 bg-green-100 px-2.5 py-1 rounded-full">🎉 Jsi investor!</span>}
           </div>
-          <div className="h-2 bg-surface-container rounded-full overflow-hidden">
+          <div className="h-2 bg-white/5 rounded-full overflow-hidden">
             <div
               className="h-full bg-green-500 rounded-full transition-all duration-500"
               style={{ width: `${(completedCount / STEPS.length) * 100}%` }}
@@ -342,7 +342,7 @@ export default function JakZacitPage() {
               <button
                 onClick={() => toggleComplete(step.number)}
                 className={`absolute top-4 right-12 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all ${
-                  completed.includes(step.number) ? "bg-green-500 border-green-500" : "border-outline-variant/30 bg-white hover:border-green-300"
+                  completed.includes(step.number) ? "bg-green-500 border-green-500" : "border-white/12/30 bg-white hover:border-green-300"
                 }`}
               >
                 {completed.includes(step.number) && (
@@ -353,26 +353,26 @@ export default function JakZacitPage() {
           ))}
         </div>
 
-        <section className="mb-10 rounded-2xl border border-outline-variant/10 bg-white p-6">
+        <section className="mb-10 rounded-2xl border border-white/12/10 bg-white p-6">
           <div className="max-w-3xl mb-5">
-            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
               Trading bez iluzí
             </p>
-            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-white font-headline">
               Trading není povinný start.
             </h2>
-            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+            <p className="mt-2 text-sm leading-relaxed text-white/65">
               Když jsi nový, je úplně v pohodě trading neřešit. Není to zkratka k bohatství, spíš těžší disciplína, která na internetu vypadá mnohem jednodušeji než ve skutečnosti.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {TRADING_EXPLAINER.map((item) => (
-              <div key={item.title} className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-5 py-5">
-                <h3 className="text-base font-black text-primary font-headline">
+              <div key={item.title} className="rounded-2xl border border-white/12/10 bg-white/5 px-5 py-5">
+                <h3 className="text-base font-black text-white font-headline">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                <p className="mt-2 text-sm leading-relaxed text-white/65">
                   {item.text}
                 </p>
               </div>
@@ -385,10 +385,10 @@ export default function JakZacitPage() {
             <p className="text-[11px] font-black uppercase tracking-[0.2em] text-purple-700 font-headline">
               ETF bez pozlátka
             </p>
-            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-white font-headline">
               ETF: nuda v dobrém slova smyslu.
             </h2>
-            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+            <p className="mt-2 text-sm leading-relaxed text-white/65">
               Nemusíš začínat něčím flashy. Pro spoustu lidí je ETF chytřejší první krok než hon na jednotlivé akcie nebo snaha být trader dřív, než vůbec víš, co sleduješ.
             </p>
           </div>
@@ -396,10 +396,10 @@ export default function JakZacitPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {ETF_EXPLAINER.map((item) => (
               <div key={item.title} className="rounded-2xl border border-purple-200 bg-white/90 px-5 py-5">
-                <h3 className="text-base font-black text-primary font-headline">
+                <h3 className="text-base font-black text-white font-headline">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                <p className="mt-2 text-sm leading-relaxed text-white/65">
                   {item.text}
                 </p>
               </div>
@@ -412,10 +412,10 @@ export default function JakZacitPage() {
             <p className="text-[11px] font-black uppercase tracking-[0.2em] text-amber-700 font-headline">
               CFD bez zbytečného chaosu
             </p>
-            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-white font-headline">
               CFD není totéž co normální investování.
             </h2>
-            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+            <p className="mt-2 text-sm leading-relaxed text-white/65">
               Spousta lidí si plete nákup aktiva s tím, že jen spekuluješ na jeho pohyb. U CFD je právě tenhle rozdíl důležitý. Vypadá to jednoduše, ale je to podstatně ostřejší hra.
             </p>
           </div>
@@ -423,10 +423,10 @@ export default function JakZacitPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {CFD_EXPLAINER.map((item) => (
               <div key={item.title} className="rounded-2xl border border-amber-200 bg-white/90 px-5 py-5">
-                <h3 className="text-base font-black text-primary font-headline">
+                <h3 className="text-base font-black text-white font-headline">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                <p className="mt-2 text-sm leading-relaxed text-white/65">
                   {item.text}
                 </p>
               </div>
@@ -439,10 +439,10 @@ export default function JakZacitPage() {
             <p className="text-[11px] font-black uppercase tracking-[0.2em] text-green-700 font-headline">
               DCA v praxi
             </p>
-            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-white font-headline">
               DCA bez hero momentu.
             </h2>
-            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+            <p className="mt-2 text-sm leading-relaxed text-white/65">
               DCA už na stránce máš vysvětlené. Tohle je spíš připomínka, jak vypadá klidný start v reálu: malé částky, žádné čekání na perfektní chvíli a minimum zbytečného dramatu.
             </p>
           </div>
@@ -450,10 +450,10 @@ export default function JakZacitPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {DCA_PRACTICE.map((item) => (
               <div key={item.title} className="rounded-2xl border border-green-200 bg-white/90 px-5 py-5">
-                <h3 className="text-base font-black text-primary font-headline">
+                <h3 className="text-base font-black text-white font-headline">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                <p className="mt-2 text-sm leading-relaxed text-white/65">
                   {item.text}
                 </p>
               </div>
@@ -462,49 +462,49 @@ export default function JakZacitPage() {
         </section>
 
         <section className="mb-10 hidden md:block">
-          <div className="overflow-hidden rounded-[1.75rem] border border-outline-variant/10 bg-white shadow-[0_18px_60px_rgba(12,23,46,0.06)]">
+          <div className="overflow-hidden rounded-[1.75rem] border border-white/12/10 bg-white shadow-[0_18px_60px_rgba(12,23,46,0.06)]">
             <div className="grid grid-cols-[minmax(0,1.1fr),22rem]">
               <div className="px-7 py-7">
-                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
-                  Signal Level MVP
+                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
+                  Signal Level
                 </p>
-                <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+                <h2 className="mt-2 text-2xl font-black tracking-tight text-white font-headline">
                   Progress, který působí jako produkt. Ne jako hra.
                 </h2>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-on-surface-variant">
-                  Malý desktop-only koncept, jak může Radar ukazovat postup bez gamifikovaného cirkusu.
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/65">
+                  Malý koncept pro desktop, jak může Radar ukazovat postup bez zbytečné gamifikace.
                   Ne sbírání bodů za existenci, ale klidný přehled toho, v jaké fázi se uživatel nachází,
-                  co mu dává progres a co dává smysl odemknout jako další vrstvu produktu.
+                  co se počítá jako smysluplný progres a co dává smysl otevřít jako další vrstvu produktu.
                 </p>
 
-                <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-outline-variant/10 bg-surface-container-low">
+                <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-white/12/10 bg-white/5">
                   <div className="grid grid-cols-[minmax(0,1fr),18rem]">
                     <div className="px-5 py-5">
                       <div className="flex items-start justify-between gap-6">
                         <div>
-                          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
-                            Aktuální stage
+                          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
+                            Aktuální fáze
                           </p>
                           <div className="mt-3 flex items-center gap-3">
-                            <p className="text-2xl font-black text-primary font-headline">
+                            <p className="text-2xl font-black text-white font-headline">
                               {currentStage.name}
                             </p>
-                            <span className="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.18em] text-outline font-headline">
-                              {signalProgress}% to {currentStage.next}
+                            <span className="rounded-full bg-white px-3 py-1 text-[11px] font-black uppercase tracking-[0.18em] text-white/55 font-headline">
+                              {signalProgress}% do {currentStage.next}
                             </span>
                           </div>
-                          <p className="mt-3 max-w-xl text-sm leading-relaxed text-on-surface-variant">
+                          <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/65">
                             {currentStage.description}
                           </p>
                         </div>
-                        <div className="rounded-2xl border border-outline-variant/10 bg-white px-4 py-3">
-                          <p className="text-[11px] font-black uppercase tracking-[0.18em] text-outline font-headline">
-                            Další unlock
+                        <div className="rounded-2xl border border-white/12/10 bg-white px-4 py-3">
+                          <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/55 font-headline">
+                            Další vrstva
                           </p>
-                          <p className="mt-2 text-base font-black text-primary font-headline">
+                          <p className="mt-2 text-base font-black text-white font-headline">
                             {currentStage.next}
                           </p>
-                          <p className="mt-1 max-w-[14rem] text-xs leading-relaxed text-on-surface-variant">
+                          <p className="mt-1 max-w-[14rem] text-xs leading-relaxed text-white/65">
                             {currentStage.unlock}
                           </p>
                         </div>
@@ -512,10 +512,10 @@ export default function JakZacitPage() {
 
                       <div className="mt-6">
                         <div className="mb-2 flex items-center justify-between text-xs">
-                          <span className="font-black uppercase tracking-[0.18em] text-outline font-headline">
-                            Signal progress
+                          <span className="font-black uppercase tracking-[0.18em] text-white/55 font-headline">
+                            Postup v Signal Level
                           </span>
-                          <span className="font-bold text-primary">{signalProgress}%</span>
+                          <span className="font-bold text-white">{signalProgress}%</span>
                         </div>
                         <div className="h-2 rounded-full bg-white overflow-hidden">
                           <div
@@ -523,8 +523,8 @@ export default function JakZacitPage() {
                             style={{ width: `${signalProgress}%` }}
                           />
                         </div>
-                        <p className="mt-3 text-sm text-on-surface-variant">
-                          Chybí už jen: <span className="font-bold text-primary">{currentStage.remaining}</span>
+                        <p className="mt-3 text-sm text-white/65">
+                          Chybí už jen: <span className="font-bold text-white">{currentStage.remaining}</span>
                         </p>
                       </div>
                     </div>
@@ -532,8 +532,8 @@ export default function JakZacitPage() {
                 </div>
               </div>
 
-              <div className="border-l border-outline-variant/10 bg-surface px-6 py-7">
-                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+              <div className="border-l border-white/12/10 bg-white/4 px-6 py-7">
+                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
                   Co dává progres
                 </p>
                 <div className="mt-5 space-y-3">
@@ -549,11 +549,11 @@ export default function JakZacitPage() {
                   ))}
                 </div>
 
-                <div className="mt-5 rounded-2xl border border-outline-variant/10 bg-white px-4 py-4">
-                  <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+                <div className="mt-5 rounded-2xl border border-white/12/10 bg-white px-4 py-4">
+                  <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
                     Princip
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                  <p className="mt-2 text-sm leading-relaxed text-white/65">
                     Progress se váže na pochopení a návrat k důležitým věcem. Ne na náhodné proklikávání, refreshování cen nebo sbírání bodů za hluk.
                   </p>
                 </div>
@@ -566,9 +566,9 @@ export default function JakZacitPage() {
         <div className="gradient-primary rounded-2xl p-8 text-white text-center">
           <Mascot size={72} mood="happy" variant="signal" trackMouse={false} />
           <p className="text-2xl font-black font-headline mt-4 mb-2">Hotovo! Co dál?</p>
-          <p className="text-primary-fixed-dim mb-6 max-w-md mx-auto">Teď, když máš základy, se můžeš ponořit hlouběji. Radar tě provede každý týden.</p>
+          <p className="text-white-fixed-dim mb-6 max-w-md mx-auto">Teď, když máš základy, se můžeš ponořit hlouběji. Radar tě provede každý týden.</p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link to="/knowhow" className="bg-white text-primary font-black text-sm font-headline px-6 py-2.5 rounded-full hover:bg-primary-fixed transition-colors">
+            <Link to="/knowhow" className="bg-white text-white font-black text-sm font-headline px-6 py-2.5 rounded-full hover:bg-white/8 transition-colors">
               Know How sekce →
             </Link>
             <Link to="/srovnavac-brokeru" className="bg-white/10 text-white font-bold text-sm font-headline px-6 py-2.5 rounded-full hover:bg-white/20 transition-colors">

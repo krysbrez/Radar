@@ -16,10 +16,10 @@ function TickerItem({ symbol, item }) {
 
   return (
     <span className="inline-flex items-center gap-2 px-6 whitespace-nowrap">
-      <span className="text-primary-fixed-dim text-xs font-bold tracking-wider uppercase opacity-60">
+      <span className="text-white-fixed-dim text-xs font-bold tracking-wider uppercase opacity-60">
         {meta.icon}
       </span>
-      <span className="text-primary-fixed-dim font-semibold text-sm font-headline">
+      <span className="text-white-fixed-dim font-semibold text-sm font-headline">
         {meta.label}
       </span>
       <span className="text-white font-bold text-sm">
@@ -38,7 +38,7 @@ function TickerItem({ symbol, item }) {
         {isUp ? "+" : ""}
         {item.change}%
       </span>
-      <span className="text-primary-container opacity-30 ml-2">|</span>
+      <span className="text-white-container opacity-30 ml-2">|</span>
     </span>
   );
 }
@@ -55,7 +55,7 @@ export default function PriceTicker() {
   if (loading && !data) {
     return (
       <div className="gradient-primary h-8 flex items-center justify-center">
-        <span className="text-primary-fixed-dim text-xs tracking-widest animate-pulse">
+        <span className="text-white-fixed-dim text-xs tracking-widest animate-pulse">
           {t("live_prices.loading")}
         </span>
       </div>

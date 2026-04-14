@@ -31,7 +31,7 @@ export default function ZacinamOnboarding() {
             <span className="text-3xl">🚀</span>
             <div>
               <h2 className="text-2xl font-black font-headline tracking-tight">{t("onboarding.title")}</h2>
-              <p className="text-primary-fixed-dim text-sm">{t("onboarding.subtitle")}</p>
+              <p className="text-white-fixed-dim text-sm">{t("onboarding.subtitle")}</p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ export default function ZacinamOnboarding() {
                     </button>
                   </div>
                   <h3 className="font-black text-white font-headline mb-1.5">{t("onboarding." + s.titleKey)}</h3>
-                  <p className="text-primary-fixed-dim text-sm leading-relaxed mb-4">{t("onboarding." + s.descKey)}</p>
+                  <p className="text-white-fixed-dim text-sm leading-relaxed mb-4">{t("onboarding." + s.descKey)}</p>
                   <Link
                     to={s.to}
                     className="inline-flex items-center gap-1 text-sm font-bold text-white underline underline-offset-4 decoration-white/40 hover:decoration-white transition-all"
@@ -76,7 +76,7 @@ export default function ZacinamOnboarding() {
           {allDone && (
             <div className="mt-5 p-4 bg-white/15 rounded-xl text-center animate-fade-in">
               <p className="font-black text-white font-headline">🎉 {t("onboarding.done_title")}</p>
-              <p className="text-primary-fixed-dim text-sm mt-1">
+              <p className="text-white-fixed-dim text-sm mt-1">
                 {t("onboarding.done_desc")}
               </p>
             </div>

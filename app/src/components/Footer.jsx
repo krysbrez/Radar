@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import radarWordmarkLight from "../assets/branding/radar-wordmark-light.png";
+import radarRmarkLight from "../assets/branding/radar-rmark-light.png";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -26,6 +28,7 @@ export default function Footer() {
     ],
     [t("footer.radar_section")]: [
       { label: t("footer.about"), to: "/o-nas" },
+      { label: t("nav.tools_hlidac"), to: "/hlidac" },
       { label: t("footer.team"), to: "/tym" },
       { label: t("footer.advertise"), to: "/inzerce" },
       { label: t("footer.newsletter_link"), to: "/#newsletter" },
@@ -46,26 +49,30 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-3">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
-                <span className="text-white font-headline font-black text-sm">R</span>
+              <div className="w-8 h-8 bg-white/10 rounded-lg overflow-hidden flex items-center justify-center">
+                <img src={radarRmarkLight} alt="" className="w-full h-full object-contain" />
               </div>
-              <span className="text-2xl font-black tracking-tighter font-headline uppercase">RADAR</span>
+              <img
+                src={radarWordmarkLight}
+                alt="RADAR"
+                className="h-5 w-auto"
+              />
             </div>
-            <p className="text-primary-fixed-dim text-sm leading-relaxed mb-5 max-w-xs">
+            <p className="text-white-fixed-dim text-sm leading-relaxed mb-5 max-w-xs">
               {t("footer.tagline")}
             </p>
             <div className="flex items-center gap-2 mb-5">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"/>
-              <span className="text-xs text-primary-fixed-dim font-semibold">47 238 {t("footer.active_readers")}</span>
+              <span className="text-xs text-white-fixed-dim font-semibold">47 238 {t("footer.active_readers")}</span>
             </div>
 
             {/* Contact */}
             <div className="space-y-2 mb-5">
-              <a href="mailto:redakce@radar.cz" className="flex items-center gap-2 text-xs text-primary-fixed-dim hover:text-white transition-colors">
+              <a href="mailto:redakce@radar.cz" className="flex items-center gap-2 text-xs text-white-fixed-dim hover:text-white transition-colors">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 redakce@radar.cz
               </a>
-              <a href="tel:+420222000000" className="flex items-center gap-2 text-xs text-primary-fixed-dim hover:text-white transition-colors">
+              <a href="tel:+420222000000" className="flex items-center gap-2 text-xs text-white-fixed-dim hover:text-white transition-colors">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.08 6.08l1.95-1.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 +420 222 000 000
               </a>
@@ -79,7 +86,7 @@ export default function Footer() {
                 { label: "LinkedIn", icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> },
               ].map((s) => (
                 <a key={s.label} href="#" aria-label={s.label}
-                  className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center text-primary-fixed-dim hover:text-white transition-all">
+                  className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center text-white-fixed-dim hover:text-white transition-all">
                   {s.icon}
                 </a>
               ))}
@@ -89,11 +96,11 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(LINKS).map(([section, links]) => (
             <div key={section} className="md:col-span-2">
-              <p className="text-xs font-black text-primary-fixed-dim/50 uppercase tracking-widest mb-4 font-headline">{section}</p>
+              <p className="text-xs font-black text-white-fixed-dim/50 uppercase tracking-widest mb-4 font-headline">{section}</p>
               <ul className="space-y-2">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <Link to={link.to} className="text-sm text-primary-fixed-dim hover:text-white transition-colors">
+                    <Link to={link.to} className="text-sm text-white-fixed-dim hover:text-white transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -104,9 +111,9 @@ export default function Footer() {
 
           {/* Newsletter CTA */}
           <div className="md:col-span-1">
-            <p className="text-xs font-black text-primary-fixed-dim/50 uppercase tracking-widest mb-4 font-headline">{t("footer.subscribe_section")}</p>
-            <p className="text-sm text-primary-fixed-dim mb-4 leading-relaxed">{t("footer.subscribe_desc")}</p>
-            <Link to="/#newsletter" className="inline-block bg-white text-primary font-black text-sm font-headline px-5 py-2.5 rounded-xl hover:bg-primary-fixed transition-colors whitespace-nowrap">
+            <p className="text-xs font-black text-white-fixed-dim/50 uppercase tracking-widest mb-4 font-headline">{t("footer.subscribe_section")}</p>
+            <p className="text-sm text-white-fixed-dim mb-4 leading-relaxed">{t("footer.subscribe_desc")}</p>
+            <Link to="/#newsletter" className="inline-block bg-white text-white font-black text-sm font-headline px-5 py-2.5 rounded-xl hover:bg-white/8 transition-colors whitespace-nowrap">
               {t("footer.subscribe_btn")}
             </Link>
           </div>
@@ -114,10 +121,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-primary-fixed-dim/50 text-center md:text-left">
+          <p className="text-xs text-white-fixed-dim/50 text-center md:text-left">
             {t("footer.copyright")}
           </p>
-          <p className="text-xs text-primary-fixed-dim/40 text-center max-w-md">
+          <p className="text-xs text-white-fixed-dim/40 text-center max-w-md">
             {t("footer.disclaimer")}
           </p>
         </div>

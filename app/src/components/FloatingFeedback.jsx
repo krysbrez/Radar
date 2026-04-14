@@ -40,10 +40,9 @@ export default function FloatingFeedback() {
       <button
         onClick={() => setOpen(true)}
         aria-label="Zpětná vazba"
-        className="fixed bottom-6 right-6 z-50 w-13 h-13 gradient-primary text-white rounded-full shadow-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center"
-        style={{ width: 52, height: 52 }}
+        className="fixed bottom-3 right-3 md:bottom-6 md:right-6 z-50 h-[46px] w-[46px] md:h-[52px] md:w-[52px] gradient-primary text-white rounded-full shadow-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center"
       >
-        <span className="text-xl">💬</span>
+        <span className="text-lg md:text-xl">💬</span>
       </button>
 
       {/* Backdrop */}
@@ -52,12 +51,12 @@ export default function FloatingFeedback() {
           className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-end sm:items-center justify-center p-4"
           onClick={(e) => { if (e.target === e.currentTarget) handleClose(); }}
         >
-          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-fade-in">
+          <div className="bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-fade-in mb-2 sm:mb-0">
             {/* Header */}
             <div className="gradient-primary text-white px-6 py-5 flex items-center justify-between">
               <div>
                 <h2 className="text-lg font-black font-headline">{t("feedback.title")}</h2>
-                <p className="text-primary-fixed-dim text-sm">{t("feedback.subtitle")}</p>
+                <p className="text-white-fixed-dim text-sm">{t("feedback.subtitle")}</p>
               </div>
               <button
                 onClick={handleClose}
@@ -73,8 +72,8 @@ export default function FloatingFeedback() {
             {submitted ? (
               <div className="p-8 text-center">
                 <p className="text-5xl mb-4">🎉</p>
-                <h3 className="text-xl font-black text-primary font-headline mb-2">{t("feedback.success_title")}</h3>
-                <p className="text-on-surface-variant">{t("feedback.success_desc")}</p>
+                <h3 className="text-xl font-black text-white font-headline mb-2">{t("feedback.success_title")}</h3>
+                <p className="text-white/65">{t("feedback.success_desc")}</p>
                 <button
                   onClick={handleClose}
                   className="mt-6 gradient-primary text-white px-6 py-2.5 rounded-full font-bold font-headline text-sm"
@@ -86,33 +85,33 @@ export default function FloatingFeedback() {
               <form onSubmit={handleSubmit} className="p-6 space-y-4">
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="text-xs font-bold text-outline uppercase tracking-wider mb-1.5 block font-headline">
-                      {t("feedback.name_label")} <span className="text-outline/50 normal-case font-normal">({t("feedback.optional")})</span>
+                    <label className="text-xs font-bold text-white/55 uppercase tracking-wider mb-1.5 block font-headline">
+                      {t("feedback.name_label")} <span className="text-white/55/50 normal-case font-normal">({t("feedback.optional")})</span>
                     </label>
                     <input
                       type="text"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Petr"
-                      className="w-full bg-surface-container border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary placeholder-outline outline-none transition-colors"
+                      className="w-full bg-white/5 border border-white/12/20 focus:border-[#ffd700]/40/40 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/35 outline-none transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="text-xs font-bold text-outline uppercase tracking-wider mb-1.5 block font-headline">
-                      {t("feedback.email_label")} <span className="text-outline/50 normal-case font-normal">({t("feedback.optional")})</span>
+                    <label className="text-xs font-bold text-white/55 uppercase tracking-wider mb-1.5 block font-headline">
+                      {t("feedback.email_label")} <span className="text-white/55/50 normal-case font-normal">({t("feedback.optional")})</span>
                     </label>
                     <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="petr@email.cz"
-                      className="w-full bg-surface-container border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary placeholder-outline outline-none transition-colors"
+                      className="w-full bg-white/5 border border-white/12/20 focus:border-[#ffd700]/40/40 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/35 outline-none transition-colors"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-xs font-bold text-outline uppercase tracking-wider mb-1.5 block font-headline">
+                  <label className="text-xs font-bold text-white/55 uppercase tracking-wider mb-1.5 block font-headline">
                     {t("feedback.message_label")} <span className="text-red-400">*</span>
                   </label>
                   <textarea
@@ -120,7 +119,7 @@ export default function FloatingFeedback() {
                     onChange={(e) => { setMessage(e.target.value); if (error) setError(""); }}
                     placeholder={t("feedback.message_placeholder")}
                     rows={4}
-                    className="w-full bg-surface-container border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary placeholder-outline outline-none transition-colors resize-none"
+                    className="w-full bg-white/5 border border-white/12/20 focus:border-[#ffd700]/40/40 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/35 outline-none transition-colors resize-none"
                   />
                   {error && <p className="text-red-500 text-xs mt-1">{error}</p>}
                 </div>
@@ -131,7 +130,7 @@ export default function FloatingFeedback() {
                 >
                   {t("feedback.submit")}
                 </button>
-                <p className="text-xs text-outline text-center">{t("feedback.privacy")}</p>
+                <p className="text-xs text-white/55 text-center">{t("feedback.privacy")}</p>
               </form>
             )}
           </div>

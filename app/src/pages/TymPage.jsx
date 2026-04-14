@@ -64,24 +64,24 @@ export default function TymPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-white/4">
       {/* Hero */}
       <div className="gradient-primary text-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8 pt-10 pb-12">
-          <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
+          <nav className="flex items-center gap-2 text-xs text-white-fixed-dim/60 mb-6">
             <Link to="/" className="hover:text-white transition-colors">{t("common.breadcrumb_home")}</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">{t("tym.breadcrumb")}</span>
+            <span className="text-white-fixed-dim">{t("tym.breadcrumb")}</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-4">
-                <span className="text-xs font-black text-primary-fixed-dim uppercase tracking-widest font-headline">{t("tym.hero_badge")}</span>
+                <span className="text-xs font-black text-white-fixed-dim uppercase tracking-widest font-headline">{t("tym.hero_badge")}</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4">
                 {t("tym.hero_title")}<br /><span className="text-tertiary-fixed">{t("tym.hero_title_accent")}</span>
               </h1>
-              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl">
+              <p className="text-white-fixed-dim text-lg leading-relaxed max-w-xl">
                 {t("tym.hero_subtitle")}
               </p>
             </div>
@@ -96,33 +96,29 @@ export default function TymPage() {
 
         {/* SEKCE 1 — CEO */}
         <section>
-          <div className="bg-white rounded-3xl border border-outline-variant/10 overflow-hidden shadow-sm">
+          <div className="bg-white rounded-3xl border border-white/12/10 overflow-hidden shadow-sm">
             <div className="flex flex-col md:flex-row">
               {/* Foto strana */}
               <div className="md:w-72 flex-shrink-0 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center p-10">
                 <div className="text-center">
-                  <div className="w-40 h-40 rounded-3xl overflow-hidden mx-auto mb-5 border-4 border-white/20 shadow-lg">
-                    <img
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&q=80"
-                      alt="Kryštof"
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="mx-auto mb-5 flex h-40 w-40 items-center justify-center rounded-3xl border-4 border-white/20 bg-white/10 shadow-lg backdrop-blur-sm">
+                    <span className="font-headline text-5xl font-black tracking-tight text-white">K.B.</span>
                   </div>
-                  <p className="text-white font-black font-headline text-2xl">Kryštof</p>
+                  <p className="text-white font-black font-headline text-2xl">K.B.</p>
                   <div className="inline-flex items-center gap-1.5 bg-white/15 rounded-full px-3 py-1 mt-2">
-                    <span className="text-xs font-black text-white/90 uppercase tracking-wider font-headline">Zakladatel & CEO</span>
+                    <span className="text-xs font-black text-white/90 uppercase tracking-wider font-headline">Founder & CEO</span>
                   </div>
                 </div>
               </div>
 
               {/* Bio strana */}
               <div className="flex-1 p-8 md:p-10 flex flex-col justify-center">
-                <p className="text-on-surface leading-relaxed text-lg mb-6">
+                <p className="text-white/85 leading-relaxed text-lg mb-6">
                   "Jsem student, sportovec a zakladatel Radaru. Nevěřím, že finance jsou jen pro lidi v oblecích. Radar jsem založil proto, aby každý mladý člověk měl přístup k informacím, které dřív dostávali jen ti 'správní' lidé. Náš tým? Trochu neobvyklý. Ale funguje."
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["🎓 Student", "🏃 Sportovec", "📡 Founder Radaru", "💡 Finanční vzdělání pro každého"].map(tag => (
-                    <span key={tag} className="text-xs bg-surface-container px-3 py-1.5 rounded-full text-outline font-bold">{tag}</span>
+                    <span key={tag} className="text-xs bg-white/5 px-3 py-1.5 rounded-full text-white/55 font-bold">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -133,10 +129,10 @@ export default function TymPage() {
         {/* SEKCE 2 — Tým */}
         <section>
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-black font-headline text-primary mb-2">
+            <h2 className="text-3xl md:text-4xl font-black font-headline text-white mb-2">
               {t("tym.team_section_title")}
             </h2>
-            <p className="text-on-surface-variant text-lg">
+            <p className="text-white/65 text-lg">
               {t("tym.team_section_subtitle")}
             </p>
           </div>
@@ -151,12 +147,12 @@ export default function TymPage() {
                   </div>
                   <div>
                     <p className={`font-black font-headline text-lg ${agent.text}`}>{agent.name}</p>
-                    <p className="text-xs text-outline font-bold">{agent.role}</p>
+                    <p className="text-xs text-white/55 font-bold">{agent.role}</p>
                   </div>
                 </div>
 
                 {/* Bio */}
-                <p className="text-sm text-on-surface leading-relaxed flex-1 mb-5">{agent.bio}</p>
+                <p className="text-sm text-white/85 leading-relaxed flex-1 mb-5">{agent.bio}</p>
 
                 {/* Stats */}
                 <div className={`${agent.light} rounded-xl p-3 space-y-2`}>
@@ -178,17 +174,17 @@ export default function TymPage() {
                 </div>
                 <div>
                   <p className="font-black font-headline text-lg">Radar</p>
-                  <p className="text-xs text-primary-fixed-dim font-bold">Mascot & Brand Voice</p>
+                  <p className="text-xs text-white-fixed-dim font-bold">Mascot & Brand Voice</p>
                 </div>
               </div>
-              <p className="text-sm text-primary-fixed-dim leading-relaxed flex-1 mb-5">
+              <p className="text-sm text-white-fixed-dim leading-relaxed flex-1 mb-5">
                 Tvář Radaru. Hlídá trhy. Nikdy nepanikuje. Mírně arogantní — ale má vždy pravdu.
               </p>
               <div className="space-y-2">
                 {["Hlídač nálady trhů", "Průvodce začátečníků", "Never sells at bottom"].map(s => (
                   <div key={s} className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-tertiary-fixed rounded-full flex-shrink-0"></span>
-                    <span className="text-xs font-black text-primary-fixed-dim">{s}</span>
+                    <span className="text-xs font-black text-white-fixed-dim">{s}</span>
                   </div>
                 ))}
               </div>
@@ -219,10 +215,10 @@ export default function TymPage() {
           <div className="gradient-primary rounded-2xl p-8 text-white text-center">
             <Mascot size={72} mood="happy" variant="signal" trackMouse={false} />
             <p className="text-2xl font-black font-headline mt-4 mb-2">{t("tym.join_title")}</p>
-            <p className="text-primary-fixed-dim mb-6 max-w-md mx-auto">
+            <p className="text-white-fixed-dim mb-6 max-w-md mx-auto">
               {t("tym.join_desc")}
             </p>
-            <Link to="/kontakt" className="bg-white text-primary font-black text-sm font-headline px-6 py-2.5 rounded-full hover:bg-primary-fixed transition-colors">
+            <Link to="/kontakt" className="bg-white text-white font-black text-sm font-headline px-6 py-2.5 rounded-full hover:bg-white/8 transition-colors">
               {t("tym.join_cta")}
             </Link>
           </div>

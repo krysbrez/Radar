@@ -95,7 +95,7 @@ function Stars({ count }) {
   return (
     <div className="flex gap-0.5">
       {[1,2,3,4,5].map((i) => (
-        <span key={i} className={`text-xs ${i <= count ? "text-yellow-400" : "text-outline/30"}`}>★</span>
+        <span key={i} className={`text-xs ${i <= count ? "text-yellow-400" : "text-white/55/30"}`}>★</span>
       ))}
     </div>
   );
@@ -105,23 +105,23 @@ export default function SrovnavacBrokeruPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-white/4">
       {/* Hero */}
       <div className="gradient-primary text-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8 pt-10 pb-12">
-          <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
+          <nav className="flex items-center gap-2 text-xs text-white-fixed-dim/60 mb-6">
             <Link to="/" className="hover:text-white transition-colors">Radar</Link>
             <span>›</span>
             <Link to="/knowhow" className="hover:text-white transition-colors">{t("nav.tools")}</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">{t("tools.broker_title")}</span>
+            <span className="text-white-fixed-dim">{t("tools.broker_title")}</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4">
                 {t("tools.broker_title")}
               </h1>
-              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl">
+              <p className="text-white-fixed-dim text-lg leading-relaxed max-w-xl">
                 {t("tools.broker_subtitle")}
               </p>
             </div>
@@ -146,26 +146,26 @@ export default function SrovnavacBrokeruPage() {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl border border-outline-variant/10 p-5 mb-8">
+        <div className="bg-white rounded-2xl border border-white/12/10 p-5 mb-8">
           <div className="max-w-3xl mb-5">
-            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
               Kde začít, když nechceš chaos
             </p>
-            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary font-headline">
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-white font-headline">
               Broker vs. burza: co řeší který nástroj
             </h2>
-            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+            <p className="mt-2 text-sm leading-relaxed text-white/65">
               Pro většinu začátečníků je problém spíš v tom, že neví, kde začít, než v tom, že by neuměli investovat. Tohle je rychlá orientace bez finanční mlhy.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {STARTER_GUIDE.map((item) => (
-              <div key={item.title} className="rounded-2xl border border-outline-variant/10 bg-surface-container-low px-5 py-5">
-                <h3 className="text-base font-black text-primary font-headline">
+              <div key={item.title} className="rounded-2xl border border-white/12/10 bg-white/5 px-5 py-5">
+                <h3 className="text-base font-black text-white font-headline">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+                <p className="mt-2 text-sm leading-relaxed text-white/65">
                   {item.text}
                 </p>
               </div>
@@ -173,19 +173,19 @@ export default function SrovnavacBrokeruPage() {
           </div>
         </div>
 
-        <div className="bg-surface-container-low rounded-2xl border border-outline-variant/10 p-5 mb-8">
+        <div className="bg-white/5 rounded-2xl border border-white/12/10 p-5 mb-8">
           <div className="max-w-3xl mb-4">
-            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
               Na co si dát bacha při prvním účtu
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+            <p className="mt-2 text-sm leading-relaxed text-white/65">
               První účet nemusí být dokonalý. Ale je fajn neudělat tři chyby, které pak zbytečně bolí.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {FIRST_ACCOUNT_WARNINGS.map((item) => (
-              <div key={item} className="rounded-2xl border border-outline-variant/10 bg-white px-5 py-5 text-sm leading-relaxed text-on-surface">
+              <div key={item} className="rounded-2xl border border-white/12/10 bg-white px-5 py-5 text-sm leading-relaxed text-white/85">
                 {item}
               </div>
             ))}
@@ -193,19 +193,19 @@ export default function SrovnavacBrokeruPage() {
         </div>
 
         {/* Desktop tabulka */}
-        <div className="hidden md:block bg-white rounded-2xl border border-outline-variant/10 overflow-hidden mb-8">
+        <div className="hidden md:block bg-white rounded-2xl border border-white/12/10 overflow-hidden mb-8">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-outline-variant/10 bg-surface-container-low">
-                  <th className="text-left py-4 px-5 text-xs font-black text-outline uppercase tracking-wider font-headline">Funkce</th>
+                <tr className="border-b border-white/12/10 bg-white/5">
+                  <th className="text-left py-4 px-5 text-xs font-black text-white/55 uppercase tracking-wider font-headline">Funkce</th>
                   {BROKERS.map((b) => (
                     <th key={b.name} className="text-center py-4 px-4 min-w-[140px]">
                       <div className="flex flex-col items-center gap-1">
                         <div className={`w-10 h-10 ${b.color} rounded-xl flex items-center justify-center`}>
                           <span className="text-white text-xs font-black font-headline">{b.logo}</span>
                         </div>
-                        <span className="font-black text-primary font-headline text-sm">{b.name}</span>
+                        <span className="font-black text-white font-headline text-sm">{b.name}</span>
                         <Stars count={b.rating} />
                         {b.recommended && (
                           <span className="text-[10px] bg-green-100 text-green-700 font-black px-2 py-0.5 rounded-full">Doporučujeme</span>
@@ -217,8 +217,8 @@ export default function SrovnavacBrokeruPage() {
               </thead>
               <tbody>
                 {FEATURES.map((feat) => (
-                  <tr key={feat.key} className="border-b border-outline-variant/5 hover:bg-surface-container-low transition-colors">
-                    <td className="py-3.5 px-5 text-sm font-bold text-primary">{feat.label}</td>
+                  <tr key={feat.key} className="border-b border-white/12/5 hover:bg-white/5 transition-colors">
+                    <td className="py-3.5 px-5 text-sm font-bold text-white">{feat.label}</td>
                     {BROKERS.map((b) => {
                       const cell = b[feat.key];
                       return (
@@ -232,8 +232,8 @@ export default function SrovnavacBrokeruPage() {
                     })}
                   </tr>
                 ))}
-                <tr className="border-b border-outline-variant/5">
-                  <td className="py-3.5 px-5 text-sm font-bold text-primary">Radarovo hodnocení</td>
+                <tr className="border-b border-white/12/5">
+                  <td className="py-3.5 px-5 text-sm font-bold text-white">Radarovo hodnocení</td>
                   {BROKERS.map((b) => (
                     <td key={b.name} className="py-3.5 px-4 text-center">
                       <Stars count={b.rating} />
@@ -248,7 +248,7 @@ export default function SrovnavacBrokeruPage() {
         {/* Mobile cards */}
         <div className="md:hidden space-y-4 mb-8">
           {BROKERS.map((b) => (
-            <div key={b.name} className={`bg-white rounded-2xl border ${b.recommended ? "border-green-300" : "border-outline-variant/10"} overflow-hidden`}>
+            <div key={b.name} className={`bg-white rounded-2xl border ${b.recommended ? "border-green-300" : "border-white/12/10"} overflow-hidden`}>
               <div className={`${b.color} px-5 py-4 flex items-center justify-between`}>
                 <div className="flex items-center gap-3">
                   <span className="text-white font-black font-headline text-xl">{b.name}</span>
@@ -260,15 +260,15 @@ export default function SrovnavacBrokeruPage() {
                 {FEATURES.map((feat) => {
                   const cell = b[feat.key];
                   return (
-                    <div key={feat.key} className="flex items-center justify-between py-1.5 border-b border-outline-variant/5 last:border-0">
-                      <span className="text-sm text-on-surface-variant">{feat.label}</span>
+                    <div key={feat.key} className="flex items-center justify-between py-1.5 border-b border-white/12/5 last:border-0">
+                      <span className="text-sm text-white/65">{feat.label}</span>
                       <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${cell.isGood ? "bg-green-100 text-green-700" : "bg-red-50 text-red-600"}`}>{cell.label}</span>
                     </div>
                   );
                 })}
               </div>
               <div className="px-4 pb-4">
-                <p className="text-xs text-on-surface-variant italic">{b.note}</p>
+                <p className="text-xs text-white/65 italic">{b.note}</p>
               </div>
             </div>
           ))}
@@ -277,19 +277,19 @@ export default function SrovnavacBrokeruPage() {
         {/* Broker notes */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
           {BROKERS.map((b) => (
-            <div key={b.name} className="bg-white rounded-xl border border-outline-variant/10 p-4 flex gap-3">
+            <div key={b.name} className="bg-white rounded-xl border border-white/12/10 p-4 flex gap-3">
               <div className={`w-10 h-10 ${b.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
                 <span className="text-white text-xs font-black font-headline">{b.logo}</span>
               </div>
               <div>
-                <p className="font-black text-primary font-headline text-sm mb-1">{b.name}</p>
-                <p className="text-xs text-on-surface-variant leading-relaxed">{b.note}</p>
+                <p className="font-black text-white font-headline text-sm mb-1">{b.name}</p>
+                <p className="text-xs text-white/65 leading-relaxed">{b.note}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="text-xs text-outline italic text-center">* Informace jsou orientační. Poplatky se mohou měnit. Ověř aktuální podmínky na webu brokera.</p>
+        <p className="text-xs text-white/55 italic text-center">* Informace jsou orientační. Poplatky se mohou měnit. Ověř aktuální podmínky na webu brokera.</p>
       </div>
     </div>
   );

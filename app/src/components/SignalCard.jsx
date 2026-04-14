@@ -5,21 +5,21 @@ export default function SignalCard({
   tone = "neutral",
 }) {
   const toneClass = {
-    positive: "text-green-600",
-    negative: "text-red-500",
-    neutral: "text-primary",
-    accent: "text-orange-500",
-  }[tone] ?? "text-primary";
+    positive: "text-emerald-400",
+    negative: "text-red-400",
+    neutral: "text-white",
+    accent: "text-[#ffd700]",
+  }[tone] ?? "text-white";
 
   return (
-    <div className="bg-white rounded-2xl p-5 border border-outline-variant/10 shadow-sm">
-      <p className="text-xs font-bold text-outline uppercase tracking-wider mb-1 font-headline">
+    <div className="rounded-2xl p-5 border bg-white/8 border-white/8 shadow-none">
+      <p className="text-xs font-bold uppercase tracking-wider mb-1 font-headline text-white/55">
         {eyebrow}
       </p>
       <p className={`text-3xl font-black font-headline leading-none ${toneClass}`}>
         {value}
       </p>
-      <p className="text-xs text-outline mt-1">
+      <p className="text-xs mt-1 text-white/55">
         {note}
       </p>
     </div>

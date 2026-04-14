@@ -105,26 +105,26 @@ export default function MilionariPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-white/4">
       {/* Hero */}
       <div className="gradient-primary text-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8 pt-10 pb-12">
-          <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
+          <nav className="flex items-center gap-2 text-xs text-white-fixed-dim/60 mb-6">
             <Link to="/" className="hover:text-white transition-colors">{t("common.breadcrumb_home")}</Link>
             <span>›</span>
             <Link to="/knowhow" className="hover:text-white transition-colors">Know How</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">{t("milionari.breadcrumb_label")}</span>
+            <span className="text-white-fixed-dim">{t("milionari.breadcrumb_label")}</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-4">
-                <span className="text-xs font-black text-primary-fixed-dim uppercase tracking-widest font-headline">{t("milionari.hero_badge")}</span>
+                <span className="text-xs font-black text-white-fixed-dim uppercase tracking-widest font-headline">{t("milionari.hero_badge")}</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4">
                 {t("milionari.hero_title")}<br /><span className="text-tertiary-fixed">{t("milionari.hero_title_accent")}</span>
               </h1>
-              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl">{t("milionari.hero_subtitle")}</p>
+              <p className="text-white-fixed-dim text-lg leading-relaxed max-w-xl">{t("milionari.hero_subtitle")}</p>
             </div>
             <div className="hidden md:block flex-shrink-0 bg-white/10 rounded-3xl p-4">
               <Mascot size={120} mood="happy" variant="signal" trackMouse={false} />
@@ -145,15 +145,15 @@ export default function MilionariPage() {
 
         {/* Cards */}
         {BILLIONAIRES.map((b) => (
-          <div key={b.name} className="bg-white rounded-2xl border border-outline-variant/10 overflow-hidden hover:shadow-md transition-shadow">
+          <div key={b.name} className="bg-white rounded-2xl border border-white/12/10 overflow-hidden hover:shadow-md transition-shadow">
             <div className="p-6 md:p-8">
               <div className="flex flex-col md:flex-row gap-6">
                 {/* Avatar + basic info */}
                 <div className="flex-shrink-0 flex flex-col items-center md:items-start gap-3">
                   <div className={`w-16 h-16 ${b.color} rounded-2xl flex items-center justify-center text-2xl`}>{b.emoji}</div>
                   <div>
-                    <p className="font-black text-primary font-headline text-lg">{b.name}</p>
-                    <p className="text-xs text-outline">{b.born}</p>
+                    <p className="font-black text-white font-headline text-lg">{b.name}</p>
+                    <p className="text-xs text-white/55">{b.born}</p>
                   </div>
                   <div className="bg-green-50 border border-green-200 rounded-xl px-3 py-2 text-center">
                     <p className="text-xs text-green-600 font-bold uppercase tracking-wider">{t("milionari.net_worth")}</p>
@@ -161,7 +161,7 @@ export default function MilionariPage() {
                   </div>
                   <div className="flex flex-wrap gap-1">
                     {b.tags.map(tag => (
-                      <span key={tag} className="text-[10px] bg-surface-container px-2 py-0.5 rounded-full text-outline font-bold">{tag}</span>
+                      <span key={tag} className="text-[10px] bg-white/5 px-2 py-0.5 rounded-full text-white/55 font-bold">{tag}</span>
                     ))}
                   </div>
                 </div>
@@ -169,16 +169,16 @@ export default function MilionariPage() {
                 {/* Content */}
                 <div className="flex-1 space-y-4">
                   <div>
-                    <p className="text-xs font-black text-outline uppercase tracking-wider mb-1 font-headline">{t("milionari.first_stock")}</p>
-                    <p className="text-sm text-on-surface leading-relaxed">{b.firstInvestment}</p>
+                    <p className="text-xs font-black text-white/55 uppercase tracking-wider mb-1 font-headline">{t("milionari.first_stock")}</p>
+                    <p className="text-sm text-white/85 leading-relaxed">{b.firstInvestment}</p>
                   </div>
 
-                  <div className="bg-surface-container rounded-xl p-4">
-                    <p className="text-xs font-black text-outline uppercase tracking-wider mb-1 font-headline">{t("milionari.best_advice")}</p>
-                    <p className="text-sm font-bold text-primary leading-relaxed italic">{b.bestAdvice}</p>
+                  <div className="bg-white/5 rounded-xl p-4">
+                    <p className="text-xs font-black text-white/55 uppercase tracking-wider mb-1 font-headline">{t("milionari.best_advice")}</p>
+                    <p className="text-sm font-bold text-white leading-relaxed italic">{b.bestAdvice}</p>
                   </div>
 
-                  <p className="text-sm text-on-surface-variant leading-relaxed">{b.story}</p>
+                  <p className="text-sm text-white/65 leading-relaxed">{b.story}</p>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function MilionariPage() {
           <Mascot size={72} mood="happy" variant="signal" trackMouse={false} />
           <p className="text-xl font-black font-headline mt-4 mb-2">{t("milionari.tagline")}</p>
           <div className="flex flex-wrap justify-center gap-3 mt-4">
-            <Link to="/knowhow" className="bg-white text-primary font-black text-sm font-headline px-6 py-2.5 rounded-full hover:bg-primary-fixed transition-colors">
+            <Link to="/knowhow" className="bg-white text-white font-black text-sm font-headline px-6 py-2.5 rounded-full hover:bg-white/8 transition-colors">
               {t("milionari.back")}
             </Link>
             <Link to="/jak-zacit" className="bg-white/10 text-white font-bold text-sm font-headline px-6 py-2.5 rounded-full hover:bg-white/20 transition-colors">

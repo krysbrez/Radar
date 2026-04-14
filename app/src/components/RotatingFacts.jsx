@@ -22,7 +22,7 @@ export default function RotatingFacts({ facts, intervalMs = 6000 }) {
         Věděli jste?
       </p>
       <p
-        className="text-sm text-on-surface-variant leading-relaxed transition-opacity duration-300"
+        className="text-sm text-white/65 leading-relaxed transition-opacity duration-300"
         style={{ opacity: fading ? 0 : 1 }}
       >
         {facts[index]}

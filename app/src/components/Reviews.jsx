@@ -46,13 +46,13 @@ export default function Reviews() {
         <div className="inline-flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-full px-4 py-1.5 mb-3">
           <span className="text-xs font-black text-yellow-700 uppercase tracking-widest font-headline">{t("reviews.badge")}</span>
         </div>
-        <h2 className="text-3xl md:text-4xl font-black text-primary font-headline mb-2">{t("reviews.title")}</h2>
-        <p className="text-on-surface-variant">{t("reviews.subtitle")}</p>
+        <h2 className="text-3xl md:text-4xl font-black text-white font-headline mb-2">{t("reviews.title")}</h2>
+        <p className="text-white/65">{t("reviews.subtitle")}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {REVIEWS.map((r) => (
-          <div key={r.name} className="bg-white rounded-2xl border border-outline-variant/10 p-6 flex flex-col hover:shadow-md transition-shadow">
+          <div key={r.name} className="bg-white rounded-2xl border border-white/12/10 p-6 flex flex-col hover:shadow-md transition-shadow">
             <div className="flex items-center gap-3 mb-4">
               <img
                 src={r.avatar}
@@ -61,15 +61,15 @@ export default function Reviews() {
                 onError={(e) => { e.currentTarget.style.display = "none"; }}
               />
               <div>
-                <p className="font-black text-primary font-headline">{r.name}</p>
-                <p className="text-xs text-outline">{r.age} {t("freedom.years_label")}</p>
+                <p className="font-black text-white font-headline">{r.name}</p>
+                <p className="text-xs text-white/55">{r.age} {t("freedom.years_label")}</p>
               </div>
               <div className="ml-auto">
                 <Stars count={r.stars} />
               </div>
             </div>
 
-            <p className="text-sm text-on-surface leading-relaxed flex-1 italic mb-4">
+            <p className="text-sm text-white/85 leading-relaxed flex-1 italic mb-4">
               "{r.text}"
             </p>
 

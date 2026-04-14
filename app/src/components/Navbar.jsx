@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Mascot from "./Mascot";
 
 const LANGUAGES = [
   { code: "cs", flag: "🇨🇿", label: "CS" },
@@ -9,41 +8,188 @@ const LANGUAGES = [
   { code: "de", flag: "🇩🇪", label: "DE" },
 ];
 
+const MARKETS = [
+  { label: "Akcie", path: "/akcie" },
+  { label: "Krypto", path: "/krypto" },
+  { label: "Forex", path: "/forex" },
+  { label: "Nemovitosti", path: "/nemovitosti" },
+  { label: "Auta", path: "/auta" },
+];
+
+const TOOLS = [
+  { label: "Srovnávač brokerů", path: "/srovnavac-brokeru" },
+  { label: "Kalkulačky", path: "/kalkulacky" },
+  { label: "Jak začít", path: "/jak-zacit" },
+  { label: "Hlídač cen", path: "/hlidac" },
+  { label: "Slovník", path: "/slovnik" },
+  { label: "Daně", path: "/dane" },
+];
+
+function useOutsideClick(ref, onClose) {
+  useEffect(() => {
+    const handler = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) onClose();
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, [ref, onClose]);
+}
+
+function Chevron({ open }) {
+  return (
+    <svg
+      width="10" height="10" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" strokeWidth="2.5"
+      className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+    >
+      <polyline points="6 9 12 15 18 9" />
+    </svg>
+  );
+}
+
+function MarketsMenu() {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isActive = MARKETS.some((m) => location.pathname === m.path);
+
+  useOutsideClick(ref, () => setOpen(false));
+
+  return (
+    <div className="relative" ref={ref}>
+      <button
+        onClick={() => setOpen(!open)}
+        className={`relative flex items-center gap-1 px-3 py-2 text-sm font-semibold font-headline tracking-tight rounded-lg transition-colors ${
+          isActive ? "text-white" : "text-white/50 hover:text-white"
+        }`}
+      >
+        Trhy
+        <Chevron open={open} />
+        {isActive && (
+          <span className="absolute bottom-0 left-3 right-3 h-[1.5px] bg-[#ffd700] rounded-full" />
+        )}
+      </button>
+      {open && (
+        <div className="absolute top-full left-0 mt-2 bg-[#000d1f] border border-white/8 rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.7)] py-1.5 min-w-[160px] z-50">
+          {MARKETS.map((item) => {
+            const active = location.pathname === item.path;
+            return (
+              <button
+                key={item.path}
+                onClick={() => { navigate(item.path); setOpen(false); }}
+                className={`w-full text-left px-4 py-2.5 text-sm font-semibold font-headline transition-colors hover:bg-white/5 flex items-center justify-between ${
+                  active ? "text-white" : "text-white/60 hover:text-white"
+                }`}
+              >
+                {item.label}
+                {active && <span className="w-1.5 h-1.5 bg-[#ffd700] rounded-full flex-shrink-0" />}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ToolsMenu() {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isActive = TOOLS.some((t) => location.pathname === t.path);
+
+  useOutsideClick(ref, () => setOpen(false));
+
+  return (
+    <div className="relative" ref={ref}>
+      <button
+        onClick={() => setOpen(!open)}
+        className={`relative flex items-center gap-1 px-3 py-2 text-sm font-semibold font-headline tracking-tight rounded-lg transition-colors ${
+          isActive ? "text-white" : "text-white/50 hover:text-white"
+        }`}
+      >
+        Nástroje
+        <Chevron open={open} />
+        {isActive && (
+          <span className="absolute bottom-0 left-3 right-3 h-[1.5px] bg-[#ffd700] rounded-full" />
+        )}
+      </button>
+      {open && (
+        <div className="absolute top-full left-0 mt-2 bg-[#000d1f] border border-white/8 rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.7)] py-1.5 min-w-[200px] z-50">
+          {TOOLS.map((item) => {
+            const active = location.pathname === item.path;
+            return (
+              <button
+                key={item.path}
+                onClick={() => { navigate(item.path); setOpen(false); }}
+                className={`w-full text-left px-4 py-2.5 text-sm font-semibold font-headline transition-colors hover:bg-white/5 flex items-center justify-between ${
+                  active ? "text-white" : "text-white/60 hover:text-white"
+                }`}
+              >
+                {item.label}
+                {active && <span className="w-1.5 h-1.5 bg-[#ffd700] rounded-full flex-shrink-0" />}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function NavLink({ to, children }) {
+  const location = useLocation();
+  const isActive = location.pathname === to;
+  return (
+    <Link
+      to={to}
+      className={`relative px-3 py-2 text-sm font-semibold font-headline tracking-tight rounded-lg transition-colors ${
+        isActive ? "text-white" : "text-white/50 hover:text-white"
+      }`}
+    >
+      {children}
+      {isActive && (
+        <span className="absolute bottom-0 left-3 right-3 h-[1.5px] bg-[#ffd700] rounded-full" />
+      )}
+    </Link>
+  );
+}
+
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
   const current = LANGUAGES.find((l) => l.code === i18n.language) || LANGUAGES[0];
 
-  useEffect(() => {
-    const handler = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
+  useOutsideClick(ref, () => setOpen(false));
 
   return (
     <div className="relative" ref={ref}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold text-on-surface-variant hover:bg-surface-container-high transition-colors border border-outline-variant/20"
+        className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold font-headline text-white/50 hover:text-white border border-white/8 hover:border-white/15 transition-colors"
       >
         <span>{current.flag}</span>
-        <span className="font-headline">{current.label}</span>
-        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className={`transition-transform ${open ? "rotate-180" : ""}`}>
-          <polyline points="6 9 12 15 18 9"/>
-        </svg>
+        <span>{current.label}</span>
+        <Chevron open={open} />
       </button>
       {open && (
-        <div className="absolute right-0 mt-2 bg-white rounded-xl border border-outline-variant/15 shadow-lg py-1 min-w-[100px] z-50">
+        <div className="absolute right-0 mt-2 bg-[#000d1f] border border-white/8 rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.7)] py-1.5 min-w-[100px] z-50">
           {LANGUAGES.map((lang) => (
             <button
               key={lang.code}
               onClick={() => { i18n.changeLanguage(lang.code); setOpen(false); }}
-              className={`w-full flex items-center gap-2 px-3 py-2 text-xs font-bold hover:bg-surface-container transition-colors ${i18n.language === lang.code ? "text-primary" : "text-on-surface-variant"}`}
+              className={`w-full flex items-center gap-2 px-3 py-2 text-xs font-bold font-headline hover:bg-white/5 transition-colors ${
+                i18n.language === lang.code ? "text-white" : "text-white/55 hover:text-white"
+              }`}
             >
               <span>{lang.flag}</span>
-              <span className="font-headline">{lang.label}</span>
-              {i18n.language === lang.code && <span className="ml-auto w-1.5 h-1.5 bg-primary rounded-full"/>}
+              <span>{lang.label}</span>
+              {i18n.language === lang.code && (
+                <span className="ml-auto w-1.5 h-1.5 bg-[#ffd700] rounded-full" />
+              )}
             </button>
           ))}
         </div>
@@ -52,127 +198,35 @@ function LanguageSwitcher() {
   );
 }
 
-function MobileLangSwitcher() {
-  const { i18n } = useTranslation();
+function MobileSection({ title, items, closeMobile, location }) {
   return (
-    <div className="pt-2 flex gap-2">
-      {LANGUAGES.map((lang) => (
-        <button
-          key={lang.code}
-          onClick={() => i18n.changeLanguage(lang.code)}
-          className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-bold border transition-colors ${i18n.language === lang.code ? "border-primary text-primary bg-primary/5" : "border-outline-variant/20 text-on-surface-variant hover:bg-surface-container"}`}
-        >
-          {lang.flag} {lang.label}
-        </button>
-      ))}
+    <div className="px-6 pt-6">
+      <p className="text-[10px] font-black uppercase tracking-[0.14em] text-white/30 mb-1">{title}</p>
+      {items.map((item) => {
+        const active = location.pathname === item.path;
+        return (
+          <Link
+            key={item.path}
+            to={item.path}
+            onClick={closeMobile}
+            className={`flex items-center justify-between py-3 text-sm font-semibold font-headline border-b border-white/4 last:border-0 transition-colors ${
+              active ? "text-white" : "text-white/60 hover:text-white"
+            }`}
+          >
+            {item.label}
+            {active && <span className="w-1.5 h-1.5 bg-[#ffd700] rounded-full flex-shrink-0" />}
+          </Link>
+        );
+      })}
     </div>
-  );
-}
-
-function ToolsDropdown({ onClick }) {
-  const { t } = useTranslation();
-  const [open, setOpen] = useState(false);
-  const ref = useRef(null);
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const TOOL_LINKS = [
-    { label: t("nav.tools_broker"), path: "/srovnavac-brokeru", icon: "⚖️" },
-    { label: t("nav.tools_calc"), path: "/kalkulacky", icon: "🧮" },
-    { label: t("nav.tools_glossary"), path: "/slovnik", icon: "📖" },
-    { label: t("nav.tools_start"), path: "/jak-zacit", icon: "🚀" },
-    { label: t("nav.tools_tax"), path: "/dane", icon: "🧾" },
-    { label: t("nav.tools_milionari"), path: "/milionari", icon: "💎" },
-  ];
-
-  const isActive = ["/srovnavac-brokeru", "/kalkulacky", "/slovnik", "/jak-zacit", "/dane", "/milionari"].includes(location.pathname);
-
-  useEffect(() => {
-    const handler = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
-
-  return (
-    <div className="relative" ref={ref}>
-      <button
-        onClick={() => setOpen(!open)}
-        className={`relative px-3 py-2 text-sm font-semibold font-headline tracking-tight transition-colors rounded-lg flex items-center gap-1 ${
-          isActive ? "text-primary" : "text-on-surface-variant hover:text-primary"
-        }`}
-      >
-        {t("nav.tools")}
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className={`transition-transform ${open ? "rotate-180" : ""}`}>
-          <polyline points="6 9 12 15 18 9"/>
-        </svg>
-        {isActive && <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-primary rounded-full" />}
-      </button>
-      {open && (
-        <div className="absolute top-full left-0 mt-2 bg-white rounded-xl border border-outline-variant/15 shadow-lg py-2 min-w-[220px] z-50">
-          {TOOL_LINKS.map((link) => (
-            <button
-              key={link.path}
-              onClick={() => { navigate(link.path); setOpen(false); onClick?.(); }}
-              className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-surface-container transition-colors text-left ${location.pathname === link.path ? "text-primary font-bold" : "text-on-surface-variant"}`}
-            >
-              <span className="text-base">{link.icon}</span>
-              <span className="font-semibold font-headline">{link.label}</span>
-              {location.pathname === link.path && <span className="ml-auto w-1.5 h-1.5 bg-primary rounded-full"/>}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
-
-function NavItem({ link, onClick }) {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const { t } = useTranslation();
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    if (link.path) {
-      navigate(link.path);
-    } else {
-      navigate({ pathname: "/", hash: `#${link.hash}` });
-    }
-    onClick?.();
-  };
-
-  const isActive = link.path
-    ? location.pathname === link.path
-    : location.pathname === "/" && location.hash === `#${link.hash}`;
-
-  return (
-    <button
-      onClick={handleClick}
-      className={`relative px-3 py-2 text-sm font-semibold font-headline tracking-tight transition-colors rounded-lg ${
-        isActive ? "text-primary" : "text-on-surface-variant hover:text-primary"
-      }`}
-    >
-      {link.label ?? t(link.tKey)}
-      {isActive && <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-primary rounded-full" />}
-    </button>
   );
 }
 
 export default function Navbar() {
-  const { t } = useTranslation();
+  const { i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  const NAV_LINKS = [
-    { label: t("nav.investing"), tKey: "nav.investing", hash: "investovani" },
-    { label: t("nav.stocks"), tKey: "nav.stocks", path: "/akcie" },
-    { label: t("nav.crypto"), tKey: "nav.crypto", path: "/krypto" },
-    { label: t("nav.forex"), tKey: "nav.forex", path: "/forex" },
-    { label: t("nav.real_estate"), tKey: "nav.real_estate", path: "/nemovitosti" },
-    { label: t("nav.cars"), tKey: "nav.cars", path: "/auta" },
-    { label: t("nav.know_how"), tKey: "nav.know_how", path: "/knowhow" },
-    { label: t("nav.archive"), tKey: "nav.archive", path: "/archiv" },
-  ];
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -180,93 +234,128 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location.pathname]);
+
+  const closeMobile = () => setMobileOpen(false);
+
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? "bg-white/90 backdrop-blur-xl shadow-[0_1px_0_0_rgba(0,6,19,0.08)]" : "bg-surface/80 backdrop-blur-xl"
+      scrolled
+        ? "bg-[#000d1f]/95 backdrop-blur-xl border-b border-white/6"
+        : "bg-[#000613]/70 backdrop-blur-xl"
     }`}>
-      <div className="flex justify-between items-center px-6 md:px-8 py-2 max-w-7xl mx-auto">
-        <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2">
-          <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
-            <span className="text-white font-headline font-black text-sm">R</span>
+      <div className="flex justify-between items-center px-6 md:px-8 py-3 max-w-7xl mx-auto">
+
+        {/* Logo */}
+        <Link to="/" onClick={closeMobile} className="flex items-center gap-2 flex-shrink-0">
+          <div className="w-7 h-7 gradient-primary rounded-lg flex items-center justify-center">
+            <span className="text-white font-headline font-black text-xs">R</span>
           </div>
-          <span className="text-2xl font-black tracking-tighter text-primary uppercase font-headline">RADAR</span>
+          <span className="text-xl font-black tracking-tighter text-white uppercase font-headline">RADAR</span>
         </Link>
 
+        {/* Desktop center nav */}
         <div className="hidden md:flex items-center gap-0.5">
-          {NAV_LINKS.map((link) => (
-            <NavItem key={link.tKey} link={link} />
-          ))}
-          <ToolsDropdown />
+          <MarketsMenu />
+          <NavLink to="/knowhow">Know How</NavLink>
+          <NavLink to="/archiv">Archiv</NavLink>
+          <ToolsMenu />
         </div>
 
-        <div className="flex items-center gap-2">
-          <div className="hidden md:flex items-center gap-2">
-            <LanguageSwitcher />
-            <Link
-              to="/#newsletter"
-              aria-label="Hledat a procházet obsah"
-              className="w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-              </svg>
-            </Link>
-            <Link
-              to="/#newsletter"
-              className="gradient-primary text-white px-5 py-2 rounded-full font-bold text-sm font-headline tracking-tight hover:opacity-90 active:scale-95 transition-all"
-            >
-              {t("nav.subscribe_free")}
-            </Link>
-          </div>
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden"
-            aria-label={mobileOpen ? "Zavřít menu" : "Otevřít menu"}
+        {/* Desktop right actions */}
+        <div className="hidden md:flex items-center gap-2">
+          <LanguageSwitcher />
+          <Link
+            to="/muj-radar"
+            className={`px-3 py-1.5 rounded-lg text-sm font-bold font-headline border transition-colors ${
+              location.pathname === "/muj-radar"
+                ? "border-white/15 bg-white/8 text-white"
+                : "border-white/8 text-white/60 hover:text-white hover:border-white/15"
+            }`}
           >
-            <div className="bg-surface-container-low rounded-xl p-0.5">
-              <Mascot size={42} mood={mobileOpen ? "surprised" : "normal"} trackMouse={false} variant="idle" />
-            </div>
-          </button>
+            Můj Radar
+          </Link>
+          <Link
+            to="/#newsletter"
+            className="gradient-primary text-white px-4 py-1.5 rounded-full font-bold text-sm font-headline hover:opacity-90 active:scale-95 transition-all"
+          >
+            Odebírat
+          </Link>
         </div>
+
+        {/* Mobile burger */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px]"
+          aria-label={mobileOpen ? "Zavřít menu" : "Otevřít menu"}
+        >
+          <span className={`block w-5 h-[1.5px] bg-white/80 rounded-full transition-all duration-200 origin-center ${mobileOpen ? "rotate-45 translate-y-[6.5px]" : ""}`} />
+          <span className={`block w-5 h-[1.5px] bg-white/80 rounded-full transition-all duration-200 ${mobileOpen ? "opacity-0 scale-x-0" : ""}`} />
+          <span className={`block w-5 h-[1.5px] bg-white/80 rounded-full transition-all duration-200 origin-center ${mobileOpen ? "-rotate-45 -translate-y-[6.5px]" : ""}`} />
+        </button>
       </div>
 
-      {/* Mobile menu */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? "max-h-screen" : "max-h-0"}`}>
-        <div className="px-6 pb-5 pt-2 bg-white/97 backdrop-blur-xl border-t border-outline-variant/10 space-y-1">
-          <div className="flex items-center gap-3 py-3 mb-1">
-            <div className="bg-surface-container-low rounded-xl p-1">
-              <Mascot size={44} mood="happy" trackMouse={false} variant="signal" />
-            </div>
-            <div>
-              <p className="text-sm font-black text-primary font-headline">{t("nav.hi_im_radar")}</p>
-              <p className="text-xs text-outline">{t("nav.where_today")}</p>
-            </div>
-          </div>
-          {NAV_LINKS.map((link) => (
-            <NavItem key={link.tKey} link={link} onClick={() => setMobileOpen(false)} />
-          ))}
-          {/* Mobile tools links */}
-          <div className="pt-2 border-t border-outline-variant/10">
-            <p className="text-xs font-black text-outline uppercase tracking-widest px-3 py-1 font-headline">{t("nav.tools")}</p>
-            {[
-              { label: t("nav.tools_broker"), path: "/srovnavac-brokeru" },
-              { label: t("nav.tools_calc"), path: "/kalkulacky" },
-              { label: t("nav.tools_glossary"), path: "/slovnik" },
-              { label: t("nav.tools_start"), path: "/jak-zacit" },
-            ].map((item) => (
-              <NavItem key={item.path} link={{ tKey: "_", path: item.path, label: item.label }} onClick={() => setMobileOpen(false)} />
-            ))}
-          </div>
-          {/* Language switcher mobile */}
-          <MobileLangSwitcher />
-          <div className="pt-2 block">
+      {/* Mobile menu panel */}
+      <div className={`md:hidden transition-all duration-300 overflow-hidden ${mobileOpen ? "max-h-[90vh]" : "max-h-0"}`}>
+        <div className="bg-[#000613] border-t border-white/6 overflow-y-auto max-h-[85vh]">
+
+          <MobileSection
+            title="Trhy"
+            items={MARKETS}
+            closeMobile={closeMobile}
+            location={location}
+          />
+
+          <MobileSection
+            title="Vzdělávání"
+            items={[
+              { label: "Know How", path: "/knowhow" },
+              { label: "Archiv článků", path: "/archiv" },
+            ]}
+            closeMobile={closeMobile}
+            location={location}
+          />
+
+          <MobileSection
+            title="Nástroje"
+            items={TOOLS}
+            closeMobile={closeMobile}
+            location={location}
+          />
+
+          {/* Bottom actions */}
+          <div className="px-6 pt-6 pb-10">
             <Link
               to="/#newsletter"
-              onClick={() => setMobileOpen(false)}
-              className="block w-full text-center gradient-primary text-white px-5 py-3 rounded-full font-bold text-sm font-headline"
+              onClick={closeMobile}
+              className="block w-full text-center gradient-primary text-white py-3 rounded-xl font-bold text-sm font-headline mb-3"
             >
-              {t("nav.subscribe_free")}
+              Odebírat zdarma
             </Link>
+            <Link
+              to="/muj-radar"
+              onClick={closeMobile}
+              className="block w-full text-center border border-white/8 text-white/60 py-3 rounded-xl font-bold text-sm font-headline hover:text-white hover:border-white/15 transition-colors mb-5"
+            >
+              Můj Radar
+            </Link>
+            <div className="flex justify-center gap-2">
+              {LANGUAGES.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => i18n.changeLanguage(lang.code)}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold font-headline border transition-colors ${
+                    i18n.language === lang.code
+                      ? "border-[#ffd700]/30 text-[#ffd700] bg-[#ffd700]/8"
+                      : "border-white/8 text-white/45 hover:text-white hover:border-white/15"
+                  }`}
+                >
+                  {lang.flag} {lang.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>

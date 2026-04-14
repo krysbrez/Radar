@@ -7,7 +7,7 @@ export default function RadarSays({ text }) {
         <Mascot size={40} mood="happy" variant="signal" trackMouse={false} />
       </div>
       <div>
-        <p className="text-xs font-black text-primary-fixed-dim/70 uppercase tracking-widest font-headline mb-1">Radar říká:</p>
+        <p className="text-xs font-black text-white/55 uppercase tracking-widest font-headline mb-1">Radar říká:</p>
         <p className="text-sm text-white leading-relaxed">{text}</p>
       </div>
     </div>

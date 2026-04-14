@@ -124,8 +124,8 @@ export default function StaticPage({ pageKey }) {
     <div className="min-h-screen bg-white">
       <div className="max-w-3xl mx-auto px-6 md:px-8 py-12">
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-xs text-outline mb-8">
-          <Link to="/" className="hover:text-primary transition-colors">Radar</Link>
+        <nav className="flex items-center gap-2 text-xs text-white/55 mb-8">
+          <Link to="/" className="hover:text-white transition-colors">Radar</Link>
           <span>›</span>
           <span>{page.title}</span>
         </nav>
@@ -134,11 +134,11 @@ export default function StaticPage({ pageKey }) {
         <div className="flex items-start gap-6 mb-10">
           <div className="flex-1">
             <span className="text-4xl block mb-3">{page.emoji}</span>
-            <h1 className="text-3xl md:text-4xl font-black text-primary font-headline tracking-tight mb-3">{page.title}</h1>
-            <p className="text-lg text-on-surface-variant leading-relaxed">{page.subtitle}</p>
+            <h1 className="text-3xl md:text-4xl font-black text-white font-headline tracking-tight mb-3">{page.title}</h1>
+            <p className="text-lg text-white/65 leading-relaxed">{page.subtitle}</p>
           </div>
           <div className="hidden md:block flex-shrink-0">
-            <div className="bg-surface-container-low rounded-2xl p-3">
+            <div className="bg-white/5 rounded-2xl p-3">
               <Mascot size={80} mood="normal" variant="idle" trackMouse={false} />
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function StaticPage({ pageKey }) {
         {/* Content */}
         <div className="space-y-4 mb-10">
           {page.content.map((para, i) => (
-            <p key={i} className={`leading-relaxed ${page.important ? "text-on-surface" : "text-on-surface-variant"}`}>
+            <p key={i} className={`leading-relaxed ${page.important ? "text-white/85" : "text-white/65"}`}>
               {page.important && i < 6 ? (
                 <span className="flex gap-3">
                   <span className="text-red-400 flex-shrink-0 font-bold mt-0.5">→</span>
@@ -178,19 +178,19 @@ export default function StaticPage({ pageKey }) {
 
         {/* "Stránka se dokončuje" badge */}
         {!page.done && (
-          <div className="bg-surface-container-low rounded-2xl p-6 flex items-center gap-4 mt-8">
+          <div className="bg-white/5 rounded-2xl p-6 flex items-center gap-4 mt-8">
             <div className="bg-white rounded-xl p-2 flex-shrink-0">
               <Mascot size={48} mood="happy" variant="signal" trackMouse={false} />
             </div>
             <div>
-              <p className="font-black text-primary font-headline text-sm">Radar pracuje na obsahu</p>
-              <p className="text-xs text-on-surface-variant mt-0.5">Tato stránka se dokončuje. Brzy tu bude plný obsah!</p>
+              <p className="font-black text-white font-headline text-sm">Radar pracuje na obsahu</p>
+              <p className="text-xs text-white/65 mt-0.5">Tato stránka se dokončuje. Brzy tu bude plný obsah!</p>
             </div>
           </div>
         )}
 
         <div className="mt-8">
-          <Link to="/" className="text-sm font-bold text-primary font-headline border-b-2 border-primary-fixed-dim pb-0.5 hover:border-primary transition-colors">← Zpět na hlavní stránku</Link>
+          <Link to="/" className="text-sm font-bold text-white font-headline border-b-2 border-primary-fixed-dim pb-0.5 hover:border-primary transition-colors">← Zpět na hlavní stránku</Link>
         </div>
       </div>
     </div>

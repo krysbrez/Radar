@@ -52,8 +52,8 @@ export default function RadarWTF() {
                 {t("wtf.badge")}
               </span>
             </div>
-            <h2 className="text-3xl font-black text-primary font-headline mb-1">{t("wtf.title")}</h2>
-            <p className="text-sm text-on-surface-variant mb-6">{t("wtf.subtitle")}</p>
+            <h2 className="text-3xl font-black text-white font-headline mb-1">{t("wtf.title")}</h2>
+            <p className="text-sm text-white/65 mb-6">{t("wtf.subtitle")}</p>
 
             {/* Dot nav */}
             <div className="flex gap-1.5 mb-4">
@@ -68,13 +68,13 @@ export default function RadarWTF() {
             <div className="flex gap-2">
               <button
                 onClick={() => setIdx((idx - 1 + WTF_ITEMS.length) % WTF_ITEMS.length)}
-                className="text-xs font-bold text-on-surface-variant hover:text-primary transition-colors"
+                className="text-xs font-bold text-white/65 hover:text-white transition-colors"
               >
                 {t("wtf.prev")}
               </button>
               <button
                 onClick={() => setIdx((idx + 1) % WTF_ITEMS.length)}
-                className="text-xs font-bold text-on-surface-variant hover:text-primary transition-colors"
+                className="text-xs font-bold text-white/65 hover:text-white transition-colors"
               >
                 {t("wtf.next")}
               </button>
@@ -87,9 +87,9 @@ export default function RadarWTF() {
               <span className="text-4xl">{item.emoji}</span>
               <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full flex-shrink-0 ${item.tagColor}`}>{item.tag}</span>
             </div>
-            <h3 className="text-xl font-black text-primary font-headline leading-tight mb-3">{item.headline}</h3>
-            <p className="text-sm text-on-surface leading-relaxed mb-4">{item.context}</p>
-            <p className="text-xs text-outline font-semibold">{item.date}</p>
+            <h3 className="text-xl font-black text-white font-headline leading-tight mb-3">{item.headline}</h3>
+            <p className="text-sm text-white/85 leading-relaxed mb-4">{item.context}</p>
+            <p className="text-xs text-white/55 font-semibold">{item.date}</p>
           </div>
         </div>
       </div>

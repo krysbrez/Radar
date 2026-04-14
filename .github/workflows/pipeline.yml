@@ -1,0 +1,82 @@
+name: RADAR Content Pipeline
+
+on:
+  # Every Monday at 06:00 UTC (08:00 Prague time)
+  schedule:
+    - cron: "0 6 * * 1"
+  # Manual trigger with optional category filter
+  workflow_dispatch:
+    inputs:
+      category:
+        description: "Category filter (leave blank for all)"
+        required: false
+        default: ""
+      top:
+        description: "Max articles to enrich per run"
+        required: false
+        default: "8"
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to commit articles.js
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser openai
+
+      - name: Run processor
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          ARGS="--use-config --out /tmp/radar_out.json --top ${{ github.event.inputs.top || '8' }}"
+          CAT="${{ github.event.inputs.category }}"
+          [ -n "$CAT" ] && ARGS="$ARGS --category $CAT"
+          python news_agent/processor.py $ARGS
+
+      - name: Check enrichment quality
+        run: |
+          python3 - <<'EOF'
+          import json, sys
+          d = json.load(open("/tmp/radar_out.json"))
+          articles = d.get("articles", [])
+          enriched = [a for a in articles if a.get("radar_headline")]
+          print(f"Total fetched: {d.get('article_count', 0)}")
+          print(f"LLM-enriched: {len(enriched)}")
+          if not enriched:
+              print("WARNING: No enriched articles — check OPENROUTER_API_KEY secret")
+              sys.exit(1)
+          for a in enriched[:3]:
+              print(f"  [{a['category']}] {a['radar_headline'][:70]}")
+          EOF
+
+      - name: Stitch into articles.js
+        run: python stitch.py /tmp/radar_out.json
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet app/src/data/articles.js && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push articles.js
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "RADAR Pipeline"
+          git config user.email "pipeline@radar-newsletter.cz"
+          git add app/src/data/articles.js
+          COUNT=$(git diff --cached --stat | grep -oP '(?<=\+)\d+' | head -1 || echo "?")
+          git commit -m "content: pipeline run $(date -u '+%Y-%m-%d %H:%M UTC') [+${COUNT} lines]"
+          git push
+
+      - name: No new articles
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "articles.js unchanged — all fetched items were duplicates or unenriched."

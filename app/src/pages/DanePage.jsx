@@ -30,35 +30,35 @@ function TaxCalculator() {
   const underLimit = profit <= 100000;
 
   return (
-    <div className="bg-white rounded-2xl border border-outline-variant/10 p-6">
-      <h3 className="font-black text-primary font-headline text-lg mb-5">{t("dane.calc_title")}</h3>
-      <p className="text-sm text-on-surface-variant mb-5">{t("dane.calc_desc")}</p>
+    <div className="bg-white rounded-2xl border border-white/12/10 p-6">
+      <h3 className="font-black text-white font-headline text-lg mb-5">{t("dane.calc_title")}</h3>
+      <p className="text-sm text-white/65 mb-5">{t("dane.calc_desc")}</p>
 
       <div className="space-y-5 mb-6">
         <div>
-          <label className="text-xs font-bold text-outline uppercase tracking-wider block mb-1">{t("dane.profit_label")}</label>
-          <div className="flex items-center gap-3">
+          <label className="text-xs font-bold text-white/55 uppercase tracking-wider block mb-1">{t("dane.profit_label")}</label>
+          <div className="flex flex-col items-stretch gap-2 sm:flex-row sm:items-center sm:gap-3">
             <input
               type="range" min={0} max={2000000} step={10000} value={profit}
               onChange={e => setProfit(+e.target.value)}
               className="flex-1 accent-primary"
             />
-            <span className="text-sm font-black text-primary w-32 text-right font-mono">{profit.toLocaleString("cs")} Kč</span>
+            <span className="text-sm font-black text-white sm:w-32 sm:text-right font-mono break-words">{profit.toLocaleString("cs")} Kč</span>
           </div>
         </div>
 
         <div>
-          <label className="text-xs font-bold text-outline uppercase tracking-wider block mb-2">{t("dane.years_held_label")}</label>
-          <div className="flex gap-3">
+          <label className="text-xs font-bold text-white/55 uppercase tracking-wider block mb-2">{t("dane.years_held_label")}</label>
+          <div className="flex flex-col gap-3 sm:flex-row">
             <button
               onClick={() => setHeld("under")}
-              className={`flex-1 py-2.5 rounded-xl text-sm font-bold border transition-colors ${held === "under" ? "bg-red-50 border-red-300 text-red-700" : "bg-surface-container border-outline-variant/20 text-on-surface-variant hover:bg-surface-container-high"}`}
+              className={`flex-1 py-2.5 rounded-xl text-sm font-bold border transition-colors ${held === "under" ? "bg-red-50 border-red-300 text-red-700" : "bg-white/5 border-white/12/20 text-white/65 hover:bg-white/6"}`}
             >
               {t("dane.years_option_under")}
             </button>
             <button
               onClick={() => setHeld("over")}
-              className={`flex-1 py-2.5 rounded-xl text-sm font-bold border transition-colors ${held === "over" ? "bg-green-50 border-green-300 text-green-700" : "bg-surface-container border-outline-variant/20 text-on-surface-variant hover:bg-surface-container-high"}`}
+              className={`flex-1 py-2.5 rounded-xl text-sm font-bold border transition-colors ${held === "over" ? "bg-green-50 border-green-300 text-green-700" : "bg-white/5 border-white/12/20 text-white/65 hover:bg-white/6"}`}
             >
               {t("dane.years_option_over")}
             </button>
@@ -67,20 +67,20 @@ function TaxCalculator() {
       </div>
 
       <div className={`rounded-2xl p-5 text-center transition-all ${isExempt || underLimit ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"}`}>
-        <p className="text-xs font-black uppercase tracking-wider mb-2 font-headline text-outline">{t("dane.tax_result")}</p>
+        <p className="text-xs font-black uppercase tracking-wider mb-2 font-headline text-white/55">{t("dane.tax_result")}</p>
         {isExempt || underLimit ? (
-          <p className="text-3xl font-black text-green-700 font-headline">{t("dane.tax_free")}</p>
+          <p className="text-2xl sm:text-3xl font-black text-green-700 font-headline leading-tight">{t("dane.tax_free")}</p>
         ) : (
           <>
-            <p className="text-4xl font-black text-red-700 font-headline">{tax.toLocaleString("cs")} Kč</p>
-            <p className="text-xs text-red-600 mt-1">15 % z ({profit.toLocaleString("cs")} − 100 000) Kč</p>
+            <p className="text-3xl sm:text-4xl font-black text-red-700 font-headline leading-tight break-words">{tax.toLocaleString("cs")} Kč</p>
+            <p className="text-xs text-red-600 mt-1 break-words">15 % z ({profit.toLocaleString("cs")} − 100 000) Kč</p>
           </>
         )}
         {isExempt && <p className="text-xs text-green-600 mt-1 font-bold">Časový test splněn ✓</p>}
         {underLimit && !isExempt && <p className="text-xs text-green-600 mt-1 font-bold">Pod ročním limitem 100 000 Kč ✓</p>}
       </div>
 
-      <p className="text-xs text-outline mt-3">* Zjednodušený výpočet. Nezohledňuje DIP, ztráty z minulých let ani zahraniční daně.</p>
+      <p className="text-xs text-white/55 mt-3">* Zjednodušený výpočet. Nezohledňuje DIP, ztráty z minulých let ani zahraniční daně.</p>
     </div>
   );
 }
@@ -89,26 +89,26 @@ export default function DanePage() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-white/4">
       {/* Hero */}
       <div className="gradient-primary text-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8 pt-10 pb-12">
-          <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
+          <nav className="flex items-center gap-2 text-xs text-white-fixed-dim/60 mb-6">
             <Link to="/" className="hover:text-white transition-colors">{t("common.breadcrumb_home")}</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">{t("nav.tools")}</span>
+            <span className="text-white-fixed-dim">{t("nav.tools")}</span>
             <span>›</span>
-            <span className="text-primary-fixed-dim">{t("tools.tax_title")}</span>
+            <span className="text-white-fixed-dim">{t("tools.tax_title")}</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-4">
-                <span className="text-xs font-black text-primary-fixed-dim uppercase tracking-widest font-headline">{t("dane.hero_badge")}</span>
+                <span className="text-xs font-black text-white-fixed-dim uppercase tracking-widest font-headline">{t("dane.hero_badge")}</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4">
                 {t("dane.hero_title")}<br /><span className="text-tertiary-fixed">{t("dane.hero_title_accent")}</span>
               </h1>
-              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl">{t("dane.hero_subtitle")}</p>
+              <p className="text-white-fixed-dim text-lg leading-relaxed max-w-xl">{t("dane.hero_subtitle")}</p>
             </div>
             <div className="hidden md:block flex-shrink-0 bg-white/10 rounded-3xl p-4">
               <Mascot size={120} mood="thinking" variant="signal" trackMouse={false} />
@@ -134,8 +134,8 @@ export default function DanePage() {
 
         {/* Časový test */}
         <section>
-          <h2 className="text-2xl font-black font-headline text-primary mb-2">{t("dane.time_test_title")}</h2>
-          <p className="text-on-surface-variant mb-5">{t("dane.time_test_desc")}</p>
+          <h2 className="text-2xl font-black font-headline text-white mb-2">{t("dane.time_test_title")}</h2>
+          <p className="text-white/65 mb-5">{t("dane.time_test_desc")}</p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
               <div className="text-3xl mb-3">⏱️</div>
@@ -158,11 +158,11 @@ export default function DanePage() {
 
         {/* Sazby */}
         <section>
-          <h2 className="text-xl font-black font-headline text-primary mb-5">{t("dane.rates_title")}</h2>
-          <div className="bg-white rounded-2xl border border-outline-variant/10 overflow-hidden">
+          <h2 className="text-xl font-black font-headline text-white mb-5">{t("dane.rates_title")}</h2>
+          <div className="bg-white rounded-2xl border border-white/12/10 overflow-hidden">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-surface-container text-xs text-outline uppercase tracking-wider font-headline">
+                <tr className="bg-white/5 text-xs text-white/55 uppercase tracking-wider font-headline">
                   <th className="text-left px-5 py-3">{t("dane.rates_col_income")}</th>
                   <th className="text-right px-4 py-3">{t("dane.rates_col_rate")}</th>
                   <th className="text-right px-5 py-3">{t("dane.rates_col_note")}</th>
@@ -170,12 +170,12 @@ export default function DanePage() {
               </thead>
               <tbody>
                 {TAX_RATES.map((r, i) => (
-                  <tr key={r.income} className={`border-t border-outline-variant/5 ${i % 2 === 1 ? "bg-surface-container/20" : ""}`}>
-                    <td className="px-5 py-3.5 font-medium text-primary">{r.income}</td>
+                  <tr key={r.income} className={`border-t border-white/12/5 ${i % 2 === 1 ? "bg-white/5/20" : ""}`}>
+                    <td className="px-5 py-3.5 font-medium text-white">{r.income}</td>
                     <td className="px-4 py-3.5 text-right">
                       <span className={`text-sm font-black px-2 py-0.5 rounded-full ${r.color}`}>{r.rate}</span>
                     </td>
-                    <td className="px-5 py-3.5 text-right text-xs text-on-surface-variant">{r.note}</td>
+                    <td className="px-5 py-3.5 text-right text-xs text-white/65">{r.note}</td>
                   </tr>
                 ))}
               </tbody>
@@ -193,7 +193,7 @@ export default function DanePage() {
                 <p className="text-sm text-indigo-700 leading-relaxed mb-3">{t("dane.dip_desc")}</p>
                 <div className="bg-white rounded-xl p-4">
                   <p className="text-xs font-bold text-indigo-600 mb-1">Příklad úspory DIP:</p>
-                  <p className="text-sm text-on-surface">Vložíš 48 000 Kč/rok do DIP → snížíš základ daně o 48 000 Kč → ušetříš 7 200 Kč na daních (při 15 % sazbě). Každý rok. Automaticky.</p>
+                  <p className="text-sm text-white/85">Vložíš 48 000 Kč/rok do DIP → snížíš základ daně o 48 000 Kč → ušetříš 7 200 Kč na daních (při 15 % sazbě). Každý rok. Automaticky.</p>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@ export default function DanePage() {
 
         {/* Kdy podávat přiznání */}
         <section>
-          <h2 className="text-xl font-black font-headline text-primary mb-5">{t("dane.when_file")}</h2>
+          <h2 className="text-xl font-black font-headline text-white mb-5">{t("dane.when_file")}</h2>
           <div className="space-y-3">
             {WHEN_TO_FILE.map((item, i) => (
               <div key={i} className={`rounded-xl p-4 flex gap-3 items-start border ${item.file ? "bg-yellow-50 border-yellow-200" : "bg-green-50 border-green-200"}`}>
@@ -232,7 +232,7 @@ export default function DanePage() {
           <Mascot size={72} mood="happy" variant="signal" trackMouse={false} />
           <p className="text-2xl font-black font-headline mt-4 mb-2">{t("dane.cta_heading")}</p>
           <div className="flex flex-wrap justify-center gap-3 mt-4">
-            <Link to="/kalkulacky" className="bg-white text-primary font-black text-sm font-headline px-6 py-2.5 rounded-full hover:bg-primary-fixed transition-colors">
+            <Link to="/kalkulacky" className="bg-white text-white font-black text-sm font-headline px-6 py-2.5 rounded-full hover:bg-white/8 transition-colors">
               {t("tools.calc_title")} →
             </Link>
             <Link to="/jak-zacit" className="bg-white/10 text-white font-bold text-sm font-headline px-6 py-2.5 rounded-full hover:bg-white/20 transition-colors">

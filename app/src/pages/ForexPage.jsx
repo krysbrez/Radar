@@ -27,30 +27,30 @@ function EurCzkChart() {
   const diffPct = (((last - first) / first) * 100).toFixed(2);
 
   return (
-    <div className={`rounded-2xl border border-outline-variant/10 p-6 ${isUp ? "bg-green-50" : "bg-red-50"}`}>
+    <div className={`rounded-2xl border p-6 ${isUp ? "bg-red-500/8 border-red-500/20" : "bg-emerald-500/8 border-emerald-500/20"}`}>
       <div className="flex items-center justify-between mb-4">
         <div>
-          <p className="text-xs font-black text-outline uppercase tracking-wider font-headline mb-1">EUR/CZK · 30 dní</p>
-          <p className="text-3xl font-black text-primary font-headline">{last.toFixed(2)}</p>
+          <p className="text-xs font-black text-white/55 uppercase tracking-wider font-headline mb-1">EUR/CZK · 30 dní</p>
+          <p className="text-3xl font-black text-white font-headline">{last.toFixed(2)}</p>
         </div>
-        <div className={`text-right px-3 py-2 rounded-xl ${isUp ? "bg-red-100" : "bg-green-100"}`}>
-          <p className={`text-lg font-black ${isUp ? "text-red-600" : "text-green-600"}`}>
+        <div className={`text-right px-3 py-2 rounded-xl ${isUp ? "bg-red-500/15" : "bg-emerald-500/15"}`}>
+          <p className={`text-lg font-black ${isUp ? "text-red-400" : "text-emerald-400"}`}>
             {isUp ? "▲" : "▼"} {Math.abs(diffPct)}%
           </p>
-          <p className={`text-xs font-bold ${isUp ? "text-red-500" : "text-green-500"}`}>
+          <p className={`text-xs font-bold ${isUp ? "text-red-400/70" : "text-emerald-400/70"}`}>
             {isUp ? "+" : ""}{diff} za 30 dní
           </p>
         </div>
       </div>
       <ResponsiveContainer width="100%" height={180}>
         <LineChart data={EUR_CZK_DATA} margin={{ top: 4, right: 4, bottom: 0, left: 0 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.06)" vertical={false} />
-          <XAxis dataKey="date" tick={{ fontSize: 10, fill: "#9ca3af" }} axisLine={false} tickLine={false} interval={4} />
+          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" vertical={false} />
+          <XAxis dataKey="date" tick={{ fontSize: 10, fill: "rgba(255,255,255,0.4)" }} axisLine={false} tickLine={false} interval={4} />
           <YAxis hide domain={["auto", "auto"]} />
           <Tooltip
-            contentStyle={{ borderRadius: 12, border: "none", boxShadow: "0 4px 20px rgba(0,0,0,0.1)", fontSize: 12 }}
+            contentStyle={{ borderRadius: 12, border: "1px solid rgba(255,255,255,0.1)", background: "#000d1f", fontSize: 12 }}
             formatter={(v) => [`${v.toFixed(3)} CZK`, "EUR/CZK"]}
-            labelStyle={{ fontWeight: 700, color: "#1a1a2e" }}
+            labelStyle={{ fontWeight: 700, color: "rgba(255,255,255,0.85)" }}
           />
           <Line
             type="monotone"
@@ -62,7 +62,7 @@ function EurCzkChart() {
           />
         </LineChart>
       </ResponsiveContainer>
-      <p className="text-xs text-outline mt-3 text-center">Nižší hodnota = silnější koruna · Placeholder data · Zdroj: ČNB (fáze 2)</p>
+      <p className="text-xs text-white/55 mt-3 text-center">Nižší hodnota = silnější koruna · Placeholder data · Zdroj: ČNB (fáze 2)</p>
     </div>
   );
 }
@@ -114,30 +114,30 @@ export default function ForexPage() {
   const articles = getArticlesByCategory("forex");
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-[#000d1f]">
       {/* Hero */}
       <div className="gradient-primary text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8 pt-10 pb-14">
-          <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
+          <nav className="flex items-center gap-2 text-xs text-white/50 mb-6">
             <Link to="/" className="hover:text-white transition-colors">Radar</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">Forex</span>
+            <span className="text-white/75">Forex</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-5">
                 <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-                <span className="text-xs font-black text-primary-fixed-dim uppercase tracking-widest font-headline">{t("forex.live_badge")}</span>
+                <span className="text-xs font-black text-white/75 uppercase tracking-widest font-headline">{t("forex.live_badge")}</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-black font-headline tracking-tight leading-tight mb-4">
                 Forex?<br />Není to sci-fi.
               </h1>
-              <p className="text-primary-fixed-dim text-xl leading-relaxed max-w-xl mb-6">
+              <p className="text-white/75 text-xl leading-relaxed max-w-xl mb-6">
                 Měnové kurzy ovlivňují tvoje nákupy, dovolenou i hypotéku.
                 Radar ti každý týden vysvětlí, co se děje, bez pocitu, že musíš být trader v obleku.
               </p>
               <div className="flex gap-3">
-                <Link to="/#newsletter" className="bg-white text-primary font-black text-sm font-headline px-6 py-3 rounded-full hover:bg-primary-fixed transition-colors">
+                <Link to="/#newsletter" className="bg-white text-[#000613] font-black text-sm font-headline px-6 py-3 rounded-full hover:bg-white/90 transition-colors">
                   Odebírat newsletter →
                 </Link>
               </div>
@@ -152,7 +152,7 @@ export default function ForexPage() {
       </div>
 
       {/* SignalCard strip */}
-      <div className="bg-surface-container/50 border-b border-outline-variant/10">
+      <div className="bg-white/4 border-b border-white/8">
         <div className="max-w-6xl mx-auto px-6 md:px-8 py-4 grid grid-cols-1 md:grid-cols-3 gap-3">
           <SignalCard eyebrow="EUR/CZK" value="25.18" note="↑ +0.1% dnes" tone="positive" />
           <SignalCard eyebrow="USD/CZK" value="23.42" note="↓ -0.2% dnes" tone="negative" />
@@ -162,20 +162,20 @@ export default function ForexPage() {
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 space-y-12">
 
-        <section className="bg-surface-container-low rounded-3xl border border-outline-variant/10 p-6 md:p-7">
+        <section className="bg-white/5 rounded-3xl border border-white/8 p-6 md:p-7">
           <div className="max-w-3xl mb-5">
-            <p className="text-xs font-black text-outline uppercase tracking-[0.22em] font-headline mb-2">Proč řešit kurz, i když netraduješ</p>
-            <h2 className="text-2xl font-black text-primary font-headline mb-2">Forex bez dramatu.</h2>
-            <p className="text-sm text-on-surface-variant leading-relaxed">
+            <p className="text-xs font-black text-white/55 uppercase tracking-[0.22em] font-headline mb-2">Proč řešit kurz, i když netraduješ</p>
+            <h2 className="text-2xl font-black text-white font-headline mb-2">Forex bez dramatu.</h2>
+            <p className="text-sm text-white/65 leading-relaxed">
               Nemusíš sedět u grafu celý den. Stačí vědět, že kurz se propisuje do normálních věcí:
               nákupů, cestování a toho, kolik tě reálně stojí věci ze světa venku.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {FOREX_STARTER_POINTS.map((item) => (
-              <div key={item.title} className="bg-white rounded-2xl border border-outline-variant/10 p-5">
-                <h3 className="text-base font-black text-primary font-headline mb-2">{item.title}</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">{item.text}</p>
+              <div key={item.title} className="bg-white/5 rounded-2xl border border-white/8 p-5">
+                <h3 className="text-base font-black text-white font-headline mb-2">{item.title}</h3>
+                <p className="text-sm text-white/65 leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -188,33 +188,33 @@ export default function ForexPage() {
         <section>
           <div className="flex items-center gap-3 mb-5">
             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            <h2 className="text-xl font-black text-primary font-headline">{t("forex.pairs_title")}</h2>
-            <span className="text-xs text-outline bg-surface-container px-2 py-0.5 rounded-full">{t("common.placeholder_data")}</span>
+            <h2 className="text-xl font-black text-white font-headline">{t("forex.pairs_title")}</h2>
+            <span className="text-xs text-white/55 bg-white/5 px-2 py-0.5 rounded-full">{t("common.placeholder_data")}</span>
           </div>
-          <div className="bg-white rounded-2xl border border-outline-variant/10 overflow-hidden">
+          <div className="bg-white/5 rounded-2xl border border-white/8 overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b border-outline-variant/10 bg-surface-container-low">
-                    <th className="text-left py-3 px-4 text-xs font-black text-outline uppercase tracking-wider font-headline">{t("forex.col_pair")}</th>
-                    <th className="text-right py-3 px-4 text-xs font-black text-outline uppercase tracking-wider font-headline">{t("forex.col_rate")}</th>
-                    <th className="text-right py-3 px-4 text-xs font-black text-outline uppercase tracking-wider font-headline">24h</th>
-                    <th className="text-left py-3 px-4 text-xs font-black text-outline uppercase tracking-wider font-headline hidden md:table-cell">{t("forex.col_note")}</th>
+                  <tr className="border-b border-white/8 bg-white/5">
+                    <th className="text-left py-3 px-4 text-xs font-black text-white/55 uppercase tracking-wider font-headline">{t("forex.col_pair")}</th>
+                    <th className="text-right py-3 px-4 text-xs font-black text-white/55 uppercase tracking-wider font-headline">{t("forex.col_rate")}</th>
+                    <th className="text-right py-3 px-4 text-xs font-black text-white/55 uppercase tracking-wider font-headline">24h</th>
+                    <th className="text-left py-3 px-4 text-xs font-black text-white/55 uppercase tracking-wider font-headline hidden md:table-cell">{t("forex.col_note")}</th>
                   </tr>
                 </thead>
                 <tbody>
                   {CURRENCY_PAIRS.map((c) => (
-                    <tr key={c.pair} className="border-b border-outline-variant/5 hover:bg-surface-container-low transition-colors">
+                    <tr key={c.pair} className="border-b border-white/6 hover:bg-white/5 transition-colors">
                       <td className="py-3 px-4">
-                        <span className="font-black text-primary font-headline">{c.pair}</span>
+                        <span className="font-black text-white font-headline">{c.pair}</span>
                       </td>
-                      <td className="py-3 px-4 text-right font-black text-primary font-headline text-sm">{c.rate}</td>
+                      <td className="py-3 px-4 text-right font-black text-white font-headline text-sm">{c.rate}</td>
                       <td className="py-3 px-4 text-right">
-                        <span className={`text-sm font-black ${c.isUp ? "text-green-600" : "text-red-500"}`}>
+                        <span className={`text-sm font-black ${c.isUp ? "text-emerald-400" : "text-red-400"}`}>
                           {c.change}
                         </span>
                       </td>
-                      <td className="py-3 px-4 text-sm text-on-surface-variant hidden md:table-cell">{c.note}</td>
+                      <td className="py-3 px-4 text-sm text-white/65 hidden md:table-cell">{c.note}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -223,17 +223,17 @@ export default function ForexPage() {
           </div>
         </section>
 
-        {/* Proč kurzy záleží + Articles */}
+        {/* Analyses + Sidebar */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-4">
-            <h2 className="text-xl font-black text-primary font-headline mb-5">{t("forex.analyses_title")}</h2>
+            <h2 className="text-xl font-black text-white font-headline mb-5">{t("forex.analyses_title")}</h2>
             {articles.length > 0 ? articles.map((article) => (
               <Link
                 key={article.id}
                 to={`/clanek/${article.id}`}
-                className="group flex gap-4 bg-white rounded-xl border border-outline-variant/10 hover:border-outline-variant/25 hover:shadow-sm transition-all p-4"
+                className="group flex gap-4 bg-white/5 rounded-xl border border-white/8 hover:border-white/15 hover:shadow-sm transition-all p-4"
               >
-                <div className="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center text-3xl">
+                <div className="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden bg-gradient-to-br from-blue-900/50 to-blue-800/50 flex items-center justify-center text-3xl">
                   {article.image ? (
                     <img src={article.image} alt={article.title} className="w-full h-full object-cover" onError={(e) => { e.target.style.display="none"; }} />
                   ) : "💱"}
@@ -241,39 +241,39 @@ export default function ForexPage() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                     <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${article.tagColor}`}>{article.tag}</span>
-                    <span className="text-xs text-outline">{article.date}</span>
+                    <span className="text-xs text-white/55">{article.date}</span>
                   </div>
-                  <h3 className="text-base font-black text-primary font-headline leading-snug mb-1 group-hover:text-primary-container transition-colors line-clamp-2">{article.title}</h3>
-                  <p className="text-sm text-on-surface-variant line-clamp-1">{article.excerpt}</p>
+                  <h3 className="text-base font-black text-white font-headline leading-snug mb-1 group-hover:text-[#ffd700] transition-colors line-clamp-2">{article.title}</h3>
+                  <p className="text-sm text-white/65 line-clamp-1">{article.excerpt}</p>
                 </div>
               </Link>
             )) : (
-              <div className="bg-surface-container-low rounded-xl p-8 text-center">
+              <div className="bg-white/5 rounded-xl p-8 text-center">
                 <p className="text-4xl mb-3">💱</p>
-                <p className="text-on-surface-variant">{t("forex.analyses_empty")}</p>
+                <p className="text-white/65">{t("forex.analyses_empty")}</p>
               </div>
             )}
           </div>
 
           <div className="space-y-5">
             {/* Radarův tip */}
-            <div className="bg-surface-container-low rounded-2xl p-5">
+            <div className="bg-white/5 rounded-2xl p-5 border border-white/8">
               <div className="flex items-center gap-3 mb-3">
-                <div className="bg-white rounded-xl p-2">
+                <div className="bg-white/8 rounded-xl p-2">
                   <Mascot size={48} mood="normal" variant="idle" trackMouse={false} />
                 </div>
-                <p className="text-sm font-black text-primary font-headline">{t("forex.radar_tip_title")}</p>
+                <p className="text-sm font-black text-white font-headline">{t("forex.radar_tip_title")}</p>
               </div>
-              <p className="text-sm text-on-surface-variant leading-relaxed">
+              <p className="text-sm text-white/65 leading-relaxed">
                 {t("forex.radar_tip_text")}
               </p>
             </div>
 
             {/* Zajímavé číslo */}
-            <div className="bg-white rounded-2xl border border-outline-variant/10 p-5">
-              <p className="text-xs font-black text-outline uppercase tracking-wider mb-1 font-headline">{t("common.did_you_know")}</p>
-              <p className="text-3xl font-black text-primary font-headline leading-none">$7.5T</p>
-              <p className="text-sm text-on-surface-variant mt-2 leading-relaxed">
+            <div className="bg-white/5 rounded-2xl border border-white/8 p-5">
+              <p className="text-xs font-black text-white/55 uppercase tracking-wider mb-1 font-headline">{t("common.did_you_know")}</p>
+              <p className="text-3xl font-black text-white font-headline leading-none">$7.5T</p>
+              <p className="text-sm text-white/65 mt-2 leading-relaxed">
                 {t("forex.daily_volume_note")}
               </p>
             </div>
@@ -284,14 +284,14 @@ export default function ForexPage() {
         <section>
           <div className="flex items-center gap-3 mb-5">
             <span className="text-xl">💡</span>
-            <h2 className="text-xl font-black text-primary font-headline">{t("forex.why_rates_matter_title")}</h2>
+            <h2 className="text-xl font-black text-white font-headline">{t("forex.why_rates_matter_title")}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {FOREX_EXPLAINERS.map((item) => (
-              <div key={item.title} className="bg-white rounded-2xl border border-outline-variant/10 p-5">
+              <div key={item.title} className="bg-white/5 rounded-2xl border border-white/8 p-5">
                 <span className="text-3xl block mb-3">{item.emoji}</span>
-                <h3 className="text-base font-black text-primary font-headline mb-2">{item.title}</h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed">{item.text}</p>
+                <h3 className="text-base font-black text-white font-headline mb-2">{item.title}</h3>
+                <p className="text-sm text-white/65 leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -300,8 +300,8 @@ export default function ForexPage() {
         {/* CTA */}
         <div className="gradient-primary rounded-2xl p-8 text-white text-center">
           <p className="text-2xl font-black font-headline mb-2">Forex brief každý týden.</p>
-          <p className="text-primary-fixed-dim mb-5">Kurzy, co se změnilo a co to znamená pro tvoji peněženku.</p>
-          <Link to="/#newsletter" className="inline-block bg-white text-primary font-black text-sm font-headline px-8 py-3 rounded-full hover:bg-primary-fixed transition-colors">
+          <p className="text-white/75 mb-5">Kurzy, co se změnilo a co to znamená pro tvoji peněženku.</p>
+          <Link to="/#newsletter" className="inline-block bg-white text-[#000613] font-black text-sm font-headline px-8 py-3 rounded-full hover:bg-white/90 transition-colors">
             Odebírat zdarma →
           </Link>
         </div>

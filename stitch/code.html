@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="cs"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#74777f",
+                    "on-tertiary-container": "#b5785f",
+                    "on-secondary-fixed": "#131c29",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#e1e3e4",
+                    "surface-container-low": "#f3f4f5",
+                    "primary-container": "#001f3f",
+                    "tertiary-fixed": "#ffdbce",
+                    "tertiary": "#110200",
+                    "on-secondary-fixed-variant": "#3e4756",
+                    "inverse-surface": "#2e3132",
+                    "background": "#f8f9fa",
+                    "outline-variant": "#c4c6cf",
+                    "surface-dim": "#d9dadb",
+                    "secondary-container": "#d7e0f2",
+                    "primary-fixed-dim": "#afc8f0",
+                    "secondary-fixed-dim": "#bec7d9",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#476083",
+                    "surface-container-high": "#e7e8e9",
+                    "error": "#ba1a1a",
+                    "surface": "#f8f9fa",
+                    "primary-fixed": "#d4e3ff",
+                    "on-surface-variant": "#43474e",
+                    "on-primary-fixed": "#001c3a",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#2f486a",
+                    "on-error-container": "#93000a",
+                    "on-background": "#191c1d",
+                    "on-surface": "#191c1d",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#afc8f0",
+                    "primary": "#000613",
+                    "surface-bright": "#f8f9fa",
+                    "secondary": "#565f6e",
+                    "on-tertiary-fixed-variant": "#6b3a25",
+                    "on-primary-container": "#6f88ad",
+                    "surface-container": "#edeeef",
+                    "on-secondary-container": "#5a6372",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary-fixed-dim": "#fdb69a",
+                    "tertiary-container": "#391303",
+                    "secondary-fixed": "#dae3f5",
+                    "on-tertiary-fixed": "#351002"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-blue-900/15">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase font-['Manrope']">RADAR</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-blue-900 dark:text-white font-bold border-b-2 border-blue-900 pb-1 font-['Manrope'] tracking-tight" href="#">Investování</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors font-['Manrope'] tracking-tight" href="#">Akcie</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors font-['Manrope'] tracking-tight" href="#">Forex</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors font-['Manrope'] tracking-tight" href="#">Archiv</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:opacity-80 transition-opacity">search</button>
+<button class="bg-primary-container text-white px-6 py-2 rounded-full font-bold text-sm hover:opacity-90 active:scale-95 transition-all">Odebírat</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-12 max-w-7xl mx-auto px-8">
+<!-- Hero Section: Editorial Headline -->
+<header class="py-12 border-b border-outline-variant/15">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="max-w-3xl">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 text-xs font-bold tracking-widest uppercase rounded-sm mb-4 inline-block">Vydání #142</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-primary leading-tight tracking-tighter">
+                        Trhy v pohybu: Proč diverzifikace dává smysl právě teď.
+                    </h1>
+</div>
+<div class="text-right">
+<p class="text-on-surface-variant font-medium">14. Října 2026</p>
+<p class="text-sm text-outline">Čas čtení: 8 minut</p>
+</div>
+</div>
+</header>
+<!-- Bento Grid: Main Content -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mt-12">
+<!-- Main Story: Investování -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of a sleek stock market ticker screen reflecting on a glass surface with deep blue and white ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVG3WNFg67W4aEnOLjvpMR15uEa_g6ZeKNg0imBTyxrN1C-6ELwPcWNOSG-cziXIzGQqASwShbxWD4ISt1IXrzCKPu6C0cRXeU0ktSigUqajW9esVzLP6nBPNotbRnymefhD0cqc2naWwMn2nmJtPGiDOaJ8na7ni5DyKK0XG3KQaUHEkA24evDxtD521vFCUuT71kMGx-Nmz4roXqOEmqBuwucm6GPMmxPr_66yB7Ubr1qTFk3chkWY3RGBmssylxVN_vHYThBOUd"/>
+</div>
+<div class="mt-6">
+<h2 class="text-3xl font-bold text-primary mb-4">Investování: Od Bitcoinu k indexům</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-6">
+                        Ať už sledujete ETF kopírující S&amp;P 500, nebo věříte v budoucnost decentralizovaných financí, aktuální volatilita nabízí příležitosti. Rozebrali jsme pro vás, jak balancovat agresivní krypto portfolio se stabilními dividendovými tituly. Smart friend rada? Neprodávejte v panice, když trh dýchá.
+                    </p>
+<a class="text-primary font-bold border-b-2 border-primary-fixed-dim pb-1 hover:border-primary transition-all" href="#">Číst celou analýzu</a>
+</div>
+</div>
+<!-- Side Sidebar: Market Data -->
+<div class="md:col-span-4 space-y-8">
+<div class="bg-surface-container-highest p-8 rounded-xl">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">trending_up</span>
+                        Aktuální přehled
+                    </h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/15">
+<span class="font-medium">S&amp;P 500</span>
+<span class="text-green-600 font-bold">+1.24%</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/15">
+<span class="font-medium">Bitcoin</span>
+<span class="text-red-500 font-bold">-2.10%</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/15">
+<span class="font-medium">Zlato</span>
+<span class="text-green-600 font-bold">+0.45%</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="font-medium">EUR/CZK</span>
+<span class="text-on-surface-variant">25.24</span>
+</div>
+</div>
+</div>
+<div class="bg-primary text-white p-8 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-2xl font-bold mb-2">Radar Pulse</h3>
+<p class="text-primary-fixed-dim text-sm mb-4">Live aktualizace z trhů</p>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-tertiary-fixed rounded-full animate-pulse"></span>
+<span class="text-sm font-medium tracking-wide">ECB potvrzuje stabilitu sazeb</span>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]">radar</span>
+</div>
+</div>
+</div>
+</section>
+<!-- New Sections: Nemovitosti & Auta -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20">
+<div class="group">
+<h3 class="text-xs font-black tracking-widest uppercase text-outline mb-6">Sektor: Nemovitosti</h3>
+<div class="bg-surface-container-lowest p-1 rounded-xl overflow-hidden mb-6">
+<img class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="Modern architectural residential building with clean lines and large glass windows during twilight blue hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9TPDVdvRM_8-OUn3fbYMo01eiKVv4g8TZGvaeiF3KR6OoMMaxTIYDAjcKw7wAycgjah_jyCpdD37UFeFL_YBeejWEhL4-qUL4-RzWPJvxiYPul84PDXTyzeAviE7gxL0HtW3CIxHE4hXTQN4-pVNsEs10sau5FgTH9LBE2e64nhsfWKqAkv7WPgTQOLk--mm55ZMntEwd2Gm84EEEPCp3tvcrtIexjpnUHTRjmu2Q0t7jGudAEKo20sEbV_5BXg5Sy8-ef3V_0rRN"/>
+</div>
+<h4 class="text-2xl font-bold mb-3">Nájemní výnosy vs. Úrokové sazby</h4>
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                    Hypotéky začínají mírně klesat, ale ceny bytů v Praze a Brně drží svoji úroveň. Vyplatí se teď kupovat na investici, nebo raději volit REIT fondy? Podívali jsme se na čísla.
+                </p>
+<button class="flex items-center gap-2 text-primary font-bold">
+                    Více o realitách <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="group">
+<h3 class="text-xs font-black tracking-widest uppercase text-outline mb-6">Sektor: Auta</h3>
+<div class="bg-surface-container-lowest p-1 rounded-xl overflow-hidden mb-6">
+<img class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of a vintage luxury sports car dashboard with leather and chrome details in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHrr5mx3KmInBJl7URJYezPBGsKw4CX_kxlZ8sj7R7_HzmSjlBs86h6kZeVJPEPxKBqKY7E7f3EvElNrQmv5sqbublskLXT1QCwLjymIDXKoZNLSKWqkd6tHSOMxNyKfuCJYpeO6ws4fCZyNFjgSVNGGCzLxXshyP1jyzNEfrcQka35HbXUcFeNXZf3-2PADUlibRbzpcrwM9_fDqTP4ZHbkvehHO0gOPhnWadFdGUjNCWg-we4GNrQrTBuGdtJ8wWg8F-lETFc8Os"/>
+</div>
+<h4 class="text-2xl font-bold mb-3">Youngtimery jako bezpečný přístav?</h4>
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                    Klasické vozy z 90. let letos překonaly výkonností leckteré akciové tituly. Které modely mají největší potenciál růstu a na co si dát pozor při nákupu na aukci.
+                </p>
+<button class="flex items-center gap-2 text-primary font-bold">
+                    Auto-moto analýza <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Tip Týdne: High-End Highlight -->
+<section class="mt-20 bg-surface-container-low p-12 rounded-2xl border border-outline-variant/10">
+<div class="max-w-3xl mx-auto text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" data-weight="fill">verified</span>
+<h2 class="text-3xl font-bold text-primary mb-6">Tip týdne</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed italic">
+                    "Diverzifikace není jen o tom vlastnit hodně věcí. Je o tom vlastnit věci, které se v krizi nechovají stejně. Pokud vše ve vašem portfoliu roste ve stejnou chvíli, nejste diverzifikovaní – jste jen v riskantní jízdě nahoru."
+                </p>
+<div class="mt-8 pt-8 border-t border-outline-variant/20">
+<p class="font-bold text-primary">Petr Novák</p>
+<p class="text-sm text-outline">Hlavní analytik Radar Editorial</p>
+</div>
+</div>
+</section>
+<!-- Alternativní investice Block -->
+<section class="mt-20">
+<h3 class="text-xs font-black tracking-widest uppercase text-outline mb-8 text-center">Alternativní investice</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white p-6 rounded-xl shadow-sm flex items-center gap-4 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Detailed macro shot of a luxury watch mechanical movement with gold gears and ruby bearings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8lhMOtGYtbBHozxUjKbmfXU51ZF7K6m7V8Ts1gSr7Rl66xa-A38tn_Gelzs8i3N7ZknZytm1bKoDDpHgolImjyHY6n_xjPwTwlPvJqxb43R5ss2QbOJlfIqd0_uZB61CuayFxg6lHrrc4tYwSSlE5y6QLdv23XPXqmchZoXv5pyZjayGfGq_AzXP8egLATeWJE8gWTDD0XovK8fIymTG6oAs6bBeaJFV8yDIalQr_lY4hIdXzTOg6xtHzFysn15tMZWCNspCWIXON"/>
+</div>
+<div>
+<h5 class="font-bold">Hodinky</h5>
+<p class="text-xs text-on-surface-variant">Rolex &amp; Patek indexy +0.8%</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm flex items-center gap-4 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Stacks of polished gold bars reflecting warm studio light on a dark surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7HLn7JVTqJpN_IopjfX1seE5HonKXRhgY5J23WUHtPtYSv6mEUWCu_W4evay5gjUTS6ax8_kiNBrwgv8wVU9dBDKkSHzrayyFJAnPx86mNNNgqUqW6GF9RPcq6VYXIgs0JPCb36ehYA3NbTxp5-kaOkNFsIuWtR8kYWufw3sqmnWfpRBRTy31VzyeMor8I9_y1oQHQTtvVXJAyIfB4QBhix6F5qfkmtDqlhuXh0JyDLWoMKnHB3IB1x3I_29ecaTP-a57MnBj7W67"/>
+</div>
+<div>
+<h5 class="font-bold">Zlato</h5>
+<p class="text-xs text-on-surface-variant">Nové historické maximum</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm flex items-center gap-4 border border-outline-variant/5">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Limited edition designer sneakers in a clean minimalist studio setting with architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEexLqRdgGH4Dx5im3WOvmQMW9YRubv1t0s2rYLwqaMfdu_M08AdllSsZVPT5g8rm_YtYHuW4sNr7WHJIxWkrDoA2l5GplcZKFuN1p8yBZrCka0P9WWXmlWdh6hsFNGxWE74XpU71oH1Deue5EHFaZwmJPUUFczo4x5wxSKieEWnAG-2O8CN51dEyTBR-WQ4nkvu4OnTV9XK_lbSjK4LGyvxIecbIZcRGVtkhUiYnYVzjRnb14CY5qhZScJLyTEdJux0Ds_VTfQpF5"/>
+</div>
+<div>
+<h5 class="font-bold">Sneakers</h5>
+<p class="text-xs text-on-surface-variant">Sběratelský trh se ochlazuje</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-blue-900/10 bg-slate-50 dark:bg-slate-950 mt-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<div class="text-slate-400 font-['Inter'] text-sm uppercase tracking-widest">
+                © 2026 Radar Editorial Intelligence
+            </div>
+<div class="flex gap-8">
+<a class="text-slate-400 font-['Inter'] text-sm uppercase tracking-widest hover:underline underline-offset-4 transition-all" href="#">O nás</a>
+<a class="text-slate-400 font-['Inter'] text-sm uppercase tracking-widest hover:underline underline-offset-4 transition-all" href="#">Podmínky užití</a>
+<a class="text-slate-400 font-['Inter'] text-sm uppercase tracking-widest hover:underline underline-offset-4 transition-all" href="#">Kontakt</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-high text-blue-900 hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-high text-blue-900 hover:opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

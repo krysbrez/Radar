@@ -46,11 +46,11 @@ export default function RadarScore() {
   ];
 
   return (
-    <div className={`${c.bg} rounded-2xl p-6 border border-outline-variant/10 h-full`}>
+    <div className={`${c.bg} rounded-2xl p-6 border border-white/12/10 h-full`}>
       <div className="flex items-center justify-between mb-4">
         <div>
           <div className="flex items-center gap-1.5">
-            <p className="text-xs font-black text-outline uppercase tracking-widest font-headline">{t("radar_score.title")}</p>
+            <p className="text-xs font-black text-white/55 uppercase tracking-widest font-headline">{t("radar_score.title")}</p>
             {/* Tooltip trigger */}
             <div className="relative">
               <button
@@ -58,7 +58,7 @@ export default function RadarScore() {
                 onMouseLeave={() => setShowTooltip(false)}
                 onFocus={() => setShowTooltip(true)}
                 onBlur={() => setShowTooltip(false)}
-                className="w-4 h-4 rounded-full bg-outline/20 text-outline flex items-center justify-center text-[10px] font-bold hover:bg-outline/30 transition-colors"
+                className="w-4 h-4 rounded-full bg-outline/20 text-white/55 flex items-center justify-center text-[10px] font-bold hover:bg-outline/30 transition-colors"
                 aria-label="Info o Radar Score"
               >
                 ?
@@ -71,7 +71,7 @@ export default function RadarScore() {
               )}
             </div>
           </div>
-          <p className="text-xs text-on-surface-variant mt-0.5">{t("radar_score.subtitle")}</p>
+          <p className="text-xs text-white/65 mt-0.5">{t("radar_score.subtitle")}</p>
         </div>
         <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${c.badge}`}>{t(`radar_score.${labelKey}`)}</span>
       </div>
@@ -99,7 +99,7 @@ export default function RadarScore() {
         {/* Legenda */}
         <div className="flex-1 space-y-1.5">
           {LEGEND.map((item) => (
-            <div key={item.range} className={`flex items-center gap-2 text-xs ${item.active ? "font-bold text-primary" : "text-outline"}`}>
+            <div key={item.range} className={`flex items-center gap-2 text-xs ${item.active ? "font-bold text-white" : "text-white/55"}`}>
               <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${item.active ? "bg-primary" : "bg-outline-variant"}`} />
               <span>{t(`radar_score.${item.labelKey}`)} {item.emoji}</span>
               <span className="ml-auto opacity-60">{item.range}</span>
@@ -108,7 +108,7 @@ export default function RadarScore() {
         </div>
       </div>
 
-      <p className="text-[10px] text-outline mt-4 italic">{t("radar_score.note")}</p>
+      <p className="text-[10px] text-white/55 mt-4 italic">{t("radar_score.note")}</p>
     </div>
   );
 }

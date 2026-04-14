@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-04-12T18:29:33.826443+00:00",
+  "category_filter": "markets",
+  "article_count": 2,
+  "failed_feeds": [],
+  "overview": "Týdenní přehled: Geopolitické napětí žene nahoru ceny ropy a trhy reagují opatrně. Americké akcie se snaží udržet dubnové oživení, ale nadcházející zprávy o ziscích představují klíčovou zkoušku.",
+  "articles": [
+    {
+      "title": "Trump announces blockade of Strait of Hormuz as Vance leaves Pakistan talks with no deal. How financial markets are reacting.",
+      "link": "https://www.marketwatch.com/story/vance-leaves-pakistan-talks-with-no-deal-how-financial-markets-are-reacting-ef6916b3?mod=mw_rss_topstories",
+      "published": "Sun, 12 Apr 2026 18:05:00 GMT",
+      "summary": "As U.S.-Iran talks in Pakistan ended without a deal, U.S. stock futures were sliding and oil was climbing, based on trading via a crypto-based trading platform.",
+      "category": "markets",
+      "source": "MarketWatch.com - Top Stories",
+      "relevance_score": 4,
+      "image_url": "https://images.mktw.net/im-88823864",
+      "radar_headline": "Trump hrozí blokádou Hormuzu, ropa roste",
+      "radar_summary_short": "Rozhovory USA-Írán neuspěly, futures klesají a cena ropy stoupá. Geopolitické riziko tlačí na trhy.",
+      "radar_summary_long": "Rozhovory mezi USA a Íránem v Pákistánu skončily bez dohody. Trump navrhl blokádu Hormuzského průlivu, což vyvolalo obavy z narušení dodávek ropy. Trhy reagují poklesem futures a růstem cen ropy.",
+      "why_it_matters": "Blokáda Hormuzu by mohla výrazně ovlivnit globální ekonomiku a ceny energií.",
+      "tone": "warning",
+      "tags": [
+        "geopolitika",
+        "ropa",
+        "USA",
+        "Írán",
+        "trhy"
+      ]
+    },
+    {
+      "title": "April’s stock-market rebound is about to face its first major test as earnings season swings into gear",
+      "link": "https://www.marketwatch.com/story/aprils-stock-market-rebound-is-about-to-face-its-first-major-test-as-earnings-season-swings-into-gear-1210b246?mod=mw_rss_topstories",
+      "published": "Sun, 12 Apr 2026 16:00:00 GMT",
+      "summary": "The recovery in the U.S. stock market since the beginning of April could soon face its first critical test, as the first-quarter corporate earnings season is about to get underway.",
+      "category": "markets",
+      "source": "MarketWatch.com - Top Stories",
+      "relevance_score": 3,
+      "image_url": "https://images.mktw.net/im-74965763",
+      "radar_headline": "Test pro akciový obrat: Zprávy o ziscích na obzoru",
+      "radar_summary_short": "Dubnové oživení akcií čelí první velké zkoušce – zprávám o ziscích. Výsledky firem rozhodnou o dalším vývoji.",
+      "radar_summary_long": "Americké akcie se od začátku dubna zotavují, ale nadcházející zprávy o ziscích představují klíčový moment. Investoři bedlivě sledují, zda firmy dokážou naplnit očekávání a udržet pozitivní trend. Výsledky firem budou mít zásadní vliv na sentiment na trhu.",
+      "why_it_matters": "Zprávy o ziscích jsou klíčové pro posouzení zdraví ekonomiky a budoucího růstu akcií.",
+      "tone": "neutral",
+      "tags": [
+        "akcie",
+        "zprávy o ziscích",
+        "USA",
+        "trhy"
+      ]
+    }
+  ]
+}

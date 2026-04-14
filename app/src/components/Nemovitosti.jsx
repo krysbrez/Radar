@@ -13,11 +13,11 @@ const REGIONS = [
 
 function RegionMap() {
   return (
-    <div className="bg-surface-container-lowest rounded-xl border border-outline-variant/10 p-5">
-      <h4 className="text-sm font-black text-primary font-headline uppercase tracking-wider mb-4">
+    <div className="bg-white/4-container-lowest rounded-xl border border-white/12/10 p-5">
+      <h4 className="text-sm font-black text-white font-headline uppercase tracking-wider mb-4">
         Výnosová mapa ČR
       </h4>
-      <div className="relative bg-surface-container-low rounded-xl overflow-hidden" style={{ paddingBottom: "60%" }}>
+      <div className="relative bg-white/5 rounded-xl overflow-hidden" style={{ paddingBottom: "60%" }}>
         <svg
           viewBox="0 0 420 280"
           className="absolute inset-0 w-full h-full"
@@ -53,13 +53,13 @@ function RegionMap() {
       <div className="flex items-center gap-4 mt-3">
         <div className="flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-full bg-green-100 border border-green-600" />
-          <span className="text-xs text-on-surface-variant">Výnos roste</span>
+          <span className="text-xs text-white/65">Výnos roste</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-full bg-surface-container border border-outline" />
-          <span className="text-xs text-on-surface-variant">Stabilní</span>
+          <span className="w-3 h-3 rounded-full bg-white/5 border border-white/20" />
+          <span className="text-xs text-white/65">Stabilní</span>
         </div>
-        <span className="text-xs text-outline ml-auto">Hrubý nájemní výnos</span>
+        <span className="text-xs text-white/55 ml-auto">Hrubý nájemní výnos</span>
       </div>
     </div>
   );
@@ -74,17 +74,17 @@ export default function Nemovitosti() {
     <section id="nemovitosti" className="max-w-7xl mx-auto px-6 md:px-8 py-16">
       <div className="flex items-end justify-between mb-10">
         <div>
-          <p className="text-xs font-black tracking-widest uppercase text-outline mb-2 font-headline">Sektor</p>
-          <h2 className="text-4xl md:text-5xl font-black text-primary font-headline tracking-tight leading-none">
+          <p className="text-xs font-black tracking-widest uppercase text-white/55 mb-2 font-headline">Sektor</p>
+          <h2 className="text-4xl md:text-5xl font-black text-white font-headline tracking-tight leading-none">
             Nemovitosti
           </h2>
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-on-surface-variant">
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/65">
             Nejen ceny bytů. Radar ukazuje, kde dává smysl sledovat výnos, tlak na nájem a momenty, kdy trh na chvíli povolí.
           </p>
         </div>
         <Link
           to="/clanek/najemni-vynosy-vs-sazby"
-          className="hidden md:flex items-center gap-1.5 text-sm font-bold text-primary font-headline border-b-2 border-primary-fixed-dim pb-0.5 hover:border-primary transition-colors"
+          className="hidden md:flex items-center gap-1.5 text-sm font-bold text-white font-headline border-b-2 border-primary-fixed-dim pb-0.5 hover:border-primary transition-colors"
         >
           Všechny články
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -97,7 +97,7 @@ export default function Nemovitosti() {
           {featuredArticle && (
             <Link
               to={`/clanek/${featuredArticle.id}`}
-              className="group relative mb-5 block overflow-hidden rounded-[1.75rem] border border-outline-variant/10 bg-slate-900"
+              className="group relative mb-5 block overflow-hidden rounded-[1.75rem] border border-white/12/10 bg-slate-900"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent z-10" />
               {featuredArticle.image ? (
@@ -163,16 +163,16 @@ export default function Nemovitosti() {
                 </div>
 
                 <div className="flex items-center gap-2 mb-1.5">
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-outline flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                  <span className="text-xs text-outline">{article.date}</span>
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white/55 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span className="text-xs text-white/55">{article.date}</span>
                 </div>
-                <h3 className="text-base font-black text-primary font-headline leading-snug mb-1.5 group-hover:text-primary-container transition-colors line-clamp-2">
+                <h3 className="text-base font-black text-white font-headline leading-snug mb-1.5 group-hover:text-white-container transition-colors line-clamp-2">
                   {article.title}
                 </h3>
-                <p className="text-sm text-on-surface-variant leading-relaxed line-clamp-2 flex-1 mb-3">
+                <p className="text-sm text-white/65 leading-relaxed line-clamp-2 flex-1 mb-3">
                   {article.excerpt}
                 </p>
-                <span className="text-sm font-bold text-primary font-headline group-hover:text-primary-container transition-colors">
+                <span className="text-sm font-bold text-white font-headline group-hover:text-white-container transition-colors">
                   Číst více →
                 </span>
               </Link>
@@ -186,8 +186,8 @@ export default function Nemovitosti() {
           <PriceWatcherForm category="Nemovitosti" />
 
           {/* Quick stats */}
-          <div className="bg-surface-container-highest rounded-xl p-5">
-            <h4 className="text-xs font-black text-primary font-headline uppercase tracking-wider mb-4">
+          <div className="bg-white/4-container-highest rounded-xl p-5">
+            <h4 className="text-xs font-black text-white font-headline uppercase tracking-wider mb-4">
               Klíčové ukazatele Q1 2026
             </h4>
             {[
@@ -196,11 +196,11 @@ export default function Nemovitosti() {
               { label: "Průměrný výnos Praha", value: "3.3 %", note: "hrubý" },
               { label: "REIT výnosy", value: "5–7 %", note: "EUR fondy" },
             ].map((s) => (
-              <div key={s.label} className="flex items-center justify-between py-2.5 border-b border-outline-variant/10 last:border-0">
-                <span className="text-sm text-on-surface-variant">{s.label}</span>
+              <div key={s.label} className="flex items-center justify-between py-2.5 border-b border-white/12/10 last:border-0">
+                <span className="text-sm text-white/65">{s.label}</span>
                 <div className="text-right">
-                  <span className="font-black text-primary text-sm font-headline">{s.value}</span>
-                  <span className="text-xs text-outline ml-1">{s.note}</span>
+                  <span className="font-black text-white text-sm font-headline">{s.value}</span>
+                  <span className="text-xs text-white/55 ml-1">{s.note}</span>
                 </div>
               </div>
             ))}

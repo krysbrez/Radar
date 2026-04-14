@@ -98,21 +98,21 @@ export default function SlovnikPage() {
   const availableLetters = [...new Set(TERMS.map((t) => t.term[0].toUpperCase()))].sort((a, b) => a.localeCompare(b, "cs"));
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-white/4">
       {/* Hero */}
       <div className="gradient-primary text-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8 pt-10 pb-12">
-          <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
+          <nav className="flex items-center gap-2 text-xs text-white-fixed-dim/60 mb-6">
             <Link to="/" className="hover:text-white transition-colors">Radar</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">{t("tools.glossary_title")}</span>
+            <span className="text-white-fixed-dim">{t("tools.glossary_title")}</span>
           </nav>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4">
                 {t("tools.glossary_title")}
               </h1>
-              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl">
+              <p className="text-white-fixed-dim text-lg leading-relaxed max-w-xl">
                 {t("tools.glossary_subtitle")}
               </p>
             </div>
@@ -126,7 +126,7 @@ export default function SlovnikPage() {
       <div className="max-w-5xl mx-auto px-6 md:px-8 py-8">
         {/* Search */}
         <div className="relative mb-5">
-          <svg className="absolute left-4 top-1/2 -translate-y-1/2 text-outline" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+          <svg className="absolute left-4 top-1/2 -translate-y-1/2 text-white/55" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
           </svg>
           <input
@@ -134,10 +134,10 @@ export default function SlovnikPage() {
             placeholder={t("slovnik.placeholder")}
             value={query}
             onChange={(e) => { setQuery(e.target.value); setActiveLetter(null); }}
-            className="w-full pl-11 pr-4 py-3.5 bg-white border border-outline-variant/20 rounded-xl text-sm text-primary placeholder-outline focus:outline-none focus:border-primary/40 transition-colors shadow-sm"
+            className="w-full pl-11 pr-4 py-3.5 bg-white border border-white/12/20 rounded-xl text-sm text-white placeholder-white/35 focus:outline-none focus:border-[#ffd700]/40/40 transition-colors shadow-sm"
           />
           {query && (
-            <button onClick={() => setQuery("")} className="absolute right-4 top-1/2 -translate-y-1/2 text-outline hover:text-primary transition-colors">
+            <button onClick={() => setQuery("")} className="absolute right-4 top-1/2 -translate-y-1/2 text-white/55 hover:text-white transition-colors">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
             </button>
           )}
@@ -147,7 +147,7 @@ export default function SlovnikPage() {
         <div className="flex flex-wrap gap-1 mb-8">
           <button
             onClick={() => setActiveLetter(null)}
-            className={`px-2.5 py-1 rounded-lg text-xs font-bold font-headline transition-all ${!activeLetter ? "gradient-primary text-white" : "bg-white border border-outline-variant/20 text-on-surface-variant hover:border-outline-variant/40"}`}
+            className={`px-2.5 py-1 rounded-lg text-xs font-bold font-headline transition-all ${!activeLetter ? "gradient-primary text-white" : "bg-white border border-white/12/20 text-white/65 hover:border-white/12/40"}`}
           >
             {t("slovnik.all_btn")}
           </button>
@@ -155,7 +155,7 @@ export default function SlovnikPage() {
             <button
               key={letter}
               onClick={() => { setActiveLetter(activeLetter === letter ? null : letter); setQuery(""); }}
-              className={`px-2.5 py-1 rounded-lg text-xs font-bold font-headline transition-all ${activeLetter === letter ? "gradient-primary text-white" : "bg-white border border-outline-variant/20 text-on-surface-variant hover:border-outline-variant/40"}`}
+              className={`px-2.5 py-1 rounded-lg text-xs font-bold font-headline transition-all ${activeLetter === letter ? "gradient-primary text-white" : "bg-white border border-white/12/20 text-white/65 hover:border-white/12/40"}`}
             >
               {letter}
             </button>
@@ -163,13 +163,13 @@ export default function SlovnikPage() {
         </div>
 
         {/* Results count */}
-        <p className="text-xs text-outline mb-4">{t("slovnik.count", { count: filtered.length })}</p>
+        <p className="text-xs text-white/55 mb-4">{t("slovnik.count", { count: filtered.length })}</p>
 
         {/* Terms list */}
         {filtered.length === 0 ? (
           <div className="text-center py-16">
             <p className="text-4xl mb-3">🔍</p>
-            <p className="text-on-surface-variant">{t("slovnik.not_found")}</p>
+            <p className="text-white/65">{t("slovnik.not_found")}</p>
           </div>
         ) : (
           <div className="space-y-2">
@@ -177,23 +177,23 @@ export default function SlovnikPage() {
               <button
                 key={item.term}
                 onClick={() => setOpenTerm(openTerm === item.term ? null : item.term)}
-                className="w-full text-left bg-white rounded-xl border border-outline-variant/10 hover:border-outline-variant/30 transition-all overflow-hidden"
+                className="w-full text-left bg-white rounded-xl border border-white/12/10 hover:border-white/12/30 transition-all overflow-hidden"
               >
                 <div className="flex items-center justify-between px-5 py-3.5">
-                  <span className="font-black text-primary font-headline">{item.term}</span>
+                  <span className="font-black text-white font-headline">{item.term}</span>
                   <svg
                     width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
-                    className={`text-outline flex-shrink-0 transition-transform ${openTerm === item.term ? "rotate-180" : ""}`}
+                    className={`text-white/55 flex-shrink-0 transition-transform ${openTerm === item.term ? "rotate-180" : ""}`}
                   >
                     <polyline points="6 9 12 15 18 9"/>
                   </svg>
                 </div>
                 {openTerm === item.term && (
-                  <div className="px-5 pb-4 border-t border-outline-variant/10 pt-4 space-y-3">
-                    <p className="text-sm text-on-surface leading-relaxed">{item.def}</p>
-                    <div className="bg-surface-container-low rounded-lg px-4 py-2.5 flex gap-2">
-                      <span className="text-xs font-black text-outline uppercase tracking-wider font-headline flex-shrink-0 pt-0.5">{t("slovnik.example_label")}</span>
-                      <p className="text-xs text-on-surface-variant leading-relaxed italic">{item.example}</p>
+                  <div className="px-5 pb-4 border-t border-white/12/10 pt-4 space-y-3">
+                    <p className="text-sm text-white/85 leading-relaxed">{item.def}</p>
+                    <div className="bg-white/5 rounded-lg px-4 py-2.5 flex gap-2">
+                      <span className="text-xs font-black text-white/55 uppercase tracking-wider font-headline flex-shrink-0 pt-0.5">{t("slovnik.example_label")}</span>
+                      <p className="text-xs text-white/65 leading-relaxed italic">{item.example}</p>
                     </div>
                   </div>
                 )}

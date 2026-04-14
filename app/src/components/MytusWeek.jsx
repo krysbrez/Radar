@@ -47,8 +47,8 @@ export default function MytusWeek() {
           <div className="inline-flex items-center gap-2 bg-red-100 rounded-full px-3 py-1.5 mb-3 w-fit">
             <span className="text-xs font-black text-red-700 uppercase tracking-widest font-headline">{t("myth.badge")}</span>
           </div>
-          <h2 className="text-3xl font-black text-primary font-headline mb-2">{t("myth.title")}</h2>
-          <p className="text-sm text-on-surface-variant mb-5">
+          <h2 className="text-3xl font-black text-white font-headline mb-2">{t("myth.title")}</h2>
+          <p className="text-sm text-white/65 mb-5">
             Každý týden vyvrátíme jeden finanční mýtus, který tě stojí peníze.
           </p>
           {/* Dot nav */}
@@ -61,7 +61,7 @@ export default function MytusWeek() {
               />
             ))}
           </div>
-          <p className="text-xs text-outline">{idx + 1} / {MYTHS.length}</p>
+          <p className="text-xs text-white/55">{idx + 1} / {MYTHS.length}</p>
         </div>
 
         {/* Cards */}
@@ -78,7 +78,7 @@ export default function MytusWeek() {
           {/* Reality */}
           <div className="bg-green-50 border border-green-200 rounded-2xl p-5">
             <p className="text-xs font-black text-green-700 uppercase tracking-widest font-headline mb-2">{t("myth.reality_label")}</p>
-            <p className="text-on-surface leading-relaxed">{item.reality}</p>
+            <p className="text-white/85 leading-relaxed">{item.reality}</p>
             <p className="text-xs text-green-600 mt-3 font-semibold">{t("myth.source")}: {item.source}</p>
           </div>
         </div>

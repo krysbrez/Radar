@@ -37,7 +37,7 @@ export default function TydenVCislech() {
   return (
     <section className="max-w-7xl mx-auto px-6 md:px-8 py-8">
       <div className="flex items-center gap-3 mb-5">
-        <p className="text-xs font-black tracking-widest uppercase text-outline font-headline">
+        <p className="text-xs font-black tracking-widest uppercase text-white/55 font-headline">
           Tento týden v číslech
         </p>
         <div className="h-px flex-1 bg-outline-variant/15" />
@@ -46,7 +46,7 @@ export default function TydenVCislech() {
         {NUMBERS.map((n) => (
           <div
             key={n.label}
-            className="bg-white rounded-xl p-4 border border-outline-variant/10 hover:border-outline-variant/25 transition-all"
+            className="bg-white rounded-xl p-4 border border-white/12/10 hover:border-white/12/25 transition-all"
           >
             <div className="flex items-center justify-between mb-2">
               <span className="text-xl">{n.emoji}</span>
@@ -56,12 +56,12 @@ export default function TydenVCislech() {
                 {n.up ? "↑" : "↓"}
               </span>
             </div>
-            <p className="text-2xl font-black text-primary font-headline leading-none">
+            <p className="text-2xl font-black text-white font-headline leading-none">
               {n.value}
-              <span className="text-sm font-semibold text-outline ml-1">{n.unit}</span>
+              <span className="text-sm font-semibold text-white/55 ml-1">{n.unit}</span>
             </p>
-            <p className="text-xs font-semibold text-on-surface-variant mt-1">{n.label}</p>
-            <p className="text-[10px] text-outline mt-0.5">{n.note}</p>
+            <p className="text-xs font-semibold text-white/65 mt-1">{n.label}</p>
+            <p className="text-[10px] text-white/55 mt-0.5">{n.note}</p>
           </div>
         ))}
       </div>

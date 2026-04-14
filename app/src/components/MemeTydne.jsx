@@ -62,7 +62,7 @@ export default function MemeTydne() {
       <div className="relative">
         <div className="flex items-start justify-between gap-4 mb-5">
           <div>
-            <p className="text-[11px] font-black uppercase tracking-[0.22em] text-outline font-headline">
+            <p className="text-[11px] font-black uppercase tracking-[0.22em] text-white/55 font-headline">
               {insight.label}
             </p>
             <p className={`mt-2 inline-flex rounded-full px-2.5 py-1 text-[11px] font-black uppercase tracking-[0.18em] font-headline ${insight.chip}`}>
@@ -82,24 +82,24 @@ export default function MemeTydne() {
         </div>
 
         <div className="rounded-[1.5rem] border border-white/70 bg-white/90 p-5 shadow-[0_18px_40px_rgba(12,23,46,0.06)] backdrop-blur-sm">
-          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
             Týdenní insight
           </p>
-          <h3 className="mt-3 text-xl font-black leading-tight text-primary font-headline">
+          <h3 className="mt-3 text-xl font-black leading-tight text-white font-headline">
             {insight.headline}
           </h3>
-          <p className="mt-3 text-sm leading-relaxed text-on-surface-variant">
+          <p className="mt-3 text-sm leading-relaxed text-white/65">
             {insight.note}
           </p>
 
-          <div className="mt-5 rounded-2xl border border-outline-variant/10 bg-surface-container-low px-4 py-4">
-            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-outline font-headline">
+          <div className="mt-5 rounded-2xl border border-white/12/10 bg-white/5 px-4 py-4">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/55 font-headline">
               Signál týdne
             </p>
-            <p className="mt-2 text-base font-black text-primary font-headline">
+            <p className="mt-2 text-base font-black text-white font-headline">
               {insight.signal}
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+            <p className="mt-2 text-sm leading-relaxed text-white/65">
               {insight.takeaway}
             </p>
           </div>
@@ -108,14 +108,14 @@ export default function MemeTydne() {
         <div className="mt-4 flex items-center justify-between text-xs">
           <button
             onClick={() => setIndex((index - 1 + RADAR_INSIGHTS.length) % RADAR_INSIGHTS.length)}
-            className="font-bold text-on-surface-variant hover:text-primary transition-colors"
+            className="font-bold text-white/65 hover:text-white transition-colors"
           >
             ← Předchozí
           </button>
-          <p className="text-outline">{index + 1} / {RADAR_INSIGHTS.length}</p>
+          <p className="text-white/55">{index + 1} / {RADAR_INSIGHTS.length}</p>
           <button
             onClick={() => setIndex((index + 1) % RADAR_INSIGHTS.length)}
-            className="font-bold text-on-surface-variant hover:text-primary transition-colors"
+            className="font-bold text-white/65 hover:text-white transition-colors"
           >
             Další →
           </button>

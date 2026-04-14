@@ -38,7 +38,7 @@ export default function RadarovaMoudrost() {
   return (
     <section className="max-w-7xl mx-auto px-6 md:px-8 py-6">
       <div className="gradient-primary rounded-2xl px-8 py-8 text-white">
-        <p className="text-xs font-black text-primary-fixed-dim/60 uppercase tracking-widest mb-5 font-headline">
+        <p className="text-xs font-black text-white-fixed-dim/60 uppercase tracking-widest mb-5 font-headline">
           Radarova moudrost
         </p>
         <div
@@ -49,7 +49,7 @@ export default function RadarovaMoudrost() {
           <p className="text-xl md:text-2xl font-black font-headline leading-snug text-white mb-4 max-w-3xl">
             "{tip.text}"
           </p>
-          <p className="text-xs text-primary-fixed-dim/60 font-semibold">{tip.author}</p>
+          <p className="text-xs text-white-fixed-dim/60 font-semibold">{tip.author}</p>
         </div>
         <div className="flex gap-2 mt-6">
           {TIPS.map((_, i) => (

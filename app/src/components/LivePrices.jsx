@@ -55,17 +55,17 @@ function PriceCard({ config, item, loading }) {
   const isUp = item?.change >= 0;
 
   return (
-    <div className="bg-surface-container-lowest rounded-xl p-5 border border-outline-variant/10 hover:border-outline-variant/30 transition-all hover:shadow-sm group">
+    <div className="bg-white/4-container-lowest rounded-xl p-5 border border-white/12/10 hover:border-white/12/30 transition-all hover:shadow-sm group">
       <div className="flex justify-between items-start mb-4">
         <div>
-          <p className="text-xs font-bold text-outline uppercase tracking-wider mb-1 font-headline">
+          <p className="text-xs font-bold text-white/55 uppercase tracking-wider mb-1 font-headline">
             {config.note}
           </p>
-          <p className="font-bold text-primary font-headline">{config.label}</p>
+          <p className="font-bold text-white font-headline">{config.label}</p>
         </div>
         <div
           className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${
-            loading ? "bg-surface-container" :
+            loading ? "bg-white/5" :
             isUp ? "bg-green-50 text-green-600" : "bg-red-50 text-red-500"
           }`}
         >
@@ -75,12 +75,12 @@ function PriceCard({ config, item, loading }) {
 
       {loading ? (
         <div className="space-y-2 animate-pulse">
-          <div className="h-7 bg-surface-container rounded w-3/4" />
-          <div className="h-4 bg-surface-container rounded w-1/2" />
+          <div className="h-7 bg-white/5 rounded w-3/4" />
+          <div className="h-4 bg-white/5 rounded w-1/2" />
         </div>
       ) : (
         <>
-          <p className="text-2xl font-black text-primary font-headline leading-none mb-2">
+          <p className="text-2xl font-black text-white font-headline leading-none mb-2">
             {item?.price}{config.unit}
           </p>
           <div className="flex items-center gap-2">
@@ -95,7 +95,7 @@ function PriceCard({ config, item, loading }) {
               {isUp ? "+" : ""}
               {item?.change}%
             </span>
-            <span className="text-xs text-outline">{t("live_prices.today")}</span>
+            <span className="text-xs text-white/55">{t("live_prices.today")}</span>
           </div>
         </>
       )}
@@ -123,13 +123,13 @@ export default function LivePrices({ inline = false }) {
             </span>
           </div>
           {lastUpdated && (
-            <span className="text-xs text-outline">
+            <span className="text-xs text-white/55">
               {t("live_prices.updated")} {formatTime(lastUpdated)}
             </span>
           )}
         </div>
         {error && (
-          <span className="text-xs text-outline italic">{error}</span>
+          <span className="text-xs text-white/55 italic">{error}</span>
         )}
       </div>
 

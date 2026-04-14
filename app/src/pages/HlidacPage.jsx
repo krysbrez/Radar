@@ -10,19 +10,21 @@ const TABS = [
 
 function SuccessBanner({ onReset }) {
   return (
-    <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
+    <div className="bg-emerald-500/8 border border-emerald-500/20 rounded-2xl p-8 text-center">
       <p className="text-4xl mb-3">✅</p>
-      <h3 className="text-xl font-black text-green-800 font-headline mb-2">Alert nastaven!</h3>
-      <p className="text-green-700 text-sm mb-4">Radar tě upozorní, jakmile se cena změní. Hlídáme 24/7.</p>
+      <h3 className="text-xl font-black text-emerald-400 font-headline mb-2">Hlídání je zapnuté!</h3>
+      <p className="text-emerald-400/70 text-sm mb-4">Radar tě upozorní, jakmile se cena pohne. Hlídáme nonstop.</p>
       <button
         onClick={onReset}
-        className="text-sm font-bold text-green-700 underline underline-offset-2"
+        className="text-sm font-bold text-emerald-400 underline underline-offset-2"
       >
-        Nastavit další alert →
+        Nastavit další hlídání →
       </button>
     </div>
   );
 }
+
+const inputClass = "w-full bg-white/8 border border-white/10 focus:border-[#ffd700]/40 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/35 outline-none transition-colors";
 
 function NemovitostiForm() {
   const [form, setForm] = useState({ typ: "byt", lokalita: "", maxCena: "", minPlocha: "", email: "" });
@@ -40,12 +42,8 @@ function NemovitostiForm() {
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Typ nemovitosti</label>
-          <select
-            value={form.typ}
-            onChange={e => set("typ", e.target.value)}
-            className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-          >
+          <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Typ nemovitosti</label>
+          <select value={form.typ} onChange={e => set("typ", e.target.value)} className={inputClass}>
             <option value="byt">Byt</option>
             <option value="dum">Rodinný dům</option>
             <option value="pozemek">Pozemek</option>
@@ -53,61 +51,33 @@ function NemovitostiForm() {
           </select>
         </div>
         <div>
-          <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Lokalita</label>
-          <input
-            type="text"
-            placeholder="Praha, Brno, Ostrava..."
-            value={form.lokalita}
-            onChange={e => set("lokalita", e.target.value)}
-            className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-          />
+          <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Lokalita</label>
+          <input type="text" placeholder="Praha, Brno, Ostrava..." value={form.lokalita} onChange={e => set("lokalita", e.target.value)} className={inputClass} />
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Max. cena (Kč)</label>
-          <input
-            type="number"
-            placeholder="5 000 000"
-            value={form.maxCena}
-            onChange={e => set("maxCena", e.target.value)}
-            className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-          />
+          <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Max. cena (Kč)</label>
+          <input type="number" placeholder="5 000 000" value={form.maxCena} onChange={e => set("maxCena", e.target.value)} className={inputClass} />
         </div>
         <div>
-          <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Min. plocha (m²)</label>
-          <input
-            type="number"
-            placeholder="50"
-            value={form.minPlocha}
-            onChange={e => set("minPlocha", e.target.value)}
-            className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-          />
+          <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Min. plocha (m²)</label>
+          <input type="number" placeholder="50" value={form.minPlocha} onChange={e => set("minPlocha", e.target.value)} className={inputClass} />
         </div>
       </div>
 
       <div>
-        <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Tvůj email <span className="text-red-400">*</span></label>
-        <input
-          type="email"
-          required
-          placeholder="petr@email.cz"
-          value={form.email}
-          onChange={e => set("email", e.target.value)}
-          className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-        />
+        <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Tvůj email <span className="text-red-400">*</span></label>
+        <input type="email" required placeholder="petr@email.cz" value={form.email} onChange={e => set("email", e.target.value)} className={inputClass} />
       </div>
 
-      <div className="bg-blue-50 border border-blue-200 rounded-xl p-3 text-xs text-blue-800">
+      <div className="bg-sky-500/8 border border-sky-500/20 rounded-xl p-3 text-xs text-sky-300">
         📡 Radar hlídá <strong>Sreality, Bezrealitky, Reality.cz</strong> a 10 dalších portálů. Nové nabídky dostaneš do hodiny.
       </div>
 
-      <button
-        type="submit"
-        className="w-full gradient-primary text-white py-3.5 rounded-xl font-black font-headline text-sm hover:opacity-90 active:scale-[0.99] transition-all"
-      >
-        🔔 Aktivovat alert →
+      <button type="submit" className="w-full gradient-primary text-white py-3.5 rounded-xl font-black font-headline text-sm hover:opacity-90 active:scale-[0.99] transition-all">
+        🔔 Zapnout hlídání →
       </button>
     </form>
   );
@@ -124,73 +94,37 @@ function AutaForm() {
     <form onSubmit={e => { e.preventDefault(); setSent(true); }} className="space-y-5">
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Značka</label>
-          <input
-            type="text"
-            placeholder="Toyota, BMW, Porsche..."
-            value={form.znacka}
-            onChange={e => set("znacka", e.target.value)}
-            className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-          />
+          <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Značka</label>
+          <input type="text" placeholder="Toyota, BMW, Porsche..." value={form.znacka} onChange={e => set("znacka", e.target.value)} className={inputClass} />
         </div>
         <div>
-          <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Model</label>
-          <input
-            type="text"
-            placeholder="Supra, E36 M3, 964..."
-            value={form.model}
-            onChange={e => set("model", e.target.value)}
-            className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-          />
+          <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Model</label>
+          <input type="text" placeholder="Supra, E36 M3, 964..." value={form.model} onChange={e => set("model", e.target.value)} className={inputClass} />
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Max. cena (Kč)</label>
-          <input
-            type="number"
-            placeholder="2 000 000"
-            value={form.maxCena}
-            onChange={e => set("maxCena", e.target.value)}
-            className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-          />
+          <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Max. cena (Kč)</label>
+          <input type="number" placeholder="2 000 000" value={form.maxCena} onChange={e => set("maxCena", e.target.value)} className={inputClass} />
         </div>
         <div>
-          <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Rok výroby od</label>
-          <input
-            type="number"
-            placeholder="1990"
-            min={1960}
-            max={2010}
-            value={form.rokOd}
-            onChange={e => set("rokOd", e.target.value)}
-            className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-          />
+          <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Rok výroby od</label>
+          <input type="number" placeholder="1990" min={1960} max={2010} value={form.rokOd} onChange={e => set("rokOd", e.target.value)} className={inputClass} />
         </div>
       </div>
 
       <div>
-        <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Tvůj email <span className="text-red-400">*</span></label>
-        <input
-          type="email"
-          required
-          placeholder="petr@email.cz"
-          value={form.email}
-          onChange={e => set("email", e.target.value)}
-          className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-        />
+        <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Tvůj email <span className="text-red-400">*</span></label>
+        <input type="email" required placeholder="petr@email.cz" value={form.email} onChange={e => set("email", e.target.value)} className={inputClass} />
       </div>
 
-      <div className="bg-orange-50 border border-orange-200 rounded-xl p-3 text-xs text-orange-800">
-        🚗 Radar hlídá <strong>Sauto.cz, TipCars, Autobazar.eu</strong> a 15 dalších. Japonské youngtimery, BMW M-série, Porsche 911 — vše na jednom místě.
+      <div className="bg-orange-500/8 border border-orange-500/20 rounded-xl p-3 text-xs text-orange-300">
+        🚗 Radar hlídá <strong>Sauto.cz, TipCars, Autobazar.eu</strong> a 15 dalších webů. Japonské youngtimery, BMW M a Porsche 911 na jednom místě.
       </div>
 
-      <button
-        type="submit"
-        className="w-full gradient-primary text-white py-3.5 rounded-xl font-black font-headline text-sm hover:opacity-90 active:scale-[0.99] transition-all"
-      >
-        🔔 Aktivovat alert →
+      <button type="submit" className="w-full gradient-primary text-white py-3.5 rounded-xl font-black font-headline text-sm hover:opacity-90 active:scale-[0.99] transition-all">
+        🔔 Zapnout hlídání →
       </button>
     </form>
   );
@@ -217,12 +151,8 @@ function AltForm() {
   return (
     <form onSubmit={e => { e.preventDefault(); setSent(true); }} className="space-y-5">
       <div>
-        <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Kategorie</label>
-        <select
-          value={form.kategorie}
-          onChange={e => set("kategorie", e.target.value)}
-          className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-        >
+        <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Kategorie</label>
+        <select value={form.kategorie} onChange={e => set("kategorie", e.target.value)} className={inputClass}>
           {ALT_CATEGORIES.map(c => (
             <option key={c.value} value={c.value}>{c.label}</option>
           ))}
@@ -230,48 +160,26 @@ function AltForm() {
       </div>
 
       <div>
-        <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Klíčové slovo / název</label>
-        <input
-          type="text"
-          placeholder="Rolex Submariner, Charizard 1st Ed., Jordan 1..."
-          value={form.klic}
-          onChange={e => set("klic", e.target.value)}
-          className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-        />
+        <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Klíčové slovo / název</label>
+        <input type="text" placeholder="Rolex Submariner, Charizard 1st Ed., Jordan 1..." value={form.klic} onChange={e => set("klic", e.target.value)} className={inputClass} />
       </div>
 
       <div>
-        <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Max. cena (Kč)</label>
-        <input
-          type="number"
-          placeholder="100 000"
-          value={form.maxCena}
-          onChange={e => set("maxCena", e.target.value)}
-          className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-        />
+        <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Max. cena (Kč)</label>
+        <input type="number" placeholder="100 000" value={form.maxCena} onChange={e => set("maxCena", e.target.value)} className={inputClass} />
       </div>
 
       <div>
-        <label className="text-xs font-black text-outline uppercase tracking-wider mb-1.5 block font-headline">Tvůj email <span className="text-red-400">*</span></label>
-        <input
-          type="email"
-          required
-          placeholder="petr@email.cz"
-          value={form.email}
-          onChange={e => set("email", e.target.value)}
-          className="w-full bg-white border border-outline-variant/20 focus:border-primary/40 rounded-xl px-4 py-2.5 text-sm text-primary outline-none"
-        />
+        <label className="text-xs font-black text-white/55 uppercase tracking-wider mb-1.5 block font-headline">Tvůj email <span className="text-red-400">*</span></label>
+        <input type="email" required placeholder="petr@email.cz" value={form.email} onChange={e => set("email", e.target.value)} className={inputClass} />
       </div>
 
-      <div className="bg-purple-50 border border-purple-200 rounded-xl p-3 text-xs text-purple-800">
+      <div className="bg-purple-500/8 border border-purple-500/20 rounded-xl p-3 text-xs text-purple-300">
         💎 Radar hlídá <strong>eBay, Vinted, bazaary a specializované weby</strong> pro každou kategorii. Včetně mezinárodních aukčních domů.
       </div>
 
-      <button
-        type="submit"
-        className="w-full gradient-primary text-white py-3.5 rounded-xl font-black font-headline text-sm hover:opacity-90 active:scale-[0.99] transition-all"
-      >
-        🔔 Aktivovat alert →
+      <button type="submit" className="w-full gradient-primary text-white py-3.5 rounded-xl font-black font-headline text-sm hover:opacity-90 active:scale-[0.99] transition-all">
+        🔔 Zapnout hlídání →
       </button>
     </form>
   );
@@ -287,27 +195,27 @@ export default function HlidacPage() {
   const [activeTab, setActiveTab] = useState("nemovitosti");
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="min-h-screen bg-[#000d1f]">
       {/* Hero */}
       <div className="gradient-primary text-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8 pt-10 pb-14">
-          <nav className="flex items-center gap-2 text-xs text-primary-fixed-dim/60 mb-6">
+          <nav className="flex items-center gap-2 text-xs text-white/50 mb-6">
             <Link to="/" className="hover:text-white transition-colors">Radar</Link>
             <span>›</span>
-            <span className="text-primary-fixed-dim">Hlídač cen</span>
+            <span className="text-white/75">Hlídač cen</span>
           </nav>
 
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-4">
-                <span className="w-2 h-2 bg-tertiary-fixed rounded-full animate-pulse" />
-                <span className="text-xs font-black text-primary-fixed-dim uppercase tracking-widest font-headline">Nástroje · Hlídač</span>
+                <span className="w-2 h-2 bg-[#ffd700] rounded-full animate-pulse" />
+                <span className="text-xs font-black text-white/75 uppercase tracking-widest font-headline">Nástroje · Hlídač</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-black font-headline tracking-tight mb-4 leading-tight">
-                Nastav alert.<br />
-                <span className="text-tertiary-fixed">Radar hlídá za tebe.</span>
+                Nastav hlídání.<br />
+                <span className="text-[#ffd700]">Radar hlídá za tebe.</span>
               </h1>
-              <p className="text-primary-fixed-dim text-lg leading-relaxed max-w-xl mb-8">
+              <p className="text-white/75 text-lg leading-relaxed max-w-xl mb-8">
                 Nemovitosti, auta, hodinky, LEGO — zadáš co hledáš a my tě upozorníme, jakmile se objeví nabídka. Bez scrollování. Bez promeškání.
               </p>
 
@@ -316,7 +224,7 @@ export default function HlidacPage() {
                 {STATS.map(s => (
                   <div key={s.label}>
                     <p className="text-2xl font-black text-white font-headline">{s.value}</p>
-                    <p className="text-xs text-primary-fixed-dim/70">{s.label}</p>
+                    <p className="text-xs text-white/55">{s.label}</p>
                   </div>
                 ))}
               </div>
@@ -333,7 +241,7 @@ export default function HlidacPage() {
       <div className="max-w-3xl mx-auto px-6 md:px-8 py-10">
 
         {/* Tabs */}
-        <div className="flex gap-1 p-1 bg-surface-container rounded-2xl mb-8">
+        <div className="flex gap-1 p-1 bg-white/5 rounded-2xl mb-8">
           {TABS.map(tab => (
             <button
               key={tab.id}
@@ -341,7 +249,7 @@ export default function HlidacPage() {
               className={`flex-1 py-2.5 px-3 rounded-xl text-sm font-black font-headline transition-all ${
                 activeTab === tab.id
                   ? "gradient-primary text-white shadow-sm"
-                  : "text-on-surface-variant hover:text-primary"
+                  : "text-white/65 hover:text-white"
               }`}
             >
               {tab.label}
@@ -350,7 +258,7 @@ export default function HlidacPage() {
         </div>
 
         {/* Form container */}
-        <div className="bg-white rounded-2xl border border-outline-variant/10 shadow-sm p-6 md:p-8">
+        <div className="bg-white/5 rounded-2xl border border-white/8 shadow-sm p-6 md:p-8">
           {activeTab === "nemovitosti" && <NemovitostiForm />}
           {activeTab === "auta" && <AutaForm />}
           {activeTab === "alt" && <AltForm />}
@@ -358,7 +266,7 @@ export default function HlidacPage() {
 
         {/* How it works */}
         <div className="mt-10">
-          <p className="text-xs font-black text-outline uppercase tracking-widest font-headline mb-5 text-center">Jak to funguje</p>
+          <p className="text-xs font-black text-white/55 uppercase tracking-widest font-headline mb-5 text-center">Jak to funguje</p>
           <div className="grid grid-cols-3 gap-4">
             {[
               { step: "1", emoji: "⚙️", title: "Nastav kritéria", desc: "Lokalita, cena, parametry. 30 sekund." },
@@ -369,8 +277,8 @@ export default function HlidacPage() {
                 <div className="w-12 h-12 gradient-primary rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3">
                   {s.emoji}
                 </div>
-                <p className="font-black text-primary font-headline text-sm mb-1">{s.title}</p>
-                <p className="text-xs text-on-surface-variant leading-relaxed">{s.desc}</p>
+                <p className="font-black text-white font-headline text-sm mb-1">{s.title}</p>
+                <p className="text-xs text-white/65 leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -382,7 +290,7 @@ export default function HlidacPage() {
             <Mascot size={40} mood="happy" variant="signal" trackMouse={false} />
           </div>
           <div>
-            <p className="text-xs font-black text-primary-fixed-dim/70 uppercase tracking-widest font-headline mb-1">Radar říká:</p>
+            <p className="text-xs font-black text-white/55 uppercase tracking-widest font-headline mb-1">Radar říká:</p>
             <p className="text-sm text-white leading-relaxed">Nejlepší investice jsou ty, které stihnáš jako první. Alert ti dá náskok před ostatními kupci — a to je v dnešní době k nezaplacení.</p>
           </div>
         </div>

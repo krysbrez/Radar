@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-04-12T18:29:12.893651+00:00",
+  "category_filter": "crypto",
+  "article_count": 2,
+  "failed_feeds": [],
+  "overview": "Tento týden sledujeme vývoj v kryptoměnách, zejména u Bitcoinu. Michael Saylor z firmy Strategy naznačil další nákupy a těžaři se připravují na náročnější období před halvingem. Zajímejte se o dopady na trh a budoucí vývoj.",
+  "articles": [
+    {
+      "title": "Strategy's Michael Saylor signals impending Bitcoin purchase",
+      "link": "https://cointelegraph.com/news/strategy-saylor-signal-bitcoin-purchase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "Sun, 12 Apr 2026 17:35:17 +0100",
+      "summary": "The company has completed 105 Bitcoin transactions since 2020 and is playing contrarian as it continues accumulating BTC via corporate debt and equity financing",
+      "category": "crypto",
+      "source": "Cointelegraph.com News",
+      "relevance_score": 3,
+      "image_url": "https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjYtMDQvMDE5ZDgyNmMtMjczYy03N2Y3LThiNzYtMjAyZDFjMjRmOWZmLmpwZw==.jpg",
+      "radar_headline": "Saylor chystá další nákupy Bitcoinu",
+      "radar_summary_short": "Strategy pod vedením Michaela Saylor pokračuje v akumulaci Bitcoinu. Společnost již provedla přes 100 transakcí s BTC od roku 2020.",
+      "radar_summary_long": "Michael Saylor z firmy Strategy naznačil další nákupy Bitcoinu, což ukazuje na jeho silnou víru v digitální aktivum. Společnost již od roku 2020 provedla přes 105 transakcí s BTC a pokračuje v nákupu i přes aktuální tržní podmínky. Saylorova strategie je založena na contrarian přístupu a dlouhodobém horizontu.",
+      "why_it_matters": "Saylorovy nákupy mohou ovlivnit cenu Bitcoinu a posílit důvěru investorů.",
+      "tone": "bullish",
+      "tags": [
+        "Bitcoin",
+        "Saylor",
+        "Strategy",
+        "investice"
+      ]
+    },
+    {
+      "title": "Bitcoin miners face a tougher road to the 2028 halving",
+      "link": "https://cointelegraph.com/news/bitcoin-2028-halving-hits-the-halfway-point?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "published": "Sun, 12 Apr 2026 15:00:00 +0100",
+      "summary": "Bitcoin miners are heading toward the 2028 halving with thinner margins, tighter power markets and a growing need for capital discipline.",
+      "category": "crypto",
+      "source": "Cointelegraph.com News",
+      "relevance_score": 2,
+      "image_url": "https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjYtMDQvMDE5ZDc2YjUtMjhmMS03ZmE1LWI3Y2QtNTAzYTJiNmM0MGQ2LmpwZw==.jpg",
+      "radar_headline": "Těžaři Bitcoinu čelí náročnějšímu období",
+      "radar_summary_short": "Bitcoinoví těžaři se připravují na halving v roce 2028 s menšími ziskovými maržemi. Zvyšuje se tlak na snižování nákladů a hledání efektivnějších řešení.",
+      "radar_summary_long": "Bitcoinoví těžaři směřují k halvingu v roce 2028 s tenčími maržemi, napjatějšími trhy s energií a rostoucí potřebou investic do nového vybavení. Zvyšuje se tlak na snižování nákladů a hledání efektivnějších řešení, aby zůstali konkurenceschopní. Halving sníží odměnu za těžbu, což může vést k úbytku menších těžařů.",
+      "why_it_matters": "Halving může výrazně ovlivnit rentabilitu těžby a stabilitu sítě.",
+      "tone": "warning",
+      "tags": [
+        "Bitcoin",
+        "těžaři",
+        "halving",
+        "energie"
+      ]
+    }
+  ]
+}

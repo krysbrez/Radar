@@ -48,27 +48,40 @@ export default function CisloTydne() {
   const { t } = useTranslation();
   const [idx, setIdx] = useState(0);
   const item = NUMBERS[idx];
+  const hasCzkSuffix = item.number.endsWith(" Kč");
+  const compactMainNumber = hasCzkSuffix ? item.number.replace(/\s*Kč$/, "") : item.number;
 
   return (
     <section className="max-w-7xl mx-auto px-6 md:px-8 py-6">
       <div className={`${item.bg} border ${item.border} rounded-3xl p-8 transition-all duration-500`}>
-        <div className="flex flex-col md:flex-row gap-8 items-center">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
           {/* Number */}
-          <div className="flex-shrink-0 text-center md:text-left">
+          <div className="flex-shrink-0 text-center md:text-left w-full md:w-auto">
             <div className="inline-flex items-center gap-2 bg-white/60 rounded-full px-3 py-1 mb-3">
-              <span className="text-xs font-black text-outline uppercase tracking-widest font-headline">{t("number_week.badge")}</span>
+              <span className="text-xs font-black text-white/55 uppercase tracking-widest font-headline">{t("number_week.badge")}</span>
             </div>
-            <div className="flex items-center gap-3 mb-2">
+            <div className="flex flex-col items-center gap-2 mb-2 sm:flex-row sm:justify-center md:justify-start md:items-center md:gap-3">
               <span className="text-4xl">{item.emoji}</span>
-              <p className={`text-5xl md:text-6xl font-black font-headline leading-none ${item.color}`}>{item.number}</p>
+              {hasCzkSuffix ? (
+                <div className={`max-w-[10ch] ${item.color}`}>
+                  <p className="text-balance text-[clamp(2.25rem,10vw,4rem)] font-black font-headline leading-[0.92]">
+                    {compactMainNumber}
+                  </p>
+                  <p className="mt-1 text-lg sm:text-xl font-black font-headline leading-none">Kč</p>
+                </div>
+              ) : (
+                <p className={`max-w-[11ch] text-balance text-[clamp(2.3rem,11vw,4rem)] font-black font-headline leading-[0.92] ${item.color}`}>
+                  {item.number}
+                </p>
+              )}
             </div>
-            <p className="text-lg font-black text-primary font-headline">{item.headline}</p>
+            <p className="text-base sm:text-lg font-black text-white font-headline">{item.headline}</p>
           </div>
 
           {/* Context */}
-          <div className="flex-1">
-            <p className="text-xs font-black text-outline uppercase tracking-widest font-headline mb-2">{t("number_week.context_label")}</p>
-            <p className="text-on-surface leading-relaxed text-base">{item.context}</p>
+          <div className="flex-1 text-center md:text-left">
+            <p className="text-xs font-black text-white/55 uppercase tracking-widest font-headline mb-2">{t("number_week.context_label")}</p>
+            <p className="text-white/85 leading-relaxed text-sm sm:text-base">{item.context}</p>
             <span className={`inline-block mt-3 text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/60 ${item.color}`}>{item.tag}</span>
           </div>
 

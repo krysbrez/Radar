@@ -13,30 +13,30 @@ export default function TrziTydne() {
 
   return (
     <section className="max-w-7xl mx-auto px-6 md:px-8 py-8">
-      <div className="bg-surface-container-highest rounded-3xl p-8 md:p-10">
+      <div className="bg-white/4-container-highest rounded-3xl p-8 md:p-10">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           {/* Mascot */}
           <div className="flex-shrink-0 flex flex-col items-center gap-2">
             <div className="bg-white rounded-2xl p-3 shadow-sm">
               <Mascot size={80} mood="normal" variant="signal" trackMouse={false} />
             </div>
-            <p className="text-xs font-bold text-outline text-center font-headline">{t("markets.watching")}</p>
+            <p className="text-xs font-bold text-white/55 text-center font-headline">{t("markets.watching")}</p>
           </div>
 
           {/* Content */}
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-5">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <p className="text-xs font-black text-outline uppercase tracking-widest font-headline">{t("markets.this_week")}</p>
+              <p className="text-xs font-black text-white/55 uppercase tracking-widest font-headline">{t("markets.this_week")}</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {NUMBERS.map((n) => (
                 <div key={n.labelKey} className="bg-white rounded-xl p-4 shadow-sm">
-                  <p className="text-xs text-outline font-semibold mb-1 leading-tight">{t(n.labelKey)}</p>
+                  <p className="text-xs text-white/55 font-semibold mb-1 leading-tight">{t(n.labelKey)}</p>
                   <p className={`text-2xl font-black font-headline leading-none ${n.isUp ? "text-green-600" : "text-red-500"}`}>
                     {n.value}
                   </p>
-                  <p className="text-xs text-on-surface-variant mt-1.5 leading-tight">{t(n.noteKey)}</p>
+                  <p className="text-xs text-white/65 mt-1.5 leading-tight">{t(n.noteKey)}</p>
                 </div>
               ))}
             </div>

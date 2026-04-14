@@ -6,42 +6,42 @@ const NEWS_ITEMS = [
     time: "09:42",
     tag: "Akcie",
     text: "ECB potvrzuje stabilitu úrokových sazeb na 3,25 % — trhy reagují mírným růstem",
-    tagColor: "bg-blue-100 text-blue-700",
+    tagColor: "bg-sky-500/20 text-sky-300",
   },
   {
     id: 2,
     time: "09:15",
     tag: "Krypto",
     text: "Bitcoin překonává $70k intraday, avšak uzavírá pod klíčovým odporem",
-    tagColor: "bg-orange-100 text-orange-700",
+    tagColor: "bg-orange-500/20 text-orange-300",
   },
   {
     id: 3,
     time: "08:50",
     tag: "Forex",
     text: "EUR/CZK klesá k 25.10 po silnějším než očekávaném průmyslovém indexu ČR",
-    tagColor: "bg-purple-100 text-purple-700",
+    tagColor: "bg-purple-500/20 text-purple-300",
   },
   {
     id: 4,
     time: "08:30",
     tag: "Zlato",
     text: "Zlato atakuje historická maxima — bezpečné přístavy v kurzu před Powell projevem",
-    tagColor: "bg-yellow-100 text-yellow-700",
+    tagColor: "bg-[#ffd700]/15 text-[#ffd700]",
   },
   {
     id: 5,
     time: "08:05",
     tag: "Nemovitosti",
     text: "Hypoteční sazby v ČR klesají pod 5,5 % — první pokles od Q2 2024",
-    tagColor: "bg-green-100 text-green-700",
+    tagColor: "bg-emerald-500/20 text-emerald-300",
   },
   {
     id: 6,
     time: "07:45",
     tag: "S&P 500",
     text: "Tech sektor vede rally — NVDA a MSFT na nových maximech po AI earnings sezóně",
-    tagColor: "bg-blue-100 text-blue-700",
+    tagColor: "bg-sky-500/20 text-sky-300",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function RadarPulse() {
   const active = NEWS_ITEMS[activeIndex];
 
   return (
-    <div className="bg-primary text-white rounded-2xl p-6 relative overflow-hidden">
+    <div className="gradient-primary text-white rounded-2xl p-6 relative overflow-hidden border border-white/8">
       {/* Background decoration */}
       <div className="absolute -right-6 -bottom-6 opacity-5">
         <svg viewBox="0 0 120 120" width="120" height="120" fill="none">
@@ -81,14 +81,14 @@ export default function RadarPulse() {
         <div className="flex items-center justify-between mb-5">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="w-2.5 h-2.5 bg-tertiary-fixed rounded-full animate-pulse" />
+              <span className="w-2.5 h-2.5 bg-[#ffd700] rounded-full animate-pulse" />
               <h3 className="text-lg font-black font-headline tracking-tight">Radar Pulse</h3>
             </div>
-            <p className="text-primary-fixed-dim text-xs font-semibold tracking-wide uppercase">
+            <p className="text-white/65 text-xs font-semibold tracking-wide uppercase">
               Živé aktualizace z trhů
             </p>
           </div>
-          <div className="text-xs text-primary-fixed-dim opacity-60 font-mono">
+          <div className="text-xs text-white/40 font-mono">
             {active.time}
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function RadarPulse() {
                 i === activeIndex ? "bg-white/10" : "hover:bg-white/5"
               }`}
             >
-              <span className="text-primary-fixed-dim text-xs font-mono mt-0.5 flex-shrink-0 opacity-70">
+              <span className="text-white/65 text-xs font-mono mt-0.5 flex-shrink-0 opacity-70">
                 {item.time}
               </span>
               <p className="text-xs text-white/75 leading-relaxed line-clamp-2">

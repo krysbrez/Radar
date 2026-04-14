@@ -33,26 +33,26 @@ function YoungtimerRow({ item, onClick, isOpen }) {
     <>
       <button
         onClick={onClick}
-        className="w-full flex items-center justify-between py-3 px-3 hover:bg-surface-container-low rounded-lg transition-colors text-left group"
+        className="w-full flex items-center justify-between py-3 px-3 hover:bg-white/5 rounded-lg transition-colors text-left group"
       >
         <div className="flex items-center gap-3 flex-1 min-w-0">
           {item.hot && <span className="w-1.5 h-1.5 bg-tertiary-fixed rounded-full flex-shrink-0" />}
           {!item.hot && <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 opacity-0" />}
-          <span className="text-sm font-semibold text-primary truncate">{item.model}</span>
+          <span className="text-sm font-semibold text-white truncate">{item.model}</span>
         </div>
         <div className="flex items-center gap-3 flex-shrink-0 ml-2">
           <span className="text-sm font-black text-green-600 font-headline">{item.gain}</span>
-          <span className="text-xs text-outline">/{item.period}</span>
+          <span className="text-xs text-white/55">/{item.period}</span>
           <svg
             width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
-            className={`text-outline transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+            className={`text-white/55 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
           >
             <polyline points="6 9 12 15 18 9" />
           </svg>
         </div>
       </button>
       {isOpen && (
-        <div className="mx-3 mb-2 bg-surface-container-low rounded-lg border-l-2 border-primary-fixed-dim animate-fade-in overflow-hidden">
+        <div className="mx-3 mb-2 bg-white/5 rounded-lg border-l-2 border-primary-fixed-dim animate-fade-in overflow-hidden">
           {item.image && (
             <img
               src={item.image}
@@ -62,10 +62,10 @@ function YoungtimerRow({ item, onClick, isOpen }) {
             />
           )}
           <div className="px-4 py-3">
-            <p className="text-xs font-bold text-primary mb-1 font-headline">{item.model}</p>
-            <p className="text-xs text-on-surface-variant mb-2 leading-relaxed">{item.detail}</p>
+            <p className="text-xs font-bold text-white mb-1 font-headline">{item.model}</p>
+            <p className="text-xs text-white/65 mb-2 leading-relaxed">{item.detail}</p>
             <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-primary">Průměrná tržní cena: {item.price}</span>
+              <span className="text-xs font-bold text-white">Průměrná tržní cena: {item.price}</span>
               <span className={`text-xs font-black px-2 py-0.5 rounded-full ${item.gain.startsWith("+") ? "bg-green-100 text-green-700" : "bg-red-50 text-red-600"}`}>
                 {item.gain} / {item.period}
               </span>
@@ -88,15 +88,15 @@ export default function Auta() {
     <section id="auta" className="max-w-7xl mx-auto px-6 md:px-8 py-16">
       <div className="flex items-end justify-between mb-10">
         <div>
-          <p className="text-xs font-black tracking-widest uppercase text-outline mb-2 font-headline">Sektor</p>
-          <h2 className="text-4xl md:text-5xl font-black text-primary font-headline tracking-tight leading-none">Auta</h2>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-on-surface-variant">
+          <p className="text-xs font-black tracking-widest uppercase text-white/55 mb-2 font-headline">Sektor</p>
+          <h2 className="text-4xl md:text-5xl font-black text-white font-headline tracking-tight leading-none">Auta</h2>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/65">
             Kategorie pro věci, které nejsou jen hezké na plakátu. Youngtimery, ikonické modely a situace, kde dává smysl dívat se dřív, než se z toho stane drahá nostalgie.
           </p>
         </div>
         <Link
           to="/auta"
-          className="hidden md:flex items-center gap-1.5 text-sm font-bold text-primary font-headline border-b-2 border-primary-fixed-dim pb-0.5 hover:border-primary transition-colors"
+          className="hidden md:flex items-center gap-1.5 text-sm font-bold text-white font-headline border-b-2 border-primary-fixed-dim pb-0.5 hover:border-primary transition-colors"
         >
           Všechny články
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -109,7 +109,7 @@ export default function Auta() {
           {leadArticle && (
             <Link
               to={`/clanek/${leadArticle.id}`}
-              className="group relative block overflow-hidden rounded-[1.75rem] border border-outline-variant/10 bg-slate-950 min-h-[30rem]"
+              className="group relative block overflow-hidden rounded-[1.75rem] border border-white/12/10 bg-slate-950 min-h-[30rem]"
             >
               <div className="absolute inset-0">
                 {leadArticle.image ? (
@@ -123,30 +123,30 @@ export default function Auta() {
                   <div className="w-full h-full bg-gradient-to-br from-slate-900 to-primary" />
                 )}
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/88 to-slate-950/40" />
+              <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/98 to-slate-950/82 md:from-slate-950 md:via-slate-950/88 md:to-slate-950/40" />
               <div className="relative flex h-full flex-col justify-between p-7 md:p-8">
                 <div className="max-w-2xl">
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-white font-headline">
+                    <span className="rounded-full bg-white/14 px-3 py-1 text-[11px] font-black uppercase tracking-[0.2em] text-white font-headline">
                       Worth watching
                     </span>
                     <span className="rounded-full bg-tertiary-fixed px-2.5 py-1 text-[11px] font-black uppercase tracking-[0.18em] text-on-tertiary-fixed font-headline">
                       {watchingModels.length} modely na radaru
                     </span>
                   </div>
-                  <p className="text-[11px] font-black uppercase tracking-[0.22em] text-white/55 font-headline">
+                  <p className="text-[11px] font-black uppercase tracking-[0.22em] text-white/72 md:text-white/55 font-headline">
                     Kategorie preview
                   </p>
-                  <h3 className="mt-4 text-3xl md:text-[2.4rem] font-black text-white font-headline leading-tight tracking-tight">
+                  <h3 className="mt-4 text-[2rem] md:text-[2.4rem] font-black text-white font-headline leading-tight tracking-tight">
                     Auta, která stojí za pozornost dřív, než začnou být zbytečně drahá.
                   </h3>
-                  <p className="mt-4 max-w-xl text-sm md:text-[0.98rem] leading-relaxed text-white/72">
+                  <p className="mt-4 max-w-xl text-[0.95rem] md:text-[0.98rem] leading-relaxed text-white/92 md:text-white/72">
                     Radar tady neřeší jen obsah o autech. Řeší, co má sběratelský tlak, kde je ještě rozumný vstup a jak neudělat drahý nákup jen proto, že to zní cool.
                   </p>
 
                   <div className="mt-6 grid gap-2">
                     {WATCHLIST_POINTS.map((point) => (
-                      <div key={point} className="flex items-start gap-2.5 text-sm text-white/80">
+                      <div key={point} className="flex items-start gap-2.5 text-sm text-white/95 md:text-white/80">
                         <span className="mt-1 h-1.5 w-1.5 rounded-full bg-tertiary-fixed flex-shrink-0" />
                         <span>{point}</span>
                       </div>
@@ -157,7 +157,7 @@ export default function Auta() {
                     {watchingModels.map((item) => (
                       <span
                         key={item.model}
-                        className="rounded-full border border-white/12 bg-white/8 px-3 py-1.5 text-xs font-bold text-white/80"
+                        className="rounded-full border border-white/14 bg-white/10 px-3 py-1.5 text-xs font-bold text-white/90 md:text-white/80"
                       >
                         {item.model}
                       </span>
@@ -166,21 +166,21 @@ export default function Auta() {
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-[minmax(0,1fr),auto] md:items-end">
-                  <div className="rounded-2xl border border-white/10 bg-white/8 p-4 backdrop-blur-sm">
+                  <div className="rounded-2xl border border-white/14 bg-white/12 p-4 backdrop-blur-sm">
                     <div className="flex items-center gap-2 mb-2">
                       <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${leadArticle.tagColor}`}>{leadArticle.tag}</span>
                       {leadArticle.hot && (
                         <span className="rounded-full bg-tertiary-fixed px-2 py-0.5 text-[11px] font-black text-on-tertiary-fixed font-headline">🔥 Hot</span>
                       )}
-                      <span className="ml-auto text-xs text-white/55">{leadArticle.date}</span>
+                      <span className="ml-auto text-xs text-white/72 md:text-white/55">{leadArticle.date}</span>
                     </div>
-                    <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/50 font-headline">
+                    <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/68 md:text-white/50 font-headline">
                       Lead story
                     </p>
                     <h4 className="mt-2 text-xl font-black text-white font-headline leading-snug">
                       {leadArticle.title}
                     </h4>
-                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/72">
+                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/92 md:text-white/72">
                       {leadArticle.excerpt}
                     </p>
                   </div>
@@ -189,7 +189,7 @@ export default function Auta() {
                     <span className="text-sm font-bold text-white font-headline group-hover:text-tertiary-fixed transition-colors">
                       Otevřít sekci Auta →
                     </span>
-                    <span className="text-xs text-white/55">
+                    <span className="text-xs text-white/72 md:text-white/55">
                       {leadArticle.readTime} · {leadArticle.author}
                     </span>
                   </div>
@@ -203,23 +203,23 @@ export default function Auta() {
               <Link
                 key={article.id}
                 to={`/clanek/${article.id}`}
-                className="group rounded-2xl border border-outline-variant/10 bg-white p-5 transition-all hover:border-outline-variant/25 hover:shadow-md"
+                className="group rounded-2xl border border-white/12/10 bg-white p-5 transition-all hover:border-white/12/25 hover:shadow-md"
               >
                 <div className="flex items-center justify-between gap-3">
                   <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${article.tagColor}`}>{article.tag}</span>
-                  <span className="text-xs text-outline">{article.readTime}</span>
+                  <span className="text-xs text-white/55">{article.readTime}</span>
                 </div>
-                <h3 className="mt-4 text-lg font-black text-primary font-headline leading-snug group-hover:text-primary-container transition-colors">
+                <h3 className="mt-4 text-lg font-black text-white font-headline leading-snug group-hover:text-white-container transition-colors">
                   {article.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-on-surface-variant line-clamp-3">
+                <p className="mt-2 text-sm leading-relaxed text-white/65 line-clamp-3">
                   {article.excerpt}
                 </p>
-                <div className="mt-4 pt-4 border-t border-outline-variant/10 flex items-center justify-between">
-                  <span className="text-sm font-bold text-primary font-headline group-hover:text-primary-container transition-colors">
+                <div className="mt-4 pt-4 border-t border-white/12/10 flex items-center justify-between">
+                  <span className="text-sm font-bold text-white font-headline group-hover:text-white-container transition-colors">
                     Číst dál →
                   </span>
-                  <span className="text-xs text-outline">{article.date}</span>
+                  <span className="text-xs text-white/55">{article.date}</span>
                 </div>
               </Link>
             ))}
@@ -229,12 +229,12 @@ export default function Auta() {
         {/* Sidebar */}
         <div className="lg:col-span-4 space-y-4">
           {/* Youngtimer Index */}
-          <div className="bg-surface-container-highest rounded-xl p-5">
+          <div className="bg-white/4-container-highest rounded-xl p-5">
             <div className="flex items-center justify-between mb-4">
-              <h4 className="text-sm font-black text-primary font-headline uppercase tracking-wider">
+              <h4 className="text-sm font-black text-white font-headline uppercase tracking-wider">
                 Radar Youngtimer Index
               </h4>
-              <span className="text-xs text-outline">Klikni na model</span>
+              <span className="text-xs text-white/55">Klikni na model</span>
             </div>
             <div className="space-y-0.5">
               {YOUNGTIMER_INDEX.map((item) => (
