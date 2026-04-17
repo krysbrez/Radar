@@ -1,10 +1,8 @@
 name: RADAR Content Pipeline
 
 on:
-  # Every Monday at 06:00 UTC (08:00 Prague time)
   schedule:
-    - cron: "0 6 * * 1"
-  # Manual trigger with optional category filter
+    - cron: "0 6 * * *"
   workflow_dispatch:
     inputs:
       category:
@@ -20,11 +18,13 @@ jobs:
   run-pipeline:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # needed to commit articles.js
+      contents: write
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -38,9 +38,12 @@ jobs:
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          ARGS="--use-config --out /tmp/radar_out.json --top ${{ github.event.inputs.top || '8' }}"
+          TOP="${{ github.event.inputs.top || '8' }}"
           CAT="${{ github.event.inputs.category }}"
-          [ -n "$CAT" ] && ARGS="$ARGS --category $CAT"
+          ARGS="--use-config --out /tmp/radar_out.json --top $TOP"
+          if [ -n "$CAT" ]; then
+            ARGS="$ARGS --category $CAT"
+          fi
           python news_agent/processor.py $ARGS
 
       - name: Check enrichment quality
@@ -65,16 +68,16 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet app/src/data/articles.js && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet app/src/data/articles.js && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
 
-           - name: Commit and push articles.js
+      - name: Commit and push articles.js
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "RADAR Pipeline"
           git config user.email "pipeline@radar-newsletter.cz"
           git add app/src/data/articles.js
           COUNT=$(git diff --cached --stat | grep -oP '(?<=\+)\d+' | head -1 || echo "?")
-          git commit -m "content: pipeline run $(date -u '+%Y-%m-%d %H:%M UTC') [+${COUNT} lines]" || echo "No changes to commit"
+          git commit -m "content: pipeline run $(date -u '+%Y-%m-%d %H:%M UTC') [+${COUNT} lines]"
           git pull --rebase origin main
           git push origin main
 
