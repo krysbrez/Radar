@@ -1,5 +1,324 @@
 export const ARTICLES = [
   {
+    id: "iranska-deklarace-o-otevreni-hormuzske-uziny-prudce-snizila-",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Íránská deklarace o otevření Hormuzské úžiny prudce snížila ceny ropy",
+    excerpt: "Prohlášení íránského ministra zahraničí o plném otevření Hormuzské úžiny způsobilo prudký pokles cen ropy. Trhy reagovaly na zprávu rychlým prodejem.",
+    body: `Trump na platformě Truth Social oznámil, že Írán prohlásil Hormuzskou úžinu za plně otevřenou pro plavbu. Tato zpráva okamžitě vyvolala prudký pokles cen ropy, přičemž trhy reagovaly rychlým prodejem. Analytici poukazují na vzor 'head and shoulders', který naznačoval korekci již od začátku měsíce, a zdůrazňují, že vývoj probíhá hladce, což překračuje očekávání.
+
+**Co se stalo**
+
+Íránská vláda oznámila plné otevření Hormuzské úžiny pro námořní dopravu. Trump na to reagoval na sociálních sítích a trhy okamžitě zareagovaly poklesem cen ropy.
+
+**Kontext**
+
+Hormuzská úžina je klíčová pro globální námořní dopravu ropy, a jakékoli narušení v ní může mít významný dopad na ceny ropy a globální ekonomiku. Napětí v regionu, zejména mezi Íránem a Spojenými státy, v posledních měsících rostlo, což vyvolávalo obavy z potenciálního omezení dodávek ropy.
+
+**Klíčová čísla**
+
+- **Pokles cen ropy:** Okamžitý pokles po oznámení.
+- **Vzor 'head and shoulders':** Technický indikátor naznačující korekci.
+- **Hormuzská úžina:** Klíčová tranzitní cesta pro cca 20 % světové ropy.
+- **Trump:** Reakce na Twitteru (Truth Social) zesílila dopad zprávy.
+
+**Co sledovat dál**
+
+Sledujte další prohlášení íránské vlády a reakci OPEC+ na situaci. Důležité bude sledovat, zda se jedná o trvalé otevření úžiny, nebo jen dočasné gesto.
+
+**Praktický závěr**
+
+Investoři by měli zvážit snížení expozice v sektoru ropy a energie, dokud se situace neuklidní a nebudou známy další kroky.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/trump-thanks-iran-for-opening-the-strait-20260417/)*`,
+    whyMatters: "Stabilita Hormuzské úžiny je klíčová pro globální energetickou bezpečnost a ceny ropy mají dopad na inflaci a ekonomický růst.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/trump-thanks-iran-for-opening-the-strait-20260417/",
+  },
+  {
+    id: "mclaren-forseven-ticha-revoluce-v-automobilovem-prumyslu",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "McLaren Forseven: Tichá revoluce v automobilovém průmyslu",
+    excerpt: "McLaren a Forseven pokračují ve své spolupráci a Nick Collins tvrdí, že jde o nejzajímavější příběh v automobilovém průmyslu. Zaměřují se na elektrifikaci a nové technologie.",
+    body: `CEO McLarenu Nick Collins opakovaně prohlašuje, že spolupráce s Forseven je nejzajímavější příběh v automobilovém průmyslu. Po fúzi se McLaren zaměřuje na elektrifikaci a vývoj nových technologií, přičemž Collins zdůrazňuje, že se jedná o dlouhodobý projekt s ambicemi změnit automobilový průmysl.
+
+**Co se stalo**
+
+McLaren a Forseven pokračují ve svém vývoji a zaměřují se na elektrifikaci a nové technologie.
+
+**Kontext**
+
+Fúze McLarenu a start-upu Forseven byla vnímána jako riskantní krok, ale McLaren se snaží využít Forsevenovy inovace v oblasti elektrifikace a autonomního řízení.
+
+**Klíčová čísla**
+
+- **Rok od fúze:** Collins zdůrazňuje pokrok za poslední rok.
+- **McLaren Technology Centre:** Hlavní vývojové centrum.
+- **Forseven:** Startup, který přináší nové technologie.
+- **Elektrifikace:** Klíčový směr vývoje.
+
+**Co sledovat dál**
+
+Sledujte oznámení o nových modelech a technologiích, které McLaren a Forseven vyvíjejí.
+
+**Praktický závěr**
+
+Investoři by měli sledovat vývoj McLarenu a Forseven, protože jejich inovace by mohly mít dopad na celý automobilový průmysl.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/exclusive-behind-scenes-mclarens-radical-reinvention)*`,
+    whyMatters: "McLaren se snaží udržet si pozici v automobilovém průmyslu, který prochází rychlou transformací směrem k elektrifikaci a autonomnímu řízení.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/exclusive-behind-scenes-mclarens-radical-reinvention",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/1-mclaren_comp_render_2026_update.jpg?itok=iq9ORKNG",
+  },
+  {
+    id: "dodge-caliber-predcasny-prukopnik-crossoveru",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Dodge Caliber: Předčasný průkopník crossoverů",
+    excerpt: "Dodge Caliber byl tichým průkopníkem moderního crossover segmentu, nabízející americký styl a praktičnost za dostupnou cenu.",
+    body: `Dodge Caliber, často opomíjený, byl v době svého vzniku průkopníkem v segmentu crossoverů. Nabízel kombinaci amerického designu a praktičnosti za relativně nízkou cenu, čímž předznamenal pozdější popularitu tohoto typu vozidel.
+
+**Co se stalo**
+
+Caliber byl jedním z prvních vozidel, které definovalo moderní crossover segment.
+
+**Kontext**
+
+V době vzniku Caliberu byl trh s crossovery relativně malý a Caliber se snažil oslovit zákazníky, kteří hledali praktické a stylové vozidlo za dostupnou cenu.
+
+**Klíčová čísla**
+
+- **Průkopník:** Jeden z prvních crossoverů.
+- **Americký styl:** Charakteristický design.
+- **Dostupná cena:** Klíčový pro oslovení široké veřejnosti.
+- **Talbot Matra Rancho:** Srovnání s dalšími ranými pokusy o crossover.
+
+**Co sledovat dál**
+
+Sledujte, jak se Caliber vrací do paměti a jak ovlivnil vývoj moderních crossoverů.
+
+**Praktický závěr**
+
+Caliber ukazuje, že i méně známé modely mohou mít významný dopad na vývoj automobilového průmyslu.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/used-cars/dodge-caliber-retrospective-crossover-arrived-too-early)*`,
+    whyMatters: "Caliber je příkladem toho, jak se mění preference zákazníků a jak se automobilky musí přizpůsobovat novým trendům.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/used-cars/dodge-caliber-retrospective-crossover-arrived-too-early",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/dodge_caliber.jpg?itok=-xUI0r1N",
+  },
+  {
+    id: "fyzicka-tlacitka-se-vraci-jako-klicovy-diferenciator-v-autom",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Fyzická tlačítka se vrací jako klíčový diferenciátor v automobilovém průmyslu",
+    excerpt: "Automobilky se vrací k fyzickým ovládacím prvkům, aby se odlišily od konkurence a nabídly intuitivnější ovládání.",
+    body: `V době, kdy se v automobilech stále častěji objevují dotykové obrazovky, se automobilky začínají vracet k fyzickým ovládacím prvkům. Designéři a odborníci na značku tvrdí, že fyzická tlačítka a ovladače se stanou klíčovým prvkem pro odlišení značky a nabídnutí intuitivnějšího ovládání.
+
+**Co se stalo**
+
+Automobilky se vrací k fyzickým ovládacím prvkům jako klíčovému diferenciátoru.
+
+**Kontext**
+
+Dotykové obrazovky sice nabízejí moderní vzhled, ale často jsou méně intuitivní a mohou odvádět pozornost řidiče od řízení.
+
+**Klíčová čísla**
+
+- **Intuitivní ovládání:** Hlavní důvod návratu k fyzickým prvkům.
+- **Diferenciace značky:** Klíčový faktor v konkurenčním prostředí.
+- **Dotykové obrazovky:** Čím dál více kritizované pro svou neintuitivnost.
+- **Lazy design:** Kritika nekvalitního implementování dotykových obrazovek.
+
+**Co sledovat dál**
+
+Sledujte, jak automobilky implementují fyzická tlačítka a ovladače do svých nových modelů.
+
+**Praktický závěr**
+
+Investoři by měli sledovat, jak se automobilky snaží vyvážit moderní technologie s intuitivním ovládáním.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/physical-buttons-poised-become-key-brand-differentiator)*`,
+    whyMatters: "Bezpečné a intuitivní ovládání je klíčové pro komfort a bezpečnost řidiče.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/physical-buttons-poised-become-key-brand-differentiator",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/bentley-bentayga-switches.jpg?itok=77QGkjYs",
+  },
+  {
+    id: "denni-prehled-kryptomen-bitcoin-a-altcoiny-rostou-po-iranske",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Denní přehled kryptoměn: Bitcoin a altcoiny rostou po íránské zprávě",
+    excerpt: "Bitcoin překročil 78 000 USD a altcoiny rostly po oznámení Íránu o otevření Hormuzské úžiny.",
+    body: `Bitcoin prudce vzrostl nad 78 000 USD a následovaly ho i altcoiny, což bylo způsobeno oznámením Íránu o plném otevření Hormuzské úžiny. Trhy reagovaly optimisticky a spekulují o dalším růstu.
+
+**Co se stalo**
+
+Bitcoin a altcoiny zaznamenaly prudký růst po íránské zprávě.
+
+**Kontext**
+
+Otevření Hormuzské úžiny snížilo obavy z narušení dodávek ropy, což pozitivně ovlivnilo trhy s rizikovými aktivy, včetně kryptoměn.
+
+**Klíčová čísla**
+
+- **78 000 USD:** Nové maximum Bitcoinu.
+- **Altcoiny:** Následný růst.
+- **Hormuzská úžina:** Klíčový faktor ovlivňující trhy.
+- **TACO:** Očekávaný vzor na trhu.
+
+**Co sledovat dál**
+
+Sledujte, zda se růst Bitcoinu a altcoinů udrží a jak zareagují trhy na další zprávy.
+
+**Praktický závěr**
+
+Investoři by měli zvážit diverzifikaci do kryptoměn, ale zároveň být opatrní a sledovat vývoj trhu.
+
+*Zdroj: [Cointelegraph.com News](https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)*`,
+    whyMatters: "Kryptoměny jsou stále volatilní aktivum, ale mohou nabídnout vysoké výnosy.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    image: "https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjYtMDIvMDE5YzY2NjktN2UxNi03ZmI0LTlmNjItOTIxNWU3YTcwZmIwLmpwZw==.jpg",
+  },
+  {
+    id: "audi-hybridizuje-petivalec-rs3-aby-splnilo-normu-euro-7",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Audi hybridizuje pětiválec RS3, aby splnilo normu Euro 7",
+    excerpt: "Audi zvažuje hybridizaci pětiválec RS3, aby splnilo přísnější emisní normy Euro 7.",
+    body: `Audi Sport boss Rolf Michl potvrdil, že Audi zvažuje hybridizaci svého pětiválec motoru 2.5 litru, aby ho udrželo na trhu i po zavedení přísnějších emisních norem Euro 7.
+
+**Co se stalo**
+
+Audi zvažuje hybridizaci motoru RS3, aby splnilo normu Euro 7.
+
+**Kontext**
+
+Norma Euro 7 je mnohem přísnější než předchozí normy a vyžaduje od automobilů nižší emise.
+
+**Klíčová čísla**
+
+- **2.5 litru:** Objem motoru.
+- **394bhp:** Výkon motoru.
+- **Euro 7:** Nová emisní norma.
+- **Hybridizace:** Potenciální řešení pro splnění normy.
+
+**Co sledovat dál**
+
+Sledujte, zda se Audi rozhodne pro hybridizaci motoru RS3 a jak to ovlivní výkon a cenu vozidla.
+
+**Praktický závěr**
+
+Investoři by měli sledovat, jak automobilky reagují na přísnější emisní normy a jak to ovlivní jejich produktovou nabídku.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/audi-could-hybridise-rs3s-five-pot-keep-it-sale-europe)*`,
+    whyMatters: "Emisní normy mají dopad na vývoj automobilového průmyslu a mohou vést k změnám v designu a technologiích vozidel.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/audi-could-hybridise-rs3s-five-pot-keep-it-sale-europe",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/20-audi-rs3-2025-autocar-road-test-review-front-static_0.jpg?itok=iFPqceIx",
+  },
+  {
+    id: "predikce-cen-kryptomen-174-btc-eth-xrp-bnb-sol-doge-hype-ada",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Predikce cen kryptoměn 17.4.: BTC, ETH, XRP, BNB, SOL, DOGE, HYPE, ADA, BCH, LINK",
+    excerpt: "Bitcoin dosáhl 78 000 USD a altcoiny rostly po zprávě o otevření Hormuzské úžiny.",
+    body: `Bitcoin prudce vzrostl nad 78 000 USD a následovaly ho i altcoiny, což bylo způsobeno oznámením Íránu o plném otevření Hormuzské úžiny. Otázkou je, zda si býci dokáží udržet tento růstový trend.
+
+**Co se stalo**
+
+Bitcoin a altcoiny zaznamenaly prudký růst po íránské zprávě.
+
+**Kontext**
+
+Otevření Hormuzské úžiny snížilo obavy z narušení dodávek ropy, což pozitivně ovlivnilo trhy s rizikovými aktivy, včetně kryptoměn.
+
+**Klíčová čísla**
+
+- **78 000 USD:** Nové maximum Bitcoinu.
+- **Altcoiny:** Následný růst.
+- **Hormuzská úžina:** Klíčový faktor ovlivňující trhy.
+- **Býci:** Otázka udržitelnosti růstu.
+
+**Co sledovat dál**
+
+Sledujte, zda se růst Bitcoinu a altcoinů udrží a jak zareagují trhy na další zprávy.
+
+**Praktický závěr**
+
+Investoři by měli zvážit diverzifikaci do kryptoměn, ale zároveň být opatrní a sledovat vývoj trhu.
+
+*Zdroj: [Cointelegraph.com News](https://cointelegraph.com/news/price-predictions-4-17-btc-eth-xrp-bnb-sol-doge-hype-ada-bch-link?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)*`,
+    whyMatters: "Kryptoměny jsou stále volatilní aktivum, ale mohou nabídnout vysoké výnosy.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://cointelegraph.com/news/price-predictions-4-17-btc-eth-xrp-bnb-sol-doge-hype-ada-bch-link?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    image: "https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjYtMDQvMDE5ZDljNTUtMmEyNC03MWI3LTkyYzQtZWM2NjU0MWE4NGYxLmpwZw==.jpg",
+  },
+  {
+    id: "americka-kongresmanka-sheri-biggs-investovala-do-bitcoinu-pr",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Americká kongresmanka Sheri Biggs investovala do Bitcoinu přes ETF iShares",
+    excerpt: "Kongresmanka Sheri Biggs investovala až 250 000 USD do Bitcoinu prostřednictvím ETF iShares Bitcoin.",
+    body: `Kongresmanka Sheri Biggs z Jižní Karolíny zveřejnila investici až do výše 250 000 USD do Bitcoinu prostřednictvím ETF iShares Bitcoin. Tento krok naznačuje rostoucí zájem o Bitcoin i mezi politiky.
+
+**Co se stalo**
+
+Kongresmanka Biggs zveřejnila investici do Bitcoinu přes ETF.
+
+**Kontext**
+
+Zveřejnění investice politikem může mít pozitivní dopad na vnímání Bitcoinu a kryptoměn obecně.
+
+**Klíčová čísla**
+
+- **250 000 USD:** Maximální výše investice.
+- **iShares Bitcoin ETF:** Nástroj pro investici do Bitcoinu.
+- **Sheri Biggs:** Kongresmanka z Jižní Karolíny.
+- **Bitcoin:** Objekt investice.
+
+**Co sledovat dál**
+
+Sledujte, zda další politici zveřejní své investice do kryptoměn a jak to ovlivní regulaci kryptoměn.
+
+**Praktický závěr**
+
+Investoři by měli sledovat politický vývoj v oblasti kryptoměn, protože regulace může mít významný dopad na trh.
+
+*Zdroj: [Bitcoin Magazine](https://bitcoinmagazine.com/news/sheri-biggs-discloses-250000-bitcoin)*`,
+    whyMatters: "Zájem politiků o kryptoměny může vést k novým regulacím a pravidlům pro trh.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://bitcoinmagazine.com/news/sheri-biggs-discloses-250000-bitcoin",
+    image: "https://bitcoinmagazine.com/wp-content/uploads/2026/04/Congresswoman-Sheri-Biggs-Discloses-Up-to-250000-BTC-Investment-via-iShares-Bitcoin-ETF.jpg",
+  },
+  {
     id: "investori-jsou-pesimistictejsi-nez-za-poslednich-10-mesicu-b",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
