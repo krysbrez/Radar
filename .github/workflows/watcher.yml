@@ -1,30 +1,30 @@
-⏺ name: RADAR Watcher Agent
+name: RADAR Watcher Agent
 
-  on:                                                                                  
-    schedule:
-      - cron: "5 * * * *"                                                              
-    workflow_dispatch: {}                                   
+on:
+  schedule:
+    - cron: "5 * * * *"
+  workflow_dispatch:
 
-  jobs:
-    run-watcher:
-      runs-on: ubuntu-latest
-                                                                                       
-      steps:
-        - name: Checkout repo                                                          
-          uses: actions/checkout@v4                         
+jobs:
+  run-watcher:
+    runs-on: ubuntu-latest
 
-        - name: Set up Python
-          uses: actions/setup-python@v5
-          with:
-            python-version: "3.11"
-                                                                                       
-        - name: Install dependencies
-          run: pip install requests                                                    
-                                                            
-        - name: Run watcher
-          env:
-            SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-            SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-            RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}                              
-            WATCHER_FROM_EMAIL: ${{ secrets.WATCHER_FROM_EMAIL }}
-          run: python news_agent/watcher.py             
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run watcher
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          WATCHER_FROM_EMAIL: ${{ secrets.WATCHER_FROM_EMAIL }}
+        run: python news_agent/watcher.py
