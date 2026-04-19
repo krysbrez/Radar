@@ -79,7 +79,7 @@ def insert_alert(request_id, listing_url, listing_price):
 
 # ── Sauto.cz search ───────────────────────────────────────────────────────────
 
-SAUTO_API = "https://www.sauto.cz/api/search/v1/car"
+SAUTO_API = "https://www.sauto.cz/api/v1/items/search"
 
 PALIVO_MAP = {
     "benzin":  "petrol",
