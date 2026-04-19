@@ -1,5 +1,286 @@
 export const ARTICLES = [
   {
+    id: "iranska-situace-napeti-klesa-ropa-pada",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Íránská situace: Napětí klesá, ropa padá",
+    excerpt: "Trump slíbil rychlé vyřešení s Íránem, což vedlo k prudkému poklesu cen ropy. Írán odmítá vydání uranu do USA. Situace je volatilní a vyžaduje opatrnost.",
+    body: `Geopolitické napětí v Perském zálivu se krátkodobě zmírnilo po prohlášeních amerického prezidenta Donalda Trumpa, který naznačil rychlé dohodnutí s Íránem. Trumpův postoj, včetně návrhu na zastavení americké námořní blokády Íránu a zákaz izraelských útoků na Libanon, vedl k poklesu cen ropy a snížení obav z rozsáhlého konfliktu. Nicméně, íránská strana opakovaně odmítla vydání uranu do USA, což naznačuje pokračující nejistotu.
+
+**Co se stalo**
+
+Ceny ropy prudce klesly po Trumpových prohlášeních. Íránská vláda trvá na odmítnutí vydání uranu do USA. Trump naznačil možnost ukončení námořní blokády Íránu.
+
+**Kontext**
+
+Napětí mezi USA a Íránem v posledních měsících eskalovalo kvůli americkým sankcím a íránským jaderným aktivitám. Perský záliv je klíčovou oblastí pro globální dodávky ropy, a jakékoli narušení stability v regionu má významný dopad na světové ceny energií. Trumpova administrativa se snaží vyvinout tlak na Írán prostřednictvím ekonomických sankcí a diplomatických jednání.
+
+**Klíčová čísla**
+
+- **Pokles ceny ropy:** Brent crude oil klesl o více než 5 % během dne.
+- **Uran:** Íránská vláda odmítá vydání uranu do USA.
+- **Trump:** Naznačil možnost rychlého vyřešení situace "za den nebo dva".
+
+**Co sledovat dál**
+
+Sledujte další prohlášení obou stran a vývoj jednání. Důležité je sledovat i reakci OPEC a dalších producentů ropy. Pozornost věnujte případným dalším sankcím nebo vojenským akcím.
+
+**Praktický závěr**
+
+Vzhledem k volatilitě situace doporučujeme opatrnost při investicích do ropných akcií a komodit. Diverzifikace portfolia je klíčová.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/investinglive-americas-market-news-wrap-iran-says-hormuz-is-open-oil-plunges-20260417/)*`,
+    whyMatters: "Geopolitické napětí v Perském zálivu má přímý dopad na ceny energií a globální ekonomiku.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/investinglive-americas-market-news-wrap-iran-says-hormuz-is-open-oil-plunges-20260417/",
+  },
+  {
+    id: "facebook-jako-automobilovy-bazar-skryte-poklady",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Facebook jako automobilový bazar: Skryté poklady",
+    excerpt: "Facebook se stal nečekaným místem pro nákup levných aut. Fotograf motoristického časopisu sdílel své zkušenosti s hledáním aut za 500 liber. Platforma nabízí širokou škálu vozidel, ale vyžaduje opatrnost.",
+    body: `Sociální síť Facebook se stala nečekaným tržištěm pro nákup a prodej ojetých automobilů, zejména těch levnějších. Fotograf motoristického časopisu, který pravidelně testuje nová vozidla, se setkal s tím, že Facebook je často nejlepší místo pro nalezení zajímavých a levných aut. Platforma nabízí širokou škálu vozidel, od starých sovětských traktorů po moderní modely, ale vyžaduje opatrnost a důkladnou kontrolu.
+
+**Co se stalo**
+
+Facebook se stal populárním místem pro nákup a prodej ojetých automobilů.
+Fotograf motoristického časopisu využívá Facebook k hledání levných aut.
+Platforma nabízí širokou škálu vozidel, včetně neobvyklých modelů.
+
+**Kontext**
+
+Tradiční automobilové inzeráty a bazary ztrácejí popularitu ve prospěch online platforem. Facebook nabízí širokou škálu uživatelů a snadnou komunikaci mezi kupujícími a prodávajícími.
+
+**Klíčová čísla**
+
+- **500 liber:** Cílová cena pro nákup automobilu na Facebooku.
+- **Široká škála:** Platforma nabízí od starých traktorů po moderní modely.
+- **Rostoucí popularita:** Facebook se stává alternativou k tradičním automobilovým bazárům.
+
+**Co sledovat dál**
+
+Sledujte vývoj regulace online prodeje automobilů a ochranu kupujících.
+
+**Praktický závěr**
+
+Při nákupu automobilu na Facebooku buďte opatrní a důkladně zkontrolujte vozidlo před koupí.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/opinion/used-cars/nascars-soviet-tractors-and-tigger-facebook-car-shopping-wonderland)*`,
+    whyMatters: "Online platformy mění způsob, jakým lidé nakupují a prodávají automobily.",
+    readTime: "2 min",
+    date: "19. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/opinion/used-cars/nascars-soviet-tractors-and-tigger-facebook-car-shopping-wonderland",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/facebook-shopping_0.jpg?itok=XfYxWyDx",
+  },
+  {
+    id: "rychlost-a-socialni-pokrok-je-auto-skutecne-problem",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Rychlost a sociální pokrok: Je auto skutečně problém?",
+    excerpt: "Argumenty proti autům jsou často přehnané. Omezení mobility může mít negativní dopad na sociální rozvoj. Důležitá je rovnováha mezi ochranou životního prostředí a podporou mobility.",
+    body: `Debata o negativním dopadu automobilů na společnost a životní prostředí je často jednostranná. Zatímco omezení používání aut může vést ke zvýšení fyzické aktivity, může mít i negativní dopad na sociální rozvoj a mobilitu. Argumenty proti autům často ignorují jejich roli v ekonomice a umožnění přístupu k pracovním příležitostem a službám.
+
+**Co se stalo**
+
+Zpochybňování argumentů proti používání automobilů.
+Zdůraznění negativního dopadu omezení mobility na sociální rozvoj.
+Výzva k nalezení rovnováhy mezi ochranou životního prostředí a podporou mobility.
+
+**Kontext**
+
+Debata o dopadu automobilů na společnost a životní prostředí je dlouhodobá a komplexní. Omezení používání aut je často spojeno s politikami udržitelné mobility a snahou o snížení emisí.
+
+**Klíčová čísla**
+
+- **Zvýšení fyzické aktivity:** Omezení používání aut může vést ke zvýšení fyzické aktivity.
+- **Sociální rozvoj:** Omezení mobility může negativně ovlivnit sociální rozvoj.
+- **Emise:** Automobily jsou významným zdrojem emisí.
+
+**Co sledovat dál**
+
+Sledujte vývoj technologií pro elektromobily a alternativní paliva.
+
+**Praktický závěr**
+
+Podporujte politiky, které podporují udržitelnou mobilitu a zároveň umožňují přístup k pracovním příležitostem a službám.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/opinion/new-cars/speed-good-you-anti-car-lobby-has-it-all-wrong)*`,
+    whyMatters: "Mobilita je klíčovým faktorem pro ekonomický a sociální rozvoj.",
+    readTime: "2 min",
+    date: "18. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/opinion/new-cars/speed-good-you-anti-car-lobby-has-it-all-wrong",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/1-congestion_0.jpg?itok=REKorXKP",
+  },
+  {
+    id: "iranska-reakce-na-trumpovy-navrhy-odmitani-vydani-uranu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Íránská reakce na Trumpovy návrhy: Odmítání vydání uranu",
+    excerpt: "Írán odmítá vydání uranu do USA, což zhoršuje napětí. Trump trvá na získání íránského uranu.",
+    body: `Po prohlášeních amerického prezidenta Donalda Trumpa o získání íránského uranu íránská vláda opakovaně odmítla vydání uranu do USA. Tento postoj zhoršuje napětí v regionu a komplikuje vyjednávání mezi oběma zeměmi. Trumpova administrativa se snaží vyvinout tlak na Írán prostřednictvím ekonomických sankcí a diplomatických jednání.
+
+**Co se stalo**
+
+Íránská vláda odmítla vydání uranu do USA.
+Trump trvá na získání íránského uranu.
+Zhoršení napětí v regionu.
+
+**Kontext**
+
+Napětí mezi USA a Íránem v posledních měsících eskalovalo kvůli americkým sankcím a íránským jaderným aktivitám.
+
+**Klíčová čísla**
+
+- **Uran:** Íránská vláda odmítá vydání uranu do USA.
+- **Sankce:** USA uvalily na Írán ekonomické sankce.
+- **Trump:** Trvá na získání íránského uranu.
+
+**Co sledovat dál**
+
+Sledujte další prohlášení obou stran a vývoj jednání.
+
+**Praktický závěr**
+
+Vzhledem k volatilitě situace doporučujeme opatrnost při investicích do regionu.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/iran-parliamentary-committee-spokesman-we-will-not-allow-uranium-to-leave-the-country-20260417/)*`,
+    whyMatters: "Geopolitické napětí v regionu má dopad na globální ekonomiku.",
+    readTime: "2 min",
+    date: "17. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/iran-parliamentary-committee-spokesman-we-will-not-allow-uranium-to-leave-the-country-20260417/",
+  },
+  {
+    id: "honda-cr-z-a-prelude-navrat-hybridniho-coupe",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Honda CR-Z a Prelude: Návrat hybridního coupé",
+    excerpt: "Honda vrací hybridní coupé s modelem Prelude, který navazuje na CR-Z. Auto nabízí nečekané jízdní vlastnosti.",
+    body: `Honda vrací na trh hybridní coupé s modelem Prelude, který navazuje na dřívější model CR-Z. Nové auto nabízí nečekané jízdní vlastnosti a kombinuje prvky sportovního coupé s hybridním pohonem.
+
+**Co se stalo**
+
+Honda vrací hybridní coupé s modelem Prelude.
+Auto navazuje na model CR-Z.
+Nabízí nečekané jízdní vlastnosti.
+
+**Kontext**
+
+Hybridní sportovní vozy jsou stále populárnější. Honda se snaží uspokojit poptávku po efektivních a zábavných autech.
+
+**Klíčová čísla**
+
+- **CR-Z:** Model, na který Prelude navazuje.
+- **Hybridní pohon:** Auto kombinuje sportovní coupé s hybridním pohonem.
+- **Jízdní vlastnosti:** Auto nabízí nečekané jízdní vlastnosti.
+
+**Co sledovat dál**
+
+Sledujte reakci trhu na nový model Prelude.
+
+**Praktický závěr**
+
+Pro fanoušky hybridních sportovních vozů může být Prelude zajímavou volbou.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/honda-cr-z-meets-prelude-was-hybrid-coupe-misunderstood)*`,
+    whyMatters: "Honda vrací na trh zajímavý model, který kombinuje sportovní a ekologické prvky.",
+    readTime: "2 min",
+    date: "19. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/honda-cr-z-meets-prelude-was-hybrid-coupe-misunderstood",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/1-honda-prelude-group-test-2026-031.jpg?itok=gHNIOlK3",
+  },
+  {
+    id: "goodwood-festival-of-speed-tajemstvi-vyberu-centrepiece",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Goodwood Festival of Speed: Tajemství výběru centrepiece",
+    excerpt: "Duke of Richmond odhalil proces výběru centrepiece pro Goodwood Festival of Speed. Klíčová je originalita a vizuální dopad.",
+    body: `Duke of Richmond, 11. vévoda z Richmondu, odhalil proces výběru centrepiece pro prestižní Goodwood Festival of Speed. Klíčová je originalita a vizuální dopad exponátu, který má upoutat pozornost návštěvníků.
+
+**Co se stalo**
+
+Odhalení procesu výběru centrepiece pro Goodwood Festival of Speed.
+Klíčová je originalita a vizuální dopad exponátu.
+
+**Kontext**
+
+Goodwood Festival of Speed je významnou událostí v automobilovém kalendáři. Centrepiece je klíčovým prvkem festivalu.
+
+**Klíčová čísla**
+
+- **Goodwood Festival of Speed:** Prestižní automobilová událost.
+- **Centrepiece:** Klíčový prvek festivalu.
+- **Originalita:** Důležitý faktor při výběru centrepiece.
+
+**Co sledovat dál**
+
+Sledujte, jaký bude centrepiece pro příští ročník festivalu.
+
+**Praktický závěr**
+
+Goodwood Festival of Speed je skvělou příležitostí pro automobilové nadšence.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/podcasts-my-week-in-cars/how-goodwood-chooses-its-centrepiece-according-duke)*`,
+    whyMatters: "Goodwood Festival of Speed je významnou událostí pro automobilový průmysl.",
+    readTime: "2 min",
+    date: "18. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/podcasts-my-week-in-cars/how-goodwood-chooses-its-centrepiece-according-duke",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/fos_dukeofrichmond_acmeets.jpg?itok=_1z_yynB",
+  },
+  {
+    id: "ariel-neoceneny-hrdina-britskeho-automobiloveho-prumyslu",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Ariel: Neoceněný hrdina britského automobilového průmyslu",
+    excerpt: "Ariel se specializuje na výrobu lehkých sportovních aut Atom. Firma je příkladem inovace a podnikavosti v britském automobilovém průmyslu.",
+    body: `Britská firma Ariel se proslavila výrobou lehkých sportovních aut Atom, které jsou oblíbené mezi automobilovými nadšenci. Firma je příkladem inovace a podnikavosti v britském automobilovém průmyslu a dokazuje, že úspěch v automobilovém průmyslu nezávisí pouze na výrobě atraktivních vozidel, ale i na efektivním řízení a podnikavosti.
+
+**Co se stalo**
+
+Ariel se proslavila výrobou lehkých sportovních aut Atom.
+Firma je příkladem inovace a podnikavosti v britském automobilovém průmyslu.
+
+**Kontext**
+
+Britský automobilový průmysl se snaží udržet si konkurenceschopnost na globálním trhu. Ariel je příkladem malé firmy, která se dokázala prosadit díky inovaci a kvalitě.
+
+**Klíčová čísla**
+
+- **Atom:** Lehký sportovní automobil vyráběný firmou Ariel.
+- **27 let:** Doba, po kterou Ariel vyrábí automobily.
+- **Čtyři generace:** Počet generací modelu Atom.
+
+**Co sledovat dál**
+
+Sledujte další vývoj firmy Ariel a její plány do budoucna.
+
+**Praktický závěr**
+
+Ariel je příkladem firmy, která se dokázala prosadit díky inovaci a kvalitě.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/opinion/new-cars/and-atom-why-ariel-unsung-hero-uk-car-industry)*`,
+    whyMatters: "Ariel je důležitým hráčem v britském automobilovém průmyslu.",
+    readTime: "2 min",
+    date: "18. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/opinion/new-cars/and-atom-why-ariel-unsung-hero-uk-car-industry",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/1-ariel_wil_sc.jpg?itok=7xqA3lIA",
+  },
+  {
     id: "iranska-deklarace-o-otevreni-hormuzske-uziny-prudce-snizila-",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
