@@ -1,5 +1,199 @@
 export const ARTICLES = [
   {
+    id: "polestar-3-technologicky-skok-ale-s-kompromisy-v-jizde",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Polestar 3: Technologický skok, ale s kompromisy v jízdě",
+    excerpt: "Nový Polestar 3 přináší výrazné technologické vylepšení, zejména rychlejší nabíjení. Na druhou stranu, úpravy podvozkem negativně ovlivnily jízdní vlastnosti.",
+    body: `Polestar 3 se dočkal významných vylepšení, především v oblasti rychlosti nabíjení. Tyto změny však měly dopad i na jízdní vlastnosti vozidla. Podobně jako u jiných vozidel, i zde hraje klíčovou roli jeden specifický komponent – v tomto případě úpravy podvozku. Změny v nastavení podvozku, i když zlepšují nabíjecí výkon, vedly ke kompromisům v dynamice a celkovém jízdním zážitku.
+
+**Co se stalo**
+
+Zvýšení rychlosti nabíjení, ale snížení jízdních vlastností díky úpravám podvozku.
+
+**Kontext**
+
+Polestar 3 je součástí rostoucího segmentu elektrických SUV, kde je klíčová kombinace výkonu, dojezdu a rychlosti nabíjení.
+
+**Klíčová čísla**
+
+- **Rychlost nabíjení:** Zvýšení rychlosti nabíjení je klíčovým parametrem.
+- **SUV:** Polestar 3 je elektrické SUV.
+- **Torque vectoring:** Technologický prvek ovlivňující jízdní vlastnosti.
+
+**Co sledovat dál**
+
+Sledujte, jak se Polestar vyrovná s kompromisem mezi rychlostí nabíjení a jízdními vlastnostmi a jak na to zareagují zákazníci.
+
+**Praktický závěr**
+
+Při nákupu elektrického SUV je důležité zvážit kompromisy mezi různými parametry, jako je rychlost nabíjení a jízdní vlastnosti.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/new-2026-polestar-3-driven-huge-tech-upgrade-one-big-loss)*`,
+    whyMatters: "Ukazuje výzvy spojené s vývojem elektrických vozidel a potřebu optimalizace různých aspektů pro dosažení co nejlepšího celkového zážitku.",
+    readTime: "2 min",
+    date: "20. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/new-2026-polestar-3-driven-huge-tech-upgrade-one-big-loss",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/polestar-3-review-2026-075.jpg?itok=qfSd1lb-",
+  },
+  {
+    id: "smart-2-nahled-na-nastupce-fortwo-s-designem-pro-evropu",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Smart #2: Náhled na nástupce Fortwo s designem pro Evropu",
+    excerpt: "Smart představil koncept #2, který naznačuje design budoucího nástupce Fortwo. Nový model bude malý, elektrický a zaměřený na evropský trh.",
+    body: `Smart zveřejnil první obrázky konceptu #2, který předznamenává design nástupce legendárního Fortwo. Nový model bude elektrický, malý a primárně určený pro evropský trh. Vývoj probíhá ve spolupráci s Geely a Mercedes-Benz, což zaručuje vysokou kvalitu a moderní technologie. Očekává se, že #2 bude klíčovým prvkem v plánech Smart na posílení pozice na trhu malých elektromobilů.
+
+**Co se stalo**
+
+Představení konceptu #2, který ukazuje design budoucího modelu Smart.
+
+**Kontext**
+
+Smart se snaží o restart značky s důrazem na elektrifikaci a moderní design. Spolupráce s Geely a Mercedes-Benz má zajistit konkurenceschopnost nových modelů.
+
+**Klíčová čísla**
+
+- **Dva sedadla:** Zachování tradičního konceptu malého městského auta.
+- **Evropa:** Primární trh pro nový model.
+- **Geely a Mercedes-Benz:** Společný vývoj a výroba.
+
+**Co sledovat dál**
+
+Sledujte, jak se koncept #2 promění v produkční model a jaké budou jeho technické specifikace a cena.
+
+**Praktický závěr**
+
+Pro investory zajímavá příležitost sledovat vývoj značky Smart a její potenciál na trhu malých elektromobilů.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/smart-2-concept-previews-design-fortwo-successor)*`,
+    whyMatters: "Ukazuje, jak se tradiční automobilové značky přizpůsobují trendu elektrifikace a jak se mění design a koncept malých městských vozů.",
+    readTime: "2 min",
+    date: "20. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/smart-2-concept-previews-design-fortwo-successor",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/smart_concept2_sketch_front_34.jpg?itok=-mD3VMQ8",
+  },
+  {
+    id: "kvantovy-skok-v-kryptu-bitcoin-a-ethereum-na-odlisnych-cesta",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Kvantový skok v kryptu: Bitcoin a Ethereum na odlišných cestách",
+    excerpt: "Bitcoin a Ethereum se liší v přístupu k zabezpečení blockchainu a řešení budoucích kryptografických rizik.",
+    body: `Bitcoin a Ethereum se vydávají na odlišné cesty v oblasti zabezpečení blockchainu. Zatímco Bitcoin se zaměřuje na stabilitu a osvědčenou kryptografii, Ethereum experimentuje s novými technologiemi a řešeními. Rozdíly v přístupu k zabezpečení odrážejí rozdílné cíle a filozofie obou kryptoměn. Je důležité sledovat, jak se vyvíjejí bezpečnostní opatření a jak ovlivní budoucnost obou blockchainů.
+
+**Co se stalo**
+
+Odlišné přístupy Bitcoinu a Etherea k zabezpečení blockchainu.
+
+**Kontext**
+
+Zabezpečení blockchainu je klíčové pro důvěru v kryptoměny a jejich dlouhodobou udržitelnost.
+
+**Klíčová čísla**
+
+- **Kryptografické riziko:** Budoucí hrozby pro zabezpečení blockchainu.
+- **Blockchain:** Základní technologie kryptoměn.
+- **Bitcoin a Ethereum:** Dvě největší kryptoměny.
+
+**Co sledovat dál**
+
+Sledujte, jak se vyvíjejí bezpečnostní opatření u obou kryptoměn a jak na to zareagují trhy.
+
+**Praktický závěr**
+
+Pro investory důležité sledovat vývoj zabezpečení blockchainu a jeho dopad na hodnotu kryptoměn.
+
+*Zdroj: [Cointelegraph.com News](https://cointelegraph.com/explained/bitcoin-and-ethereum-quantum-threat-strategy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)*`,
+    whyMatters: "Ukazuje, že zabezpečení blockchainu je dynamický proces a že je potřeba neustále inovovat a přizpůsobovat se novým hrozbám.",
+    readTime: "2 min",
+    date: "20. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://cointelegraph.com/explained/bitcoin-and-ethereum-quantum-threat-strategy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    image: "https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjYtMDQvMDE5ZGE5NmYtYTNkNC03NGNjLTg5NTktYTQ5NjZiODU0ZDE5LmpwZw==.jpg",
+  },
+  {
+    id: "akciovy-trh-pokles-kvuli-napeti-mezi-usa-a-iranem",
+    tag: "Investování",
+    tagColor: "bg-blue-500/20 text-blue-300",
+    title: "Akciový trh: Pokles kvůli napětí mezi USA a Íránem",
+    excerpt: "Akciové trhy klesají v reakci na eskalaci napětí mezi USA a Íránem.",
+    body: `Akciové trhy reagují na zhoršení vztahů mezi USA a Íránem poklesem. Geopolitické napětí vždy vyvolává nejistotu a obavy investorů. Sledování vývoje situace je klíčové pro pochopení budoucího vývoje trhů.
+
+**Co se stalo**
+
+Pokles akciových trhů v důsledku geopolitického napětí.
+
+**Kontext**
+
+Geopolitické události mají významný dopad na finanční trhy.
+
+**Klíčová čísla**
+
+- **S&P 500, Nasdaq, Dow:** Hlavní akciové indexy, které klesají.
+- **USA a Írán:** Zúčastněné strany v geopolitickém konfliktu.
+- **Finanční trhy:** Reagují na geopolitické události.
+
+**Co sledovat dál**
+
+Sledujte, jak se bude vyvíjet situace mezi USA a Íránem a jak na to zareagují trhy.
+
+**Praktický závěr**
+
+V období geopolitického napětí je vhodné být opatrný a diverzifikovat portfolio.
+
+*Zdroj: [Yahoo Finance](https://finance.yahoo.com/markets/stocks/live/stock-market-today-sp-500-nasdaq-dow-futures-fall-as-us-iran-tensions-flare-up-again-to-shutter-hormuz-230354323.html)*`,
+    whyMatters: "Ukazuje, jak geopolitické události ovlivňují finanční trhy a jak je důležité sledovat vývoj situace.",
+    readTime: "2 min",
+    date: "19. 4. 2026",
+    author: "Radar Redakce",
+    category: "investovani",
+    sourceLink: "https://finance.yahoo.com/markets/stocks/live/stock-market-today-sp-500-nasdaq-dow-futures-fall-as-us-iran-tensions-flare-up-again-to-shutter-hormuz-230354323.html",
+    image: "https://s.yimg.com/uu/api/res/1.2/gfXa8W65t.tHiDRgDaTfww--~B/aD01MjA5O3c9NzgxNDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-04/a976999b-4852-4a8f-9aab-dbb602f225e7",
+  },
+  {
+    id: "iran-odmita-americke-navrhy-vyjednavani-v-patove-situaci",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Írán odmítá americké návrhy: Vyjednávání v patové situaci",
+    excerpt: "Írán odmítl americké návrhy na vyjednávání a trvá na svých požadavcích.",
+    body: `Írán opakovaně odmítl americké návrhy na vyjednávání a trvá na svých požadavcích. Teherán tvrdí, že americké návrhy jsou nerealistické a neberou v úvahu národní zájmy Íránu. Situace je v patové situaci a vyjednávání se zdají být v nedohlednu.
+
+**Co se stalo**
+
+Odmítnutí amerických návrhů Íránem.
+
+**Kontext**
+
+Vyjednávání mezi USA a Íránem jsou klíčová pro stabilitu v regionu.
+
+**Klíčová čísla**
+
+- **Národní zájmy:** Důvod odmítnutí amerických návrhů.
+- **Vyjednávání:** Patová situace.
+- **USA a Írán:** Zúčastněné strany.
+
+**Co sledovat dál**
+
+Sledujte, zda dojde k novým jednáním a jak se bude vyvíjet situace.
+
+**Praktický závěr**
+
+Geopolitické riziko ovlivňuje ceny ropy a dalších komodit.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/iran-continues-to-reaffirm-that-us-demands-have-been-unserious-and-unrealistic-20260420/)*`,
+    whyMatters: "Ukazuje, jak geopolitické napětí ovlivňuje globální ekonomiku.",
+    readTime: "2 min",
+    date: "20. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/iran-continues-to-reaffirm-that-us-demands-have-been-unserious-and-unrealistic-20260420/",
+  },
+  {
     id: "iranska-situace-napeti-klesa-ropa-pada",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
