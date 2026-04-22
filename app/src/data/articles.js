@@ -1,5 +1,307 @@
 export const ARTICLES = [
   {
+    id: "ecb-euro-nemuze-nahradit-dolar-jako-bezpecny-pristav",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "ECB: Euro nemůže nahradit dolar jako bezpečný přístav",
+    excerpt: "Philip Lane poukázal na nedostatek euro-denominated bezpečných aktiv. Německé Bunds nestačí uspokojit globální poptávku a zajistit autonomní měnový systém. ECB hledá řešení pro posílení role eura.",
+    body: `Hlavní ekonom ECB Philip Lane otevřeně přiznal, že euro nemůže v dohledné době nahradit americký dolar v roli globálního bezpečného přístavu.  Důvodem je podle něj nedostatečná nabídka aktiv denominovaných v eurech, které by splňovaly kritéria bezpečnosti a likvidity.  Ačkoliv německé vládní dluhopisy (Bunds) slouží jako primární benchmark, jejich objem je příliš omezený na uspokojení globální poptávky a zajištění hluboké likvidity nezbytné pro plně autonomní měnový systém.
+
+**Co se stalo**
+
+Lane explicitně uvedl, že euro nemá potenciál nahradit dolar jako globální bezpečný přístav.  Zdůraznil nedostatek euro-denominated bezpečných aktiv a potřebu řešení.
+
+**Kontext**
+
+Role bezpečné měny je klíčová pro stabilitu globálního finančního systému.  Dolar si tuto pozici dlouhodobě udržuje díky hloubce trhu, likviditě a obecné důvěře.  Eurozóna se snaží posílit svou pozici, ale čelí strukturálním překážkám.
+
+**Klíčová čísla**
+
+- **Globální poptávka po bezpečných aktivech:** Stále roste, zejména v období nejistoty.
+- **Nabídka německých Bunds:** Omezená, což brání plné využití eura jako bezpečné měny.
+- **Likvidita:** Nedostatečná pro plně autonomní měnový systém Eurozóny.
+
+**Co sledovat dál**
+
+Sledujte, zda ECB navrhne konkrétní opatření pro zvýšení nabídky euro-denominated bezpečných aktiv.  Pozorujte reakci trhů na jakékoliv oznámení ohledně měnové politiky Eurozóny.
+
+**Praktický závěr**
+
+Investoři by měli zvážit diverzifikaci portfolia a sledovat vývoj v měnové politice ECB.  Dolar si pravděpodobně udrží dominantní pozici v krátkodobém horizontu.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/ecb-policymaker-lane-admits-the-euro-cant-replace-us-dollars-role-as-global-safe-haven-20260422/)*`,
+    whyMatters: "Omezená role eura jako bezpečné měny může ovlivnit investiční toky a stabilitu Eurozóny.",
+    readTime: "2 min",
+    date: "22. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/ecb-policymaker-lane-admits-the-euro-cant-replace-us-dollars-role-as-global-safe-haven-20260422/",
+  },
+  {
+    id: "inflace-ve-velke-britanii-core-inflace-klesa-sluzby-zustavaj",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Inflace ve Velké Británii: Core inflace klesá, služby zůstávají vysoké",
+    excerpt: "UK CPI vzrostla kvůli energiím, ale core inflace mírně klesla na 3,1 %. Služby však zůstávají nad 4 %, což tlačí Bank of England k opatrnosti.",
+    body: `Inflační data ve Velké Británii ukázala očekávaný nárůst celkové inflace, primárně způsobený vyššími cenami energií.  Nicméně, core inflace, která nezahrnuje ceny energií a potravin, mírně klesla na 3,1 %.  Zásadní je však, že inflace v sektoru služeb zůstává vysoká, nad 4 %, a dokonce se mírně zvýšila na 4,5 %. To představuje výzvu pro Bank of England, která se snaží inflaci dostat pod kontrolu.
+
+**Co se stalo**
+
+Core inflace mírně klesla, zatímco inflace v sektoru služeb se zvýšila.
+
+**Kontext**
+
+Inflace je klíčovým faktorem ovlivňujícím měnovou politiku.  Bank of England se snaží najít rovnováhu mezi bojem proti inflaci a podporou ekonomického růstu.
+
+**Klíčová čísla**
+
+- **Celková inflace:** Očekávaný nárůst.
+- **Core inflace:** 3,1 % (mírný pokles).
+- **Inflace v sektoru služeb:** 4,5 % (zvýšení).
+- **Cílová inflace BoE:** 2 %
+
+**Co sledovat dál**
+
+Sledujte další data o inflaci a vývoj na trhu práce.  Pozorujte komunikaci Bank of England ohledně budoucího směřování úrokových sazeb.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad inflace na britské akcie a dluhopisy.  Očekává se, že BoE bude pokračovat v opatrné monetární politice.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/what-are-the-main-events-for-today-20260422/)*`,
+    whyMatters: "Inflace ovlivňuje kupní sílu a ekonomický růst. Zásahy BoE mohou mít významný dopad na finanční trhy.",
+    readTime: "2 min",
+    date: "22. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/what-are-the-main-events-for-today-20260422/",
+  },
+  {
+    id: "renault-data-z-vozidel-jako-novy-zdroj-prijmu",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Renault: Data z vozidel jako nový zdroj příjmů",
+    excerpt: "Renault plánuje monetizovat data z softwarově definovaných vozidel, začínaje modely Trafic.",
+    body: `Automobilka Renault se chystá využít potenciál dat generovaných z vozidel a transformovat je v nový zdroj příjmů.  Společnost se zaměřuje na monetizaci dat z softwarově definovaných vozidel, přičemž první krokem bude využití dat z modelů Trafic.  Renault věří, že schopnost minimalizovat prostoje vozidel pomocí nových technologií může přinést značné finanční výhody.
+
+**Co se stalo**
+
+Renault oznámil plány na monetizaci dat z vozidel.
+
+**Kontext**
+
+Data z vozidel se stávají cenným zdrojem informací pro automobilky.  Umožňují optimalizaci provozu, zlepšení služeb a vývoj nových produktů.
+
+**Klíčová čísla**
+
+- **Prostoje vozidel:** Cílem je minimalizovat prostoje pomocí nových technologií.
+- **Trafic:** První model, na kterém bude testována monetizace dat.
+
+**Co sledovat dál**
+
+Sledujte, jak se Renault bude vyrovnávat s ochranou soukromí uživatelů a regulacemi týkajícími se dat.
+
+**Praktický závěr**
+
+Investoři by měli zvážit potenciál automobilky Renault v oblasti dat a softwaru.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars-vans/renault-eyes-data-revenues-software-defined-vans)*`,
+    whyMatters: "Monetizace dat z vozidel může zásadně změnit obchodní modely automobilky.",
+    readTime: "2 min",
+    date: "22. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars-vans/renault-eyes-data-revenues-software-defined-vans",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/renault-estafette.jpg?itok=gr8Vkxx3",
+  },
+  {
+    id: "smart-2-navrat-ke-korenum-s-elektrickym-mestskym-vozem",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Smart #2: Návrat ke kořenům s elektrickým městským vozem",
+    excerpt: "Smart vrací se k městským kořenům s novým elektrickým modelem #2, který navazuje na původní Fortwo.",
+    body: `Značka Smart se vrací ke svým kořenům a představuje nový elektrický městský vůz #2, který navazuje na původní model Fortwo.  Po experimentech s elektrickými SUV se Smart rozhodl vrátit se k původnímu konceptu malého, obratného městského auta.  Vývoj #2 byl náročný, ale společnost věří v jeho potenciál.
+
+**Co se stalo**
+
+Smart představil nový model #2, který navazuje na původní Fortwo.
+
+**Kontext**
+
+Smart byl původně založen jako projekt Swatch a Mercedes-Benz.  Značka se zaměřuje na městské vozy s důrazem na kompaktnost a obratnost.
+
+**Klíčová čísla**
+
+- **Dojezd:** 186 mil (přibližně 300 km).
+- **Velikost:** Nejmenší elektrické auto na trhu.
+
+**Co sledovat dál**
+
+Sledujte reakci trhu na nový model #2 a jeho konkurenceschopnost.
+
+**Praktický závěr**
+
+Investoři by měli zvážit potenciál Smartu v rostoucím segmentu elektrických městských vozů.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/from-the-archive/original-city-slicker-smart-cars-journey-swatch-2)*`,
+    whyMatters: "Návrat ke kořenům může pomoci Smartu posílit pozici na trhu.",
+    readTime: "2 min",
+    date: "22. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/from-the-archive/original-city-slicker-smart-cars-journey-swatch-2",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/a94f262.jpg?itok=btNLhllv",
+  },
+  {
+    id: "smart-fortwo-nova-generace-jako-premiovy-elektromobil",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Smart Fortwo: Nová generace jako prémiový elektromobil",
+    excerpt: "Smart vrací Fortwo jako malý, prémiový elektromobil s dojezdem 300 km.",
+    body: `Smart se vrací k původnímu konceptu malého městského vozu s novou generací Fortwo, která bude dostupná jako elektromobil.  Nový model, nazvaný #2, bude nejmenším elektrickým autem na trhu a zaměří se na prémiový segment.  Očekává se, že bude uveden na trh v příštím roce.
+
+**Co se stalo**
+
+Smart představil novou generaci Fortwo jako prémiový elektromobil.
+
+**Kontext**
+
+Smart se snaží posílit svou pozici na trhu s elektrickými vozidly.
+
+**Klíčová čísla**
+
+- **Dojezd:** 186 mil (přibližně 300 km).
+- **Velikost:** Nejmenší elektrické auto na trhu.
+
+**Co sledovat dál**
+
+Sledujte reakci trhu na nový model a jeho konkurenceschopnost.
+
+**Praktický závěr**
+
+Investoři by měli zvážit potenciál Smartu v rostoucím segmentu elektrických městských vozů.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/electric-cars/smart-fortwo-returns-premium-city-car-ev-186-mile-range)*`,
+    whyMatters: "Návrat k původnímu konceptu může pomoci Smartu posílit pozici na trhu.",
+    readTime: "2 min",
+    date: "22. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/electric-cars/smart-fortwo-returns-premium-city-car-ev-186-mile-range",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/smart_concepthashtag2_brand_event_beijing_2.jpg?itok=etGGCVOT",
+  },
+  {
+    id: "iran-signaly-o-ochote-usa-uvolnit-namorni-blokadu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Írán: Signály o ochotě USA uvolnit námořní blokádu",
+    excerpt: "Írán obdržel signály o možné ochotě USA zrušit námořní blokádu.",
+    body: `Podle zpráv agentury Bloomberg, citující Tasnim News Agency, Írán obdržel od USA „nějaké signály“ o možné ochotě zrušit námořní blokádu.  Tato zpráva by mohla vést k obnovení jednání a prodloužení příměří.  Nicméně, další jednání jsou odložena na neurčito.
+
+**Co se stalo**
+
+Írán obdržel signály o možné ochotě USA zrušit námořní blokádu.
+
+**Kontext**
+
+Námořní blokáda Íránu má významný dopad na jeho ekonomiku a přístup k mezinárodnímu obchodu.
+
+**Klíčová čísla**
+
+- **Příměří:** Prodloužení je v jednání.
+- **Jednání:** Odložena na neurčito.
+
+**Co sledovat dál**
+
+Sledujte vývoj jednání a reakci trhů na geopolitické události.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad geopolitických rizik na ceny ropy a íránské akcie.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/iran-reportedly-receives-some-sign-that-the-us-is-ready-to-break-its-naval-blockade-20260422/)*`,
+    whyMatters: "Geopolitické napětí v regionu Perského zálivu může ovlivnit globální ekonomiku.",
+    readTime: "2 min",
+    date: "22. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/iran-reportedly-receives-some-sign-that-the-us-is-ready-to-break-its-naval-blockade-20260422/",
+  },
+  {
+    id: "bitcoin-dosahl-11tydenniho-maxima",
+    tag: "Trhy",
+    tagColor: "bg-sky-500/20 text-sky-300",
+    title: "Bitcoin dosáhl 11týdenního maxima",
+    excerpt: "Bitcoin výrazně posílil a dosáhl 11týdenního maxima.",
+    body: `Bitcoin zaznamenal výrazný nárůst hodnoty a dosáhl 11týdenního maxima.  Trhy sledují vývoj v kryptoměnách a jejich potenciální dopad na investiční portfolia.
+
+**Co se stalo**
+
+Bitcoin dosáhl 11týdenního maxima.
+
+**Kontext**
+
+Bitcoin je nejznámější kryptoměna a jeho cena je ovlivněna mnoha faktory, včetně regulace, technologického vývoje a poptávky.
+
+**Klíčová čísla**
+
+- **11týdenní maximum:** Aktuální cenový vrchol Bitcoinu.
+
+**Co sledovat dál**
+
+Sledujte další vývoj v kryptoměnách a regulaci.
+
+**Praktický závěr**
+
+Investoři by měli zvážit rizika a potenciální výnosy investic do kryptoměn.
+
+*Zdroj: [e15.cz](https://www.e15.cz/investice/investicni-online-bitcoin-vyrazne-posilil-a-dostal-se-na-11tydenni-maximum-1424330)*`,
+    whyMatters: "Cena Bitcoinu může ovlivnit investiční strategie a tržní sentiment.",
+    readTime: "2 min",
+    date: "22. 4. 2026",
+    author: "Radar Redakce",
+    category: "investovani",
+    sourceLink: "https://www.e15.cz/investice/investicni-online-bitcoin-vyrazne-posilil-a-dostal-se-na-11tydenni-maximum-1424330",
+    image: "https://1884403144.rsc.cdn77.org/foto/cinske-akcie-akcie/MzMweDE5NS9jZW50ZXIvbWlkZGxlL2ZpbHRlcnM6cXVhbGl0eSg4NSk6bm9fdXBzY2FsZSgpOmZvY2FsKDIzNXg1ODI6MzQ0eDczNSkvaW1n/9207465.jpg?v=0&amp;st=ah94tclrpVs3fYwgdgnWYWWlt_uexAP3s-IjqEvlqr4&amp;ts=1600812000&amp;e=0",
+  },
+  {
+    id: "kalshi-a-polymarket-vstupuji-do-zavodu-o-perpetual-futures-p",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Kalshi a Polymarket vstupují do závodu o perpetual futures pro kryptoměny",
+    excerpt: "Kalshi a Polymarket se chystají spustit perpetual futures pro kryptoměny, posun od sázek na události k derivátům.",
+    body: `Společnosti Kalshi a Polymarket se zapojují do závodu o spuštění perpetual futures pro kryptoměny.  Tento krok signalizuje posun od tradičních sázek na události k obchodování s deriváty a nabízí nové možnosti pro spekulaci a zajištění.
+
+**Co se stalo**
+
+Kalshi a Polymarket se chystají spustit perpetual futures pro kryptoměny.
+
+**Kontext**
+
+Perpetual futures jsou deriváty, které umožňují obchodování s kryptoměnami bez expirace.
+
+**Klíčová čísla**
+
+- **Deriváty:** Nová možnost pro spekulaci a zajištění.
+
+**Co sledovat dál**
+
+Sledujte, jak se budou vyvíjet perpetual futures a jak ovlivní trh s kryptoměnami.
+
+**Praktický závěr**
+
+Investoři by měli zvážit rizika a potenciální výnosy obchodování s deriváty.
+
+*Zdroj: [Bitcoin Magazine](https://bitcoinmagazine.com/news/kalshi-and-polymarket-enter-the-crypto)*`,
+    whyMatters: "Nové deriváty mohou zvýšit likviditu a efektivitu trhu s kryptoměnami.",
+    readTime: "2 min",
+    date: "21. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://bitcoinmagazine.com/news/kalshi-and-polymarket-enter-the-crypto",
+    image: "https://bitcoinmagazine.com/wp-content/uploads/2026/04/Tether-moves-over-70-million-in-bitcoin-to-reserves-on-chain-data-shows.jpg",
+  },
+  {
     id: "polestar-3-technologicky-skok-ale-s-kompromisy-v-jizde",
     tag: "Auta",
     tagColor: "bg-amber-500/20 text-amber-300",
