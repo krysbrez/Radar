@@ -1,5 +1,307 @@
 export const ARTICLES = [
   {
+    id: "pmi-eurozony-v-dubnu-vyrazne-pod-ocekavani-sluzby-v-propadu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "PMI eurozóny v dubnu výrazně pod očekávání – služby v propadu",
+    excerpt: "Flash PMI pro eurozónu v dubnu výrazně pod očekáváním, zejména sektor služeb. Výrobní sektor mírně překonal odhady, ale i zde je patrná slabost. Kompozitní PMI klesl do kontrakce.",
+    body: `Dnes zveřejněná flash data PMI pro eurozónu přinesla zklamání. Zatímco výrobní sektor vykazoval mírný nárůst aktivity, sektor služeb zaznamenal výrazný pokles, což vedlo k propadu kompozitního PMI do kontrakčního pásma. Slabá poptávka a dopady konfliktu na Blízkém východě jsou hlavními faktory tohoto vývoje.
+
+**Co se stalo**
+
+Flash PMI pro eurozónu v dubnu dosáhl 47,4, což je výrazně pod očekávanými 49,8. Sektor služeb klesl na 46,9, zatímco kompozitní PMI se propadl na 48,6.
+
+**Kontext**
+
+PMI jsou klíčové ukazatele ekonomické aktivity a slouží jako indikátor budoucího vývoje. Slabé PMI naznačují zpomalení ekonomického růstu a potenciální recesi. Předchozí data PMI signalizovala stabilizaci, ale tato data naznačují zhoršení situace.
+
+**Klíčová čísla**
+
+- **47.4:** Flash PMI pro eurozónu (očekávání 49.8)
+- **46.9:** PMI pro sektor služeb (očekávání 50.4)
+- **48.6:** Kompozitní PMI (očekávání 50.1)
+- **52.2:** PMI pro výrobní sektor (očekávání 50.9)
+
+**Co sledovat dál**
+
+Sledujte revidovaná data PMI a další ekonomické ukazatele, jako je inflace a spotřebitelská důvěra. Důležitý bude také vývoj na Blízkém východě a jeho dopad na energetické ceny.
+
+**Praktický závěr**
+
+Oslabující ekonomika eurozóny může vést k tlaku na Evropskou centrální banku, aby zmírnila monetární politiku. Investoři by měli zvážit snížení expozice vůči aktivům eurozóny.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/eurozone-april-flash-services-pmi-474-vs-498-expected-20260423/)*`,
+    whyMatters: "Zpomalení ekonomiky eurozóny může mít dopad na globální ekonomický růst a finanční trhy.",
+    readTime: "2 min",
+    date: "23. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/eurozone-april-flash-services-pmi-474-vs-498-expected-20260423/",
+  },
+  {
+    id: "ora-03-konci-v-uk-gwm-meni-strategii",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Ora 03 končí v UK – GWM mění strategii",
+    excerpt: "Automobilka GWM stahuje z trhu ve Velké Británii model Ora 03 (Funky Cat) po čtyřech letech slabých prodejů. Důvodem je revize evropské strategie zaměřená na výrazný růst.",
+    body: `Čínská automobilka GWM, majitel značky Ora, rozhodla se stáhnout model Ora 03 (dříve Funky Cat) z britského trhu po čtyřech letech. Důvodem je nespokojivý prodej a revize evropské strategie, která se zaměřuje na výraznější růst. Tento krok signalizuje změnu přístupu k evropskému trhu a potenciální zaměření na jiné modely nebo segmenty.
+
+**Co se stalo**
+
+Model Ora 03 bude stažen z britských prodejních míst. GWM reviduje svou evropskou strategii.
+
+**Kontext**
+
+Ora 03 byl debutový model značky Ora, zaměřené na elektrická vozidla s důrazem na design. Prodej modelu v UK však nedosahoval očekávání.
+
+**Klíčová čísla**
+
+- **4 roky:** Doba prodeje Ora 03 ve Velké Británii
+- **Ora:** Značka elektrických vozidel pod GWM
+
+**Co sledovat dál**
+
+Sledujte, jaké modely GWM představí na evropském trhu v budoucnu a jak se bude vyvíjet jejich celková evropská strategie.
+
+**Praktický závěr**
+
+Investoři v automobilovém průmyslu by měli sledovat strategické změny čínských automobilek na evropském trhu.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/ora-03-pulled-sale-gwm-overhauls-uk-strategy)*`,
+    whyMatters: "Ústup Ora 03 z UK trhu ukazuje výzvy, kterým čelí čínští výrobci při pronikání na západní trhy.",
+    readTime: "2 min",
+    date: "23. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/ora-03-pulled-sale-gwm-overhauls-uk-strategy",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/gwm-ora-03-0.jpg?itok=0IfJAxlr",
+  },
+  {
+    id: "morgan-supersport-400-nejvykonnejsi-morgan-v-historii",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Morgan Supersport 400 – nejvýkonnější Morgan v historii",
+    excerpt: "Morgan představil Supersport 400 s výkonem 402 koní, což je nový rekord pro značku. Zrychlení z 0 na 62 mph činí 3,6 sekundy.",
+    body: `Britská automobilka Morgan uvedla na trh nový model Supersport 400, který překonává dosavadní výkonnostní rekord značky. S výkonem 402 koní, díky upravenému motoru BMW, Supersport 400 nabízí výrazně lepší dynamiku a zrychlení.
+
+**Co se stalo**
+
+Představen model Morgan Supersport 400 s výkonem 402 koní.
+Zrychlení z 0 na 62 mph činí 3,6 sekundy.
+
+**Kontext**
+
+Morgan je známý svými ručně vyráběnými sportovními vozy s tradičním designem. Supersport je vlajkovou lodí značky.
+
+**Klíčová čísla**
+
+- **402 koní:** Výkon modelu Supersport 400
+- **3,6 sekundy:** Zrychlení z 0 na 62 mph
+
+**Co sledovat dál**
+
+Sledujte reakci trhu na nový model a jeho dopad na prodeje značky Morgan.
+
+**Praktický závěr**
+
+Pro sběratele a nadšence do automobilů může být Supersport 400 zajímavou investicí.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/new-supersport-400-revealed-morgans-most-powerful-car-yet)*`,
+    whyMatters: "Supersport 400 ukazuje, že i tradiční značky mohou inovovat a nabízet vysoce výkonné modely.",
+    readTime: "2 min",
+    date: "23. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/new-supersport-400-revealed-morgans-most-powerful-car-yet",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/morgan-supersport-400-2026-073.jpg?itok=KGvxFE5K",
+  },
+  {
+    id: "rostouci-naklady-dusi-eurozonu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Rostoucí náklady dusí eurozónu",
+    excerpt: "PMI data ukazují rozdílný vývoj – zatímco výrobní sektor odolává, sektor služeb bojuje s klesající poptávkou a rostoucími cenami energií.",
+    body: `Dnešní data PMI pro eurozónu odhalují rozdílný obraz. Zatímco výrobní sektor si udržel určitou odolnost, sektor služeb se potýká s oslabující poptávkou a rostoucími cenami energií, což je zhoršující se signál pro celou ekonomiku.
+
+**Co se stalo**
+
+Sektor služeb v eurozóně zaznamenal pokles kvůli slabé poptávce a rostoucím cenám energií.
+
+**Kontext**
+
+PMI data jsou důležitým ukazatelem ekonomické aktivity a sentimentu. Rostoucí náklady a geopolitické napětí představují významné riziko pro eurozónu.
+
+**Klíčová čísla**
+
+- **PMI:** Ukazatel ekonomické aktivity
+- **Ceny energií:** Faktor ovlivňující náklady a inflaci
+
+**Co sledovat dál**
+
+Sledujte vývoj cen energií a dopad geopolitických rizik na ekonomiku eurozóny.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad rostoucích nákladů na ziskovost společností v eurozóně.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/rising-cost-pressures-starting-to-bug-the-euro-area-economy-20260423/)*`,
+    whyMatters: "Rostoucí náklady mohou vést k inflaci a zpomalení ekonomického růstu.",
+    readTime: "2 min",
+    date: "23. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/rising-cost-pressures-starting-to-bug-the-euro-area-economy-20260423/",
+  },
+  {
+    id: "nemecky-pmi-v-dubnu-pod-ocekavani-zastaveny-ekonomicky-obrat",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Německý PMI v dubnu pod očekávání – zastavený ekonomický obrat",
+    excerpt: "Flash PMI pro Německo v dubnu pod očekáváním, kompozitní PMI klesl do kontrakce. Důvodem je dopad konfliktu na Blízkém východě a rostoucí inflace.",
+    body: `Dnešní flash data PMI pro Německo přinesla zklamání. PMI pro výrobní sektor mírně překonal očekávání, ale sektor služeb zaznamenal výrazný pokles, což vedlo k propadu kompozitního PMI do kontrakčního pásma. Konflikt na Blízkém východě a rostoucí inflace jsou hlavními faktory tohoto vývoje.
+
+**Co se stalo**
+
+Kompozitní PMI pro Německo klesl do kontrakce.
+
+**Kontext**
+
+Německo je největší ekonomikou eurozóny a jeho výkonnost má významný dopad na celou oblast.
+
+**Klíčová čísla**
+
+- **48.3:** Kompozitní PMI pro Německo (očekávání 51.2)
+- **46.9:** PMI pro sektor služeb v Německu (očekávání 50.4)
+
+**Co sledovat dál**
+
+Sledujte vývoj konfliktu na Blízkém východě a jeho dopad na německou ekonomiku.
+
+**Praktický závěr**
+
+Investoři by měli zvážit snížení expozice vůči německým aktivům.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/germany-april-flash-manufacturing-pmi-512-vs-514-expected-20260423/)*`,
+    whyMatters: "Zpomalení německé ekonomiky může mít negativní dopad na globální ekonomický růst.",
+    readTime: "2 min",
+    date: "23. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/germany-april-flash-manufacturing-pmi-512-vs-514-expected-20260423/",
+  },
+  {
+    id: "mercedes-sl-r129-legenda-s-vysokymi-naklady-na-udrzbu",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Mercedes SL R129 – legenda s vysokými náklady na údržbu",
+    excerpt: "Majitel Mercedes SL R129 zjistil, že údržba tohoto 33letého vozu může být velmi nákladná, zejména kvůli složitému elektrickému systému a hydraulickému mechanismu střechy.",
+    body: `Zag Ji, majitel Mercedes-Benz SL 500 z roku 1993, zjistil, že údržba tohoto klasického vozu může být velmi nákladná. Obnova elektrického systému a hydraulického mechanismu střechy by mohla stát tisíce liber.
+
+**Co se stalo**
+
+Majitel zjistil vysoké náklady na údržbu Mercedes SL R129.
+
+**Kontext**
+
+Mercedes SL R129 je ikonický sportovní vůz, který je oblíbený mezi sběrateli a nadšenci.
+
+**Klíčová čísla**
+
+- **Tisíce liber:** Odhadované náklady na opravu elektrického systému a hydraulického mechanismu střechy.
+
+**Co sledovat dál**
+
+Sledujte ceny a dostupnost náhradních dílů pro Mercedes SL R129.
+
+**Praktický závěr**
+
+Před koupí klasického vozu je důležité zvážit náklady na údržbu a opravy.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/used-cars/why-buying-33-year-old-mercedes-sl-brilliant%C2%A0%E2%80%93-yet-brutal)*`,
+    whyMatters: "Klasické vozy mohou být nákladné na údržbu, ale mohou také představovat zajímavou investici.",
+    readTime: "2 min",
+    date: "23. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/used-cars/why-buying-33-year-old-mercedes-sl-brilliant%C2%A0%E2%80%93-yet-brutal",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/1-sl_500_merc.jpg?itok=M43tw_-Q",
+  },
+  {
+    id: "porsche-zvazuje-simulovane-prevodovky-inspirovane-hyundai",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Porsche zvažuje simulované převodovky inspirované Hyundai",
+    excerpt: "Porsche zvažuje implementaci simulovaných převodových stupňů do svých elektrických vozidel, inspirované funkcí Hyundai Ioniq 5 N.",
+    body: `Porsche zvažuje přidání simulovaných převodových stupňů do svých budoucích elektrických sportovních vozidel, aby se zvýšil zážitek z jízdy. Inspirací pro tuto funkci je Hyundai Ioniq 5 N, který nabízí simulaci motoru s vnitřním spalováním a převodovky.
+
+**Co se stalo**
+
+Porsche zvažuje implementaci simulovaných převodových stupňů do svých EV.
+
+**Kontext**
+
+Simulované převodové stupně mohou zlepšit zážitek z jízdy v elektrických vozidlech tím, že poskytují pocit tradiční převodovky.
+
+**Klíčová čísla**
+
+- **Hyundai Ioniq 5 N:** Inspirace pro simulované převodové stupně.
+
+**Co sledovat dál**
+
+Sledujte vývoj elektrických vozidel Porsche a jejich funkce.
+
+**Praktický závěr**
+
+Simulované převodové stupně mohou být zajímavou funkcí pro řidiče, kteří preferují tradiční pocit z jízdy.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/electric-cars/future-porsche-evs-frame-hyundai-simulated-gearboxes)*`,
+    whyMatters: "Inovace v oblasti elektrických vozidel mohou zlepšit zážitek z jízdy a přilákat nové zákazníky.",
+    readTime: "2 min",
+    date: "23. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/electric-cars/future-porsche-evs-frame-hyundai-simulated-gearboxes",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/porsche-718-render_0.jpg?itok=wmgB3Nih",
+  },
+  {
+    id: "eurusd-uob-vidi-riziko-poklesu-v-definovanem-rozmezi",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "EUR/USD – UOB vidí riziko poklesu v definovaném rozmezí",
+    excerpt: "UOB strategové očekávají krátkodobý pokles EUR/USD, ale po průlomu pod 1.1720 pochybují o rychlém propadu k podpoře na 1.1665.",
+    body: `Strategové UOB vidí kurz EUR/USD v krátkodobém horizontu pod tlakem, po průlomu pod 1.1720 však neočekávají rychlý pokles k podpoře na 1.1665. Očekávají obchodování v rozmezí 1.1665 až 1.1795.
+
+**Co se stalo**
+
+UOB strategové očekávají krátkodobý pokles EUR/USD.
+
+**Kontext**
+
+EUR/USD je jeden z nejdůležitějších měnových párů na světě a jeho vývoj má dopad na globální finanční trhy.
+
+**Klíčová čísla**
+
+- **1.1720:** Úroveň, pod kterou se kurz EUR/USD propadl
+- **1.1665:** Podpora
+- **1.1795:** Odpor
+
+**Co sledovat dál**
+
+Sledujte vývoj kurzu EUR/USD a reakci trhu na klíčové úrovně podpory a odporu.
+
+**Praktický závěr**
+
+Investoři by měli zvážit rizika spojená s obchodováním s měnovým párem EUR/USD.
+
+*Zdroj: [FXStreet Forex & Commodities News](https://www.fxstreet.com/news/eur-usd-downside-risk-within-defined-range-uob-202604230948)*`,
+    whyMatters: "Vývoj kurzu EUR/USD ovlivňuje obchodní toky a investice mezi Evropou a Spojenými státy.",
+    readTime: "2 min",
+    date: "23. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://www.fxstreet.com/news/eur-usd-downside-risk-within-defined-range-uob-202604230948",
+  },
+  {
     id: "ecb-euro-nemuze-nahradit-dolar-jako-bezpecny-pristav",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
