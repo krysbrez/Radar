@@ -1,5 +1,301 @@
 export const ARTICLES = [
   {
+    id: "americke-indexy-na-rekordech-usd-oslabuje-geopoliticke-vlivy",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Americké indexy na rekordech, USD oslabuje – geopolitické vlivy",
+    excerpt: "Americké indexy NASDAQ a S&P dosáhly rekordních hodnot. USD oslabuje v souvislosti s jednáními s Íránem.",
+    body: `Americké akciové trhy zakončily týden v rekordních hodnotách, což signalizuje pokračující optimismus investorů. Oslabování dolaru je částečně způsobeno spekulacemi ohledně možného diplomatického průlomu s Íránem, i když se termín setkání přesouvá. Celkově trhy reagují na nejistotu s náznakem optimismu.
+
+**Co se stalo**
+
+NASDAQ a S&P dosáhly rekordních hodnot. USD oslabuje. Trump vyslal Witkoffa a Kushnera do Pákistánu pro jednání s Íránem. Vyšetřování Jerome Powella bylo ukončeno.
+
+**Kontext**
+
+Geopolitické napětí a diplomatické snahy mají významný vliv na měnové trhy. Silné ekonomické údaje z USA podporují růst akcií, ale nejistota ohledně mezinárodních vztahů může vést k volatilitě.
+
+**Klíčová čísla**
+
+- **Rekordní hodnoty:** NASDAQ a S&P 500
+- **Oslabení USD:** Měnový trh reaguje na geopolitické události
+- **Ukončení vyšetřování:** US Dept of Justice ukončilo vyšetřování Jerome Powella
+
+**Co sledovat dál**
+
+Sledujte vývoj jednání s Íránem a reakci trhů na případné zpoždění nebo změnu v postojích. Důležité budou i další ekonomické údaje z USA, které ovlivní očekávání ohledně měnové politiky.
+
+**Praktický závěr**
+
+Vzhledem k nejistotě doporučujeme diverzifikovat portfolio a být připraveni na potenciální volatilitu.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/investinglive-americas-fx-news-wrap-24-apr-20260424/)*`,
+    whyMatters: "Geopolitické události a měnové pohyby mají přímý dopad na investice a globální ekonomiku.",
+    readTime: "2 min",
+    date: "24. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/investinglive-americas-fx-news-wrap-24-apr-20260424/",
+  },
+  {
+    id: "dulezity-tyden-pro-centralni-banky-a-inflaci-volatilita-na-o",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Důležitý týden pro centrální banky a inflaci – volatilita na obzoru",
+    excerpt: "Příští týden rozhodnutí centrálních bank (BoJ, BoC, FOMC, ECB) a klíčová data o inflaci a růstu.",
+    body: `Příští týden bude klíčový pro trhy, protože se uskuteční rozhodnutí několika významných centrálních bank a zveřejní se důležitá data o inflaci a ekonomickém růstu. Zvláštní pozornost bude věnována rozhodnutím Bank of Japan, Bank of Canada, FOMC a ECB, stejně jako zveřejnění amerického HDP a PCE.
+
+**Co se stalo**
+
+Příští týden rozhodnutí BoJ, BoC, FOMC a ECB. Zveřejnění dat o HDP a PCE.
+
+**Kontext**
+
+Rozhodnutí centrálních bank a inflační data mají zásadní vliv na úrokové sazby a ekonomický růst. Očekávání trhů ohledně těchto událostí mohou vést k výrazné volatilitě.
+
+**Klíčová čísla**
+
+- **Inflace:** Klíčový ukazatel pro měnovou politiku
+- **HDP:** Ukazatel ekonomického růstu
+- **PCE:** Preferovaný inflační ukazatel americké centrální banky
+
+**Co sledovat dál**
+
+Sledujte reakci trhů na rozhodnutí centrálních bank a interpretaci inflačních dat.
+
+**Praktický závěr**
+
+Připravte se na potenciální volatilitu a zvažte úpravu portfolia v závislosti na výsledcích.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/global-central-banks-decisions-highlight-next-weeks-calendar-market-volatility-ahead-20260424/)*`,
+    whyMatters: "Rozhodnutí centrálních bank a inflační data ovlivňují úrokové sazby, ekonomický růst a investiční rozhodnutí.",
+    readTime: "2 min",
+    date: "24. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/global-central-banks-decisions-highlight-next-weeks-calendar-market-volatility-ahead-20260424/",
+  },
+  {
+    id: "citroen-sazi-na-dedictvi-a-design-boj-s-cinskou-konkurenci",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Citroën sází na dědictví a design – boj s čínskou konkurencí",
+    excerpt: "Citroën se vrací ke kořenům a klade důraz na design, aby čelil čínským konkurentům.",
+    body: `Citroën se rozhodl vsadit na své dědictví a výrazný design, aby se odlišil od konkurence, zejména od čínských výrobců. Nový koncept ELO naznačuje budoucí směřování designu značky.
+
+**Co se stalo**
+
+Citroën se zaměřuje na design a dědictví. Nový koncept ELO.
+
+**Kontext**
+
+Čínští výrobci automobilů získávají na popularitě a agresivně expandují na evropský trh. Citroën se snaží najít svou pozici tím, že se odlišuje od konkurence.
+
+**Klíčová čísla**
+
+- **N/A**
+
+**Co sledovat dál**
+
+Sledujte reakci trhu na nové modely Citroën a jejich schopnost oslovit zákazníky.
+
+**Praktický závěr**
+
+Investoři by měli sledovat, zda Citroën dokáže úspěšně implementovat svou strategii a získat konkurenční výhodu.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/more-character-more-speed-citroen-taps-heritage-battle-new-rivals)*`,
+    whyMatters: "Úspěch Citroën má dopad na celkový stav evropského automobilového průmyslu.",
+    readTime: "2 min",
+    date: "24. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/more-character-more-speed-citroen-taps-heritage-battle-new-rivals",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/_zwi5815.jpg?itok=i5opyxBk",
+  },
+  {
+    id: "land-rover-na-kolejich-necekane-vyuziti-terennich-vozidel",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Land Rover na kolejích – nečekané využití terénních vozidel",
+    excerpt: "Britská firma upravuje Land Rovery pro jízdu po železničních kolejích.",
+    body: `Nezvyklý projekt v Británii spočívá v úpravě Land Roverů pro jízdu po železničních kolejích. Tyto speciálně upravené vozidla se v noci pohybují po kolejích a plní neznámé účely.
+
+**Co se stalo**
+
+Land Rovery upravené pro jízdu po kolejích.
+
+**Kontext**
+
+Tento projekt je neobvyklý a jeho účel není znám. Může se jednat o testování nových technologií nebo speciální dopravní řešení.
+
+**Klíčová čísla**
+
+- **N/A**
+
+**Co sledovat dál**
+
+Sledujte další informace o účelu tohoto projektu a jeho potenciální dopad na Land Rover.
+
+**Praktický závěr**
+
+Tento příklad ukazuje, že i tradiční značky mohou překvapit nečekanými inovacemi.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/used-cars/corners-its-rails-driving-land-rovers-built-railway)*`,
+    whyMatters: "Ukazuje inovativní využití terénních vozidel.",
+    readTime: "2 min",
+    date: "25. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/used-cars/corners-its-rails-driving-land-rovers-built-railway",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/1-defender_lr_rails.jpg?itok=ABTvRjq8",
+  },
+  {
+    id: "jednani-s-iranem-pokracuji-witkoff-a-kushner-v-pakistanu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Jednání s Íránem pokračují – Witkoff a Kushner v Pákistánu",
+    excerpt: "Witkoff a Kushner cestují do Pákistánu pro jednání s Íránem. Vance je v pohotovosti.",
+    body: `Pozitivní zprávy ohledně Íránu pokračují. Witkoff a Kushner cestují do Pákistánu pro jednání, zatímco Vance zůstává v pohotovosti v USA.
+
+**Co se stalo**
+
+Witkoff a Kushner v Pákistánu. Vance v pohotovosti.
+
+**Kontext**
+
+Jednání s Íránem mají potenciál ovlivnit geopolitickou situaci na Blízkém východě a globální trhy.
+
+**Klíčová čísla**
+
+- **N/A**
+
+**Co sledovat dál**
+
+Sledujte vývoj jednání a reakci trhů na případné zprávy.
+
+**Praktický závěr**
+
+Investoři by měli sledovat geopolitické události a jejich potenciální dopad na investice.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/witkoff-and-kushner-heade-to-pakistan-saturday-jd-vance-on-standby-20260424/)*`,
+    whyMatters: "Jednání s Íránem mají významný dopad na globální politiku a ekonomiku.",
+    readTime: "2 min",
+    date: "24. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/witkoff-and-kushner-heade-to-pakistan-saturday-jd-vance-on-standby-20260424/",
+  },
+  {
+    id: "velky-short-bitcoin-signal-pro-trh",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Velký short Bitcoin – signál pro trh?",
+    excerpt: "Hyperliquid whale drží obrovskou short pozici proti Bitcoinu a altcoinům.",
+    body: `Velký investor (whale) na platformě Hyperliquid drží významnou short pozici proti Bitcoinu a několika altcoinům. Otázkou je, zda tato pozice signalizuje budoucí vývoj trhu.
+
+**Co se stalo**
+
+Velký short Bitcoin na Hyperliquid.
+
+**Kontext**
+
+Velké pozice velkých investorů mohou mít vliv na trh, ale nemusí vždy signalizovat budoucí vývoj.
+
+**Klíčová čísla**
+
+- **$38M:** Hodnota short pozice
+
+**Co sledovat dál**
+
+Sledujte vývoj ceny Bitcoinu a reakci trhu na tuto pozici.
+
+**Praktický závěr**
+
+Investoři by měli být opatrní a sledovat vývoj trhu.
+
+*Zdroj: [Cointelegraph.com News](https://cointelegraph.com/markets/hyperliquid-whale-holds-38m-short-against-bitcoin-but-does-it-matter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)*`,
+    whyMatters: "Velké pozice mohou ovlivnit tržní sentiment a cenu kryptoměn.",
+    readTime: "2 min",
+    date: "25. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://cointelegraph.com/markets/hyperliquid-whale-holds-38m-short-against-bitcoin-but-does-it-matter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    image: "https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjYtMDQvMDE5ZGMxOWItMTg0ZS03ODM3LWJhZmEtZTczYjA3NGI2OTk5LmpwZw==.jpg",
+  },
+  {
+    id: "bitcoin-hard-fork-ecash-od-paula-sztorca",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Bitcoin hard fork – eCash od Paula Sztorca",
+    excerpt: "Bitcoin developer Paul Sztorc oznámil hard fork s novou blockchain sítí eCash.",
+    body: `Bitcoin developer Paul Sztorc oznámil hard fork, který vytvoří novou blockchain síť s názvem eCash a sedmi layer-2 škálovacími sítěmi.
+
+**Co se stalo**
+
+Hard fork s novou blockchain sítí eCash.
+
+**Kontext**
+
+Hard forky mohou vést k rozdělení komunity a vzniku nových kryptoměn.
+
+**Klíčová čísla**
+
+- **7:** Počet layer-2 škálovacích sítí
+
+**Co sledovat dál**
+
+Sledujte vývoj eCash a jeho přijetí komunitou.
+
+**Praktický závěr**
+
+Investoři by měli sledovat nové kryptoměny a jejich potenciál.
+
+*Zdroj: [Cointelegraph.com News](https://cointelegraph.com/news/bitcoin-dev-paul-sztorc-hard-fork-ecash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)*`,
+    whyMatters: "Nové blockchain sítě mohou přinést inovace a nové příležitosti.",
+    readTime: "2 min",
+    date: "24. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://cointelegraph.com/news/bitcoin-dev-paul-sztorc-hard-fork-ecash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    image: "https://images.cointelegraph.com/images/528_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjYtMDQvMDE5ZGMxMjItZGM3YS03MTU4LWFmNDEtYjlkYzQzYjM3MTJmLmpwZw==.jpg",
+  },
+  {
+    id: "jednani-s-iranem-nejistota-a-opatrny-optimismus",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Jednání s Íránem – nejistota a opatrný optimismus",
+    excerpt: "Jednání s Íránem jsou nejistá, ale trhy reagují s opatrným optimismem.",
+    body: `Příprava na víkend přinesla smíšené zprávy ohledně jednání s Íránem. Trhy reagují na nejistotu s náznakem optimismu, ale jasnost a jistota stále chybí.
+
+**Co se stalo**
+
+Zpoždění jednání s Íránem.
+
+**Kontext**
+
+Geopolitická rizika a diplomatické snahy mají vliv na trhy.
+
+**Klíčová čísla**
+
+- **N/A**
+
+**Co sledovat dál**
+
+Sledujte vývoj jednání a reakci trhů na případné zprávy.
+
+**Praktický závěr**
+
+Investoři by měli být připraveni na volatilitu a sledovat geopolitické události.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/meeting-between-us-and-iran-may-not-take-place-until-monday-20260424/)*`,
+    whyMatters: "Jednání s Íránem mají dopad na globální politiku a ekonomiku.",
+    readTime: "2 min",
+    date: "24. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/meeting-between-us-and-iran-may-not-take-place-until-monday-20260424/",
+  },
+  {
     id: "pmi-eurozony-v-dubnu-vyrazne-pod-ocekavani-sluzby-v-propadu",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
