@@ -1,5 +1,303 @@
 export const ARTICLES = [
   {
+    id: "napeti-usa-iran-zene-ceny-ropy-nahoru",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Napětí USA-Írán žene ceny ropy nahoru",
+    excerpt: "Ceny ropy prudce rostou v důsledku eskalace napětí mezi USA a Íránem. Zlatu se nedaří a investoři čekají na rozhodnutí Fedu.",
+    body: `Evropské trhy reagují na rostoucí ceny ropy, které jsou taženy konfliktem v Hormuzově průlivu. Investoři se soustředí na nadcházející zasedání Fedu a očekávají jeho rozhodnutí ohledně úrokových sazeb, přičemž se neočekává žádná změna. Zlatu se nedaří, což naznačuje, že investoři hledají alternativní aktiva v nejisté situaci.
+
+**Co se stalo**
+
+Ceny ropy prudce vzrostly, zatímco cena zlata klesla. Trhy čekají na rozhodnutí Fedu a vyhodnocují výsledky firem.
+
+**Kontext**
+
+Napětí v Hormuzově průlivu ohrožuje dodávky ropy a zvyšuje ceny. Očekávání neměnné politiky Fedu snižuje atraktivitu zlata jako bezpečného přístavu.
+
+**Klíčová čísla**
+
+- **Ropa Brent:** +3% (v době psaní)
+- **Zlato:** -1.5% (v době psaní)
+- **Futures na americké akcie:** Mírně v mínusu
+
+**Co sledovat dál**
+
+Sledujte vývoj situace v Hormuzově průlivu a reakci trhů na rozhodnutí Fedu. Důležité bude sledovat i komentáře předsedy Fedu, Paula Powella.
+
+**Praktický závěr**
+
+Vzhledem k rostoucím cenám ropy a nejistotě na trzích je vhodné zvážit diverzifikaci portfolia a snížit expozici rizikovým aktivům.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/investinglive-european-markets-wrap-oil-ramps-higher-as-us-iran-stalemate-continues-20260429/)*`,
+    whyMatters: "Rostoucí ceny ropy mohou negativně ovlivnit inflaci a ekonomický růst, což má dopad na spotřebitele i podniky.",
+    readTime: "2 min",
+    date: "29. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/investinglive-european-markets-wrap-oil-ramps-higher-as-us-iran-stalemate-continues-20260429/",
+  },
+  {
+    id: "dnesni-klicove-udalosti-cpi-v-nemecku-a-spanelsku",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Dnešní klíčové události: CPI v Německu a Španělsku",
+    excerpt: "Dnes zveřejnění předběžných CPI dat ze Španělska a Německa. Očekává se mírné zpomalení inflace, ale zůstává nadále vysoká.",
+    body: `Dnešní den přinese důležitá data o inflaci ze Španělska a Německa. Předběžné údaje o CPI by měly poskytnout náhled na vývoj inflace v eurozóně. Investoři budou sledovat i předběžné údaje z německých spolkových zemí, které obvykle naznačují celonárodní CPI.
+
+**Co se stalo**
+
+Zveřejnění předběžných CPI dat ze Španělska a Německa.
+
+**Kontext**
+
+Inflace v eurozóně zůstává vysoká, což tlačí na Evropskou centrální banku, aby pokračovala v utahování měnové politiky.
+
+**Klíčová čísla**
+
+- **Inflace ve Španělsku (odhad):** +3.4% m/m
+- **Inflace v Německu (odhad):** +3.2% m/m
+
+**Co sledovat dál**
+
+Sledujte, zda se inflace zpomaluje více, než se očekává, a jak na to zareagují trhy.
+
+**Praktický závěr**
+
+Inflační data mohou ovlivnit rozhodnutí ECB o úrokových sazbách, což má dopad na evropské akcie a dluhopisy.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/what-are-the-main-events-for-today-20260429/)*`,
+    whyMatters: "Inflace ovlivňuje kupní sílu spotřebitelů a ziskovost podniků.",
+    readTime: "2 min",
+    date: "29. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/what-are-the-main-events-for-today-20260429/",
+  },
+  {
+    id: "duvera-v-eurozonu-klesa-inflacni-ocekavani-rostou",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Důvěra v eurozónu klesá, inflační očekávání rostou",
+    excerpt: "Důvěra spotřebitelů a podniků v eurozóně klesá. Inflační očekávání rostou, což signalizuje pokračující tlak na ekonomiku.",
+    body: `Index ekonomické důvěry v eurozóně klesl na 93.0, což je pod očekáváním. Důvěra spotřebitelů i podniků se snížila, zejména v sektoru služeb. Inflační očekávání rostou na 49.1, což naznačuje, že investoři očekávají pokračující tlak na ceny.
+
+**Co se stalo**
+
+Pokles indexu ekonomické důvěry a růst inflačních očekávání.
+
+**Kontext**
+
+Rostoucí ceny energií a nejistota ohledně geopolitické situace negativně ovlivňují ekonomiku eurozóny.
+
+**Klíčová čísla**
+
+- **Index ekonomické důvěry:** 93.0 (očekávání 95.2)
+- **Inflační očekávání:** 49.1 (předchozí 43.5)
+- **Důvěra v služby:** 0.9 (očekávání 3.5)
+
+**Co sledovat dál**
+
+Sledujte vývoj inflačních očekávání a reakci ECB na klesající ekonomickou důvěru.
+
+**Praktický závěr**
+
+Investoři by měli zvážit snížení expozice eurozóně a zaměřit se na aktiva, která jsou méně citlivá na inflaci.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/euro-area-economic-climate-worsens-further-in-april-as-inflation-expectations-jump-20260429/)*`,
+    whyMatters: "Klesající ekonomická důvěra a rostoucí inflace mohou vést k zpomalení ekonomického růstu a zvýšení rizika recese.",
+    readTime: "2 min",
+    date: "29. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/euro-area-economic-climate-worsens-further-in-april-as-inflation-expectations-jump-20260429/",
+  },
+  {
+    id: "porsche-911-gt3-rs-mr-extremni-tuning-na-nurburgringu",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Porsche 911 GT3 RS MR: Extrémní tuning na Nürburgringu",
+    excerpt: "Porsche 911 GT3 RS MR s tuningem od Mantheyho dosáhla na Nürburgringu působivého času.",
+    body: `Tuningová firma Manthey představila speciální verzi Porsche 911 GT3 RS MR, která na legendárním okruhu Nürburgring dosáhla času o čtyři sekundy lepšího než standardní model. Zlepšení bylo dosaženo díky úpravám odpružení a aerodynamiky.
+
+**Co se stalo**
+
+Zlepšení výkonu Porsche 911 GT3 RS MR díky tuningové sadě od Mantheyho.
+
+**Kontext**
+
+Manthey je renomovaná tuningová firma specializující se na úpravy vozů Porsche.
+
+**Klíčová čísla**
+
+- **Čas na Nürburgringu (GT3 RS MR):** 7:25.0 (o 4 sekundy rychlejší než standardní model)
+
+**Co sledovat dál**
+
+Sledujte další vývoj v oblasti automobilového tuningu a vliv nových technologií na výkon vozidel.
+
+**Praktický závěr**
+
+Pro automobilové nadšence a investory do automobilového průmyslu představuje tento vývoj příležitost sledovat inovace a trendy v oblasti high-performance vozidel.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/porsche-911-gt3-mr-does-%C2%A356k-manthey-kit-work-road-and-track)*`,
+    whyMatters: "Ukazuje, jak inovativní tuning může výrazně zlepšit výkon a atraktivitu vozidel.",
+    readTime: "2 min",
+    date: "29. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/porsche-911-gt3-mr-does-%C2%A356k-manthey-kit-work-road-and-track",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/porsche-911-gt3-manthey-review-2026054.jpg?itok=PoJdsgYf",
+  },
+  {
+    id: "leapmotor-b05-cinsky-golf-s-potencialem",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Leapmotor B05: Čínský Golf s potenciálem",
+    excerpt: "Leapmotor B05, čínský elektromobil, nabízí slibný výkon a konkurenceschopnou cenu.",
+    body: `Nový elektromobil Leapmotor B05, nazývaný Lafa 5, se jeví jako silný konkurent pro modely jako Cupra Born. Nabízí atraktivní kombinaci výkonu, designu a ceny, což z něj činí zajímavou volbu na čínském trhu.
+
+**Co se stalo**
+
+Představení nového elektromobilu Leapmotor B05 s potenciálem konkurovat zavedeným značkám.
+
+**Kontext**
+
+Čínský trh s elektromobily je jedním z nejrychleji rostoucích na světě.
+
+**Klíčová čísla**
+
+- **Cena:** Pod 30 000 liber
+
+**Co sledovat dál**
+
+Sledujte prodejní čísla a reakci trhu na Leapmotor B05.
+
+**Praktický závěr**
+
+Investoři by měli sledovat vývoj čínského trhu s elektromobily a potenciál nových hráčů, jako je Leapmotor.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/electric-cars/leapmotor-b05-first-drive-chinas-golf-shows-signs-promise)*`,
+    whyMatters: "Ukazuje rostoucí konkurenci na trhu s elektromobily a potenciál čínských výrobců.",
+    readTime: "2 min",
+    date: "28. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/electric-cars/leapmotor-b05-first-drive-chinas-golf-shows-signs-promise",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/leapmotor-b05-review-2.jpg?itok=ERdD5-7B",
+  },
+  {
+    id: "paul-tudor-jones-bitcoin-jako-nejlepsi-ochrana-proti-inflaci",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Paul Tudor Jones: Bitcoin jako nejlepší ochrana proti inflaci",
+    excerpt: "Paul Tudor Jones doporučuje Bitcoin jako nejlepší ochranu proti inflaci.",
+    body: `Známý investor Paul Tudor Jones opakovaně zdůraznil, že Bitcoin je nejlepší ochranou proti inflaci. Jeho prohlášení přispělo k růstu ceny Bitcoinu a zvýšení zájmu o kryptoměny.
+
+**Co se stalo**
+
+Doporučení Paula Tudora Jonesa pro Bitcoin jako ochranu proti inflaci.
+
+**Kontext**
+
+Inflace je v současné době jedním z hlavních ekonomických rizik.
+
+**Klíčová čísla**
+
+- **Cena Bitcoinu:** Zvýšila se po Jonesově prohlášení
+
+**Co sledovat dál**
+
+Sledujte vývoj inflace a reakci trhů na kryptoměny.
+
+**Praktický závěr**
+
+Investoři by měli zvážit přidání Bitcoinu do svého portfolia jako diverzifikace a ochranu proti inflaci.
+
+*Zdroj: [Decrypt](https://decrypt.co/365934/morning-minute-paul-tudor-jones-calls-bitcoin-strongest-inflation-hedge)*`,
+    whyMatters: "Jonesova reputace a vliv mohou ovlivnit investiční rozhodnutí mnoha investorů.",
+    readTime: "2 min",
+    date: "29. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://decrypt.co/365934/morning-minute-paul-tudor-jones-calls-bitcoin-strongest-inflation-hedge",
+    image: "https://cdn.decrypt.co/wp-content/uploads/2025/08/bitcoin-bull-decrypt-style-gID_7.jpg",
+  },
+  {
+    id: "spanelska-inflace-mirne-klesa",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Španělská inflace mírně klesá",
+    excerpt: "Předběžná roční inflace ve Španělsku klesla na 3,2 %, což je mírně pod očekáváním.",
+    body: `Předběžná roční inflace ve Španělsku klesla na 3,2 %, což je mírně pod očekáváním trhu. Harmonizovaná inflace (HICP) zůstala na 3,5 %.
+
+**Co se stalo**
+
+Klesající roční inflace ve Španělsku.
+
+**Kontext**
+
+Klesající inflace může vést k uvolnění měnové politiky a podpořit ekonomický růst.
+
+**Klíčová čísla**
+
+- **Roční inflace (CPI):** 3,2 % (očekávání 3,4 %)
+- **Harmonizovaná inflace (HICP):** 3,5 %
+
+**Co sledovat dál**
+
+Sledujte finální údaje o inflaci a reakci ECB.
+
+**Praktický závěr**
+
+Investoři by měli sledovat vývoj inflace v eurozóně a jeho dopad na investiční rozhodnutí.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/spain-april-preliminary-cpi-32-vs-34-yy-expected-20260429/)*`,
+    whyMatters: "Inflace ovlivňuje kupní sílu spotřebitelů a ziskovost podniků.",
+    readTime: "2 min",
+    date: "29. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/spain-april-preliminary-cpi-32-vs-34-yy-expected-20260429/",
+  },
+  {
+    id: "evropske-akcie-klesaji-pred-rozhodnutim-fedu",
+    tag: "Trhy",
+    tagColor: "bg-sky-500/20 text-sky-300",
+    title: "Evropské akcie klesají před rozhodnutím Fedu",
+    excerpt: "Evropské akcie klesají v očekávání rozhodnutí Fedu a výsledků technologických firem.",
+    body: `Evropské indexy se obchodují v mínusu, přičemž DAX oslabil o více než 0,2 %. Investoři vyhodnocují výsledkovou sezónu a očekávají rozhodnutí Fedu ohledně úrokových sazeb.
+
+**Co se stalo**
+
+Klesající evropské akcie v očekávání rozhodnutí Fedu.
+
+**Kontext**
+
+Nejistota ohledně budoucího vývoje úrokových sazeb a výsledky firem ovlivňují sentiment na trzích.
+
+**Klíčová čísla**
+
+- **DAX:** -0,2 %
+
+**Co sledovat dál**
+
+Sledujte rozhodnutí Fedu a reakci trhů na výsledky technologických firem.
+
+**Praktický závěr**
+
+Investoři by měli být opatrní a zvážit snížení expozice rizikovým aktivům.
+
+*Zdroj: [Kurzy.cz - Ekonomické zpravodajství](https://zpravy.kurzy.cz/857600-shrnuti-trhu-evropske-akcie-klesaji-v-ocekavani-rozhodnuti-fedu-a-vysledku-velkych-technologickych/)*`,
+    whyMatters: "Rozhodnutí Fedu a výsledky firem mohou mít významný dopad na evropské trhy.",
+    readTime: "2 min",
+    date: "29. 4. 2026",
+    author: "Radar Redakce",
+    category: "investovani",
+    sourceLink: "https://zpravy.kurzy.cz/857600-shrnuti-trhu-evropske-akcie-klesaji-v-ocekavani-rozhodnuti-fedu-a-vysledku-velkych-technologickych/",
+    image: "https://i.fin.cz/zpravy/obrazky/0/857600/fed_big2.jpg",
+  },
+  {
     id: "major-central-banks-are-up-against-a-very-tough-task-in-navi",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
