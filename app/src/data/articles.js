@@ -1,5 +1,193 @@
 export const ARTICLES = [
   {
+    id: "jpy-strme-posiluje-boe-ponechava-sazby-beze-zmeny",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "JPY strmě posiluje, BoE ponechává sazby beze změny",
+    excerpt: "JPY prudce vzrostl po varování před měnovým zásahem. BoE nechal úrokové sazby beze změny na 3,75 %. Inflace v Itálii překročila očekávání.",
+    body: `Na forexových trzích došlo k výrazným změnám, kdy japonský yen zaznamenal prudký nárůst hodnoty. Tento pohyb byl vyvolán obavami z možného měnového zásahu ze strany japonských úřadů, kteří se snaží stabilizovat pokles jenu. Centrální banka Británie (BoE) naopak ponechala úrokové sazby beze změny, což signalizuje opatrný přístup k další monetární politice. Inflace v Itálii se ukázala být vyšší, než se předpokládalo, což přispívá k celkové nejistotě na trzích.
+
+**Co se stalo**
+
+Japonský yen prudce posílil, BoE nechal sazby beze změny na 3,75 %, italská inflace dosáhla 2,8 % (oček. 2,6 %).
+
+**Kontext**
+
+Japonsko se potýká s deflačními tlaky a slabým yenem, což vede k obavám o konkurenceschopnost exportu. BoE se snaží vyvážit boj proti inflaci s rizikem zpomalení ekonomického růstu. Inflace v eurozóně zůstává nad cílem, což tlačí na Evropskou centrální banku, aby zvážila další kroky.
+
+**Klíčová čísla**
+
+- **3,75 %:** Úroková sazba BoE.
+- **2,8 %:** Inflace v Itálii (ročně).
+- **USD/JPY:** Výrazný pokles kurzu po varování před měnovým zásahem.
+
+**Co sledovat dál**
+
+Sledovat reakci japonských úřadů na posílení jenu a další rozhodnutí BoE ohledně úrokových sazeb. Důležité bude také sledovat vývoj inflace v eurozóně a její dopad na měnovou politiku ECB.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad měnových pohybů na své portfolia, zejména pokud mají expozici vůči japonským nebo britským aktivům. Divergence v měnové politice může vést k volatilitě na trzích.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/investinglive-european-fx-news-wrap-jpy-skyrockets-on-rate-check-boe-stays-neutral-20260430/)*`,
+    whyMatters: "Vývoj na forexových trzích ovlivňuje ziskovost exportérů a importérů, a také hodnotu aktiv denominovaných v různých měnách.",
+    readTime: "2 min",
+    date: "30. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/investinglive-european-fx-news-wrap-jpy-skyrockets-on-rate-check-boe-stays-neutral-20260430/",
+  },
+  {
+    id: "life-with-the-grenadier-i-used-no-nonsense-4x4-for-everythin",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Life with the Grenadier: I used no-nonsense 4x4 for everything, everyday",
+    excerpt: "It's at its best off-road - but can this Defender-aping, do-it-all SUV make mincemeat of the daily grind? Ineos makes a thing of how rugged and dependable it would like the Ineos Grenadier to be,",
+    body: `*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/features/life-grenadier-i-used-no-nonsense-4x4-everything-everyday)*`,
+    whyMatters: "",
+    readTime: "2 min",
+    date: "30. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/features/life-grenadier-i-used-no-nonsense-4x4-everything-everyday",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/ineos-grenadier-lter-2025-jh-13-1600x1067-7b0cbc7d-5f94-4abf-95d6-3a90e0f7452c.jpg?itok=LPAHN1RP",
+  },
+  {
+    id: "volkswagen-chce-prodavat-cinske-modely-i-v-evrope",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Volkswagen chce prodávat čínské modely i v Evropě",
+    excerpt: "Volkswagen zvažuje prodej čínských modelů, jako je ID Unyx 09, i v Evropě. Cílem je zvýšit konkurenceschopnost a zjednodušit nabídku.",
+    body: `Volkswagen Group oznámil plány na posílení své konkurenceschopnosti a zjednodušení nabídky vozidel. Jedním z klíčových prvků této strategie je zvažování prodeje některých pokročilých modelů, které jsou aktuálně určeny pouze pro čínský trh, i v Evropě. Konkrétně se jedná o model ID Unyx 09, který by mohl být atraktivní pro evropské zákazníky díky svému designu a technologiím.
+
+**Co se stalo**
+
+Volkswagen zvažuje prodej čínských modelů v Evropě, aby zvýšil konkurenceschopnost.
+
+**Kontext**
+
+Volkswagen čelí tlaku na zvýšení ziskovosti a snížení složitosti nabídky. Čínský trh je pro Volkswagen klíčový a nabízí platformu pro vývoj inovativních technologií.
+
+**Klíčová čísla**
+
+- **Q1 ziskovost:** Volkswagen Group zaznamenal pokles ziskovosti v prvním čtvrtletí.
+- **ID Unyx 09:** Nový čínský model, který by mohl být prodáván i v Evropě.
+
+**Co sledovat dál**
+
+Sledovat, zda Volkswagen skutečně uvede čínské modely na evropský trh a jak na to zareagují konkurenti.
+
+**Praktický závěr**
+
+Investoři by měli sledovat, jak se Volkswagen přizpůsobuje měnícím se podmínkám na trhu a jak se to projeví na jeho ziskovosti.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/volkswagen-eyes-chinese-market-cars-europe-boost-competitiveness)*`,
+    whyMatters: "Změna strategie Volkswagenu může mít dopad na konkurenci v automobilovém průmyslu a na preference zákazníků.",
+    readTime: "2 min",
+    date: "30. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/volkswagen-eyes-chinese-market-cars-europe-boost-competitiveness",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/b2026cw00127_large.jpg?itok=onOPpL4T",
+  },
+  {
+    id: "lamborghini-appoints-audi-ceo-as-new-development-chief",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Lamborghini appoints AUDI CEO as new development chief",
+    excerpt: "Movers and shakers: Fermín Soneira succeeds Rouven Mohr, who becomes Audi’s chief technical officer Welcome to Movers and Shakers, an Autocar Business feature covering the latest job moves from",
+    body: `*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/business-corporate/movers-and-shakers-latest-job-moves-car-industry)*`,
+    whyMatters: "",
+    readTime: "2 min",
+    date: "30. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/business-corporate/movers-and-shakers-latest-job-moves-car-industry",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/fermin_soneira_lambo_rd_boss_new.jpg?itok=reWp8Bvb",
+  },
+  {
+    id: "ark-invest-nakupuje-akcie-robinhood-prodava-bitcoin-etf",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Ark Invest nakupuje akcie Robinhood, prodává Bitcoin ETF",
+    excerpt: "Ark Invest investovala 39 milionů USD do akcií Robinhood a snížila podíl v Bitcoin ETF o 6 milionů USD.",
+    body: `Investiční firma Ark Invest provedla významné změny ve svém portfoliu. Nakoupila akcie společnosti Robinhood v hodnotě 39 milionů USD, což signalizuje důvěru v budoucí růst této platformy pro obchodování s cennými papíry. Naopak, Ark Invest snížila svůj podíl v Bitcoin ETF o 6 milionů USD, což naznačuje opatrnější postoj k kryptoměnám.
+
+**Co se stalo**
+
+Ark Invest nakoupila akcie Robinhood a snížila podíl v Bitcoin ETF.
+
+**Kontext**
+
+Robinhood čelí tlaku na zlepšení ziskovosti a zvýšení počtu aktivních uživatelů. Bitcoin ETF se potýká s konkurencí a nejistotou na trhu s kryptoměnami.
+
+**Klíčová čísla**
+
+- **39 milionů USD:** Investice do Robinhood.
+- **6 milionů USD:** Snížení podílu v Bitcoin ETF.
+- **-13,2 %:** Pokles akcií Robinhood po zveřejnění výsledků.
+
+**Co sledovat dál**
+
+Sledovat, jak se Robinhood bude vyrovnávat s tlakem na ziskovost a jak se bude vyvíjet trh s kryptoměnami.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad změn v portfoliu Ark Invest na trhy a na jednotlivé společnosti.
+
+*Zdroj: [The Block](https://www.theblock.co/post/399536/ark-invest-buys-robinhood-sells-own-spot-bitcoin-etf?utm_source=rss&utm_medium=rss)*`,
+    whyMatters: "Investiční rozhodnutí velkých fondů, jako je Ark Invest, mohou ovlivnit sentiment na trzích a cenu aktiv.",
+    readTime: "2 min",
+    date: "30. 4. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://www.theblock.co/post/399536/ark-invest-buys-robinhood-sells-own-spot-bitcoin-etf?utm_source=rss&utm_medium=rss",
+    image: "https://www.tbstat.com/wp/uploads/2026/01/cathie-wood-news-800x450.png",
+  },
+  {
+    id: "usdcad-edges-lower-as-oil-retreat-fed-boc-policy-split-keep-",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "USD/CAD edges lower as Oil retreat, Fed-BoC policy split keep volatility elevated",
+    excerpt: "USD/CAD trades around 1.3655 on Thursday, down 0.21% on the day, after stabilizing in the previous day. The pair faces short-term pressure due to a modest pullback in the US Dollar, although downside",
+    body: `*Zdroj: [FXStreet Forex & Commodities News](https://www.fxstreet.com/news/usd-cad-edges-lower-as-oil-retreat-fed-boc-policy-split-keep-volatility-elevated-202604301057)*`,
+    whyMatters: "",
+    readTime: "2 min",
+    date: "30. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://www.fxstreet.com/news/usd-cad-edges-lower-as-oil-retreat-fed-boc-policy-split-keep-volatility-elevated-202604301057",
+  },
+  {
+    id: "eurozone-april-preliminary-cpi-30-vs-29-yy-expected",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Eurozone April preliminary CPI +3.0% vs +2.9% y/y expected",
+    excerpt: "Prior +2.6% Core CPI +2.2% vs +2.2 y/y expected Prior +2.3% Well, the headline reading is the highest since September 2023 and it reaffirms the impact of surging energy prices. When looking at cor",
+    body: `*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/eurozone-april-preliminary-cpi-30-vs-29-yy-expected-20260430/)*`,
+    whyMatters: "",
+    readTime: "2 min",
+    date: "30. 4. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/eurozone-april-preliminary-cpi-30-vs-29-yy-expected-20260430/",
+  },
+  {
+    id: "a-recent-range-rover-for-fiat-panda-money-its-time-to-buy-an",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "A recent Range Rover for Fiat Panda money? It's time to buy an L405",
+    excerpt: "An 'L405' Range Rover can do it all, but there are some vital ground rules... How good is the ' L405 ' generation of the Range Rover? Put it this way: last year, we were confident enough to decla",
+    body: `*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/used-cars/recent-range-rover-fiat-panda-money-its-time-buy-l405)*`,
+    whyMatters: "",
+    readTime: "2 min",
+    date: "30. 4. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/used-cars/recent-range-rover-fiat-panda-money-its-time-buy-l405",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/1-range_rover_autobography_2018_253.jpg?itok=8cL6aKpr",
+  },
+  {
     id: "napeti-usa-iran-zene-ceny-ropy-nahoru",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
