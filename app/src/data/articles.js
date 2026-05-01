@@ -1,5 +1,242 @@
 export const ARTICLES = [
   {
+    id: "japonsko-varuje-pred-dalsimi-intervencemi-na-trhu-s-eurem",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Japonsko varuje před dalšími intervencemi na trhu s eurem",
+    excerpt: "Japonsko zasáhlo do trhu s eurem a varuje před dalšími kroky. Trump obdržel briefing o možných vojenských akcích proti Íránu. Konflikt na Blízkém východě ohrožuje energetickou bezpečnost a regionální růst.",
+    body: `Globální trhy reagují na rostoucí napětí na Blízkém východě. Japonsko zasáhlo do trhu s eurem, aby podpořilo oslabený jen, a varuje před dalšími intervencemi, pokud bude nutné. Současně se objevují zprávy o tom, že Trump obdržel briefing o možných vojenských akcích proti Íránu, což dále zvyšuje nervozitu na trzích. ASEAN ministři varují před negativním dopadem konfliktu na energetickou bezpečnost a regionální růst.
+
+**Co se stalo**
+
+Japonsko zasáhlo do trhu s eurem, aby podpořilo jen. Trump obdržel briefing o možných vojenských akcích proti Íránu. ASEAN ministři varují před negativním dopadem konfliktu na energetickou bezpečnost a regionální růst.
+
+**Kontext**
+
+Konflikt na Blízkém východě představuje významné riziko pro globální ekonomiku, zejména pro regiony závislé na dovozu ropy a zemního plynu. Japonsko je silný ekonomický hráč a jeho intervence na trhu s eurem má za cíl stabilizovat finanční trhy.
+
+**Klíčová čísla**
+
+- **25%**: Podíl globální námořní dopravy ropy a LNG, který prochází Hormuzem.
+- **80%**: Podíl asijských destinací pro ropu a LNG procházející Hormuzem.
+- **4-leté maximum**: Japonský PMI v odvětví výroby.
+
+**Co sledovat dál**
+
+Sledujte další vývoj na Blízkém východě a reakci centrálních bank. Důležité bude sledovat, zda Japonsko bude pokračovat v intervencích na trhu s eurem.
+
+**Praktický závěr**
+
+Zvažte snížení expozice vůči rizikovým aktivům a diverzifikaci portfolia.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/investinglive-asia-pacific-fx-news-wrap-japan-warns-of-more-intervention-if-needed-20260501/)*`,
+    whyMatters: "Eskalace konfliktu na Blízkém východě může vést k prudkému nárůstu cen energií a destabilizaci globální ekonomiky.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/investinglive-asia-pacific-fx-news-wrap-japan-warns-of-more-intervention-if-needed-20260501/",
+  },
+  {
+    id: "pouzity-porsche-taycan-skvela-investice-do-elektromobility",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Použitý Porsche Taycan: Skvělá investice do elektromobility?",
+    excerpt: "Použitý Porsche Taycan nabízí skvělou hodnotu a málo rizik. Cena může být výrazně nižší než u nového vozu.",
+    body: `Trh s použitými elektromobily se začíná otevírat a nabízí zajímavé příležitosti pro investory. Porsche Taycan je jedním z příkladů, kdy použitý model může být výrazně levnější než nový, a přitom si zachovává vysokou kvalitu a výkon. Zkušenosti s provozem Taycanu ukazují, že se jedná o spolehlivé a atraktivní vozidlo i na sekundárním trhu.
+
+**Co se stalo**
+
+Zjištění, že použitý Porsche Taycan může být výrazně levnější než nový a přitom nabízí skvělý poměr cena/výkon.
+
+**Kontext**
+
+Trh s použitými elektromobily je stále v rané fázi vývoje, ale očekává se jeho rychlý růst. Zvyšující se nabídka použitých elektromobilů a klesající ceny baterií by měly přispět k dalšímu poklesu cen.
+
+**Klíčová čísla**
+
+- **£22k**: Úspora na použitém Porsche Taycan.
+
+**Co sledovat dál**
+
+Sledujte vývoj cen baterií a dostupnost servisních služeb pro elektromobily.
+
+**Praktický závěr**
+
+Pokud uvažujete o koupi elektromobilu, zvažte i možnost nákupu použitého modelu.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/electric-cars/i-saved-%C2%A322k-used-porsche-taycan-%E2%80%93-what-was-it)*`,
+    whyMatters: "Investice do elektromobility je dlouhodobě perspektivní, a nákup použitého vozu může být cenově dostupnější.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/electric-cars/i-saved-%C2%A322k-used-porsche-taycan-%E2%80%93-what-was-it",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/porsche_taycan_front_lead.jpg?itok=I1lLsX2R",
+  },
+  {
+    id: "evropske-trhy-dnes-zavrene-dopad-na-likviditu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Evropské trhy dnes zavřené: Dopad na likviditu",
+    excerpt: "Evropské trhy jsou dnes zavřené kvůli svátku práce. Očekává se snížená likvidita a omezený vliv na globální trhy.",
+    body: `Dnes jsou všechny hlavní evropské trhy zavřené u příležitosti svátku práce. Tato skutečnost má dopad na likviditu a omezuje schopnost evropských trhů ovlivňovat globální trhy. ECB také pozastavuje své platební a clearingové systémy.
+
+**Co se stalo**
+
+Evropské trhy jsou dnes zavřené a ECB pozastavuje své platební a clearingové systémy.
+
+**Kontext**
+
+Zavření evropských trhů je běžná událost při svátcích, ale může mít krátkodobý dopad na likviditu a volatilitu na globálních trzích.
+
+**Klíčová čísla**
+
+- **Žádné**: Očekávané vedení z evropských trhů.
+
+**Co sledovat dál**
+
+Sledujte reakci asijských a amerických trhů na absenci evropského vlivu.
+
+**Praktický závěr**
+
+Buďte opatrní při obchodování a zvažte snížení pozic.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/reminder-european-markets-will-be-closed-today-20260501/)*`,
+    whyMatters: "Snížená likvidita může vést k vyšší volatilitě a neočekávaným pohybům cen.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/reminder-european-markets-will-be-closed-today-20260501/",
+  },
+  {
+    id: "britsky-trh-s-nemovitostmi-prekvapuje-odolnosti",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Britský trh s nemovitostmi překvapuje odolností",
+    excerpt: "Ceny domů v UK rostou o 0,4 % m/m, překonávají očekávání a ukazují odolnost trhu.",
+    body: `Index cen nemovitostí Nationwide překvapil trh růstem o 0,4 % měsíčně, což je výrazně nad očekávání -0,3 %. To naznačuje, že britský trh s nemovitostmi si i přes ekonomickou a finanční nejistotu způsobenou konfliktem na Blízkém východě udržuje odolnost. Průměrná cena nemovitosti v UK se nyní vyšplhala na 278 880 liber.
+
+**Co se stalo**
+
+Ceny nemovitostí v UK rostou o 0,4 % m/m, což překonává očekávání.
+
+**Kontext**
+
+Britský trh s nemovitostmi čelí řadě výzev, včetně vysoké inflace a rostoucích úrokových sazeb. Nicméně, poptávka po nemovitostech zůstává silná a ceny rostou.
+
+**Klíčová čísla**
+
+- **0,4%**: Měsíční růst cen nemovitostí.
+- **£278,880**: Průměrná cena nemovitosti v UK.
+- **3,0%**: Roční růst cen nemovitostí.
+
+**Co sledovat dál**
+
+Sledujte vývoj úrokových sazeb a inflace, které mají zásadní vliv na trh s nemovitostmi.
+
+**Praktický závěr**
+
+Investoři do nemovitostí by měli zvážit diverzifikaci portfolia a sledovat vývoj trhu.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/uk-april-nationwide-house-prices-04-vs-03-mm-expected-20260501/)*`,
+    whyMatters: "Růst cen nemovitostí může mít pozitivní dopad na ekonomiku, ale také může vést k vyšší zadluženosti domácností.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/uk-april-nationwide-house-prices-04-vs-03-mm-expected-20260501/",
+  },
+  {
+    id: "konflikt-na-blizkem-vychode-ohrozuje-energetickou-bezpecnost",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Konflikt na Blízkém východě ohrožuje energetickou bezpečnost ASEAN",
+    excerpt: "ASEAN ministři varují před dopadem konfliktu na Blízkém východě na energetickou bezpečnost a regionální růst.",
+    body: `Ministři ASEAN ekonomické komunity vydali varování, že konflikt na Blízkém východě představuje rostoucí hrozbu pro globální energetickou bezpečnost a regionální růst. Hormuzský průliv, kterým prochází přibližně 25 % globální dopravy ropy a LNG, je klíčový pro dodávky do Asie.
+
+**Co se stalo**
+
+ASEAN ministři varují před dopadem konfliktu na Blízkém východě na energetickou bezpečnost a regionální růst.
+
+**Kontext**
+
+Konflikt na Blízkém východě má potenciál narušit dodávky ropy a zemního plynu, což by mohlo vést k nárůstu cen energií a zpomalení ekonomického růstu.
+
+**Klíčová čísla**
+
+- **25%**: Podíl globální dopravy ropy a LNG procházející Hormuzem.
+- **80%**: Podíl destinací pro ropu a LNG procházející Hormuzem.
+
+**Co sledovat dál**
+
+Sledujte vývoj konfliktu na Blízkém východě a jeho dopad na ceny energií.
+
+**Praktický závěr**
+
+Zvažte investice do energetických společností nebo komodit.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/asean-ministers-warn-middle-east-war-threatens-energy-security-and-regional-growth-20260501/)*`,
+    whyMatters: "Konflikt na Blízkém východě může mít významný dopad na globální ekonomiku a energetické trhy.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/asean-ministers-warn-middle-east-war-threatens-energy-security-and-regional-growth-20260501/",
+  },
+  {
+    id: "libra-sterling-klesa-ale-zustava-silna-diky-ocekavani-hawkis",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Libra Sterling klesá, ale zůstává silná díky očekávání hawkish BoE",
+    excerpt: "Libra Sterling mírně klesá, ale zůstává silná díky očekávání agresivní politiky Bank of England.",
+    body: `Libra Sterling mírně klesá, ale celkově zůstává silná. Trhy očekávají, že Bank of England bude pokračovat v zvyšování úrokových sazeb, což podporuje hodnotu libry.
+
+**Co se stalo**
+
+Libra Sterling mírně klesá, ale zůstává silná.
+
+**Kontext**
+
+Očekávání agresivní politiky Bank of England podporuje hodnotu libry Sterling.
+
+**Klíčová čísla**
+
+- **1.3590**: Aktuální kurz GBP/USD.
+
+**Co sledovat dál**
+
+Sledujte rozhodnutí Bank of England o úrokových sazbách.
+
+**Praktický závěr**
+
+Zvažte investice do britských aktiv.
+
+*Zdroj: [FXStreet Forex & Commodities News](https://www.fxstreet.com/news/pound-sterling-edges-down-remains-broadly-firm-amid-hawkish-boe-prospects-202605010956)*`,
+    whyMatters: "Silná libra Sterling může mít dopad na britský export a inflaci.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://www.fxstreet.com/news/pound-sterling-edges-down-remains-broadly-firm-amid-hawkish-boe-prospects-202605010956",
+  },
+  {
+    id: "toyota-c-hr-review",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Toyota C-HR+ review",
+    excerpt: "EV-agnostic Japanese giant launches its mainstream electric offering Chairman Akio Toyoda’s edict that Toyota would no longer be a producer of “boring cars” was very bold. It’s the sort of PR gold th",
+    body: `*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-review/toyota/c-hr-plus)*`,
+    whyMatters: "",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-review/toyota/c-hr-plus",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/toyota-c-hr-review-2026-001_0.jpg?itok=0DyNhqNJ",
+  },
+  {
     id: "jpy-strme-posiluje-boe-ponechava-sazby-beze-zmeny",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
