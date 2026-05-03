@@ -1,5 +1,278 @@
 export const ARTICLES = [
   {
+    id: "trump-zvysuje-tarify-na-evropska-auta-dopad-na-meny-a-obchod",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Trump zvyšuje tarify na evropská auta – dopad na měny a obchod",
+    excerpt: "Trump navýší tarify na evropská auta na 25 %, což oslabuje euro a zvyšuje napětí v obchodních vztazích. PMI v Kanadě překvapil pozitivním výsledkem, zatímco ISM Manufacturing index v USA klesl.",
+    body: `Americký prezident Donald Trump oznámil navýšení tarifů na evropská auta a nákladní vozidla dovážená do USA na 25 %. Toto rozhodnutí vyvolalo okamžitou reakci na trzích, s oslabením eura a zvýšenou nervozitou ohledně globálních obchodních vztahů.  Zatímco kanadský manufacturing PMI překonal očekávání, americký ISM Manufacturing index signalizuje zpomalení v sektoru.
+
+**Co se stalo**
+
+Tarify na evropská auta byly navýšeny z 15 % na 25 %. Trump také uvedl nespokojenost s jednáním s Íránem a naznačil, že dohoda nemusí být dosažena.
+
+**Kontext**
+
+Obchodní spory mezi USA a EU jsou dlouhodobým problémem, který ovlivňuje globální ekonomiku. Zvýšení tarifů může vést k odvetným opatřením a dalším komplikacím v obchodních vztazích.  Napětí kolem Íránu přidává další vrstvu nejistoty na trhy.
+
+**Klíčová čísla**
+
+- **25%**: Nová výše tarifů na evropská auta.
+- **53.3**: PMI v Kanadě (předchozí hodnota 50.0).
+- **52.7**: ISM Manufacturing index v USA (odhad 53.0).
+- **$78,000**: Cena bitcoinu (v době psaní článku).
+- **1.1730**: Úroveň EUR/USD (v době psaní článku).
+
+**Co sledovat dál**
+
+Sledujte reakci EU na zvýšení tarifů a případná odvetná opatření.  Důležité bude sledovat vývoj jednání s Íránem a dopad na ceny ropy.  Pozornost věnujte dalším ekonomickým datům z USA a Kanady, které mohou ovlivnit kurz EUR/USD.
+
+**Praktický závěr**
+
+Investoři by měli zvážit diverzifikaci portfolia a snížit expozici vůči akciím a měnám, které jsou přímo ovlivněny obchodními spory.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/investinglive-americas-market-news-wrap-trump-raises-tariffs-on-european-autos-20260501/)*`,
+    whyMatters: "Zvýšení tarifů může vést k vyšším cenám pro spotřebitele a snížit ekonomický růst.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/investinglive-americas-market-news-wrap-trump-raises-tariffs-on-european-autos-20260501/",
+  },
+  {
+    id: "panther-solo-britsky-supercar-ktery-predbehl-bmw-m5-a-zmizel",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Panther Solo: Britský supercar, který předběhl BMW M5 a zmizel",
+    excerpt: "Panther Solo z roku 1989 byl britský supercar s pohonem všech kol, který byl jedním z nejlepších, ale nikdy nedosáhl komerčního úspěchu. Jeho příběh ilustruje osudy mnoha britských automobilových start-upů.",
+    body: `V 80. a 90. letech byla britská automobilová scéna plná ambiciózních sportovních aut, která se snažila konkurovat zavedeným značkám. Panther Solo, mid-engined supercar s pohonem všech kol, byl jedním z nich.  Přestože nabízel vynikající výkon, nedostatek finančních prostředků a nestabilita firmy vedly k jeho rychlému zmizení.
+
+**Co se stalo**
+
+Panther Solo nebyl komerčně úspěšný, navzdory svému technickému potenciálu a výkonu.
+
+**Kontext**
+
+Britský automobilový průmysl v 80. a 90. letech byl poznamenán mnoha start-upy, které se snažily prorazit, ale často selhaly kvůli nedostatku financí a managementu.
+
+**Klíčová čísla**
+
+- **1989**: Rok výroby Panther Solo.
+- **Mid-engined**: Umístění motoru za kabinou.
+- **4WD**: Pohon všech kol.
+- **£145k**: Cena Panther Solo (v době uvedení).
+- **626bhp**: Výkon motoru.
+
+**Co sledovat dál**
+
+Sledujte, zda se podobné projekty objeví v budoucnu a jak se budou vyrovnávat s finančními a regulačními výzvami.
+
+**Praktický závěr**
+
+Příběh Panther Solo je připomínkou rizik spojených s investicemi do start-upů, zejména v automobilovém průmyslu.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/used-cars/wild-british-supercar-beat-bmw-m5-%E2%80%93-then-vanished)*`,
+    whyMatters: "Ilustruje dynamiku trhu a důležitost finanční stability pro úspěch inovativních projektů.",
+    readTime: "2 min",
+    date: "3. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/used-cars/wild-british-supercar-beat-bmw-m5-%E2%80%93-then-vanished",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/panther-solo-jb20240627_3942-1600x1067-86fa3cdd-7679-4c95-80a3-25a957d1b53f.jpg?itok=ZTdv2V9U",
+  },
+  {
+    id: "zivot-s-defenderem-octa-626-koni-a-spotreba-18-litru",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Život s Defenderem Octa: 626 koní a spotřeba 18 litrů",
+    excerpt: "Testování Defenderu Octa s výkonem 626 koní ukazuje, že extrémní SUV nabízí úžasný výkon, ale také značné výzvy v běžném provozu a vysokou spotřebu paliva.",
+    body: `Život s Defenderem Octa, SUV s výkonem 626 koní, je kombinací vzrušení a frustrace.  Extrémní výkon umožňuje neuvěřitelné akcelerace, ale zároveň vyžaduje opatrnost a vysokou spotřebu paliva.  Provoz v běžném městském provozu je často komplikovaný a vyžaduje zvláštní pozornost.
+
+**Co se stalo**
+
+Testování Defenderu Octa odhalilo jeho silné a slabé stránky v reálném provozu.
+
+**Kontext**
+
+Úpravy vozidel, jako je Defender Octa, jsou stále populárnější, ale často přinášejí kompromisy v oblasti praktičnosti a spotřeby paliva.
+
+**Klíčová čísla**
+
+- **626bhp**: Výkon motoru.
+- **18mpg**: Spotřeba paliva.
+- **£145k**: Cena.
+- **Land Rover Defender**: Základní model.
+- **SUV**: Typ vozidla.
+
+**Co sledovat dál**
+
+Sledujte vývoj úprav vozidel a jejich dopad na výkon, spotřebu a praktičnost.
+
+**Praktický závěr**
+
+Před investicí do úpravy vozidla je důležité zvážit všechny potenciální náklady a kompromisy.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/features/626bhp-%C2%A3145k-18mpg-real-life-mad-defender-octa)*`,
+    whyMatters: "Ukazuje, jak extrémní úpravy ovlivňují jízdní vlastnosti a provozní náklady vozidla.",
+    readTime: "2 min",
+    date: "2. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/features/626bhp-%C2%A3145k-18mpg-real-life-mad-defender-octa",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/octa-long-term-test-070_0.jpg?itok=IYbHs_Ky",
+  },
+  {
+    id: "mini-cooper-s-klasika-kterou-pise-historie-a-van-ji-znicil",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Mini Cooper S: Klasika, kterou píše historie – a van ji zničil",
+    excerpt: "Majitel Mini Cooper S (R53) se podělil o zkušenost s náhlou ztrátou svého oblíbeného auta, které bylo sraženo dodávkou. Mini Cooper S je moderní klasika, která si získala srdce mnoha fanoušků.",
+    body: `Majitel Mini Cooper S (R53) vlastnil své auto téměř šest let a považoval ho za kombinaci denního vozu a zábavného auta.  Přestože se původně nejednalo o auto, které by si chtěl ponechat, stal se nedílnou součástí jeho života.  Nešťastná nehoda s dodávkou však jeho oblíbené auto zničila.
+
+**Co se stalo**
+
+Mini Cooper S bylo zničeno v dopravní nehodě.
+
+**Kontext**
+
+Mini Cooper S (R53) je považován za moderní klasiku a je oblíbený mezi sběrateli a fanoušky.
+
+**Klíčová čísla**
+
+- **2005**: Rok výroby Mini Cooper S.
+- **R53**: Chassi.
+
+**Co sledovat dál**
+
+Sledujte vývoj trhu s ojetými Mini Cooper S (R53) a jeho dopad na ceny.
+
+**Praktický závěr**
+
+Pojištění je klíčové pro ochranu majetku před nečekanými událostmi.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/used-cars/i-spent-big-money-my-mini-cooper-s-then-van-wrote-it)*`,
+    whyMatters: "Ukazuje, jak náhlé události mohou ovlivnit hodnotu majetku a připomíná důležitost pojištění.",
+    readTime: "2 min",
+    date: "3. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/used-cars/i-spent-big-money-my-mini-cooper-s-then-van-wrote-it",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/mini-cooper-r53-front.jpg?itok=8tqsV7dN",
+  },
+  {
+    id: "exodus-self-custody-jako-zaklad-pro-budoucnost-plateb",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Exodus: Self-custody jako základ pro budoucnost plateb",
+    excerpt: "Exodus se snaží prosadit self-custody jako klíčovou technologii pro budoucí platební systémy, i přes regulační výzvy a zpomalení trhu.",
+    body: `Firma Exodus prezentovala na svém summitu v Omaze argument, že self-custody se posouvá od niche kryptoměnového nástroje k plnohodnotné platební infrastruktuře.  Navzdory regulačním překážkám a zpomalení trhu se společnost snaží prosadit tuto vizi.
+
+**Co se stalo**
+
+Exodus se zaměřuje na self-custody jako základ pro budoucí platební systémy.
+
+**Kontext**
+
+Self-custody umožňuje uživatelům plnou kontrolu nad svými kryptoměnami, což je v kontrastu s centralizovanými burzami a platebními systémy.
+
+**Klíčová čísla**
+
+- **Omaha**: Místo konání summitu Exodus.
+- **Self-custody**: Technologie umožňující uživatelům plnou kontrolu nad svými kryptoměnami.
+
+**Co sledovat dál**
+
+Sledujte vývoj regulace self-custody a její dopad na adopci této technologie.
+
+**Praktický závěr**
+
+Self-custody nabízí uživatelům větší kontrolu nad svými finančními prostředky, ale také vyžaduje větší zodpovědnost.
+
+*Zdroj: [Bitcoin Magazine](https://bitcoinmagazine.com/news/exodus-bets-self-custody-can-power-life)*`,
+    whyMatters: "Self-custody má potenciál demokratizovat přístup k finančním službám.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://bitcoinmagazine.com/news/exodus-bets-self-custody-can-power-life",
+    image: "https://bitcoinmagazine.com/wp-content/uploads/2026/05/unnamed-file.jpg",
+  },
+  {
+    id: "microstrategy-akcie-stoupaji-s-rustem-bitcoinu",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "MicroStrategy: Akcie stoupají s růstem bitcoinu",
+    excerpt: "Akcie MicroStrategy (MSTR) reagovaly na růst ceny bitcoinu nárůstem o 9 %, což ukazuje silnou korelaci mezi oběma aktivy.",
+    body: `Akcie společnosti MicroStrategy (MSTR) zaznamenaly v pátek nárůst o 9 % v reakci na růst ceny bitcoinu na 78 000 USD.  Tento pohyb je důsledkem toho, že MicroStrategy drží velké množství bitcoinů ve svých aktivech.
+
+**Co se stalo**
+
+Akcie MSTR stouply o 9 % v reakci na růst ceny bitcoinu.
+
+**Kontext**
+
+MicroStrategy je firma, která investovala značné prostředky do bitcoinu a jeho cena má významný dopad na hodnotu společnosti.
+
+**Klíčová čísla**
+
+- **9%**: Nárůst akcie MSTR.
+- **$78,000**: Cena bitcoinu.
+- **MSTR**: Symbol akcie MicroStrategy.
+
+**Co sledovat dál**
+
+Sledujte další vývoj ceny bitcoinu a jeho dopad na akcie MSTR.
+
+**Praktický závěr**
+
+Investoři by měli zvážit korelaci mezi cenou bitcoinu a akciemi MicroStrategy.
+
+*Zdroj: [Bitcoin Magazine](https://bitcoinmagazine.com/news/strategy-mstr-stock-bitcoin-price-back-78k)*`,
+    whyMatters: "Ukazuje, jak investice do kryptoměn mohou ovlivnit hodnotu tradičních akcií.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://bitcoinmagazine.com/news/strategy-mstr-stock-bitcoin-price-back-78k",
+    image: "https://bitcoinmagazine.com/wp-content/uploads/2026/05/GDOH2897-1-scaled.jpg",
+  },
+  {
+    id: "eurusd-tarify-a-napeti-s-iranem-oslabuji-euro",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "EUR/USD: Tarify a napětí s Íránem oslabují euro",
+    excerpt: "Hrozba zvýšení tarifů na evropská auta a nejistota ohledně Íránu oslabují euro vůči dolaru.",
+    body: `Pár EUR/USD se v pátek obchodoval blízko úrovně 1.1730, přičemž euro oslabilo v reakci na hrozbu zvýšení tarifů na evropská auta ze strany USA a nejistotu ohledně situace v Íránu.
+
+**Co se stalo**
+
+Euro oslabilo vůči dolaru.
+
+**Kontext**
+
+Obchodní spory a geopolitické napětí mají významný dopad na měnové trhy.
+
+**Klíčová čísla**
+
+- **1.1730**: Úroveň EUR/USD.
+
+**Co sledovat dál**
+
+Sledujte vývoj obchodních vztahů mezi USA a EU a situaci v Íránu.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad geopolitických událostí na měnové trhy.
+
+*Zdroj: [FXStreet Forex & Commodities News](https://www.fxstreet.com/news/eur-usd-trims-gains-as-fresh-trump-tariff-threats-iran-woes-lift-usd-202605011801)*`,
+    whyMatters: "Měnové kurzy ovlivňují ceny dovozu a vývozu a mají dopad na ekonomický růst.",
+    readTime: "2 min",
+    date: "1. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://www.fxstreet.com/news/eur-usd-trims-gains-as-fresh-trump-tariff-threats-iran-woes-lift-usd-202605011801",
+  },
+  {
     id: "japonsko-varuje-pred-dalsimi-intervencemi-na-trhu-s-eurem",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
