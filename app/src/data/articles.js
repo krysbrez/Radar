@@ -1,5 +1,196 @@
 export const ARTICLES = [
   {
+    id: "mercedes-c-class-spolehliva-volba-za-10-000-liber",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Mercedes C-Class: Spolehlivá volba za 10 000 liber",
+    excerpt: "Ojetá Mercedes C-Class (W205) nabízí skvělý poměr cena/výkon a spolehlivost. Její cena klesla na cca 4000 liber, což ji činí atraktivní alternativou k BMW a Audi.",
+    body: `Mercedes C-Class se vždy potýkala s tvrdou konkurencí od BMW 3 Series a Audi A4. Nicméně, aktuální generace (W205) vyráběná mezi lety 2014 a 2021 si s přehledem konkuruje a nyní je dostupná za ceny od 4000 liber. Jedná se o univerzální a spolehlivé auto, které nabízí dobrou hodnotu za peníze.
+
+**Co se stalo**
+
+Cena ojetých Mercedes C-Class (W205) klesla na cca 4000 liber, což je výrazně nižší než před několika lety.
+
+**Kontext**
+
+Mercedes C-Class je kompaktní sedan nebo kombi, které se dlouhodobě řadí mezi nejprodávanější vozy ve svém segmentu. Generace W205 přinesla moderní design, vylepšené technologie a vyšší úroveň komfortu.
+
+**Klíčová čísla**
+
+- **4000 liber:** Minimální cena ojeté C-Class (W205).
+- **2014-2021:** Roky výroby analyzované generace.
+- **BMW 3 Series & Audi A4:** Hlavní konkurenti C-Class.
+- **W205:** Označení generace analyzovaného modelu.
+
+**Co sledovat dál**
+
+Sledujte vývoj cen pohonných hmot a údržby, které mohou ovlivnit celkové náklady vlastnictví. Dále sledujte dostupnost náhradních dílů a servisní záznamy konkrétního vozu.
+
+**Praktický závěr**
+
+Pokud hledáte spolehlivé a dobře vybavené auto za rozumnou cenu, ojetá Mercedes C-Class (W205) je dobrou volbou.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/used-cars/better-bmw-how-score-mercedes-c-class-%C2%A310k)*`,
+    whyMatters: "Dostupnost kvalitních ojetých vozidel za atraktivní ceny je důležitá pro širokou škálu kupujících a ovlivňuje i trh s novými vozy.",
+    readTime: "2 min",
+    date: "4. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/used-cars/better-bmw-how-score-mercedes-c-class-%C2%A310k",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/1-c-class_c220d_estate_2018_314.jpg?itok=ERqOnDGm",
+  },
+  {
+    id: "ecb-vyssi-inflace-a-nizsi-rust-v-eurozone",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "ECB: Vyšší inflace a nižší růst v Eurozóně",
+    excerpt: "ECB očekává vyšší inflaci (2,7% v roce 2026) a nižší růst v Eurozóně. Předpovědi profesionálních prognostiků byly revidovány směrem dolů.",
+    body: `Nejnovější průzkum ECB mezi profesionálními prognostiky ukázal složitou situaci v Eurozóně. Očekává se vyšší inflace, měřená Harmonizovaným indexem spotřebitelských cen (HICP), a zároveň zpomalení ekonomického růstu. Prognostici upravili svá očekávání směrem dolů.
+
+**Co se stalo**
+
+ECB revidovala směrem nahoru inflační očekávání a směrem dolů očekávání růstu.
+
+**Kontext**
+
+ECB pravidelně provádí průzkum mezi profesionálními prognostiky, aby získala přehled o očekávání vývoje ekonomiky v Eurozóně.
+
+**Klíčová čísla**
+
+- **2,7%:** Očekávaná inflace (HICP) v roce 2026.
+- **HICP:** Harmonizovaný index spotřebitelských cen.
+- **Eurozóna:** Ekonomická oblast sdílející měnu euro.
+
+**Co sledovat dál**
+
+Sledujte vývoj inflace a reakci ECB na trhy.
+
+**Praktický závěr**
+
+Investoři by měli zohlednit vyšší inflaci a nižší růst při rozhodování o investicích do Eurozóny.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/ecb-survey-of-professional-forecasters-see-higher-inflation-and-lower-growth-this-year-20260504/)*`,
+    whyMatters: "Změny v makroekonomických prognózách ovlivňují investiční rozhodnutí a celkovou stabilitu trhů.",
+    readTime: "2 min",
+    date: "4. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/ecb-survey-of-professional-forecasters-see-higher-inflation-and-lower-growth-this-year-20260504/",
+  },
+  {
+    id: "akciove-trhy-v-evrope-pod-tlakem-automobilky-a-banky",
+    tag: "Trhy",
+    tagColor: "bg-sky-500/20 text-sky-300",
+    title: "Akciové trhy v Evropě pod tlakem: Automobilky a banky",
+    excerpt: "Evropské akciové trhy jsou nejisté kvůli geopolitickým rizikům a firemním výsledkům. Automobilky jsou pod tlakem kvůli avizovaným celům ze strany USA.",
+    body: `Evropské akciové trhy v úvodu týdne vykazují nejistotu. Investoři vyhodnocují vývoj situace v Perském zálivu a sledují firemní výsledky. Automobilky jsou pod tlakem kvůli avizovanému zvýšení cel ze strany amerického prezidenta Trumpa.
+
+**Co se stalo**
+
+Akciové trhy v Evropě jsou nejisté a automobilky jsou pod tlakem kvůli celům.
+
+**Kontext**
+
+Geopolitické riziko v Perském zálivu a obchodní politika USA ovlivňují globální akciové trhy.
+
+**Klíčová čísla**
+
+- **Celá:** Avizované zvýšení cel ze strany USA.
+- **Perský záliv:** Oblast s geopolitickým napětím.
+
+**Co sledovat dál**
+
+Sledujte vývoj situace v Perském zálivu a reakci trhů na obchodní politiku USA.
+
+**Praktický závěr**
+
+Investoři by měli zvážit rizika spojená s geopolitickými událostmi a obchodními konflikty.
+
+*Zdroj: [Kurzy.cz - Ekonomické zpravodajství](https://zpravy.kurzy.cz/857962-12-h-evropa-nejista-pod-tlekm-jsou-automobilky-bcpp-v-minusu-kvuli-bankam-a-zbrojarum-dolar/)*`,
+    whyMatters: "Globální ekonomika je propojená a události v jedné oblasti mohou ovlivnit trhy po celém světě.",
+    readTime: "2 min",
+    date: "4. 5. 2026",
+    author: "Radar Redakce",
+    category: "investovani",
+    sourceLink: "https://zpravy.kurzy.cz/857962-12-h-evropa-nejista-pod-tlekm-jsou-automobilky-bcpp-v-minusu-kvuli-bankam-a-zbrojarum-dolar/",
+    image: "https://i.fin.cz/zpravy/obrazky/62/857962/stock-exchange-4785080_1920.jpg",
+  },
+  {
+    id: "caterham-csr-ultimatni-ctyrkolovy-stihac",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Caterham CSR: Ultimátní čtyřkolový stíhač?",
+    excerpt: "Test Caterhamu CSR v Mach Loopu ukázal, že se jedná o extrémní a zábavné auto s výjimečným výkonem.",
+    body: `Test Caterhamu CSR v Mach Loopu (Welsh Mach Loop) ukázal, že se jedná o ultimátní čtyřkolový stíhač. Auto nabízí neuvěřitelný výkon a hravé ovládání, které připomíná létání.
+
+**Co se stalo**
+
+Test Caterhamu CSR potvrdil jeho výjimečný výkon a zábavnost.
+
+**Kontext**
+
+Caterham CSR je poslední edice Caterhamu a nabízí maximální výkon a sportovní zážitek.
+
+**Klíčová čísla**
+
+- **Mach Loop:** Testovací okruh ve Walesu.
+- **Čtyřkolový stíhač:** Přirovnání k vojenským stíhačkám.
+
+**Co sledovat dál**
+
+Sledujte reakce řidičů a odborníků na tento extrémní model.
+
+**Praktický závěr**
+
+Pokud hledáte auto pro maximální zábavu a adrenalin, Caterham CSR je skvělá volba.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/features/danger-zone-chasing-fighter-jets-caterham-csr)*`,
+    whyMatters: "Caterham CSR představuje vrchol sportovních automobilů a nabízí jedinečný zážitek.",
+    readTime: "2 min",
+    date: "3. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/features/danger-zone-chasing-fighter-jets-caterham-csr",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/caterham-csr-front-dynamic-low-flying-jh-64.jpg?itok=3SiloSZR",
+  },
+  {
+    id: "akciove-trhy-napeti-v-hormuzskem-prulivu-tlaci-dolu",
+    tag: "Investování",
+    tagColor: "bg-blue-500/20 text-blue-300",
+    title: "Akciové trhy: Napětí v Hormuzském průlivu tlačí dolů",
+    excerpt: "Evropské akciové trhy jsou pod tlakem kvůli rostoucímu napětí v Hormuzském průlivu.",
+    body: `Evropské akciové trhy jsou v úvodu týdne nejisté a pod tlakem kvůli rostoucímu napětí v Hormuzském průlivu. Investoři sledují vývoj situace a vyhodnocují firemní výsledky.
+
+**Co se stalo**
+
+Rostoucí napětí v Hormuzském průlivu tlačí dolů evropské akciové trhy.
+
+**Kontext**
+
+Hormuzský průliv je klíčová námořní cesta pro přepravu ropy a jakékoli napětí v této oblasti může mít dopad na globální ekonomiku.
+
+**Klíčová čísla**
+
+- **Hormuzský průliv:** Klíčová námořní cesta pro přepravu ropy.
+
+**Co sledovat dál**
+
+Sledujte vývoj situace v Hormuzském průlivu a reakci trhů.
+
+**Praktický závěr**
+
+Investoři by měli zvážit rizika spojená s geopolitickými událostmi.
+
+*Zdroj: [Yahoo Finance](https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-may-4-231452685.html)*`,
+    whyMatters: "Globální ekonomika je závislá na stabilní přepravě ropy a jakékoli narušení může mít vážné důsledky.",
+    readTime: "2 min",
+    date: "3. 5. 2026",
+    author: "Radar Redakce",
+    category: "investovani",
+    sourceLink: "https://finance.yahoo.com/markets/stocks/live/stock-market-today-monday-may-4-231452685.html",
+    image: "https://s.yimg.com/uu/api/res/1.2/CQth2pI2.CQ1AmBDuKuBbw--~B/aD01NzYwO3c9ODY0MDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-05/3620eca8-9f33-46dc-b69b-bfe231025615",
+  },
+  {
     id: "trump-zvysuje-tarify-na-evropska-auta-dopad-na-meny-a-obchod",
     tag: "Forex",
     tagColor: "bg-purple-500/20 text-purple-300",
