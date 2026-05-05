@@ -1,5 +1,302 @@
 export const ARTICLES = [
   {
+    id: "rba-zvysuje-urokove-sazby-na-435-geopoliticke-riziko-v-hormu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "RBA zvyšuje úrokové sazby na 4,35 %, geopolitické riziko v Hormuzském průlivu",
+    excerpt: "RBA zvýšila úrokové sazby o 25 bazických bodů na 4,35 %. Australská ekonomika vykazuje silné spotřebitelské výdaje, ale geopolitické napětí v Hormuzském průlivu představuje riziko.",
+    body: `Australská centrální banka (RBA) dnes zvýšila úrokové sazby o 25 bazických bodů na 4,35 %, což bylo široce očekáváno. NAB předpovídá, že úrokové sazby dosáhnou vrcholu kolem 4,6 %. Zpráva o spotřebitelských výdajích za březen ukázala silný růst o 1,6 % oproti předchozímu měsíci, což naznačuje odolnost australské ekonomiky. Nicméně, napětí v Hormuzském průlivu, kde Írán zahájil útoky na americké válečné lodě, představuje významné geopolitické riziko pro region a globální trhy.
+
+**Co se stalo**
+
+RBA zvýšila úrokové sazby o 25 bazických bodů. Spotřebitelské výdaje v Austrálii vzrostly o 1,6 % m/m. Írán zahájil útoky na americké válečné lodě v Hormuzském průlivu.
+
+**Kontext**
+
+Australská ekonomika čelí tlaku na zvyšování úrokových sazeb kvůli inflaci, ale zároveň se snaží podpořit ekonomický růst. Geopolitické napětí v Hormuzském průlivu může ovlivnit ceny ropy a globální obchod.
+
+**Klíčová čísla**
+
+- **4,35 %** — Nová úroková sazba RBA.
+- **1,6 %** — Růst spotřebitelských výdajů v Austrálii za březen.
+- **4,6 %** — Očekávaný vrchol úrokových sazeb podle NAB.
+
+**Co sledovat dál**
+
+Sledujte vývoj v Hormuzském průlivu a jeho dopad na ceny ropy a globální trhy. Monitorujte další data o australské ekonomice, zejména inflaci a spotřebitelskou důvěru.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad geopolitického rizika na australské akcie a měnu. Diverzifikace portfolia a hedging proti cenám ropy mohou být vhodné strategie.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/investinglive-asia-pacific-fx-news-wrap-awaiting-the-rba-expected-to-hike-by-25bp-20260505/)*`,
+    whyMatters: "Zvýšené úrokové sazby a geopolitické riziko mohou ovlivnit investiční rozhodnutí a ekonomický růst v Austrálii a globálně.",
+    readTime: "2 min",
+    date: "5. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/investinglive-asia-pacific-fx-news-wrap-awaiting-the-rba-expected-to-hike-by-25bp-20260505/",
+  },
+  {
+    id: "svycarska-inflace-mirne-prekrocila-ocekavani-snb-zustava-opa",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Švýcarská inflace mírně překročila očekávání, SNB zůstává opatrná",
+    excerpt: "Švýcarská inflace v dubnu dosáhla 0,6 % y/y, mírně překračujíc očekávání. SNB pravděpodobně zůstane opatrná a nebude reagovat na dočasné energetické šoky.",
+    body: `Inflace ve Švýcarsku v dubnu dosáhla 0,6 % y/y, což je mírně nad očekávání 0,6 %. Základní inflace se snížila na 0,3 % y/y. Švýcarská centrální banka (SNB) pravděpodobně nebude reagovat na dočasné energetické šoky a zůstane opatrná. Vysoká hodnota švýcarského franku může potlačovat inflační tlaky.
+
+**Co se stalo**
+
+Inflace ve Švýcarsku dosáhla 0,6 % y/y, základní inflace 0,3 % y/y.
+
+**Kontext**
+
+Švýcarsko čelí tlaku na zvyšování úrokových sazeb kvůli inflaci, ale zároveň se snaží podpořit ekonomický růst. Silný švýcarský frank může potlačovat inflační tlaky.
+
+**Klíčová čísla**
+
+- **0,6 %** — Inflace ve Švýcarsku v dubnu (y/y).
+- **0,3 %** — Základní inflace ve Švýcarsku v dubnu (y/y).
+- **0,3 %** — Předchozí základní inflace (y/y).
+
+**Co sledovat dál**
+
+Sledujte vývoj inflace ve Švýcarsku a reakci SNB. Monitorujte vývoj švýcarského franku a jeho dopad na ekonomiku.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad inflace a měnového kurzu na švýcarské akcie a dluhopisy.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/what-are-the-main-events-for-today-20260505/)*`,
+    whyMatters: "Inflace a měnový kurz mohou ovlivnit investiční rozhodnutí a ekonomický růst ve Švýcarsku.",
+    readTime: "2 min",
+    date: "5. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/what-are-the-main-events-for-today-20260505/",
+  },
+  {
+    id: "britske-autopujcovny-hledaji-partnery-pro-elektrifikaci",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Britské autopůjčovny hledají partnery pro elektrifikaci",
+    excerpt: "Britské autopůjčovny se snaží urychlit elektrifikaci vozového parku a hledají úzkou spolupráci s dodavateli.",
+    body: `Největší autopůjčovny ve Velké Británii se snaží urychlit elektrifikaci vozového parku kvůli pobídkám pro plug-in hybridní a elektrická auta. Čelí výzvám v podobě rostoucích nákladů, přílivu dat a složitosti elektrifikace. Ayvens UK hledá úzkou spolupráci s dodavateli, aby se s těmito výzvami vypořádala.
+
+**Co se stalo**
+
+Autopůjčovny ve Velké Británii urychlují elektrifikaci vozového parku.
+
+**Kontext**
+
+Elektrifikace automobilového průmyslu je klíčovým trendem, který ovlivňuje všechny segmenty trhu. Autopůjčovny hrají důležitou roli v podpoře tohoto trendu.
+
+**Klíčová čísla**
+
+N/A
+
+**Co sledovat dál**
+
+Sledujte vývoj elektrifikace v automobilovém průmyslu a dopad na autopůjčovny.
+
+**Praktický závěr**
+
+Investoři by měli zvážit investice do společností, které se podílejí na elektrifikaci automobilového průmyslu.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/company-cars/uk-fleets-seek-partners-navigate-electrification-challenges)*`,
+    whyMatters: "Elektrifikace automobilového průmyslu má významný dopad na ekonomiku a životní prostředí.",
+    readTime: "2 min",
+    date: "5. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/company-cars/uk-fleets-seek-partners-navigate-electrification-challenges",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/instavolt_winchester-03_0.jpg?itok=BOcmpVuA",
+  },
+  {
+    id: "od-mx-5-k-mr2-proc-jsem-vymenil-kabriolet-za-sportovni-vuz-s",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Od MX-5 k MR2: Proč jsem vyměnil kabriolet za sportovní vůz se středovým motorem",
+    excerpt: "Autor vyměnil své MX-5 za Toyota MR2, aby se vyhnul neustálým opravám a nákladům na starší vozy.",
+    body: `Autor se rozhodl vyměnit své starší vozy (Fiat Coupe a Mazda MX-5), které vyžadovaly neustálé opravy, za Toyota MR2 se středovým motorem. MR2 nabízí jiný jízdní zážitek a eliminuje problémy s korozí, které trápily jeho předchozí vozy.
+
+**Co se stalo**
+
+Autor vyměnil své MX-5 za Toyota MR2.
+
+**Kontext**
+
+Starší vozy často vyžadují nákladné opravy a údržbu. Sportovní vozy se středovým motorem nabízejí jiný jízdní zážitek a mohou být méně náchylné k problémům s korozí.
+
+**Klíčová čísla**
+
+N/A
+
+**Co sledovat dál**
+
+Sledujte trendy v automobilovém průmyslu a preference zákazníků.
+
+**Praktický závěr**
+
+Při nákupu ojetého vozu zvažte náklady na údržbu a opravy.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/features/why-i-swapped-my-mx-5-toyota-mr2-%E2%80%93-and-wont-look-back)*`,
+    whyMatters: "Výběr automobilu ovlivňuje nejen jízdní zážitek, ale i finanční náklady.",
+    readTime: "2 min",
+    date: "5. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/features/why-i-swapped-my-mx-5-toyota-mr2-%E2%80%93-and-wont-look-back",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/jack-toyota-mr-2-lead.jpg?itok=iAtcTShl",
+  },
+  {
+    id: "mini-chysta-nove-horke-hatchbacky-john-cooper-works",
+    tag: "Auta",
+    tagColor: "bg-amber-500/20 text-amber-300",
+    title: "Mini chystá nové horké hatchbacky John Cooper Works",
+    excerpt: "Mini plánuje rozšířit nabídku modelů John Cooper Works a zaměřuje se na customizaci a možnosti.",
+    body: `Mini plánuje rozšířit nabídku modelů John Cooper Works a zaměřuje se na customizaci a možnosti. Nový šéf značky Jean-Philippe Parain uvedl, že Mini neplánuje další rozšíření modelové řady, ale zvýšení variability a customizace může pomoci růstu.
+
+**Co se stalo**
+
+Mini plánuje rozšířit nabídku modelů John Cooper Works.
+
+**Kontext**
+
+Mini se snaží udržet si konkurenceschopnost na trhu s hot hatchy. Customizace a možnosti jsou důležitým faktorem pro zákazníky.
+
+**Klíčová čísla**
+
+N/A
+
+**Co sledovat dál**
+
+Sledujte vývoj nabídky modelů John Cooper Works a dopad na prodeje Mini.
+
+**Praktický závěr**
+
+Investoři by měli zvážit investice do společností, které se podílejí na výrobě automobilů Mini.
+
+*Zdroj: [Autocar RSS Feed](https://www.autocar.co.uk/car-news/new-cars/mini-priming-new-john-cooper-works-hot-hatches-after-record-year)*`,
+    whyMatters: "Vývoj automobilového průmyslu ovlivňuje ekonomiku a preference zákazníků.",
+    readTime: "2 min",
+    date: "5. 5. 2026",
+    author: "Radar Redakce",
+    category: "auta",
+    sourceLink: "https://www.autocar.co.uk/car-news/new-cars/mini-priming-new-john-cooper-works-hot-hatches-after-record-year",
+    image: "https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/styles/car_review_image_190/public/images/car-reviews/first-drives/legacy/mini-cooper-s-jcw-rt-2025-jh-32.jpg?itok=Q2vI7dGP",
+  },
+  {
+    id: "aave-bojuje-o-odledneni-71-milionu-dolaru-po-hacku-kelp-dao",
+    tag: "Krypto",
+    tagColor: "bg-orange-500/20 text-orange-300",
+    title: "Aave bojuje o odlednění 71 milionů dolarů po hacku Kelp DAO",
+    excerpt: "Aave se snaží odlednit 71 milionů dolarů po hacku Kelp DAO, který by mohl ovlivnit zabavení kryptoměn.",
+    body: `Aave bojuje o odlednění 71 milionů dolarů po hacku Kelp DAO, který se dostal do soudního sporu. Soudní případ by mohl rozhodnout, zda lze zabavit prostředky z DeFi pro uspokojení nesouvisejících soudních rozhodnutí.
+
+**Co se stalo**
+
+Aave se snaží odlednit 71 milionů dolarů po hacku Kelp DAO.
+
+**Kontext**
+
+Hack Kelp DAO má dopad na Aave a celou oblast DeFi. Soudní spor by mohl mít dalekosáhlé důsledky pro zabavení kryptoměn.
+
+**Klíčová čísla**
+
+- **71 milionů dolarů** — Částka, kterou se Aave snaží odlednit.
+
+**Co sledovat dál**
+
+Sledujte vývoj soudního sporu a jeho dopad na Aave a DeFi.
+
+**Praktický závěr**
+
+Investoři by měli zvážit rizika spojená s investicemi do kryptoměn a DeFi.
+
+*Zdroj: [Decrypt](https://decrypt.co/366744/aave-unfreeze-71m-arbitrum-kelp-dao-hack)*`,
+    whyMatters: "Hack Kelp DAO a soudní spor mají dopad na důvěru v DeFi a regulaci kryptoměn.",
+    readTime: "2 min",
+    date: "4. 5. 2026",
+    author: "Radar Redakce",
+    category: "krypto",
+    sourceLink: "https://decrypt.co/366744/aave-unfreeze-71m-arbitrum-kelp-dao-hack",
+    image: "https://cdn.decrypt.co/wp-content/uploads/2025/05/justice-decrypt-style-gID_7.png",
+  },
+  {
+    id: "usd-fed-pricing-podporuje-rust-dxy",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "USD: Fed pricing podporuje růst DXY",
+    excerpt: "USD těží z očekávání dalšího zpřísnění měnové politiky Fedu v roce 2026 a rostoucích cen ropy.",
+    body: `Americký dolar (USD) těží z očekávání dalšího zpřísnění měnové politiky Fedu v roce 2026. Vysoké ceny ropy a napětí v Hormuzském průlivu podporují krátkodobé úrokové sazby v USA.
+
+**Co se stalo**
+
+USD těží z očekávání dalšího zpřísnění měnové politiky Fedu.
+
+**Kontext**
+
+Očekávání dalšího zpřísnění měnové politiky Fedu a geopolitické faktory ovlivňují hodnotu USD.
+
+**Klíčová čísla**
+
+N/A
+
+**Co sledovat dál**
+
+Sledujte vývoj měnové politiky Fedu a geopolitické události.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad měnové politiky a geopolitických událostí na hodnotu USD.
+
+*Zdroj: [FXStreet Forex & Commodities News](https://www.fxstreet.com/news/usd-fed-pricing-supports-dxy-recovery-ing-202605050956)*`,
+    whyMatters: "Hodnota USD ovlivňuje globální obchod a investice.",
+    readTime: "2 min",
+    date: "5. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://www.fxstreet.com/news/usd-fed-pricing-supports-dxy-recovery-ing-202605050956",
+  },
+  {
+    id: "svycarsko-inflace-v-dubnu-06-yy-ekonomika-ma-rezervu",
+    tag: "Forex",
+    tagColor: "bg-purple-500/20 text-purple-300",
+    title: "Švýcarsko: Inflace v dubnu +0,6 % y/y, ekonomika má rezervu",
+    excerpt: "Inflace ve Švýcarsku v dubnu dosáhla 0,6 % y/y, což naznačuje, že ekonomika má určitou rezervu.",
+    body: `Inflace ve Švýcarsku v dubnu dosáhla 0,6 % y/y, což je v souladu s očekáváním. Základní inflace se snížila na 0,3 % y/y. I přes očekávaný nárůst inflace v následujících měsících má švýcarská ekonomika určitou rezervu. Vysoká hodnota švýcarského franku však může potlačovat inflační tlaky.
+
+**Co se stalo**
+
+Inflace ve Švýcarsku dosáhla 0,6 % y/y.
+
+**Kontext**
+
+Švýcarsko čelí tlaku na zvyšování úrokových sazeb kvůli inflaci, ale zároveň se snaží podpořit ekonomický růst. Silný švýcarský frank může potlačovat inflační tlaky.
+
+**Klíčová čísla**
+
+- **0,6 %** — Inflace ve Švýcarsku v dubnu (y/y).
+- **0,3 %** — Základní inflace ve Švýcarsku v dubnu (y/y).
+
+**Co sledovat dál**
+
+Sledujte vývoj inflace ve Švýcarsku a reakci SNB. Monitorujte vývoj švýcarského franku a jeho dopad na ekonomiku.
+
+**Praktický závěr**
+
+Investoři by měli zvážit dopad inflace a měnového kurzu na švýcarské akcie a dluhopisy.
+
+*Zdroj: [Investinglive RSS Breaking news Feed](https://investinglive.com/news/switzerland-april-cpi-06-vs-06-yy-expected-20260505/)*`,
+    whyMatters: "Inflace a měnový kurz mohou ovlivnit investiční rozhodnutí a ekonomický růst ve Švýcarsku.",
+    readTime: "2 min",
+    date: "5. 5. 2026",
+    author: "Radar Redakce",
+    category: "forex",
+    sourceLink: "https://investinglive.com/news/switzerland-april-cpi-06-vs-06-yy-expected-20260505/",
+  },
+  {
     id: "mercedes-c-class-spolehliva-volba-za-10-000-liber",
     tag: "Auta",
     tagColor: "bg-amber-500/20 text-amber-300",
